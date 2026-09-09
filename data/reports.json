@@ -1,0 +1,18 @@
+{
+  "reports": [
+    {
+      "date": "2026-09-09",
+      "activeJobs": 5,
+      "freshJobs": 5,
+      "previouslyListed": 0,
+      "closingWithin7Days": 1,
+      "jobIds": [
+        "maico-dsp-engineer-2026-09-09",
+        "rostock-signal-processing-implants-2026-09-09",
+        "charite-physiological-signal-processing-2026-09-09",
+        "siemens-embedded-xray-2026-09-09",
+        "boston-scientific-ep-graduate-2026-09-09"
+      ]
+    }
+  ]
+}
