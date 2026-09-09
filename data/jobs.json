@@ -1,0 +1,72 @@
+{
+  "lastUpdated": "2026-09-09",
+  "jobs": [
+    {
+      "id": "maico-dsp-engineer-2026-09-09",
+      "title": "DSP Engineer (f/m/d)",
+      "company": "MAICO Diagnostics GmbH",
+      "location": "Berlin",
+      "category": ["DSP", "Embedded", "Medical Device", "Signal Processing"],
+      "match": 96,
+      "fresh": true,
+      "status": "active",
+      "deadline": null,
+      "url": "https://www.euni.de/en/jobs/1231026120/dsp-engineer-f-m-d",
+      "fit": ["Early-career friendly", "DSP algorithms", "Embedded implementation", "Signal acquisition and validation"]
+    },
+    {
+      "id": "rostock-signal-processing-implants-2026-09-09",
+      "title": "Research Assistant — Energy-Efficient Signal Processing for Electrically Active Implants",
+      "company": "University of Rostock",
+      "location": "Rostock",
+      "category": ["Research", "DSP", "Embedded", "Medical Device"],
+      "match": 94,
+      "fresh": true,
+      "status": "active",
+      "deadline": "2026-09-28",
+      "url": "https://www.uni-rostock.de/en/",
+      "fit": ["Signal processing", "Embedded systems", "Medical implants", "PhD-compatible research"]
+    },
+    {
+      "id": "charite-physiological-signal-processing-2026-09-09",
+      "title": "PhD Student — Physiological Signal Processing for Clinical Decision Support",
+      "company": "Charité — Universitätsmedizin Berlin",
+      "location": "Berlin",
+      "category": ["Research", "ECG", "Signal Processing", "PhD"],
+      "match": 95,
+      "fresh": true,
+      "status": "active",
+      "deadline": "2026-09-15",
+      "url": "https://karriere.charite.de/en/job-vacancies/detail/8179",
+      "fit": ["Biomedical Engineering MSc", "Physiological signal processing", "ECG experience", "Python/scientific computing", "Feature extraction"]
+    },
+    {
+      "id": "siemens-embedded-xray-2026-09-09",
+      "title": "Embedded Softwareentwickler*in (w/m/d) — X-ray Generators",
+      "company": "Siemens Healthineers",
+      "location": "Forchheim",
+      "category": ["Embedded", "C++", "Medical Imaging"],
+      "match": 82,
+      "fresh": true,
+      "status": "active",
+      "deadline": null,
+      "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12465-1628199-1-S",
+      "fit": ["Embedded C/C++", "Medical devices", "Real-time software"],
+      "gaps": ["German requirement", "Degree wording", "Practical embedded experience"]
+    },
+    {
+      "id": "boston-scientific-ep-graduate-2026-09-09",
+      "title": "Electrophysiology Field Clinical Specialist Graduate — Germany",
+      "company": "Boston Scientific",
+      "location": "Germany",
+      "category": ["ECG", "Cardiology", "Graduate", "Medical Device"],
+      "match": 86,
+      "fresh": true,
+      "status": "active",
+      "deadline": null,
+      "url": "https://jobs.bostonscientific.com/",
+      "fit": ["Recent graduate eligible", "Biomedical background", "Cardiac electrophysiology", "ECG-domain relevance"],
+      "gaps": ["Clinical rather than embedded/R&D", "Travel required"]
+    }
+  ]
+}
