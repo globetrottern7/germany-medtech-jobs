@@ -7,12 +7,14 @@
       "company": "MAICO Diagnostics GmbH",
       "location": "Berlin",
       "category": ["DSP", "Embedded", "Medical Device", "Signal Processing"],
-      "match": 96,
+      "match": 78,
       "fresh": true,
-      "status": "active",
+      "status": "excluded",
+      "reason": "A current job-board listing specifies 1–3 years of experience. The employer text also says early-career candidates are welcome, creating a source conflict. Under the portal's strict 0-years rule, this vacancy is excluded from active recommendations.",
       "deadline": null,
-      "url": "https://www.euni.de/en/jobs/1231026120/dsp-engineer-f-m-d",
-      "fit": ["Early-career friendly", "DSP algorithms", "Embedded implementation", "Signal acquisition and validation"]
+      "url": "https://www.stepstone.de/stellenangebote--DSP-Engineer-f-m-d-Berlin-MAICO-Diagnostics-GmbH--14452282-inline.html",
+      "fit": ["Excellent DSP/medical-device technical alignment", "Embedded implementation", "Signal acquisition and validation"],
+      "gaps": ["Experience requirement conflict", "Strict fresher rule excludes it"]
     },
     {
       "id": "rostock-signal-processing-implants-2026-09-09",
