@@ -12,6 +12,12 @@
         "siemens-embedded-xray-2026-09-09",
         "boston-scientific-ep-graduate-2026-09-09"
       ],
+      "freshJobIds": [
+        "rostock-signal-processing-implants-2026-09-09",
+        "charite-physiological-signal-processing-2026-09-09",
+        "siemens-embedded-xray-2026-09-09",
+        "boston-scientific-ep-graduate-2026-09-09"
+      ],
       "excludedJobIds": ["maico-dsp-engineer-2026-09-09"]
     }
   ]
