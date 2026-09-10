@@ -19,6 +19,24 @@
         "boston-scientific-ep-graduate-2026-09-09"
       ],
       "excludedJobIds": ["maico-dsp-engineer-2026-09-09"]
+    },
+    {
+      "date": "2026-09-10",
+      "activeJobs": 5,
+      "freshJobs": 1,
+      "previouslyListed": 4,
+      "closingWithin7Days": 1,
+      "jobIds": [
+        "rostock-signal-processing-implants-2026-09-09",
+        "charite-physiological-signal-processing-2026-09-09",
+        "siemens-embedded-xray-2026-09-09",
+        "boston-scientific-ep-graduate-2026-09-09",
+        "max-planck-bmai-phd-2026-09-10"
+      ],
+      "freshJobIds": [
+        "max-planck-bmai-phd-2026-09-10"
+      ],
+      "excludedJobIds": ["maico-dsp-engineer-2026-09-09"]
     }
   ]
 }
