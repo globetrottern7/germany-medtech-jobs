@@ -85,6 +85,20 @@
       "url": "https://www.biochem.mpg.de/9016603/job_full_offer_26960440",
       "fit": ["Master's in Biomedical Engineering is a related engineering field", "Strong programming background", "Biomedical AI and life-science applications", "Structured PhD program across German research institutions"],
       "gaps": ["Broad AI/life-science call rather than a specific biosignal project", "Individual project fit depends on participating research group"]
+    },
+    {
+      "id": "kit-miniaturized-electrodes-2026-09-10",
+      "title": "PhD Student / Research Associate — Development of Miniaturized Electrodes in a Microfluidic System",
+      "company": "Karlsruhe Institute of Technology (KIT)",
+      "location": "Eggenstein-Leopoldshafen / Karlsruhe, Baden-Württemberg",
+      "category": ["Research", "Medical Imaging", "Signal Processing", "Medical Device"],
+      "match": 73,
+      "fresh": true,
+      "status": "active",
+      "deadline": "2026-09-13",
+      "url": "https://www.careerservice.kit.edu/en/studierende/jobboerse/?dvinci=1&id=1707680000&s=1&search_arr_filter_12%5B0%5D=1&search_submit=Suchen",
+      "fit": ["M.Sc.-level engineering research role", "Signal processing is an advantage", "Programmable electronics and biomedical-system development", "MRI/medical instrumentation exposure", "Doctoral research opportunity", "Good English accepted"],
+      "gaps": ["Biomedical Engineering is not one of the specifically listed degree backgrounds", "Strongest fit is electronics/microsystems rather than biosignal algorithms", "FEM/CFD, NMR and microfabrication are advantageous rather than demonstrated"]
     }
   ]
 }
