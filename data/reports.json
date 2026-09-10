@@ -6,36 +6,18 @@
       "freshJobs": 4,
       "previouslyListed": 0,
       "closingWithin7Days": 1,
-      "jobIds": [
-        "rostock-signal-processing-implants-2026-09-09",
-        "charite-physiological-signal-processing-2026-09-09",
-        "siemens-embedded-xray-2026-09-09",
-        "boston-scientific-ep-graduate-2026-09-09"
-      ],
-      "freshJobIds": [
-        "rostock-signal-processing-implants-2026-09-09",
-        "charite-physiological-signal-processing-2026-09-09",
-        "siemens-embedded-xray-2026-09-09",
-        "boston-scientific-ep-graduate-2026-09-09"
-      ],
+      "jobIds": ["rostock-signal-processing-implants-2026-09-09","charite-physiological-signal-processing-2026-09-09","siemens-embedded-xray-2026-09-09","boston-scientific-ep-graduate-2026-09-09"],
+      "freshJobIds": ["rostock-signal-processing-implants-2026-09-09","charite-physiological-signal-processing-2026-09-09","siemens-embedded-xray-2026-09-09","boston-scientific-ep-graduate-2026-09-09"],
       "excludedJobIds": ["maico-dsp-engineer-2026-09-09"]
     },
     {
       "date": "2026-09-10",
-      "activeJobs": 5,
-      "freshJobs": 1,
+      "activeJobs": 6,
+      "freshJobs": 2,
       "previouslyListed": 4,
-      "closingWithin7Days": 1,
-      "jobIds": [
-        "rostock-signal-processing-implants-2026-09-09",
-        "charite-physiological-signal-processing-2026-09-09",
-        "siemens-embedded-xray-2026-09-09",
-        "boston-scientific-ep-graduate-2026-09-09",
-        "max-planck-bmai-phd-2026-09-10"
-      ],
-      "freshJobIds": [
-        "max-planck-bmai-phd-2026-09-10"
-      ],
+      "closingWithin7Days": 2,
+      "jobIds": ["rostock-signal-processing-implants-2026-09-09","charite-physiological-signal-processing-2026-09-09","siemens-embedded-xray-2026-09-09","boston-scientific-ep-graduate-2026-09-09","max-planck-bmai-phd-2026-09-10","kit-miniaturized-electrodes-2026-09-10"],
+      "freshJobIds": ["max-planck-bmai-phd-2026-09-10","kit-miniaturized-electrodes-2026-09-10"],
       "excludedJobIds": ["maico-dsp-engineer-2026-09-09"]
     }
   ]
