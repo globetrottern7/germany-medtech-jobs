@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-09",
+  "lastUpdated": "2026-09-10",
   "jobs": [
     {
       "id": "maico-dsp-engineer-2026-09-09",
@@ -23,11 +23,12 @@
       "location": "Rostock",
       "category": ["Research", "DSP", "Embedded", "Medical Device"],
       "match": 94,
-      "fresh": true,
+      "fresh": false,
       "status": "active",
       "deadline": "2026-09-28",
-      "url": "https://www.uni-rostock.de/en/",
-      "fit": ["Signal processing", "Embedded systems", "Medical implants", "PhD-compatible research"]
+      "url": "https://jobs.uni-rostock.de/jobposting/433175ea8804a2fe0bf7a8bb7225a0a3ab494a510",
+      "fit": ["Signal processing", "Embedded C/C++", "Medical implants", "Sensor-data processing", "PhD-compatible research"],
+      "gaps": ["Digital circuit design/VHDL or Verilog is preferred"]
     },
     {
       "id": "charite-physiological-signal-processing-2026-09-09",
@@ -36,11 +37,12 @@
       "location": "Berlin",
       "category": ["Research", "ECG", "Signal Processing", "PhD"],
       "match": 95,
-      "fresh": true,
+      "fresh": false,
       "status": "active",
       "deadline": "2026-09-15",
       "url": "https://karriere.charite.de/en/job-vacancies/detail/8179",
-      "fit": ["Biomedical Engineering MSc", "Physiological signal processing", "ECG experience", "Python/scientific computing", "Feature extraction"]
+      "fit": ["Biomedical Engineering MSc", "Physiological signal processing", "ECG experience", "Python/scientific computing", "Feature extraction", "Multimodal sensor synchronization"],
+      "gaps": ["Machine-learning depth may need to be demonstrated"]
     },
     {
       "id": "siemens-embedded-xray-2026-09-09",
@@ -49,26 +51,40 @@
       "location": "Forchheim",
       "category": ["Embedded", "C++", "Medical Imaging"],
       "match": 82,
-      "fresh": true,
+      "fresh": false,
       "status": "active",
       "deadline": null,
       "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12465-1628199-1-S",
-      "fit": ["Embedded C/C++", "Medical devices", "Real-time software"],
-      "gaps": ["German requirement", "Degree wording", "Practical embedded experience"]
+      "fit": ["Embedded C/C++", "Medical-device software", "Real-time/control software", "Verification and testing"],
+      "gaps": ["Very good German required for the internal team language", "Degree wording favors CS/EE/IT fields", "First embedded professional experience is ideal"]
     },
     {
       "id": "boston-scientific-ep-graduate-2026-09-09",
       "title": "Electrophysiology Field Clinical Specialist Graduate — Germany",
       "company": "Boston Scientific",
-      "location": "Germany",
+      "location": "Jena / Erfurt / Leipzig / Ilmenau / Berlin",
       "category": ["ECG", "Cardiology", "Graduate", "Medical Device"],
       "match": 86,
-      "fresh": true,
+      "fresh": false,
       "status": "active",
       "deadline": null,
-      "url": "https://jobs.bostonscientific.com/",
-      "fit": ["Recent graduate eligible", "Biomedical background", "Cardiac electrophysiology", "ECG-domain relevance"],
-      "gaps": ["Clinical rather than embedded/R&D", "Travel required"]
+      "url": "https://jobs.bostonscientific.com/job/Leipzig-Electrophysiology-Field-Clinical-Specialist-Graduate-Germany/1369101500/",
+      "fit": ["Recent 2025/2026 graduate eligible", "Biomedical Engineering background", "ECG/cardiac-domain relevance", "Medical-device exposure"],
+      "gaps": ["Fluent German and English B2/C1 required; candidate is B1 German", "Clinical/customer-facing rather than embedded/R&D", "Extensive travel required"]
+    },
+    {
+      "id": "max-planck-bmai-phd-2026-09-10",
+      "title": "25 PhD Positions — Max Planck School of Biomedical AI",
+      "company": "Max Planck School of Biomedical AI / Max Planck Institute of Biochemistry",
+      "location": "Germany-wide participating research groups",
+      "category": ["Research", "PhD", "Biomedical AI", "Signal Processing"],
+      "match": 80,
+      "fresh": true,
+      "status": "active",
+      "deadline": "2026-12-01",
+      "url": "https://www.biochem.mpg.de/9016603/job_full_offer_26960440",
+      "fit": ["Master's in Biomedical Engineering is a related engineering field", "Strong programming background", "Biomedical AI and life-science applications", "Structured PhD program across German research institutions"],
+      "gaps": ["Broad AI/life-science call rather than a specific biosignal project", "Individual project fit depends on participating research group"]
     }
   ]
 }
