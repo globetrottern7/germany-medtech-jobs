@@ -13,7 +13,7 @@ permissions:
 jobs:
   research:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -23,7 +23,7 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Run fresh Germany-wide research
+      - name: Run fresh Europe-wide research
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python scripts/research_jobs.py
@@ -36,6 +36,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No data changes to commit."
           else
-            git commit -m "Run fresh Germany MedTech job research"
+            git commit -m "Run fresh Europe MedTech job research"
             git push
           fi
