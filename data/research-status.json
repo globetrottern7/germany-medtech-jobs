@@ -1,5 +1,10 @@
 {
-  "status": "idle",
-  "message": "Ready for research.",
-  "updatedAt": "2026-09-10T00:00:00+02:00"
+  "status": "complete",
+  "message": "Europe-wide research completed and published directly by ChatGPT web research + GitHub connector.",
+  "updatedAt": "2026-09-12T07:00:00+02:00",
+  "reportDate": "2026-09-12",
+  "activeJobs": 14,
+  "freshJobs": 8,
+  "previouslyListed": 6,
+  "publicationCommit": "82a3f0e6a5fec437970670ff2dceb8100e418a59"
 }
