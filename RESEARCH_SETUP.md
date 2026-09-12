@@ -1,26 +1,31 @@
-# Research Now setup
+# Research setup
 
-The portal's **Research Now** control uses a GitHub Actions workflow. The workflow performs fresh Germany-wide web research through the OpenAI Responses API, applies the strict 0-years/fresher rules, updates `data/jobs.json` and `data/reports.json`, and commits the result.
+The production research path now uses the **same approach as the earlier Germany search**: ChatGPT performs the web research directly, verifies the underlying vacancy sources, compares the results with the historical archive, and writes the verified Europe-wide report directly to this GitHub repository.
 
-## One-time setup
+## Production architecture
 
-1. Create an OpenAI API key in the OpenAI API platform.
-2. In this GitHub repository open **Settings → Secrets and variables → Actions**.
-3. Add a repository secret named exactly:
+`ChatGPT web search → source verification → strict adjudication → historical comparison → GitHub update`
 
-   `OPENAI_API_KEY`
+The daily automation **Daily Europe MedTech Jobs** runs at 5 PM Europe/Berlin time. It searches Germany first and then the wider European MedTech/health-tech market.
 
-4. Paste the API key as the secret value.
-5. Open **Actions → Research Now → Run workflow** once to test it.
+## API credits are not required for the research path
 
-The API key is never stored in the public website or repository files. The workflow reads it only from the GitHub Actions secret.
+This production workflow does **not** depend on the OpenAI API, `OPENAI_API_KEY`, or GitHub Actions to perform the research. The earlier GitHub Actions/OpenAI API implementation has been removed from the production path.
 
-## Using Research Now
+Therefore, an OpenAI API credit balance is not a prerequisite for the scheduled job research.
 
-The public portal button opens the secure GitHub Actions control. From there click **Run workflow**. The workflow then performs a new search rather than simply reloading existing JSON.
+## Research rules
 
-The existing automated 5 PM German-time ChatGPT job-monitoring process remains separate, so a manual research run does not replace the scheduled daily report.
+- Germany first, followed by Europe-wide coverage.
+- Prefer official employer, ATS, university/research and other primary sources.
+- Use search results/job boards for discovery, then verify the underlying vacancy whenever possible.
+- Strictly filter for fresh-graduate/0-years suitability.
+- Preserve Fresh vs Previously Listed history using vacancy identity rather than URL alone.
+- Verify that vacancies are currently open before publishing them.
+- Assess work authorization separately by country; do not assume a German residence status automatically grants work rights elsewhere in Europe.
+- Preserve the existing Europe MedTech Jobs UI, country filter, 90%+ CV-match filter and historical archive.
+- Never publish candidate personal identifiers.
 
-## Strict rules
+## Manual/on-demand research
 
-The workflow excludes roles when current credible evidence indicates professional experience is required, unless the employer explicitly accepts fresh graduates/0 years. It also rejects stale/closed vacancies and preserves Fresh vs Previously Listed history.
+For an immediate refresh, ask ChatGPT to run a fresh Europe-wide MedTech job search using the established research rules. The same web-research and GitHub-update approach should be used; do not reintroduce the API-based GitHub Actions workflow.
