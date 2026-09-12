@@ -1,16 +1,18 @@
 {
   "status": "acceptance-test-complete",
-  "message": "Production acceptance test executed against the standardized Europe-wide recall-first protocol. Germany received the deepest search; English and local-language discovery was sampled across a broad European country set. Current verified results remain published directly through the GitHub connector.",
-  "updatedAt": "2026-09-12T10:05:00+02:00",
+  "message": "Production acceptance test refreshed against EUROPE-EXHAUSTIVE-v2: Germany search now has an explicit mandatory 15-portal discovery baseline plus all broader source layers including BA, EURES, EURAXESS, national public employment, university/research portals, company career sites, ATS platforms, MedTech clusters, specialist recruiters and other reputable job boards/aggregators. Discovery remains recall-first; publication remains strict.",
+  "updatedAt": "2026-09-12T10:15:00+02:00",
   "reportDate": "2026-09-12",
   "activeJobs": 16,
   "freshJobs": 10,
   "previouslyListed": 6,
-  "publicationCommit": "05f5d6edc712e820545df3c605976abdd1ed93fc",
-  "uiCommit": "d50641789ca6b473ecf34325e3f63be5f6938149",
-  "methodology": "EUROPE-EXHAUSTIVE-v1: fixed role-family matrix + fixed country matrix + English/local-language search + public employment/EURES + official employer/ATS + universities/research institutes + MedTech clusters + broad discovery + strict 0-years adjudication + official verification + vacancy-fingerprint deduplication + persistent rediscovery/reverification + false-negative hunt. The protocol is fixed; daily vacancy results may change.",
+  "publicationCommit": "cbd9abd10430d1a67057cb0d238dfa14dfe98b48",
+  "methodologyCommit": "6875ba8a9dd9bbd4da8429de379ba33b4fa62239",
+  "uiCommit": "28af17c32d540ec80848b0389bed7274e515e006",
+  "methodology": "EUROPE-EXHAUSTIVE-v2: 15 mandatory German portal discovery baseline + all other relevant job boards/aggregators + public employment/EURES + EURAXESS + national sources + official employer/ATS + universities/research institutes + MedTech clusters + broad discovery + strict 0-years adjudication + official verification + vacancy-fingerprint deduplication + persistent rediscovery/reverification + false-negative hunt. The protocol is fixed; daily vacancy results may change.",
   "acceptance": {
-    "passed": ["Standardized search protocol defined and attached to production automation","Germany-first depth preserved","English and local-language search requirement incorporated","Europe-wide country coverage matrix incorporated","Persistent discovery/reverification principle incorporated","GitHub publication path verified","HSU ET-0926 remains present in jobs.json and is independently current on HSU/Bundeskarrriere"],
+    "passed": ["15 named German portals explicitly added as mandatory discovery baseline","Broader ATS, employer, public employment, research, university, cluster and other job-board layers retained and explicitly documented","Germany-first depth preserved","English and local-language search requirement preserved","Europe-wide country coverage matrix preserved","Persistent discovery/reverification principle preserved","Expanded acceptance refresh completed","GitHub publication path verified","No additional current vacancy was published without passing all strict gates"],
+    "excludedDuringRefresh": ["Hochschule Furtwangen medical systems/image-data role — current but very good German required; candidate B1","Erbe Elektromedizin medical-device software role — current and strong C++/MedTech fit, but first practical software-development experience and very good German required"],
     "not_claimed": ["100% recall in a single web-search run","Exhaustive enumeration of every vacancy in every European country during this one acceptance run"],
     "nextRecurringRun": "Daily at 17:00 Europe/Berlin"
   }
