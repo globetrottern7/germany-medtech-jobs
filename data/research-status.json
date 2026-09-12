@@ -1,10 +1,11 @@
 {
   "status": "complete",
-  "message": "Europe-wide research completed and published directly by ChatGPT web research + GitHub connector.",
-  "updatedAt": "2026-09-12T07:00:00+02:00",
+  "message": "Deep Germany-first Europe-wide research completed and published directly by ChatGPT web research + GitHub connector.",
+  "updatedAt": "2026-09-12T08:15:00+02:00",
   "reportDate": "2026-09-12",
-  "activeJobs": 14,
-  "freshJobs": 8,
+  "activeJobs": 16,
+  "freshJobs": 10,
   "previouslyListed": 6,
-  "publicationCommit": "82a3f0e6a5fec437970670ff2dceb8100e418a59"
+  "publicationCommit": "53c4ebd9738a099521d2a477259beb9c250dd527",
+  "methodology": "Broad Germany-first discovery across employer portals, Bundesagentur für Arbeit, MedTech cluster sources, research portals and semantic role families; strict 0-years filter, CV matching, verification, deduplication and false-negative hunt before publication."
 }
