@@ -1,11 +1,17 @@
 {
-  "status": "complete",
-  "message": "Deep Germany-first Europe-wide research completed and published directly by ChatGPT web research + GitHub connector.",
-  "updatedAt": "2026-09-12T08:15:00+02:00",
+  "status": "acceptance-test-complete",
+  "message": "Production acceptance test executed against the standardized Europe-wide recall-first protocol. Germany received the deepest search; English and local-language discovery was sampled across a broad European country set. Current verified results remain published directly through the GitHub connector.",
+  "updatedAt": "2026-09-12T10:05:00+02:00",
   "reportDate": "2026-09-12",
   "activeJobs": 16,
   "freshJobs": 10,
   "previouslyListed": 6,
-  "publicationCommit": "53c4ebd9738a099521d2a477259beb9c250dd527",
-  "methodology": "Broad Germany-first discovery across employer portals, Bundesagentur für Arbeit, MedTech cluster sources, research portals and semantic role families; strict 0-years filter, CV matching, verification, deduplication and false-negative hunt before publication."
+  "publicationCommit": "05f5d6edc712e820545df3c605976abdd1ed93fc",
+  "uiCommit": "d50641789ca6b473ecf34325e3f63be5f6938149",
+  "methodology": "EUROPE-EXHAUSTIVE-v1: fixed role-family matrix + fixed country matrix + English/local-language search + public employment/EURES + official employer/ATS + universities/research institutes + MedTech clusters + broad discovery + strict 0-years adjudication + official verification + vacancy-fingerprint deduplication + persistent rediscovery/reverification + false-negative hunt. The protocol is fixed; daily vacancy results may change.",
+  "acceptance": {
+    "passed": ["Standardized search protocol defined and attached to production automation","Germany-first depth preserved","English and local-language search requirement incorporated","Europe-wide country coverage matrix incorporated","Persistent discovery/reverification principle incorporated","GitHub publication path verified","HSU ET-0926 remains present in jobs.json and is independently current on HSU/Bundeskarrriere"],
+    "not_claimed": ["100% recall in a single web-search run","Exhaustive enumeration of every vacancy in every European country during this one acceptance run"],
+    "nextRecurringRun": "Daily at 17:00 Europe/Berlin"
+  }
 }
