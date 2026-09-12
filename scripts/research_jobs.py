@@ -1,7 +1,9 @@
 import json
 import os
 import re
+import time
 import urllib.request
+import urllib.error
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
@@ -100,9 +102,27 @@ FALSE-NEGATIVE HUNT: deliberately search for Graduate, Young Graduate, Early Car
         "coverage":{"type":"object","additionalProperties":False,"properties":{"countriesSearched":{"type":"array","items":{"type":"string"}},"sourcesSearched":{"type":"array","items":{"type":"string"}},"layersCompleted":{"type":"array","items":{"type":"string"}},"candidateUniverseCount":{"type":"integer"},"excludedCount":{"type":"integer"},"falseNegativeHunts":{"type":"array","items":{"type":"string"}},"newSearchIdeas":{"type":"array","items":{"type":"string"}}},"required":["countriesSearched","sourcesSearched","layersCompleted","candidateUniverseCount","excludedCount","falseNegativeHunts","newSearchIdeas"]}
     },"required":["jobs","statusUpdates","excludedCandidates","coverage"]}
     body = {"model":"gpt-5.6-luna","tools":[{"type":"web_search"}],"input":[{"role":"system","content":system},{"role":"user","content":json.dumps(user, ensure_ascii=False)}],"text":{"format":{"type":"json_schema","name":"europe_medtech_research","strict":True,"schema":schema},"verbosity":"low"}}
-    req = urllib.request.Request("https://api.openai.com/v1/responses", data=json.dumps(body).encode("utf-8"), headers={"Authorization":"Bearer "+api_key,"Content-Type":"application/json"}, method="POST")
-    with urllib.request.urlopen(req, timeout=900) as r:
-        result = json.loads(r.read().decode("utf-8"))
+    data = json.dumps(body).encode("utf-8")
+    headers = {"Authorization":"Bearer "+api_key,"Content-Type":"application/json"}
+    max_attempts = 6
+    for attempt in range(1, max_attempts + 1):
+        req = urllib.request.Request("https://api.openai.com/v1/responses", data=data, headers=headers, method="POST")
+        try:
+            with urllib.request.urlopen(req, timeout=900) as r:
+                result = json.loads(r.read().decode("utf-8"))
+            break
+        except urllib.error.HTTPError as e:
+            if e.code != 429 or attempt == max_attempts:
+                raise
+            retry_after = e.headers.get("Retry-After")
+            try:
+                wait = min(120, max(5, int(float(retry_after)))) if retry_after else min(120, 5 * (2 ** (attempt - 1)))
+            except (TypeError, ValueError):
+                wait = min(120, 5 * (2 ** (attempt - 1)))
+            set_status("retrying", f"OpenAI rate limit encountered; retry {attempt}/{max_attempts} after {wait}s.", methodologyVersion="4.0-Europe", retryAttempt=attempt)
+            time.sleep(wait)
+    else:
+        raise RuntimeError("OpenAI research request exhausted all retries.")
     text = result.get("output_text")
     if not text:
         for item in result.get("output", []):
