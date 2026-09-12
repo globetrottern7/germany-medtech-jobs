@@ -1,0 +1,11 @@
+{
+  "profileVersion": "1.0",
+  "status": "fresh-graduate",
+  "education": ["M.Sc. Biomedical Engineering, Germany"],
+  "professionalExperienceYears": 0,
+  "languages": {"English": "C1", "German": "B1"},
+  "technicalSkills": ["C/C++","Python","MATLAB","LabVIEW","Arduino","embedded C/C++","biosignal preprocessing","feature extraction","physiological signal analysis","ECG/EKG","EEG/EMG","real-time waveform generation","sensor interfacing","reference-based validation","algorithm testing","medical devices","VICON Nexus"],
+  "projects": ["Real-time physiological/ECG simulator with arrhythmia testing, LabVIEW integration and reference-monitor validation","VICON Nexus thoracoabdominal breathing analysis","MATLAB cardiovascular/thoracic modelling","EEG/EMG preprocessing and time/frequency-domain feature extraction"],
+  "workAuthorizationContext": {"baseCountry": "Germany", "status": "Assess per vacancy country; do not assume German post-study status authorizes work elsewhere in Europe"},
+  "preferences": {"geography": "Europe", "priority": "Germany", "targetDomains": ["MedTech","Biomedical Engineering","Signal Processing","Embedded Systems","Medical Device Software","Sensors","Validation/Test","Medical Imaging","Research/PhD","Conformity Assessment"]}
+}
