@@ -2,6 +2,10 @@ name: Research Now
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - "scripts/research_jobs.py"
+      - ".github/workflows/research-now.yml"
 
 concurrency:
   group: medtech-research
