@@ -1,1 +1,33 @@
-{"status":"acceptance-test-complete","message":"Production acceptance test refreshed against EUROPE-EXHAUSTIVE-v2. Germany search uses the explicit mandatory 15-portal discovery baseline plus all broader source layers including BA, EURES, EURAXESS, national public employment, university/research portals, company career sites, ATS platforms, MedTech clusters, specialist recruiters and other reputable job boards/aggregators. Discovery is recall-first; publication remains strict and candidate-specific.","updatedAt":"2026-09-12T10:45:00+02:00","reportDate":"2026-09-12","activeJobs":18,"freshJobs":12,"previouslyListed":6,"publicationCommit":"69289672cbb2c8c4059971e1aad5aa581f80c9de","reportCommit":"8ca5c8782654ef934f649b95c8ca3a497425e2e1","methodology":"EUROPE-EXHAUSTIVE-v2: 15 mandatory German portal discovery baseline + all other relevant job boards/aggregators + public employment/EURES + EURAXESS + national sources + official employer/ATS + universities/research institutes + MedTech clusters + broad discovery + strict 0-years adjudication + official verification + vacancy-fingerprint deduplication + persistent rediscovery/reverification + false-negative hunt.","acceptance":{"passed":["15 named German portals explicitly included as mandatory discovery baseline","Broader ATS, employer, public employment, research, university, cluster, recruiter and other job-board layers retained","Expanded-source acceptance refresh completed","Two additional current vacancies passed the candidate-specific publication gates and were added","No generic job-board inventory was published","Backup snapshot created before the expanded acceptance refresh","GitHub publication path verified"],"publishedAdditions":["Böhme Medizintechnik — graduate Medizintechnik/Elektrotechnik role, 75% match, current employer evidence; material DICOM/radiation-physics gaps flagged","Medsoto — Junior Polarion ALM Engineer, 72% match, explicitly welcomes Berufseinsteiger and accepts technical study/Python; lower-fit software/ALM pathway flagged"],"excludedDuringRefresh":["Hochschule Furtwangen medical systems/image-data role — current but very good German required; candidate B1","Erbe Elektromedizin medical-device software role — current and strong C++/MedTech fit, but first practical software-development experience and very good German required","matchING graduate MedTech software role — current discovery but first embedded-software experience and strong C/C++ plus German/English requirements create a strict-fit conflict","Berlin Heart embedded MedTech roles — current C/C++/Python/medical-device roles but prior embedded experience required"],"not_claimed":["100% recall in a single web-search run","Exhaustive enumeration of every vacancy in every European country during this one acceptance run"],"backup":"data/backups/2026-09-12-pre-expanded-acceptance/ contains the pre-refresh jobs.json and reports.json snapshots for rollback.","nextRecurringRun":"Daily at 17:00 Europe/Berlin"}}
+{
+  "status": "product-baseline-updated",
+  "message": "Production methodology and portal UX updated. Daily research remains Germany-first and Europe-wide, with expanded ecosystem sources, direct ATS checks where legitimately available, incremental plus periodic broad-recall searching, mandatory official-source verification, vacancy change detection, fixed scoring and a 75% publication floor.",
+  "updatedAt": "2026-09-12T10:50:00+02:00",
+  "reportDate": "2026-09-12",
+  "activeJobs": 10,
+  "freshJobs": 5,
+  "previouslyListed": 5,
+  "publicationThreshold": 75,
+  "strongMatchThreshold": 90,
+  "methodology": "EUROPE-MEDTECH-v3: fixed 15-portal Germany baseline + XING DACH priority + notified bodies/conformity assessment + BVMed/MedicalMountains/VDE/IEEE EMBS + specialist recruiters + academic sources + direct public ATS/employer polling where available + daily incremental discovery + periodic broad recall + standing alerts as discovery signals only + mandatory official verification + vacancy fingerprint/change detection + strict candidate gates + false-negative hunt.",
+  "acceptance": {
+    "passed": [
+      "Published report reconciled to 10 active, 5 fresh and 5 previously listed",
+      "75% is the hard publication floor; 90%+ is the Strong Match view",
+      "Candidate profile externalized to data/candidate-profile.json",
+      "Operational schemas documented in DATA_SCHEMAS.md",
+      "New MedTech ecosystem and academic/recruiter source layers added",
+      "Daily incremental and periodic broad-recall search model documented",
+      "Official-source verification made mandatory where accessible",
+      "Sponsorship and relocation separated from hard work-authorization assessment",
+      "Portal tracker, filters, deadline UX, company view, map, CSV export and recruiter-facing About page implemented",
+      "Retired OpenAI API/GitHub Actions research path remains removed"
+    ],
+    "qa": [
+      "Published report IDs must refer to active jobs with match >=75",
+      "Fresh IDs must be a subset of published IDs",
+      "No retrospective score components are invented for historical jobs without scoreBreakdown"
+    ],
+    "backup": "data/backups/2026-09-12-pre-expanded-acceptance/ contains the pre-refresh jobs.json and reports.json snapshots for rollback.",
+    "nextRecurringRun": "Daily at 17:00 Europe/Berlin"
+  }
+}
