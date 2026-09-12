@@ -19,6 +19,48 @@
       "jobIds": ["rostock-signal-processing-implants-2026-09-09","charite-physiological-signal-processing-2026-09-09","siemens-embedded-xray-2026-09-09","boston-scientific-ep-graduate-2026-09-09","max-planck-bmai-phd-2026-09-10","kit-miniaturized-electrodes-2026-09-10"],
       "freshJobIds": ["max-planck-bmai-phd-2026-09-10","kit-miniaturized-electrodes-2026-09-10"],
       "excludedJobIds": ["maico-dsp-engineer-2026-09-09"]
+    },
+    {
+      "date": "2026-09-12",
+      "activeJobs": 13,
+      "freshJobs": 7,
+      "previouslyListed": 6,
+      "closingWithin7Days": 2,
+      "jobIds": [
+        "rostock-signal-processing-implants-2026-09-09",
+        "charite-physiological-signal-processing-2026-09-09",
+        "siemens-embedded-xray-2026-09-09",
+        "boston-scientific-ep-graduate-2026-09-09",
+        "max-planck-bmai-phd-2026-09-10",
+        "kit-miniaturized-electrodes-2026-09-10",
+        "hsu-sigma-signal-processing-2026-09-12",
+        "bosch-nv-magnetometer-phd-2026-09-12",
+        "tue-microfluidic-contact-lenses-2026-09-12",
+        "cdtnet-corify-arrhythmia-2026-09-12",
+        "cochlear-microlaser-digital-twin-2026-09-12",
+        "uminho-radio4breast-2026-09-12",
+        "jnj-gold-europe-2026-09-12",
+        "jnj-graduate-process-engineer-orthopedics-2026-09-12"
+      ],
+      "freshJobIds": [
+        "hsu-sigma-signal-processing-2026-09-12",
+        "bosch-nv-magnetometer-phd-2026-09-12",
+        "tue-microfluidic-contact-lenses-2026-09-12",
+        "cdtnet-corify-arrhythmia-2026-09-12",
+        "cochlear-microlaser-digital-twin-2026-09-12",
+        "uminho-radio4breast-2026-09-12",
+        "jnj-gold-europe-2026-09-12",
+        "jnj-graduate-process-engineer-orthopedics-2026-09-12"
+      ],
+      "excludedJobIds": ["maico-dsp-engineer-2026-09-09"],
+      "coverage": {
+        "priority": "Germany first, then Europe",
+        "countriesSearched": ["Germany", "Netherlands", "Belgium", "Ireland", "Spain", "Portugal", "Austria", "Sweden", "France", "Italy", "Switzerland", "Denmark"],
+        "sourceLayers": ["official employer/university pages", "EURAXESS", "national/public vacancy portals", "job-board discovery for cross-checking"],
+        "verificationRule": "Active recommendations require current evidence; stale/closed postings are excluded.",
+        "freshnessRule": "Fresh means the exact vacancy fingerprint was not present in prior archived reports.",
+        "limitations": ["Some country-specific career portals expose only partial vacancy metadata to search", "Work authorization outside Germany remains role/country-specific unless explicitly stated by the employer", "No historical observation is fabricated for vacancies first found today"]
+      }
     }
   ]
 }
