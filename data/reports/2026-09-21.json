@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-21",
+  "runType": "daily_refresh",
+  "activeJobs": 9,
+  "freshJobs": 0,
+  "previouslyListed": 9,
+  "closingWithin7Days": 3,
+  "jobIds": [
+    "maico-dsp-engineer-2026-09-09",
+    "hsu-sigma-signal-processing-2026-09-12",
+    "rostock-signal-processing-implants-2026-09-09",
+    "siemens-embedded-xray-2026-09-09",
+    "max-planck-bmai-phd-2026-09-10",
+    "bohme-medtech-graduate-xray-2026-09-12",
+    "ferchau-junior-embedded-cpp-2026-09-13",
+    "cnrs-af-graph-signal-processing-2026-09-14",
+    "kth-computer-vision-vital-signs-2026-09-14"
+  ],
+  "freshJobIds": [],
+  "materialChanges": [],
+  "excludedJobIds": [
+    "helmholtz-biomedical-ai-public-health-2026-09-21"
+  ],
+  "sourcesSearched": [
+    "Federal Employment Agency / Karriere Bund",
+    "HSU/UniBw H official careers",
+    "University of Rostock research listings",
+    "MAICO Diagnostics / Demant Diagnostics vacancy sources",
+    "Siemens Healthineers vacancy sources",
+    "Böhme Medizintechnik",
+    "FERCHAU official careers and Federal Employment Agency",
+    "Helmholtz Munich / Federal Employment Agency",
+    "CNRS",
+    "KTH Royal Institute of Technology",
+    "Max Planck School of Biomedical AI",
+    "Nature Careers",
+    "EURAXESS",
+    "Academic Positions / academics.com discovery",
+    "XING and specialist job discovery"
+  ],
+  "falseNegativeHunts": [
+    "German: Medizintechnik, Signalverarbeitung, Embedded, Absolvent, Berufseinsteiger, wissenschaftliche Mitarbeit",
+    "English: biomedical signal processing, physiological signal, biosignal, embedded, medical device, graduate, PhD",
+    "Adjacent: medical sensing, digital health, medical imaging, validation/testing, conformity assessment, regulated-device software",
+    "Germany-wide employer and research sweep plus Europe research sweep"
+  ],
+  "candidateUniverseCount": 27,
+  "excludedCount": 1,
+  "coverage": {
+    "protocolVersion": "EUROPE-MEDTECH-v4",
+    "priority": "Germany materially deeper than wider Europe; rank by technical fit rather than geography",
+    "publicationThreshold": "75% minimum CV match; 90%+ strong-match view",
+    "searchMethod": "Past-24h/past-week incremental discovery plus broad recall; official-source verification; strict 0-years gate; technical/CV fit; language and work-authorization assessment; historical vacancy-fingerprint deduplication; material-change detection; false-negative hunt.",
+    "acceptanceAssessment": "PASS. No newly discovered vacancy cleared the 75% publication threshold after historical fingerprinting and the 0-years gate. The existing 9-role active set remains the qualifying set. MAICO remains active because the current vacancy explicitly welcomes early-career candidates and is closely aligned to DSP, algorithm development, C++/Python/MATLAB and diagnostic-device signal processing. FERCHAU remains active as an entry-level embedded role; its current official/BA listing explicitly describes Berufseinsteiger support and accepts first experience from internships, working-student work or projects. Helmholtz Munich's Research Software Engineer in Biomedical AI was excluded because the role requires production web-stack engineering, databases/containers, LLM/NLP experience and B2 German or above; those requirements materially exceed the candidate profile.",
+    "limitations": [
+      "No single run guarantees 100% recall",
+      "Some ATS pages expose limited metadata",
+      "Work authorization for non-Germany roles requires separate confirmation",
+      "Discovery boards are signals only, not final evidence",
+      "B1 German materially reduces eligibility for B2/C1 roles",
+      "Historical reporting gap for 15-17 September remains explicitly preserved"
+    ]
+  },
+  "topStrongMatches": [
+    {"id":"hsu-sigma-signal-processing-2026-09-12","match":96},
+    {"id":"rostock-signal-processing-implants-2026-09-09","match":94},
+    {"id":"cnrs-af-graph-signal-processing-2026-09-14","match":95}
+  ],
+  "publicationNote": "No PII stored or reproduced; professional qualifications and skills only."
+}
