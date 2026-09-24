@@ -1,5 +1,5 @@
 {
-  "version": "EUROPE-MEDTECH-v5",
+  "version": "EUROPE-MEDTECH-v6",
   "candidateProfile": "data/candidate-profile.json",
   "publication": {
     "minScore": 75,
@@ -90,7 +90,17 @@
     "metecon",
     "seleon",
     "mdss",
-    "qserve"
+    "qserve",
+    "WDM",
+    "Life Science Nord Jobs",
+    "SPECTARIS",
+    "VDGH",
+    "Jobware",
+    "StepStone",
+    "Bund.de",
+    "Medical Valley EMN",
+    "HealthCapital Berlin-Brandenburg",
+    "WQS"
   ],
   "falseNegativeProbes": [
     "ATS-domain",
@@ -207,7 +217,8 @@
       "dvinci",
       "rexx",
       "haufe-umantis",
-      "concludis"
+      "concludis",
+      "umantis"
     ],
     "specialist": [
       "jobvector",
@@ -218,12 +229,23 @@
       "ingenieur.de",
       "absolventa",
       "staufenbiel",
-      "berufsstart"
+      "berufsstart",
+      "stepstone",
+      "indeed",
+      "xing",
+      "linkedin",
+      "stellenanzeigen.de",
+      "joblift",
+      "wqs"
     ],
     "public": [
       "interamt",
       "BA",
-      "eures"
+      "eures",
+      "Bund.de",
+      "Karriere Bund",
+      "BfArM",
+      "PEI"
     ],
     "research": [
       "fraunhofer",
@@ -233,7 +255,10 @@
       "leibniz",
       "DLR",
       "charite",
-      "university-hospitals"
+      "university-hospitals",
+      "Nature Careers",
+      "Academic Positions",
+      "ResearchGate Jobs"
     ],
     "regulatory": [
       "nando",
@@ -246,7 +271,31 @@
       "metecon",
       "seleon",
       "mdss",
-      "qserve"
+      "qserve",
+      "WQS"
+    ],
+    "regionalSpecialist": [
+      "WDM / Weltzentrum der Medizintechnik",
+      "Life Science Nord Jobs",
+      "MedicalMountains",
+      "TechnologyMountains",
+      "Medical Valley EMN",
+      "HealthCapital Berlin-Brandenburg",
+      "Life Science Nord",
+      "Tuttlingen MedTech cluster"
+    ],
+    "associationEmployerUniverse": [
+      "BVMed",
+      "SPECTARIS",
+      "VDGH",
+      "DGBMT",
+      "FKT",
+      "DGMP",
+      "MEDICA exhibitors",
+      "COMPAMED exhibitors",
+      "MedtecLIVE exhibitors",
+      "NANDO",
+      "ZLG"
     ]
   },
   "researchInstitutes": [
@@ -274,7 +323,17 @@
     "Hamburg",
     "Berlin",
     "Lübeck",
-    "Aachen"
+    "Aachen",
+    "Tuttlingen / WDM / MedicalMountains",
+    "Erlangen/Nuremberg / Medical Valley",
+    "Jena / medtech",
+    "Freiburg / MedTech",
+    "Hamburg / Life Science Nord",
+    "Berlin / HealthCapital",
+    "Lübeck / Life Science Nord",
+    "Aachen / MedTech",
+    "Tübingen / MedTech",
+    "München / MedTech"
   ],
   "tier2Europe": [
     "Ireland",
@@ -282,17 +341,18 @@
     "Switzerland"
   ],
   "queryBudget": {
-    "dailyTotal": 30,
-    "ats": 8,
-    "employerT1": 5,
-    "BA_Interamt": 4,
+    "dailyTotal": 40,
+    "ats": 10,
+    "employerT1": 7,
+    "regionalCluster": 5,
+    "BA_Interamt_Bund": 4,
     "standardsTooling": 4,
     "graduate": 3,
-    "research": 3,
+    "research": 4,
     "tier2Europe": 3
   },
   "falseNegativeHunt": {
-    "dailyProbes": 3,
+    "dailyProbes": 4,
     "weeklyProbes": 12,
     "zeroResultEscalation": [
       1,
@@ -321,5 +381,42 @@
     "location": 5,
     "employer": 5,
     "anchors": "integer-only; stored sub-scores; no interpolation"
-  }
+  },
+  "sourceExpansionDate": "2026-09-24",
+  "germanyDiscoveryBudgetPercent": 70,
+  "employerUniverse": {
+    "primaryDirectories": [
+      "BVMed",
+      "SPECTARIS",
+      "VDGH",
+      "WDM",
+      "MedicalMountains",
+      "TechnologyMountains",
+      "Medical Valley EMN",
+      "HealthCapital Berlin-Brandenburg",
+      "Life Science Nord"
+    ],
+    "eventDirectories": [
+      "MEDICA",
+      "COMPAMED",
+      "MedtecLIVE"
+    ],
+    "regulatoryDirectories": [
+      "NANDO",
+      "ZLG"
+    ],
+    "resolutionOrder": [
+      "association/cluster directory",
+      "official employer career page",
+      "employer ATS",
+      "specialist board",
+      "broad board"
+    ],
+    "deduplication": "resolve employer first, then vacancy fingerprint"
+  },
+  "canaryQueries": [
+    "site:wdm.world/jobs (m/w/d) Entwicklungsingenieur Medizintechnik Absolvent",
+    "site:lifesciencenord.de/en/career/job-board medical technology engineer Hamburg Schleswig-Holstein"
+  ],
+  "operatingRule": "All previously configured sources remain active. New v6 sources are additive. Discovery sources never override official verification; broad boards are recall-only. Search employer universe and regional clusters before broad aggregation."
 }
