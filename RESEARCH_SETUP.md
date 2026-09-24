@@ -205,3 +205,22 @@ If a daily run is skipped or fails, record a missed run rather than fabricating 
 ## Retired research path
 
 The previous OpenAI API/GitHub Actions research workflow was removed after API credit exhaustion made it unreliable. Production research uses direct ChatGPT web research and direct GitHub updates; the retired API path must not be reintroduced as the default.
+
+
+## Production v5 research controls
+
+The v5 run uses the persistent state layer under `state/` as the operational source for identity and historical comparisons. The sequence is verification → Germany deep discovery → Tier-2 Europe → broad Europe → hidden-title/ATS/standards recall → hard gates → scoring → false-negative hunt → state update → report.
+
+Germany is explicitly budgeted at approximately 70% of discovery depth. Ireland, Netherlands and Switzerland form a named Tier-2 Europe layer; the remainder receives broad recall coverage.
+
+Claude or another external reviewer may audit the methodology, but the production run does not depend on an external reviewer. Improvements discovered during normal research are recorded in the production configuration and source/employer state.
+
+### P0 source/search additions
+- ATS-domain-first searches: Personio, softgarden, SuccessFactors, Workday, join.com and comparable public ATS surfaces.
+- Specialist/graduate/public sources: jobvector, Interamt, Yourfirm, EURES.
+- Notified-body discovery via NANDO/ZLG rather than an unbounded hand-maintained list.
+- Standards/tooling vocabulary: IEC 62304, ISO 13485, ISO 14971, IEC 60601, DICOM, Polarion, LabVIEW, MATLAB/Simulink and related terms.
+- German hidden-title vocabulary and employer-direct sweeps.
+
+### P0 controls
+Experience, language, authorization, current/open status and source verification are hard gates. Score cannot override a failed gate. FRESH is determined from the stable historical fingerprint registry, not from posting date or URL.
