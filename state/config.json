@@ -418,5 +418,11 @@
     "site:wdm.world/jobs (m/w/d) Entwicklungsingenieur Medizintechnik Absolvent",
     "site:lifesciencenord.de/en/career/job-board medical technology engineer Hamburg Schleswig-Holstein"
   ],
-  "operatingRule": "All previously configured sources remain active. New v6 sources are additive. Discovery sources never override official verification; broad boards are recall-only. Search employer universe and regional clusters before broad aggregation."
+  "operatingRule": "All previously configured sources remain active. New v6 sources are additive. Discovery sources never override official verification; broad boards are recall-only. Search employer universe and regional clusters before broad aggregation. Work authorization uncertainty does not remove a potentially relevant vacancy from research findings; it is explicitly flagged and verified separately.",
+  "workAuthorizationPolicy": {
+    "researchFinding": "INCLUDE_WITH_FLAG",
+    "publication": "VERIFY_SEPARATELY_BEFORE_FINAL_PUBLISH",
+    "unknownState": "WORK_AUTHORIZATION_VERIFY",
+    "prohibition": "Do not infer authorization from country, employer, job board, or degree location"
+  }
 }
