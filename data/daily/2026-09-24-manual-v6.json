@@ -1,0 +1,75 @@
+{
+  "date": "2026-09-24",
+  "runType": "MANUAL_V6",
+  "architectureVersion": "EUROPE-MEDTECH-v6",
+  "purpose": "User-requested manual run after source-universe expansion",
+  "germanyDepthTargetPercent": 70,
+  "sourceExpansion": [
+    "WDM",
+    "Life Science Nord Jobs",
+    "SPECTARIS",
+    "VDGH",
+    "Jobware",
+    "StepStone",
+    "Bund.de",
+    "Medical Valley EMN",
+    "HealthCapital Berlin-Brandenburg",
+    "WQS",
+    "additional direct employer ATS"
+  ],
+  "coverageRule": "All previously configured v5 sources remain active; v6 sources are additive.",
+  "findings": {
+    "newPublishable": 0,
+    "newNeedsConfirmation": 2,
+    "newExcluded": 1,
+    "existingReverified": 2,
+    "discoverySourcesAssessed": 11
+  },
+  "needsConfirmation": [
+    {
+      "title": "Biomedical Engineer",
+      "company": "KBR GmbH / ESA Space Medicine Team",
+      "location": "Cologne, Germany",
+      "score": 86,
+      "reason": "Official Workday posting and Engineer 2 entry-level signal; BME degree explicitly encouraged; candidate work-authorization status remains unverified."
+    },
+    {
+      "title": "Medical Technologist/ Medizintechniker/in (m/w/d)",
+      "company": "INTU Diagnostics GmbH",
+      "location": "Leipzig, Germany",
+      "score": 88,
+      "reason": "Recent graduates welcome and BME degree accepted; current listing found on Indeed; primary employer vacancy page not located, so verification gate fails."
+    }
+  ],
+  "excluded": [
+    {
+      "title": "Interventional Cardiology Graduate / Account Manager Graduate",
+      "company": "Boston Scientific",
+      "location": "Düsseldorf / North Germany",
+      "reason": "Graduate-accessible but German C1 requirement conflicts with candidate B1; discovery source not primary-verified."
+    }
+  ],
+  "regionalFindings": [
+    "WDM currently exposes 260 open MedTech listings across its employer register; current feed includes development, simulation, software, regulatory and quality roles.",
+    "Life Science Nord currently lists regional MedTech/life-science vacancies including Product Design Engineer and lab-automation software roles.",
+    "Jobware currently exposes MedTech engineering results and has an explicit 0-year entry-level filter.",
+    "Bund.de currently exposes health/science/technology vacancies and BfArM-related roles.",
+    "Direct employer ATS sweeps added KBR, Medtronic, BD, INTU Diagnostics, SINGULUS and Agaplesion/AMTech to the employer target universe."
+  ],
+  "falseNegativeHunt": [
+    "Graduate German-language search",
+    "regional-cluster/WDM search",
+    "direct ATS/employer search",
+    "diagnostics/device-startup search"
+  ],
+  "limitations": [
+    "No new vacancy is promoted to the published set without a tier-1 to tier-3 verification path.",
+    "Candidate work authorization remains a separate gate and was not inferred.",
+    "Some aggregator discoveries require primary employer confirmation before publication."
+  ],
+  "stateChanges": [
+    "config.json v6",
+    "employers.csv expanded",
+    "state/postings.jsonl initialized/updated"
+  ]
+}
