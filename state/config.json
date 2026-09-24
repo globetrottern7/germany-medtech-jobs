@@ -1,0 +1,102 @@
+{
+  "version": "EUROPE-MEDTECH-v5",
+  "candidateProfile": "data/candidate-profile.json",
+  "publication": {
+    "minScore": 75,
+    "strongMatch": 90
+  },
+  "hardGates": [
+    "current_open",
+    "zero_year_eligible",
+    "degree_fit",
+    "language_feasible",
+    "work_authorization_feasible",
+    "technical_fit",
+    "verified_source",
+    "not_duplicate"
+  ],
+  "identity": "company+normalized_title+primary_location+country",
+  "germanyBudgetPercent": 70,
+  "dailyCadence": [
+    "active_verification",
+    "Germany_deep_discovery",
+    "Europe_tier2_discovery",
+    "Europe_broad_recall",
+    "dedup_and_change_detection",
+    "gates_and_scoring",
+    "false_negative_hunt",
+    "GitHub_update"
+  ],
+  "weekly": [
+    "full_false_negative_hunt",
+    "employer_universe_sweep",
+    "specialist_portal_sweep"
+  ],
+  "monthly": [
+    "gold_set_recall",
+    "scoring_reproducibility",
+    "source_effectiveness_audit",
+    "fingerprint_quality_audit"
+  ],
+  "closurePolicy": {
+    "industryDays": 14,
+    "researchDays": 7
+  },
+  "verificationTiers": {
+    "1": "official employer/ATS",
+    "2": "official university/research institute",
+    "3": "official government",
+    "4": "authoritative professional/research",
+    "5": "recruiter own vacancy only",
+    "6": "job board discovery only"
+  },
+  "atsDomains": [
+    "jobs.personio.de",
+    "softgarden",
+    "successfactors",
+    "workday",
+    "join.com",
+    "greenhouse",
+    "lever",
+    "smartrecruiters",
+    "taleo",
+    "icims",
+    "recruitee",
+    "ashby",
+    "jobvite",
+    "teamtailor"
+  ],
+  "addedSources": [
+    "jobvector",
+    "interamt",
+    "yourfirm",
+    "eures",
+    "nando",
+    "zlg",
+    "jobs.zeit.de",
+    "fraunhofer",
+    "helmholtz",
+    "dgbmt",
+    "fkt",
+    "dgmp",
+    "johner",
+    "metecon",
+    "seleon",
+    "mdss",
+    "qserve"
+  ],
+  "falseNegativeProbes": [
+    "ATS-domain",
+    "standards",
+    "generic-engineering-title",
+    "German-only-title",
+    "employer-direct",
+    "university-hospital",
+    "research-phd",
+    "regulatory",
+    "tooling",
+    "small-company",
+    "recency",
+    "canary"
+  ]
+}
