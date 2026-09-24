@@ -1,0 +1,90 @@
+{
+  "date": "2026-09-24",
+  "runType": "MANUAL_V5",
+  "purpose": "User-requested manual run after production v5 architecture update",
+  "architectureVersion": "EUROPE-MEDTECH-v5",
+  "germanyDepthTargetPercent": 70,
+  "publishedNewCount": 0,
+  "freshPublishedCount": 0,
+  "existingActiveReverified": 2,
+  "newCandidatesAssessed": 4,
+  "exclusions": [
+    {
+      "title": "Prüfingenieur/in für aktive Medizinprodukte",
+      "company": "SLG Prüf- und Zertifizierungs GmbH",
+      "status": "EXCLUDED",
+      "reason": "requires relevant medical-device manufacturing experience; not 0-YoE accessible"
+    },
+    {
+      "title": "Medizintechniker - Qualitätssicherung (m/w/d)",
+      "company": "Nicolay GmbH",
+      "status": "EXCLUDED",
+      "reason": "very good German/English requested; candidate German B1"
+    },
+    {
+      "title": "Elektroingenieur, Mechatronik Ingenieur - Hardwareentwicklung, PCB Design (m/w/d)",
+      "company": "betatron bio GmbH",
+      "status": "EXCLUDED",
+      "reason": "5+ years PCB/hardware experience required"
+    },
+    {
+      "title": "Prüfingenieur Fahrzeuge / Kfz Sachverständiger (m/w/d)",
+      "company": "DEKRA",
+      "status": "EXCLUDED",
+      "reason": "automotive rather than MedTech"
+    }
+  ],
+  "reverified": [
+    {
+      "id": "hsu-sigma-signal-processing-2026-09-12",
+      "deadline": "2026-10-05",
+      "evidence": "HSU official jobs page"
+    },
+    {
+      "id": "ferchau-junior-embedded-cpp-2026-09-13",
+      "reference": "FE38-79468-KS",
+      "evidence": "FERCHAU official job page"
+    }
+  ],
+  "discoveryEvidence": [
+    {
+      "source": "jobvector",
+      "finding": "current German MedTech inventory available; specialist board added to operating model"
+    },
+    {
+      "source": "Interamt",
+      "finding": "public-sector channel live; no new qualifying BME role found in manual pass"
+    },
+    {
+      "source": "ATS Personio",
+      "finding": "domain-first discovery working; results were mostly non-MedTech or unrelated and were filtered"
+    },
+    {
+      "source": "softgarden",
+      "finding": "medical-device employer pages surfaced; current Biomedical Engineer example required experience and was excluded"
+    },
+    {
+      "source": "regulatory",
+      "finding": "SLG active-medical-device Prüfingenieur surfaced; strong domain fit but experience gate failed"
+    }
+  ],
+  "falseNegativeHunt": {
+    "probes": [
+      "ATS-domain",
+      "standards/tooling",
+      "German-only-title",
+      "employer-direct",
+      "regulatory",
+      "research/PhD",
+      "recency",
+      "canary"
+    ],
+    "canary": "No failure established",
+    "conclusion": "The upgraded search surface is finding additional relevant MedTech-adjacent roles, but the strict 0-YoE/language gates eliminate the manual-run candidates assessed."
+  },
+  "keyResult": "No additional vacancy cleared the publication threshold in this manual v5 run. This is a verified zero-new-publication result, not a zero-search result.",
+  "limitations": [
+    "Specialist/job-board listings were treated as discovery unless tier <=3 evidence was available.",
+    "No candidate PII stored."
+  ]
+}
