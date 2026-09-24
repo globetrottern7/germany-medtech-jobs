@@ -43,3 +43,8 @@ employer,employer_key,careers_url,ats_vendor,tier
 "KBR GmbH / ESA Space Medicine Team","kbr-gmbh-esa-space-medicine","https://kbr.wd5.myworkdayjobs.com/en-US/kbr_careers","direct","T1"
 "Ovesco Endoscopy AG","ovesco-endoscopy-ag","https://www.ovesco.com/","direct","T3"
 "ERBE Elektromedizin GmbH","erbe-elektromedizin-gmbh","https://en.erbegroup.com/en-en/jobs/","direct","T1"
+"Becton Dickinson (BD)","becton-dickinson-bd","https://jobs.bd.com/","workday","T1"
+"Medtronic","medtronic","https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers","workday","T1"
+"INTU Diagnostics GmbH","intu-diagnostics-gmbh","https://www.intudiagnostics.com/","direct","T2"
+"SINGULUS TECHNOLOGIES AG","singulus-technologies-ag","https://singulus.career.softgarden.de/","softgarden","T2"
+"Agaplesion / AMTech","agaplesion-amtech","https://agaplesion-jobs.softgarden.io/de/vacancies","softgarden","T2"
