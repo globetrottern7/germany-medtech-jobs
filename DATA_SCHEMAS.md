@@ -41,3 +41,24 @@ Latest-run operational status, timestamp, methodology version, message, coverage
 - `90–100`: Strong Match.
 
 Historical records without component subscores must not receive invented retrospective breakdowns.
+
+
+## Persistent state schemas (v5)
+
+### `state/vacancies.jsonl`
+One JSON object per known vacancy entity. Minimum fields: `identity_key`, `id`, `title`, `company`, `location`, `country`, `status`, `first_seen`, `last_verified`, `url`, `match`, `fresh`.
+
+### `state/fingerprints.csv`
+Stable identity registry. Identity is based on normalized company + title + primary location + country. URL, posting date and ATS migration are observations, not identity.
+
+### `state/employers.csv`
+Employer universe. Future runs may enrich rows with canonical employer, aliases, ATS vendor, careers URL, tier, cluster and source-discovery notes.
+
+### `state/exclusions.jsonl`
+One record per non-published vacancy state with reason/gate evidence where available. This prevents repeated re-adjudication of known failures without hiding them from history.
+
+### `state/fn_hunt_log.jsonl`
+Records false-negative probes, canaries, sources searched, discoveries and limitations. A failed canary is a tool/search-health signal, not evidence of market absence.
+
+### `state/config.json`
+Production thresholds and operating controls. Candidate-specific professional information remains in `data/candidate-profile.json`; no PII is permitted in research state.
