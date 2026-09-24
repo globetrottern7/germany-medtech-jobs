@@ -31,14 +31,18 @@
       "company": "KBR GmbH / ESA Space Medicine Team",
       "location": "Cologne, Germany",
       "score": 86,
-      "reason": "Official Workday posting and Engineer 2 entry-level signal; BME degree explicitly encouraged; candidate work-authorization status remains unverified."
+      "reason": "Official Workday posting and Engineer 2 entry-level signal; BME degree explicitly encouraged; candidate work-authorization status remains unverified.",
+      "workAuthorization": "NEEDS SEPARATE VERIFICATION",
+      "publicationTreatment": "Include in research findings; do not exclude solely because authorization is unverified."
     },
     {
       "title": "Medical Technologist/ Medizintechniker/in (m/w/d)",
       "company": "INTU Diagnostics GmbH",
       "location": "Leipzig, Germany",
       "score": 88,
-      "reason": "Recent graduates welcome and BME degree accepted; current listing found on Indeed; primary employer vacancy page not located, so verification gate fails."
+      "reason": "Recent graduates welcome and BME degree accepted; current listing found on Indeed; primary employer vacancy page not located, so verification gate fails.",
+      "workAuthorization": "NEEDS SEPARATE VERIFICATION",
+      "publicationTreatment": "Include in research findings; do not exclude solely because authorization is unverified."
     }
   ],
   "excluded": [
@@ -71,5 +75,11 @@
     "config.json v6",
     "employers.csv expanded",
     "state/postings.jsonl initialized/updated"
-  ]
+  ],
+  "policyUpdate": "Work authorization is a separate verification dimension. Unknown authorization does not suppress a potentially relevant research finding; it is included with an explicit WORK_AUTHORIZATION_VERIFY flag. Final publication still requires separate authorization verification.",
+  "workAuthorizationHandling": {
+    "KBR Biomedical Engineer": "NEEDS SEPARATE VERIFICATION",
+    "INTU Diagnostics Medical Technologist/Medizintechniker": "NEEDS SEPARATE VERIFICATION",
+    "rule": "Do not infer authorization from Germany location, employer, job board, or degree location."
+  }
 }
