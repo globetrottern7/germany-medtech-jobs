@@ -177,3 +177,33 @@ A concise explanation of adjacent role families being searched; it is context fo
 - `RESEARCH_SETUP.md` — execution-oriented research/search instructions.
 
 The specification defines stable rules; operational files define what happened on a particular run.
+
+
+## 12. Production v5 operating model
+
+The persistent state layer is now authoritative for vacancy identity, fingerprints, exclusions and false-negative-hunt history. Reports remain presentation snapshots and must not be used as the primary state store.
+
+### Daily execution order
+1. Re-verify active published vacancies and deadlines.
+2. Run Germany deep discovery (target ~70% of discovery allocation).
+3. Run Tier-2 Europe discovery (Ireland, Netherlands, Switzerland).
+4. Run broader Europe recall.
+5. Run hidden-title / ATS / standards-tooling searches.
+6. Normalize, fingerprint and deduplicate before scoring.
+7. Apply hard eligibility gates; blocked vacancies cannot be rescued by score.
+8. Score only gate-passing vacancies using the fixed 100-point rubric.
+9. Run the rotating false-negative probes and canary checks.
+10. Update persistent state and then generate the daily report.
+
+### Persistent state
+- `state/vacancies.jsonl` — one entity record per known vacancy.
+- `state/fingerprints.csv` — stable identity registry.
+- `state/employers.csv` — employer universe and aliases/ATS metadata.
+- `state/exclusions.jsonl` — rejected/closed/expired records and reasons.
+- `state/fn_hunt_log.jsonl` — false-negative and canary evidence.
+- `state/config.json` — thresholds, source families, cadence and control rules.
+
+The state layer is append/transition oriented. Existing reports remain historical evidence and are never rewritten merely to make the new model appear cleaner.
+
+### Independence from external reviewers
+External AI review (including Claude) is optional architecture QA. It is not a production dependency. The daily engine must be capable of discovering, verifying, adjudicating, fingerprinting, scoring and publishing independently under this contract.
