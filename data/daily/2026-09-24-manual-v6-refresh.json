@@ -1,0 +1,62 @@
+{
+  "date": "2026-09-24",
+  "runType": "MANUAL_V6_REFRESH",
+  "architectureVersion": "EUROPE-MEDTECH-v6",
+  "publicationPolicy": "Research findings include relevant roles even when work authorization is unknown; such roles carry WORK_AUTHORIZATION_VERIFY. Final verified-publication status remains separate.",
+  "sourcesSearched": [
+    "KBR Workday",
+    "WDM",
+    "Life Science Nord",
+    "Indeed",
+    "SimplyHired",
+    "Glassdoor",
+    "direct ATS queries",
+    "existing v5 sources"
+  ],
+  "coverage": "All v5 sources remain in scope; v6 regional, association, public-sector and employer-universe sources are additive.",
+  "results": {
+    "newResearchFindings": 2,
+    "newVerifiedPrimaryPublication": 1,
+    "newResearchFindingNeedsPrimaryVerification": 1,
+    "newlyExcluded": 0,
+    "existingActiveReverified": 2
+  },
+  "findings": [
+    {
+      "title": "Biomedical Engineer",
+      "employer": "KBR GmbH / ESA Space Medicine Team",
+      "location": "Cologne, Germany",
+      "score": 86,
+      "status": "PUBLISHED — RESEARCH FINDING",
+      "primarySource": "KBR Workday",
+      "workAuthorization": "⚠️ NEEDS SEPARATE VERIFICATION",
+      "whyFit": "Engineer 2 is explicitly entry-level; Biomedical Engineering degree is encouraged; English required; medical technology development and space-medicine engineering scope.",
+      "verification": "Primary employer ATS verified current posting."
+    },
+    {
+      "title": "Medical Technologist / Medizintechniker/in (m/w/d)",
+      "employer": "INTU Diagnostics GmbH",
+      "location": "Leipzig, Germany",
+      "score": 88,
+      "status": "PUBLISHED — RESEARCH FINDING / PRIMARY VERIFICATION PENDING",
+      "workAuthorization": "⚠️ NEEDS SEPARATE VERIFICATION",
+      "whyFit": "BSc/MSc medical technology or biomedical engineering accepted; recent graduates welcome; device prototyping/testing; point-of-care diagnostics.",
+      "verification": "Current Indeed/SimplyHired evidence; official employer vacancy page not yet located."
+    }
+  ],
+  "reverified": [
+    "HSU SigMA — Research Assistant, Signal Processing for Medical Applications — active; deadline 05.10.2026.",
+    "FERCHAU Kassel — Junior Softwareentwickler Embedded C/C++/C# — active; entry-level signal remains present."
+  ],
+  "discoveryNotes": [
+    "WDM currently shows 258–261 open MedTech roles depending on regional filter/page refresh; it remains a high-value regional discovery source.",
+    "Life Science Nord current board includes Product Design Engineer and lab-automation software roles, confirming continued regional specialist coverage.",
+    "Broad-board results were used for recall, not as substitutes for primary verification."
+  ],
+  "workAuthorizationRule": "Unknown authorization no longer suppresses a relevant finding. It is explicitly flagged and must be verified separately before treating authorization as PASS.",
+  "limitations": [
+    "No inference of work authorization was made.",
+    "INTU remains provisional because primary employer verification was not found in this run.",
+    "No other newly discovered role met the evidence and candidate-fit threshold sufficiently to add as a new research finding."
+  ]
+}
