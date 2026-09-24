@@ -40,7 +40,14 @@
   ],
   "closurePolicy": {
     "industryDays": 14,
-    "researchDays": 7
+    "researchDays": 7,
+    "confirmed": [
+      "404",
+      "410",
+      "explicit closure"
+    ],
+    "deadlinePassed": "EXPIRED",
+    "live": "ACTIVE"
   },
   "verificationTiers": {
     "1": "official employer/ATS",
@@ -98,5 +105,221 @@
     "small-company",
     "recency",
     "canary"
-  ]
+  ],
+  "identityModel": {
+    "stableIdentityKey": "canonical_employer|job_family|nuts3_or_normalized_location|title_core_shingle",
+    "observationKey": "canonical_url_no_query|requisition_id|source|observed_date",
+    "classification": [
+      "FRESH",
+      "REPOST",
+      "MIGRATED",
+      "REOPENED",
+      "NEW_ENTITY",
+      "DUPLICATE_OBSERVATION"
+    ],
+    "contentSimilarity": {
+      "method": "5-word shingles SimHash/MinHash",
+      "sameVacancy": 0.85,
+      "review": 0.7
+    }
+  },
+  "gateStates": [
+    "PASS",
+    "FAIL",
+    "PROVISIONAL"
+  ],
+  "gateEvidenceRequired": true,
+  "provisionalPolicy": "publish_separate_needs_confirmation_section_only",
+  "verificationWindowHours": 72,
+  "verificationBeforeDiscovery": true,
+  "sourcePolicy": {
+    "tier4": "corroboration_attempt_with_tier_1_to_3_logged",
+    "tier5": "own_vacancy_only",
+    "tier6": "discovery_only"
+  },
+  "graduateSignals": {
+    "positive": [
+      "Berufseinsteiger",
+      "Absolvent",
+      "Absolvent*innen",
+      "Direkteinstieg",
+      "Einstiegsposition",
+      "Nachwuchs",
+      "Trainee",
+      "Graduate Program",
+      "Nachwuchsingenieur",
+      "auch für Absolventen geeignet"
+    ],
+    "negative": [
+      "mehrjährige Berufserfahrung",
+      "mindestens 3 Jahre",
+      "Senior",
+      "Leitung",
+      "Teamleiter"
+    ]
+  },
+  "standards": [
+    "IEC 62304",
+    "ISO 13485",
+    "ISO 14971",
+    "MDR 2017/745",
+    "IEC 60601",
+    "ISO 10993"
+  ],
+  "tooling": [
+    "DICOM",
+    "HL7",
+    "FHIR",
+    "Polarion",
+    "DOORS",
+    "LabVIEW",
+    "MATLAB/Simulink",
+    "ITK/VTK",
+    "3D Slicer",
+    "MITK",
+    "Embedded C"
+  ],
+  "germanVacancyAnchors": [
+    "(m/w/d)",
+    "(w/m/d)",
+    "(m/w/x)",
+    "(all genders)"
+  ],
+  "staffingPolicy": {
+    "classify": "PERSONALDIENSTLEISTER",
+    "dailyPublishedCap": 3,
+    "requireNamedEndClientOrTechnicalScope": true,
+    "fingerprintRegion": "NUTS-2"
+  },
+  "sourceTiers": {
+    "employerDirect": [
+      "personio",
+      "softgarden",
+      "successfactors",
+      "workday",
+      "join",
+      "smartrecruiters",
+      "greenhouse",
+      "lever",
+      "ashby",
+      "teamtailor",
+      "recruitee",
+      "dvinci",
+      "rexx",
+      "haufe-umantis",
+      "concludis"
+    ],
+    "specialist": [
+      "jobvector",
+      "yourfirm",
+      "academics.de",
+      "jobs.zeit.de",
+      "jobware",
+      "ingenieur.de",
+      "absolventa",
+      "staufenbiel",
+      "berufsstart"
+    ],
+    "public": [
+      "interamt",
+      "BA",
+      "eures"
+    ],
+    "research": [
+      "fraunhofer",
+      "helmholtz",
+      "DZG",
+      "max-planck",
+      "leibniz",
+      "DLR",
+      "charite",
+      "university-hospitals"
+    ],
+    "regulatory": [
+      "nando",
+      "zlg",
+      "tuv-nord",
+      "mdc",
+      "medcert",
+      "berlin-cert",
+      "johner",
+      "metecon",
+      "seleon",
+      "mdss",
+      "qserve"
+    ]
+  },
+  "researchInstitutes": [
+    "Fraunhofer IBMT",
+    "Fraunhofer MEVIS",
+    "Fraunhofer IIS",
+    "Fraunhofer IPA",
+    "Fraunhofer ITEM",
+    "Fraunhofer IZI",
+    "Fraunhofer IGD",
+    "DKFZ",
+    "DZNE",
+    "Helmholtz Munich",
+    "Jülich",
+    "MDC",
+    "DZHK",
+    "DZL",
+    "DZD"
+  ],
+  "germanyClusters": [
+    "Tuttlingen",
+    "Erlangen/Nuremberg",
+    "Jena",
+    "Freiburg",
+    "Hamburg",
+    "Berlin",
+    "Lübeck",
+    "Aachen"
+  ],
+  "tier2Europe": [
+    "Ireland",
+    "Netherlands",
+    "Switzerland"
+  ],
+  "queryBudget": {
+    "dailyTotal": 30,
+    "ats": 8,
+    "employerT1": 5,
+    "BA_Interamt": 4,
+    "standardsTooling": 4,
+    "graduate": 3,
+    "research": 3,
+    "tier2Europe": 3
+  },
+  "falseNegativeHunt": {
+    "dailyProbes": 3,
+    "weeklyProbes": 12,
+    "zeroResultEscalation": [
+      1,
+      2,
+      5
+    ],
+    "canaries": 2
+  },
+  "qualityControls": {
+    "fingerprintIntegrity": "every posting resolves to vacancy",
+    "dateConsistency": "first_seen <= last_verified <= today",
+    "sourceCompleteness": "every published vacancy has tier <=3 URL",
+    "monthlyBlindRescore": 10,
+    "goldSetSize": 40,
+    "g4LanguageWatchThreshold": 0.5,
+    "freshShareWatchThreshold": 0.6
+  },
+  "scoreRubric": {
+    "degree": 15,
+    "technical": 20,
+    "medtech": 15,
+    "graduate": 15,
+    "standards": 10,
+    "tooling": 10,
+    "research": 5,
+    "location": 5,
+    "employer": 5,
+    "anchors": "integer-only; stored sub-scores; no interpolation"
+  }
 }
