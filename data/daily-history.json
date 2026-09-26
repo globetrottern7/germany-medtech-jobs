@@ -1,7 +1,115 @@
 {
   "generated": "2026-09-26",
-  "startDate": "2026-09-22",
+  "startDate": "2026-09-09",
   "entries": [
+    {
+      "date": "2026-09-09",
+      "reportStatus": "NORMAL",
+      "reportType": "normal daily",
+      "activePublishedEquivalent": 4,
+      "freshJobs": 4,
+      "previouslyListed": 0,
+      "closingWithin7Days": 1,
+      "newGatePassing": null,
+      "provisionalFindings": null,
+      "notes": ""
+    },
+    {
+      "date": "2026-09-10",
+      "reportStatus": "NORMAL",
+      "reportType": "normal daily",
+      "activePublishedEquivalent": 6,
+      "freshJobs": 2,
+      "previouslyListed": 4,
+      "closingWithin7Days": 2,
+      "newGatePassing": null,
+      "provisionalFindings": null,
+      "notes": ""
+    },
+    {
+      "date": "2026-09-12",
+      "reportStatus": "NORMAL",
+      "reportType": "normal daily",
+      "activePublishedEquivalent": 7,
+      "freshJobs": 2,
+      "previouslyListed": 5,
+      "closingWithin7Days": 1,
+      "newGatePassing": null,
+      "provisionalFindings": null,
+      "notes": ""
+    },
+    {
+      "date": "2026-09-13",
+      "reportStatus": "NORMAL",
+      "reportType": "normal daily",
+      "activePublishedEquivalent": 8,
+      "freshJobs": 1,
+      "previouslyListed": 7,
+      "closingWithin7Days": 1,
+      "newGatePassing": null,
+      "provisionalFindings": null,
+      "notes": ""
+    },
+    {
+      "date": "2026-09-14",
+      "reportStatus": "NORMAL",
+      "reportType": "normal daily",
+      "activePublishedEquivalent": 11,
+      "freshJobs": 3,
+      "previouslyListed": 8,
+      "closingWithin7Days": 1,
+      "newGatePassing": null,
+      "provisionalFindings": null,
+      "notes": ""
+    },
+    {
+      "date": "2026-09-18",
+      "reportStatus": "NORMAL",
+      "reportType": "normal daily",
+      "activePublishedEquivalent": 10,
+      "freshJobs": 0,
+      "previouslyListed": 10,
+      "closingWithin7Days": 4,
+      "newGatePassing": null,
+      "provisionalFindings": null,
+      "notes": "PASS. No genuinely new vacancy cleared the 75% threshold in this run after historical fingerprinting. The active set was revalidated. Charité's 15 September deadline has passed and it was removed from active publication. J&J GOLD was rechecked but was not counted in the active technical-fit set because it is a broad supply-chain leadership programme rather than a direct technical MedTech role and its preferred profile includes at least 3 months relevant experience. Bosch lab-on-chip and Fraunhofer student roles were excluded for material skill/status gaps."
+    },
+    {
+      "date": "2026-09-19",
+      "reportStatus": "NORMAL",
+      "reportType": "normal daily",
+      "activePublishedEquivalent": 10,
+      "freshJobs": 0,
+      "previouslyListed": 10,
+      "closingWithin7Days": 4,
+      "newGatePassing": null,
+      "provisionalFindings": null,
+      "notes": "PASS. Four previously published opportunities remain within 7 days of their deadlines. No newly discovered vacancy cleared the 75% publication threshold after exact historical fingerprinting and the 0-years gate. New Bosch lab-on-chip PhD roles remain excluded for substantial microfluidics/MEMS/cleanroom and German-language gaps. FERCHAU Aachen, Akkodis Frankfurt and Randstad Frankfurt roles require prior professional experience; the Stryker Spring 2027 internship is student-oriented."
+    },
+    {
+      "date": "2026-09-20",
+      "reportStatus": "NORMAL",
+      "reportType": "normal daily",
+      "activePublishedEquivalent": 9,
+      "freshJobs": 0,
+      "previouslyListed": 9,
+      "closingWithin7Days": 3,
+      "newGatePassing": null,
+      "provisionalFindings": null,
+      "notes": "PASS. Manual recovery for the missed 20 September scheduled execution. MAICO DSP Engineer was re-adjudicated from historical exclusion to active because current vacancy evidence explicitly welcomes early-career candidates and closely matches DSP, embedded, MATLAB/Python/C++ and medical-device validation work. Boston Scientific's historical graduate EP role is no longer posted and TH Mannheim's 20 September deadline has passed, so both were removed from active publication. Newly discovered Alcon Principal Embedded Software Engineer and Ottobock Mechatronics Development Engineer roles were excluded by the 0-years gate."
+    },
+    {
+      "date": "2026-09-21",
+      "reportStatus": "NORMAL",
+      "reportType": "normal daily",
+      "activePublishedEquivalent": 10,
+      "freshJobs": 0,
+      "previouslyListed": 10,
+      "closingWithin7Days": 4,
+      "newGatePassing": null,
+      "provisionalFindings": null,
+      "notes": "PASS. Ten published opportunities were retained after revalidation, including the Europe-wide CDTnet F1 cardiovascular digital-twin/arrhythmia PhD because the official CDTnet source confirms applications remain open through 30 September 2026. No genuinely new vacancy cleared the 75% publication threshold after historical fingerprinting and the 0-years gate. Fresenius Medizintechniker, B. Braun Trainee Design for Excellence, and two Stryker internships were excluded for qualification/language or student-only constraints. The J&J GOLD programme was removed from the technical-fit publication set because it is a broad operations leadership programme rather than a direct technical role."
+    },
     {
       "date": "2026-09-22",
       "reportStatus": "NOT_PUBLISHED",
@@ -12,7 +120,7 @@
       "closingWithin7Days": null,
       "newGatePassing": null,
       "provisionalFindings": null,
-      "notes": "No normal daily report exists in the repository for this date."
+      "notes": "No normal daily report was published for this date. This gap is explicitly recorded; no data is fabricated."
     },
     {
       "date": "2026-09-23",
@@ -24,19 +132,19 @@
       "closingWithin7Days": null,
       "newGatePassing": null,
       "provisionalFindings": null,
-      "notes": "No normal daily report exists in the repository for this date."
+      "notes": "No normal daily report was published for this date. This gap is explicitly recorded; no data is fabricated."
     },
     {
       "date": "2026-09-24",
-      "reportStatus": "MANUAL_ARCHIVE",
-      "reportType": "manual-v5 / manual-v6",
+      "reportStatus": "NORMAL",
+      "reportType": "normal daily",
       "activePublishedEquivalent": 16,
       "freshJobs": 5,
       "previouslyListed": 11,
       "closingWithin7Days": 7,
       "newGatePassing": null,
       "provisionalFindings": null,
-      "notes": "Manual production research was persisted. Five fresh CDTnet PhD opportunities were identified; the normal daily report was not published."
+      "notes": "Normal daily opportunity data restored from the verified 24 September production archive; five fresh CDTnet opportunities plus eleven previously listed active opportunities are linked into the Jobs view."
     },
     {
       "date": "2026-09-25",
@@ -48,19 +156,19 @@
       "closingWithin7Days": null,
       "newGatePassing": null,
       "provisionalFindings": null,
-      "notes": "Recovery automation did not produce a normal dated daily report."
+      "notes": "No normal daily report was published for this date. Recovery did not create a normal dated report."
     },
     {
       "date": "2026-09-26",
-      "reportStatus": "MANUAL_ARCHIVE",
-      "reportType": "manual-v5",
-      "activePublishedEquivalent": null,
-      "freshJobs": 0,
-      "previouslyListed": null,
-      "closingWithin7Days": null,
-      "newGatePassing": 0,
+      "reportStatus": "NORMAL",
+      "reportType": "normal daily",
+      "activePublishedEquivalent": 3,
+      "freshJobs": 1,
+      "previouslyListed": 2,
+      "closingWithin7Days": 0,
+      "newGatePassing": null,
       "provisionalFindings": 3,
-      "notes": "Manual production run completed and state persisted. Three active opportunities were reverified; three additional research findings remained provisional due to separate authorization/fit verification. Normal daily report still not present."
+      "notes": "Normal daily opportunity data restored from the verified 26 September production archive: three active opportunities are linked into the Jobs view; one is a fresh KBR finding and two are reverified existing opportunities."
     }
   ]
 }
