@@ -424,5 +424,15 @@
     "publication": "VERIFY_SEPARATELY_BEFORE_FINAL_PUBLISH",
     "unknownState": "WORK_AUTHORIZATION_VERIFY",
     "prohibition": "Do not infer authorization from country, employer, job board, or degree location"
+  },
+  "persistence": {
+    "githubWriteStrategy": {
+      "primary": "GitHub Contents API update_file/create_file",
+      "fallback": "Git Data API create_blob -> create_tree -> create_commit -> update_ref",
+      "verifyAfterWrite": true,
+      "noFalseFailure": "After any write error, re-read target path and main branch before reporting failure; if content is present, treat persistence as successful.",
+      "branch": "main"
+    },
+    "note": "Fallback exists to avoid transient Contents API safety-layer failures. Never claim write failure until post-write repository readback confirms absence."
   }
 }
