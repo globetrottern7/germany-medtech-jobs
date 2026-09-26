@@ -62,7 +62,7 @@ async function renderUniqueOpportunityHistory(){
     body.insertAdjacentHTML('beforeend',totalRow);
     stamp.textContent=`${qualifying.length} unique ≥75% records in historical state`;
   }catch(e){
-    body.innerHTML='<tr><td colspan="7" class="empty">Historical counts could not be loaded.</td></tr>';
+    body.insertAdjacentHTML('afterbegin','<tr><td colspan="7" class="history-warning">Live historical state could not be refreshed; showing the embedded historical snapshot. The next successful refresh will replace it.</td></tr>');
     stamp.textContent='State unavailable';
   }
 }
