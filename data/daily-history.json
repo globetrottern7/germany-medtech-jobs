@@ -27,6 +27,18 @@
       "notes": ""
     },
     {
+      "date": "2026-09-11",
+      "reportStatus": "NOT_PUBLISHED",
+      "reportType": "—",
+      "activePublishedEquivalent": null,
+      "freshJobs": null,
+      "previouslyListed": null,
+      "closingWithin7Days": null,
+      "newGatePassing": null,
+      "provisionalFindings": null,
+      "notes": "No normal daily report was published for this date. The gap is explicitly recorded; no data is fabricated."
+    },
+    {
       "date": "2026-09-12",
       "reportStatus": "NORMAL",
       "reportType": "normal daily",
@@ -61,6 +73,42 @@
       "newGatePassing": null,
       "provisionalFindings": null,
       "notes": ""
+    },
+    {
+      "date": "2026-09-15",
+      "reportStatus": "NOT_PUBLISHED",
+      "reportType": "—",
+      "activePublishedEquivalent": null,
+      "freshJobs": null,
+      "previouslyListed": null,
+      "closingWithin7Days": null,
+      "newGatePassing": null,
+      "provisionalFindings": null,
+      "notes": "No normal daily report was published for this date. The gap is explicitly recorded; no data is fabricated."
+    },
+    {
+      "date": "2026-09-16",
+      "reportStatus": "NOT_PUBLISHED",
+      "reportType": "—",
+      "activePublishedEquivalent": null,
+      "freshJobs": null,
+      "previouslyListed": null,
+      "closingWithin7Days": null,
+      "newGatePassing": null,
+      "provisionalFindings": null,
+      "notes": "No normal daily report was published for this date. The gap is explicitly recorded; no data is fabricated."
+    },
+    {
+      "date": "2026-09-17",
+      "reportStatus": "NOT_PUBLISHED",
+      "reportType": "—",
+      "activePublishedEquivalent": null,
+      "freshJobs": null,
+      "previouslyListed": null,
+      "closingWithin7Days": null,
+      "newGatePassing": null,
+      "provisionalFindings": null,
+      "notes": "No normal daily report was published for this date. The gap is explicitly recorded; no data is fabricated."
     },
     {
       "date": "2026-09-18",
