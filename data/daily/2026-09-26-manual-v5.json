@@ -1,0 +1,151 @@
+{
+  "run_date": "2026-09-26",
+  "run_type": "MANUAL_PRODUCTION_V5",
+  "status": "COMPLETED_AND_PERSISTED",
+  "architecture": "EUROPE-MEDTECH-v6-compatible production state",
+  "discovery_allocation": {
+    "Germany": "~70%",
+    "tier2": [
+      "Ireland",
+      "Netherlands",
+      "Switzerland"
+    ],
+    "broadEurope": "after Tier-2"
+  },
+  "state_read_before_research": [
+    "state/vacancies.jsonl",
+    "state/fingerprints.csv",
+    "state/employers.csv",
+    "state/exclusions.jsonl",
+    "state/fn_hunt_log.jsonl",
+    "state/config.json"
+  ],
+  "verification_first": true,
+  "sources_searched": [
+    "HSU official jobs",
+    "KBR Workday",
+    "WDM",
+    "Life Science Nord",
+    "Ottobock careers",
+    "ETH Zurich official jobs",
+    "Lake Lucerne Institute/ETH-associated listing",
+    "jobvector",
+    "Interamt",
+    "Yourfirm",
+    "EURES",
+    "Federal Employment Agency",
+    "research/university sources",
+    "ATS/employer-direct recall",
+    "standards/tooling hidden-title probes",
+    "German-language MedTech probes",
+    "regulatory/conformity-assessment recall",
+    "broad Europe recall"
+  ],
+  "current_verified": [
+    {
+      "title": "Research Assistant — Signal Processing for Medical Applications (SigMA)",
+      "employer": "HSU",
+      "location": "Hamburg, Germany",
+      "score": 94,
+      "status": "ACTIVE_REVERIFIED",
+      "deadline": "2026-10-05",
+      "work_authorization": "PASS"
+    },
+    {
+      "title": "Biomedical Engineer",
+      "employer": "KBR GmbH / ESA Space Medicine Team",
+      "location": "Cologne, Germany",
+      "score": 86,
+      "status": "ACTIVE_REVERIFIED",
+      "work_authorization": "WORK_AUTHORIZATION_VERIFY"
+    },
+    {
+      "title": "Research Assistant — Energy-Efficient Signal Processing for Electrically Active Implants",
+      "employer": "University of Rostock",
+      "location": "Rostock, Germany",
+      "score": 94,
+      "status": "ACTIVE_FROM_EXISTING_STATE",
+      "deadline": "2026-09-28",
+      "work_authorization": "SEPARATE_VERIFICATION"
+    }
+  ],
+  "new_research_findings": [
+    {
+      "title": "PhD position on engineering of machine perfusion platforms for organ and tissue culture",
+      "employer": "ETH Zurich",
+      "location": "Zurich, Switzerland",
+      "status": "PROVISIONAL_RESEARCH_FINDING",
+      "score": null,
+      "work_authorization": "WORK_AUTHORIZATION_VERIFY",
+      "reason": "MSc Biomedical Engineering explicitly eligible; strong device/sensors/control/LabVIEW/Simulink/C/C++ fit; authorization prevents gate-passing score."
+    },
+    {
+      "title": "Doctoral Position in Lower-Field Cardiac Magnetic Resonance Imaging",
+      "employer": "ETH Zurich",
+      "location": "Zurich, Switzerland",
+      "status": "PROVISIONAL_RESEARCH_FINDING",
+      "score": null,
+      "work_authorization": "WORK_AUTHORIZATION_VERIFY",
+      "reason": "MSc Biomedical Engineering eligible; signal/data processing and C/Matlab/Python fit; first-class-grade and authorization need separate verification."
+    },
+    {
+      "title": "PhD Position Movement Biomarkers in Stroke Recovery",
+      "employer": "Lake Lucerne Institute",
+      "location": "Vitznau, Switzerland",
+      "status": "PROVISIONAL_RESEARCH_FINDING",
+      "score": null,
+      "work_authorization": "WORK_AUTHORIZATION_VERIFY",
+      "reason": "MSc Biomedical Engineering eligible and deadline 30.09.2026; computer-vision/motion-analysis and Python/C# requirements create partial technical-fit uncertainty."
+    }
+  ],
+  "exclusions_or_status_changes": [
+    {
+      "title": "KTH PhD student — Medical Imaging of Childbirth-Related Pelvic Floor Injuries",
+      "status": "CLOSED/EXPIRED",
+      "reason": "Deadline was 2026-09-24; state updated on 2026-09-26."
+    },
+    {
+      "title": "WDM broad MedTech listings",
+      "status": "DISCOVERY_ONLY",
+      "reason": "Current WDM board shows 266 open listings; individual roles require employer-level gate verification."
+    },
+    {
+      "title": "Life Science Nord roles",
+      "status": "DISCOVERY_ONLY",
+      "reason": "Regional board remains active; graduate/accessibility and official employer verification applied per vacancy."
+    }
+  ],
+  "false_negative_hunt": {
+    "completed": true,
+    "probes": [
+      "ATS-domain",
+      "standards/tooling",
+      "German-language titles",
+      "employer-direct",
+      "regulatory/conformity assessment",
+      "research/PhD",
+      "small-company/cluster",
+      "recency",
+      "WDM canary",
+      "Life Science Nord canary"
+    ],
+    "canary_status": "NO_FAILURE_ESTABLISHED"
+  },
+  "publication": {
+    "fully_gate_passing_new": 0,
+    "active_reverified": 3,
+    "provisional_research_findings": 3,
+    "strong_match_active_reverified": 3,
+    "rule": "Unknown work authorization does not suppress a relevant research finding; it is flagged WORK_AUTHORIZATION_VERIFY. Such findings are not scored/published as gate-passing until authorization is separately verified."
+  },
+  "persistence": {
+    "state_updates": [
+      "state/vacancies.jsonl",
+      "state/fingerprints.csv",
+      "state/postings.jsonl"
+    ],
+    "report_file": "data/daily/2026-09-26-manual-v5.json",
+    "verified_write": "postings.jsonl read-back confirmed new 26 Sep observations after commit 2635ead8edd7cb05b9d13ca538d46f0b02300206",
+    "limitation": "fn_hunt_log update and daily report are being persisted next; no research data is considered final until those writes are verified."
+  }
+}
