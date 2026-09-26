@@ -41,7 +41,7 @@ async function renderUniqueOpportunityHistory(){
     const text=await response.text();
     const rows=text.split(/\r?\n/).filter(Boolean).map(x=>JSON.parse(x));
     const qualifying=rows.filter(x=>Number.isFinite(x.match)&&x.match>=75&&x.status!=='excluded'&&x.first_seen);
-    const dates=[...new Set(qualifying.map(x=>x.first_seen))].sort();
+    const dates=[...new Set((reports||[]).map(x=>x.date))].sort();
     const countries=[...new Set(qualifying.map(x=>x.country||'Other Europe'))].sort();
     const thresholds=[95,90,85,80,75];
     const htmlRows=[];
