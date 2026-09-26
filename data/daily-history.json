@@ -1,0 +1,66 @@
+{
+  "generated": "2026-09-26",
+  "startDate": "2026-09-22",
+  "entries": [
+    {
+      "date": "2026-09-22",
+      "reportStatus": "NOT_PUBLISHED",
+      "reportType": "—",
+      "activePublishedEquivalent": null,
+      "freshJobs": null,
+      "previouslyListed": null,
+      "closingWithin7Days": null,
+      "newGatePassing": null,
+      "provisionalFindings": null,
+      "notes": "No normal daily report exists in the repository for this date."
+    },
+    {
+      "date": "2026-09-23",
+      "reportStatus": "NOT_PUBLISHED",
+      "reportType": "—",
+      "activePublishedEquivalent": null,
+      "freshJobs": null,
+      "previouslyListed": null,
+      "closingWithin7Days": null,
+      "newGatePassing": null,
+      "provisionalFindings": null,
+      "notes": "No normal daily report exists in the repository for this date."
+    },
+    {
+      "date": "2026-09-24",
+      "reportStatus": "MANUAL_ARCHIVE",
+      "reportType": "manual-v5 / manual-v6",
+      "activePublishedEquivalent": 16,
+      "freshJobs": 5,
+      "previouslyListed": 11,
+      "closingWithin7Days": 7,
+      "newGatePassing": null,
+      "provisionalFindings": null,
+      "notes": "Manual production research was persisted. Five fresh CDTnet PhD opportunities were identified; the normal daily report was not published."
+    },
+    {
+      "date": "2026-09-25",
+      "reportStatus": "NOT_PUBLISHED",
+      "reportType": "—",
+      "activePublishedEquivalent": null,
+      "freshJobs": null,
+      "previouslyListed": null,
+      "closingWithin7Days": null,
+      "newGatePassing": null,
+      "provisionalFindings": null,
+      "notes": "Recovery automation did not produce a normal dated daily report."
+    },
+    {
+      "date": "2026-09-26",
+      "reportStatus": "MANUAL_ARCHIVE",
+      "reportType": "manual-v5",
+      "activePublishedEquivalent": null,
+      "freshJobs": 0,
+      "previouslyListed": null,
+      "closingWithin7Days": null,
+      "newGatePassing": 0,
+      "provisionalFindings": 3,
+      "notes": "Manual production run completed and state persisted. Three active opportunities were reverified; three additional research findings remained provisional due to separate authorization/fit verification. Normal daily report still not present."
+    }
+  ]
+}
