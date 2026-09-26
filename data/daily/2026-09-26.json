@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-26",
+  "reportType": "normal daily",
+  "reportStatus": "NORMAL",
+  "activeJobs": 2,
+  "freshJobs": 0,
+  "previouslyListed": 2,
+  "closingWithin7Days": 1,
+  "jobIds": [
+    "hsu-sigma-signal-processing-2026-09-12",
+    "rostock-signal-processing-implants-2026-09-09"
+  ],
+  "freshJobIds": [],
+  "excludedJobIds": [],
+  "newGatePassing": 0,
+  "provisionalFindings": 3,
+  "provisionalFindingIds": [
+    "kbr-biomedical-engineer-2026-09-26",
+    "eth-machine-perfusion-phd-2026-09-26",
+    "lake-lucerne-movement-biomarkers-2026-09-26"
+  ],
+  "researchLayers": [
+    "Germany official employer/ATS and research portals",
+    "Federal Employment Agency / Bund",
+    "Fraunhofer and DLR research sweep",
+    "Tier-2 Ireland/Netherlands/Switzerland recall",
+    "broader Europe research/PhD recall",
+    "English + German graduate/standards/tooling probes",
+    "historical fingerprint deduplication",
+    "active-vacancy revalidation",
+    "false-negative hunt"
+  ],
+  "sourcesSearched": [
+    "University of Rostock official/officially mirrored vacancy",
+    "Bund.de / HSU official listing",
+    "KBR official Workday",
+    "Fraunhofer official careers",
+    "DLR official careers",
+    "jobvector",
+    "academics.de",
+    "MedicalMountains",
+    "official employer ATS recall",
+    "EURAXESS / European research recall"
+  ],
+  "falseNegativeHunts": [
+    "ATS-domain",
+    "German graduate titles",
+    "standards/tooling",
+    "research/PhD",
+    "employer-direct",
+    "small-company/regulatory adjacent"
+  ],
+  "coverage": {
+    "protocolVersion": "EUROPE-MEDTECH-v6",
+    "germanyPriority": "70%",
+    "publicationThreshold": "75% minimum; 90% strong match",
+    "acceptanceAssessment": "PASS. Two previously published Germany opportunities were reverified as active and remain above the publication threshold. No new finding passed all hard gates today. KBR remains a strong technical match but is provisional because work authorization was not independently established; it is flagged WORK_AUTHORIZATION_VERIFY rather than suppressing the finding.",
+    "limitations": [
+      "Work authorization for KBR and non-Germany provisional research findings requires separate confirmation",
+      "No single run guarantees 100% recall",
+      "Discovery boards remain corroboration/discovery signals only"
+    ]
+  }
+}
