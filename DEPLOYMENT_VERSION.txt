@@ -1,0 +1,2 @@
+2026-09-26-pages-hardening-v1
+reports.json includes dated entries through 2026-09-26.
