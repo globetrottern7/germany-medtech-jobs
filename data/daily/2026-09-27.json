@@ -3,9 +3,9 @@
   "reportType": "normal daily",
   "reportStatus": "NORMAL",
   "activeJobs": 5,
-  "freshJobs": 3,
-  "previouslyListed": 2,
-  "closingWithin7Days": 3,
+  "freshJobs": 0,
+  "previouslyListed": 5,
+  "closingWithin7Days": 2,
   "jobIds": [
     "hsu-sigma-signal-processing-2026-09-12",
     "rostock-signal-processing-implants-2026-09-09",
@@ -13,13 +13,11 @@
     "eth-machine-perfusion-phd-2026-09-26",
     "lake-lucerne-movement-biomarkers-2026-09-26"
   ],
-  "freshJobIds": [
-    "kbr-biomedical-engineer-2026-09-26",
-    "eth-machine-perfusion-phd-2026-09-26",
-    "lake-lucerne-movement-biomarkers-2026-09-26"
+  "freshJobIds": [],
+  "excludedJobIds": [
+    "kth-computer-vision-vital-signs-2026-09-14"
   ],
-  "excludedJobIds": [],
-  "newGatePassing": 3,
+  "newGatePassing": 0,
   "provisionalFindings": 0,
   "provisionalFindingIds": [],
   "researchLayers": [
@@ -33,7 +31,8 @@
     "Historical fingerprint deduplication and material-change detection",
     "Active-vacancy revalidation and deadline/closing-date hunt",
     "False-negative hunt with 0-years gate, technical/degree/language/work-authorization assessment",
-    "Corrected work-authorization adjudication: unspecified authorization does not suppress an otherwise gate-passing vacancy; publish with explicit verification flag."
+    "Corrected work-authorization adjudication: unspecified authorization does not suppress an otherwise gate-passing vacancy; publish with explicit verification flag.",
+    "Production v5 fresh-source sweep: Germany ~70% priority plus Tier-2 Ireland/Netherlands/Switzerland and broader Europe official-source verification."
   ],
   "sourcesSearched": [
     "University of Rostock official vacancy",
@@ -86,6 +85,11 @@
       "id": "lake-lucerne-movement-biomarkers-2026-09-26",
       "status": "published",
       "note": "Official ETH Zürich vacancy remains current with deadline 2026-09-30; work authorization is not explicitly stated; verify with employer."
+    },
+    {
+      "id": "kth-computer-vision-vital-signs-2026-09-14",
+      "status": "expired",
+      "note": "Deadline reached 2026-09-27; removed from active publication set."
     }
   ],
   "coverage": {
@@ -93,11 +97,13 @@
     "searchExhaustion": "MAXIMUM_EXHAUSTION",
     "germanyPriority": "70%",
     "publicationThreshold": "75% minimum; 90% strong match",
-    "acceptanceAssessment": "PASS. Re-adjudication applied the corrected rule that unspecified work authorization does not suppress publication. Three fresh opportunities now pass the publication gate and are published with explicit work-authorization verification flags; two previously published Germany opportunities remain active.",
+    "acceptanceAssessment": "PASS. Five active published opportunities remain after current-open revalidation and deadline cleanup. No new vacancy cleared the 75% gate today after deduplication and the strict 0-years gate. One KTH vacancy reached its 2026-09-27 deadline and was removed from active publication.",
     "limitations": [
       "No search can guarantee literal 100% web recall",
       "Discovery boards are corroboration/discovery signals only",
       "Where work authorization is not explicitly stated by the employer, the vacancy is published with a verify-with-employer flag rather than excluded."
-    ]
-  }
+    ],
+    "workAuthorizationRule": "Unknown or unstated authorization is flagged WORK_AUTHORIZATION_VERIFY and does not suppress an otherwise gate-passing vacancy."
+  },
+  "productionProtocol": "EUROPE-MEDTECH-v5"
 }
