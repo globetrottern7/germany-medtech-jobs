@@ -31,40 +31,43 @@ async function renderDailyPublicationHistory(){
     body.innerHTML=(d.entries||[]).map(x=>{const status=x.reportStatus==='MANUAL_ARCHIVE'?'Manual archive':'Published';const cls=x.reportStatus==='MANUAL_ARCHIVE'?'manual':'published';return '<tr><td>'+esc(new Date(x.date+'T12:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}))+'</td><td><span class="history-status '+cls+'">'+status+'</span></td><td>'+esc(x.reportType||'—')+'</td><td>'+(x.activePublishedEquivalent??'—')+'</td><td>'+(x.freshJobs??'—')+'</td><td>'+(x.previouslyListed??'—')+'</td><td>'+(x.closingWithin7Days??'—')+'</td><td>'+(x.newGatePassing??'—')+'</td><td>'+(x.provisionalFindings??'—')+'</td><td>'+esc(x.notes||'')+'</td></tr>'}).join('');
   }catch(e){body.innerHTML='<tr><td colspan="10" class="empty">Day-wise publication history could not be loaded.</td></tr>'}
 }
-async function renderUniqueOpportunityHistory(){
-  const body=document.getElementById('uniqueHistoryBody');
-  const stamp=document.getElementById('historyUpdated');
-  if(!body)return;
+async function loadUniqueOpportunityState(){
   try{
     const response=await fetch(`./state/vacancies.jsonl?v=${Date.now()}`,{cache:'no-store'});
     if(!response.ok)throw new Error('Failed to load historical vacancy state');
     const text=await response.text();
-    const rows=text.split(/\r?\n/).filter(Boolean).map(x=>JSON.parse(x));
-    const qualifying=rows.filter(x=>Number.isFinite(x.match)&&x.match>=75&&x.status!=='excluded'&&x.first_seen);
-    const dates=[...new Set((reports||[]).map(x=>x.date))].sort();
-    const countries=[...new Set(qualifying.map(x=>x.country||'Other Europe'))].sort();
-    const thresholds=[95,90,85,80,75];
-    const htmlRows=[];
-    for(const date of dates){
-      for(const country of countries){
-        const subset=qualifying.filter(x=>x.first_seen<=date&&(x.country||'Other Europe')===country);
-        if(!subset.length)continue;
-        const vals=thresholds.map(t=>subset.filter(x=>x.match>=t).length);
-        htmlRows.push({date,country,vals});
-      }
-    }
-    htmlRows.sort((a,b)=>b.date.localeCompare(a.date)||a.country.localeCompare(b.country));
-    body.innerHTML=htmlRows.length?htmlRows.map(r=>`<tr><td>${esc(new Date(r.date+'T12:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}))}</td><td>${esc(r.country)}</td>${r.vals.map(v=>`<td>${v}</td>`).join('')}</tr>`).join(''):'<tr><td colspan="7" class="empty">No qualifying historical opportunities recorded yet.</td></tr>';
-    const latest=dates.at(-1);
-    const latestRows=qualifying.filter(x=>x.first_seen<=latest);
-    const totals=thresholds.map(t=>latestRows.filter(x=>x.match>=t).length);
-    const totalRow=`<tr class="history-total"><td colspan="2"><b>All countries · cumulative to ${esc(new Date(latest+'T12:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}))}</b></td>${totals.map(v=>`<td><b>${v}</b></td>`).join('')}</tr>`;
-    body.insertAdjacentHTML('beforeend',totalRow);
-    stamp.textContent=`${qualifying.length} unique ≥75% records in historical state`;
-  }catch(e){
-    body.insertAdjacentHTML('afterbegin','<tr><td colspan="7" class="history-warning">Live historical state could not be refreshed; showing the embedded historical snapshot. The next successful refresh will replace it.</td></tr>');
-    stamp.textContent='State unavailable';
+    return text.split(/\r?\n/).filter(Boolean).map(x=>JSON.parse(x))
+      .filter(x=>Number.isFinite(x.match)&&x.match>=75&&x.status!=='excluded'&&x.first_seen);
+  }catch(e){return null}
+}
+function thresholdCounts(rows,thresholds=[95,90,85,80,75]){
+  return thresholds.map(t=>rows.filter(x=>x.match>=t).length)
+}
+async function renderUniqueOpportunityDayHistory(){
+  const body=document.getElementById('uniqueDayHistoryBody'),stamp=document.getElementById('dayHistoryUpdated');
+  if(!body)return;
+  const qualifying=await loadUniqueOpportunityState();
+  if(!qualifying){body.innerHTML='<tr><td colspan="6" class="history-warning">Live historical state could not be refreshed.</td></tr>';if(stamp)stamp.textContent='State unavailable';return}
+  const dates=[...new Set((reports||[]).map(x=>x.date))].sort();
+  const rows=dates.map(date=>({date,vals:thresholdCounts(qualifying.filter(x=>x.first_seen<=date))}));
+  body.innerHTML=rows.length?rows.map(r=>`<tr><td>${esc(new Date(r.date+'T12:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}))}</td>${r.vals.map(v=>`<td>${v}</td>`).join('')}</tr>`).join(''):'<tr><td colspan="6" class="empty">No qualifying historical opportunities recorded yet.</td></tr>';
+  const latest=dates.at(-1);
+  if(latest){
+    const vals=thresholdCounts(qualifying.filter(x=>x.first_seen<=latest));
+    body.insertAdjacentHTML('beforeend',`<tr class="history-total"><td><b>Cumulative to ${esc(new Date(latest+'T12:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}))}</b></td>${vals.map(v=>`<td><b>${v}</b></td>`).join('')}</tr>`);
   }
+  if(stamp)stamp.textContent=`${qualifying.length} unique ≥75% records`;
+}
+async function renderUniqueOpportunityCountryHistory(){
+  const body=document.getElementById('uniqueCountryHistoryBody'),stamp=document.getElementById('countryHistoryUpdated');
+  if(!body)return;
+  const qualifying=await loadUniqueOpportunityState();
+  if(!qualifying){body.innerHTML='<tr><td colspan="6" class="history-warning">Live historical state could not be refreshed.</td></tr>';if(stamp)stamp.textContent='State unavailable';return}
+  const latest=[...new Set((reports||[]).map(x=>x.date))].sort().at(-1);
+  const countries=[...new Set(qualifying.map(x=>x.country||'Other Europe'))].sort((a,b)=>a.localeCompare(b));
+  const rows=countries.map(country=>({country,vals:thresholdCounts(qualifying.filter(x=>(x.country||'Other Europe')===country&&x.first_seen<=latest))}));
+  body.innerHTML=rows.length?rows.map(r=>`<tr><td>${esc(r.country)}</td>${r.vals.map(v=>`<td>${v}</td>`).join('')}</tr>`).join(''):'<tr><td colspan="6" class="empty">No country-level historical opportunities recorded yet.</td></tr>';
+  if(stamp)stamp.textContent=latest?`Cumulative through ${new Date(latest+'T12:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})}`:'No dated reports';
 }
 function renderResearch(r){const layers=r.researchLayers||[],sources=r.sourcesSearched||[],hunts=r.falseNegativeHunts||[];document.getElementById('researchSummary').innerHTML=`<div class="method-grid"><div><b>Candidate universe</b><br><span class="small">${r.candidateUniverseCount??'—'} screened</span></div><div><b>Exclusions</b><br><span class="small">${r.excludedCount??'—'} strict exclusions</span></div><div><b>Research layers</b><br><span class="small">${layers.length||'—'} recorded</span></div><div><b>Source groups</b><br><span class="small">${sources.length||'—'} recorded</span></div></div><details><summary>Research coverage</summary><p class="small">${layers.join(' · ')||'Coverage details appear after the upgraded research run.'}</p><p class="small"><b>False-negative hunts:</b> ${hunts.join(' · ')||'Not recorded'}</p></details>`}
 function setView(v){view=v;document.querySelectorAll('[data-view]').forEach(x=>x.classList.toggle('active',x.dataset.view===v));document.querySelectorAll('.view-panel').forEach(x=>x.classList.toggle('hidden',x.id!==`view-${v}`));if(v==='map'&&mapInstance)setTimeout(()=>mapInstance.invalidateSize(),100)}
@@ -72,4 +75,4 @@ function exportCsv(){const rows=filtered(currentList()).map(j=>{const s=stateOf(
 document.addEventListener('change',e=>{const a=e.target.dataset.action;if(!a)return;const j=jobs.find(x=>fingerprint(x)===e.target.dataset.id);if(!j)return;saveState(j,{[a]:e.target.value,statusDate:a==='status'?new Date().toISOString().slice(0,10):stateOf(j).statusDate});show(selectedDate)});
 document.addEventListener('click',e=>{const b=e.target.closest('[data-view]');if(b){setView(b.dataset.view);return}const f=e.target.closest('.filter');if(f){document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));f.classList.add('active');currentFilter=f.dataset.filter;show(selectedDate)}});
 document.getElementById('countryFilter').addEventListener('change',e=>{selectedCountry=e.target.value;show(selectedDate)});document.getElementById('matchFilter').addEventListener('change',e=>{minMatch=Number(e.target.value)||0;show(selectedDate)});document.getElementById('deadlineFilter').addEventListener('change',e=>{deadlineWindow=e.target.value;show(selectedDate)});document.getElementById('languageFilter').addEventListener('change',e=>{languageFilter=e.target.value;show(selectedDate)});document.getElementById('companyFilter').addEventListener('change',e=>{companyFilter=e.target.value;show(selectedDate)});document.getElementById('sortFilter').addEventListener('change',e=>{sortMode=e.target.value;show(selectedDate)});document.getElementById('dates').addEventListener('change',e=>show(e.target.value));document.getElementById('exportCsv').addEventListener('click',exportCsv);
-function berlinParts(date){const parts=new Intl.DateTimeFormat('en-CA',{timeZone:BERLIN_TZ,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false}).formatToParts(date);return Object.fromEntries(parts.filter(x=>x.type!=='literal').map(x=>[x.type,x.value]))}function berlinOffset(date){const p=berlinParts(date),pseudo=Date.UTC(+p.year,+p.month-1,+p.day,+p.hour,+p.minute,+p.second);return date.getTime()-pseudo}function nextBerlin5(now){const p=berlinParts(now);let targetPseudo=Date.UTC(+p.year,+p.month-1,+p.day,17,0,0),candidate=new Date(targetPseudo-berlinOffset(new Date(targetPseudo)));if(candidate<=now){const tomorrow=new Date(targetPseudo+86400000);targetPseudo=Date.UTC(tomorrow.getUTCFullYear(),tomorrow.getUTCMonth(),tomorrow.getUTCDate(),17,0,0);candidate=new Date(targetPseudo-berlinOffset(new Date(targetPseudo)))}return candidate}function nextRefresh(){const diff=nextBerlin5(new Date())-new Date(),h=Math.floor(diff/36e5),m=Math.floor(diff%36e5/6e4),s=Math.floor(diff%6e4/1e3);document.getElementById('countdown').textContent=`${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`}setView('jobs');setInterval(nextRefresh,1000);nextRefresh();loadData();renderUniqueOpportunityHistory();renderDailyPublicationHistory();setInterval(renderUniqueOpportunityHistory,3600000);setInterval(renderDailyPublicationHistory,3600000);
+function berlinParts(date){const parts=new Intl.DateTimeFormat('en-CA',{timeZone:BERLIN_TZ,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false}).formatToParts(date);return Object.fromEntries(parts.filter(x=>x.type!=='literal').map(x=>[x.type,x.value]))}function berlinOffset(date){const p=berlinParts(date),pseudo=Date.UTC(+p.year,+p.month-1,+p.day,+p.hour,+p.minute,+p.second);return date.getTime()-pseudo}function nextBerlin5(now){const p=berlinParts(now);let targetPseudo=Date.UTC(+p.year,+p.month-1,+p.day,17,0,0),candidate=new Date(targetPseudo-berlinOffset(new Date(targetPseudo)));if(candidate<=now){const tomorrow=new Date(targetPseudo+86400000);targetPseudo=Date.UTC(tomorrow.getUTCFullYear(),tomorrow.getUTCMonth(),tomorrow.getUTCDate(),17,0,0);candidate=new Date(targetPseudo-berlinOffset(new Date(targetPseudo)))}return candidate}function nextRefresh(){const diff=nextBerlin5(new Date())-new Date(),h=Math.floor(diff/36e5),m=Math.floor(diff%36e5/6e4),s=Math.floor(diff%6e4/1e3);document.getElementById('countdown').textContent=`${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`}setView('jobs');setInterval(nextRefresh,1000);nextRefresh();loadData();renderUniqueOpportunityDayHistory();renderUniqueOpportunityCountryHistory();renderDailyPublicationHistory();setInterval(renderUniqueOpportunityDayHistory,3600000);setInterval(renderUniqueOpportunityCountryHistory,3600000);setInterval(renderDailyPublicationHistory,3600000);
