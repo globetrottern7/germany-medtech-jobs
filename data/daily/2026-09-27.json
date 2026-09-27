@@ -2,23 +2,26 @@
   "date": "2026-09-27",
   "reportType": "normal daily",
   "reportStatus": "NORMAL",
-  "activeJobs": 2,
-  "freshJobs": 0,
+  "activeJobs": 5,
+  "freshJobs": 3,
   "previouslyListed": 2,
-  "closingWithin7Days": 2,
+  "closingWithin7Days": 3,
   "jobIds": [
     "hsu-sigma-signal-processing-2026-09-12",
-    "rostock-signal-processing-implants-2026-09-09"
-  ],
-  "freshJobIds": [],
-  "excludedJobIds": [],
-  "newGatePassing": 0,
-  "provisionalFindings": 3,
-  "provisionalFindingIds": [
+    "rostock-signal-processing-implants-2026-09-09",
     "kbr-biomedical-engineer-2026-09-26",
     "eth-machine-perfusion-phd-2026-09-26",
     "lake-lucerne-movement-biomarkers-2026-09-26"
   ],
+  "freshJobIds": [
+    "kbr-biomedical-engineer-2026-09-26",
+    "eth-machine-perfusion-phd-2026-09-26",
+    "lake-lucerne-movement-biomarkers-2026-09-26"
+  ],
+  "excludedJobIds": [],
+  "newGatePassing": 3,
+  "provisionalFindings": 0,
+  "provisionalFindingIds": [],
   "researchLayers": [
     "Germany maximum-exhaustion official employer/ATS and research-portal sweep",
     "Federal Employment Agency / Bund verification",
@@ -29,7 +32,8 @@
     "English/German synonym, function-based and standards/tooling probes",
     "Historical fingerprint deduplication and material-change detection",
     "Active-vacancy revalidation and deadline/closing-date hunt",
-    "False-negative hunt with 0-years gate, technical/degree/language/work-authorization assessment"
+    "False-negative hunt with 0-years gate, technical/degree/language/work-authorization assessment",
+    "Corrected work-authorization adjudication: unspecified authorization does not suppress an otherwise gate-passing vacancy; publish with explicit verification flag."
   ],
   "sourcesSearched": [
     "University of Rostock official vacancy",
@@ -70,8 +74,18 @@
     },
     {
       "id": "kbr-biomedical-engineer-2026-09-26",
-      "status": "provisional",
-      "note": "Strong technical match; WORK_AUTHORIZATION_VERIFY remains unresolved and therefore does not suppress discovery."
+      "status": "published",
+      "note": "Published under corrected rule. Work authorization is not explicitly stated in the vacancy evidence; verify with employer."
+    },
+    {
+      "id": "eth-machine-perfusion-phd-2026-09-26",
+      "status": "published",
+      "note": "Official ETH Zürich vacancy remains current; work authorization is not explicitly stated; verify with employer."
+    },
+    {
+      "id": "lake-lucerne-movement-biomarkers-2026-09-26",
+      "status": "published",
+      "note": "Official ETH Zürich vacancy remains current with deadline 2026-09-30; work authorization is not explicitly stated; verify with employer."
     }
   ],
   "coverage": {
@@ -79,11 +93,11 @@
     "searchExhaustion": "MAXIMUM_EXHAUSTION",
     "germanyPriority": "70%",
     "publicationThreshold": "75% minimum; 90% strong match",
-    "acceptanceAssessment": "PASS. Maximum-exhaustion discovery and false-negative hunting produced no additional vacancy that cleared all hard publication gates. Two previously published Germany opportunities remain active and verified. Provisional findings remain separately flagged.",
+    "acceptanceAssessment": "PASS. Re-adjudication applied the corrected rule that unspecified work authorization does not suppress publication. Three fresh opportunities now pass the publication gate and are published with explicit work-authorization verification flags; two previously published Germany opportunities remain active.",
     "limitations": [
       "No search can guarantee literal 100% web recall",
-      "Work authorization for provisional findings requires separate confirmation",
-      "Discovery boards are corroboration/discovery signals only"
+      "Discovery boards are corroboration/discovery signals only",
+      "Where work authorization is not explicitly stated by the employer, the vacancy is published with a verify-with-employer flag rather than excluded."
     ]
   }
 }
