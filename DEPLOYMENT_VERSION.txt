@@ -1,2 +1,2 @@
-2026-09-27-portal-republish-v2
-reports.json and jobs.json updated for 2026-09-27; Pages redeploy forced.
+2026-09-27-portal-rebuild-v3
+Rebuilt Unique Opportunities into separate Day-wise and Country-wise cumulative views. Portal data includes 27 Sep publication.
