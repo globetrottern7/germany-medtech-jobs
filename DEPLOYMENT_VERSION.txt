@@ -1,2 +1,2 @@
-2026-09-27-portal-rebuild-v3
-Rebuilt Unique Opportunities into separate Day-wise and Country-wise cumulative views. Portal data includes 27 Sep publication.
+2026-09-27-portal-rebuild-v4
+Fixed asynchronous report/history load ordering so day-wise and country-wise unique opportunity counts render after report data is loaded.
