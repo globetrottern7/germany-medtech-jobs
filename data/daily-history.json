@@ -222,13 +222,13 @@
       "date": "2026-09-27",
       "reportStatus": "NORMAL",
       "reportType": "normal daily",
-      "activePublishedEquivalent": 2,
-      "freshJobs": 0,
+      "activePublishedEquivalent": 5,
+      "freshJobs": 3,
       "previouslyListed": 2,
-      "closingWithin7Days": 2,
-      "newGatePassing": 0,
-      "provisionalFindings": 3,
-      "notes": "MAXIMUM_EXHAUSTION production manual run. Germany received the priority/deep sweep plus major MedTech ATS, research-institute, university, regulatory, synonym/function and false-negative hunts; Ireland/Netherlands/Switzerland and broader Europe were also swept. Two previously published Germany opportunities remain active and officially reverified. No additional vacancy cleared all hard publication gates. KBR remains provisional with WORK_AUTHORIZATION_VERIFY. State was reverified and updated on main; normal daily report published and read back."
+      "closingWithin7Days": 3,
+      "newGatePassing": 3,
+      "provisionalFindings": 0,
+      "notes": "MAXIMUM_EXHAUSTION production manual run re-adjudicated under corrected work-authorization rule. Three fresh opportunities pass the publication gate: KBR Biomedical Engineer — ESA Space Medicine Team; ETH Zürich PhD — machine perfusion platforms; Lake Lucerne Institute / ETH Zürich PhD — movement biomarkers in stroke recovery. Work authorization is not explicitly stated for these vacancies and is therefore flagged for employer verification, not used as an exclusion. Two previously published Germany opportunities remain active."
     }
   ]
 }
