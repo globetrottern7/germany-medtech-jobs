@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-26",
+  "generated": "2026-09-27",
   "startDate": "2026-09-09",
   "entries": [
     {
@@ -217,6 +217,18 @@
       "newGatePassing": null,
       "provisionalFindings": 3,
       "notes": "Normal daily opportunity data restored from the verified 26 September production archive: three active opportunities are linked into the Jobs view; one is a fresh KBR finding and two are reverified existing opportunities."
+    },
+    {
+      "date": "2026-09-27",
+      "reportStatus": "NORMAL",
+      "reportType": "normal daily",
+      "activePublishedEquivalent": 2,
+      "freshJobs": 0,
+      "previouslyListed": 2,
+      "closingWithin7Days": 2,
+      "newGatePassing": 0,
+      "provisionalFindings": 3,
+      "notes": "MAXIMUM_EXHAUSTION production manual run. Germany received the priority/deep sweep plus major MedTech ATS, research-institute, university, regulatory, synonym/function and false-negative hunts; Ireland/Netherlands/Switzerland and broader Europe were also swept. Two previously published Germany opportunities remain active and officially reverified. No additional vacancy cleared all hard publication gates. KBR remains provisional with WORK_AUTHORIZATION_VERIFY. State was reverified and updated on main; normal daily report published and read back."
     }
   ]
 }
