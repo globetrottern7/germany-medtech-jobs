@@ -1,0 +1,89 @@
+{
+  "date": "2026-09-27",
+  "reportType": "normal daily",
+  "reportStatus": "NORMAL",
+  "activeJobs": 2,
+  "freshJobs": 0,
+  "previouslyListed": 2,
+  "closingWithin7Days": 2,
+  "jobIds": [
+    "hsu-sigma-signal-processing-2026-09-12",
+    "rostock-signal-processing-implants-2026-09-09"
+  ],
+  "freshJobIds": [],
+  "excludedJobIds": [],
+  "newGatePassing": 0,
+  "provisionalFindings": 3,
+  "provisionalFindingIds": [
+    "kbr-biomedical-engineer-2026-09-26",
+    "eth-machine-perfusion-phd-2026-09-26",
+    "lake-lucerne-movement-biomarkers-2026-09-26"
+  ],
+  "researchLayers": [
+    "Germany maximum-exhaustion official employer/ATS and research-portal sweep",
+    "Federal Employment Agency / Bund verification",
+    "Major MedTech employer false-negative sweep",
+    "Fraunhofer / DLR / university and biomedical-AI research sweep",
+    "Tier-2 Ireland/Netherlands/Switzerland sweep",
+    "Broader Europe research and doctoral-network sweep",
+    "English/German synonym, function-based and standards/tooling probes",
+    "Historical fingerprint deduplication and material-change detection",
+    "Active-vacancy revalidation and deadline/closing-date hunt",
+    "False-negative hunt with 0-years gate, technical/degree/language/work-authorization assessment"
+  ],
+  "sourcesSearched": [
+    "University of Rostock official vacancy",
+    "Bund.de / HSU official listing",
+    "Federal Employment Agency Jobsuche",
+    "Böhme Medizintechnik official careers",
+    "FERCHAU official vacancy",
+    "Siemens Healthineers / BA vacancy evidence",
+    "Max Planck School of Biomedical AI official vacancy",
+    "Stryker official careers",
+    "Ottobock official careers",
+    "Terumo Europe official careers",
+    "HPRA official careers",
+    "EURAXESS",
+    "CDTnet official project vacancies",
+    "KTH official careers"
+  ],
+  "falseNegativeHunts": [
+    "major MedTech employer ATS",
+    "Germany graduate/entry-level title variants",
+    "biomedical/DSP/signal-processing/embedded/medical-imaging synonyms",
+    "research and doctoral-network opportunities",
+    "regulatory/standards/tooling-adjacent roles",
+    "small-company and direct-employer searches",
+    "closing-soon vacancy recheck",
+    "historical exclusion re-adjudication"
+  ],
+  "findings": [
+    {
+      "id": "rostock-signal-processing-implants-2026-09-09",
+      "status": "published",
+      "note": "Official vacancy remains open; deadline 2026-09-28."
+    },
+    {
+      "id": "hsu-sigma-signal-processing-2026-09-12",
+      "status": "published",
+      "note": "Official Bund listing remains open; deadline 2026-10-05."
+    },
+    {
+      "id": "kbr-biomedical-engineer-2026-09-26",
+      "status": "provisional",
+      "note": "Strong technical match; WORK_AUTHORIZATION_VERIFY remains unresolved and therefore does not suppress discovery."
+    }
+  ],
+  "coverage": {
+    "protocolVersion": "EUROPE-MEDTECH-v5",
+    "searchExhaustion": "MAXIMUM_EXHAUSTION",
+    "germanyPriority": "70%",
+    "publicationThreshold": "75% minimum; 90% strong match",
+    "acceptanceAssessment": "PASS. Maximum-exhaustion discovery and false-negative hunting produced no additional vacancy that cleared all hard publication gates. Two previously published Germany opportunities remain active and verified. Provisional findings remain separately flagged.",
+    "limitations": [
+      "No search can guarantee literal 100% web recall",
+      "Work authorization for provisional findings requires separate confirmation",
+      "Discovery boards are corroboration/discovery signals only"
+    ]
+  }
+}
