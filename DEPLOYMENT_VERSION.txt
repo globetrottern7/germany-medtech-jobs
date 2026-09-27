@@ -1,2 +1,2 @@
-2026-09-26-pages-hardening-v1
-reports.json includes dated entries through 2026-09-26.
+2026-09-27-portal-republish-v2
+reports.json and jobs.json updated for 2026-09-27; Pages redeploy forced.
