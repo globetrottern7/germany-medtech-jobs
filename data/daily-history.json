@@ -229,6 +229,18 @@
       "newGatePassing": 0,
       "provisionalFindings": 0,
       "notes": "Production v5 maximum-exhaustion refresh completed. Five active published opportunities remain; no new vacancy cleared the 75% gate after strict 0-years adjudication and deduplication. KTH Stockholm PhD reached its 27 September deadline and was removed from the active set. Unknown work authorization remains WORK_AUTHORIZATION_VERIFY and does not suppress an otherwise gate-passing vacancy."
+    },
+    {
+      "date": "2026-09-28",
+      "reportStatus": "NORMAL",
+      "reportType": "normal daily",
+      "activePublishedEquivalent": 18,
+      "freshJobs": 2,
+      "previouslyListed": 16,
+      "closingWithin7Days": 9,
+      "newGatePassing": 2,
+      "provisionalFindings": 0,
+      "notes": "Production v5 manual refresh completed. Two fresh Netherlands PhD opportunities passed the 75% gate after official-source verification. Rostock remains open through 28 Sep; KTH remains expired from 27 Sep. Unknown work authorization is flagged WORK_AUTHORIZATION_VERIFY and does not suppress an otherwise gate-passing vacancy."
     }
   ]
 }
