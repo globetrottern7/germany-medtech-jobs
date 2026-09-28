@@ -841,6 +841,136 @@
       "newGatePassing": 0,
       "provisionalFindings": 0,
       "provisionalFindingIds": []
+    },
+    {
+      "date": "2026-09-28",
+      "activeJobs": 18,
+      "freshJobs": 2,
+      "previouslyListed": 16,
+      "closingWithin7Days": 9,
+      "jobIds": [
+        "maico-dsp-engineer-2026-09-09",
+        "rostock-signal-processing-implants-2026-09-09",
+        "siemens-embedded-xray-2026-09-09",
+        "max-planck-bmai-phd-2026-09-10",
+        "hsu-sigma-signal-processing-2026-09-12",
+        "cdtnet-corify-arrhythmia-2026-09-12",
+        "bohme-medtech-graduate-xray-2026-09-12",
+        "ferchau-junior-embedded-cpp-2026-09-13",
+        "cdtnet-wearable-biosignatures-f3-2026-09-24",
+        "cdtnet-arrhythmic-risk-f6-2026-09-24",
+        "cdtnet-intramyocardial-sensing-f9-2026-09-24",
+        "cdtnet-pacing-digital-twin-f10-2026-09-24",
+        "cdtnet-diastolic-echo-f4-2026-09-24",
+        "kbr-biomedical-engineer-2026-09-26",
+        "eth-machine-perfusion-phd-2026-09-26",
+        "lake-lucerne-movement-biomarkers-2026-09-26",
+        "tue-contrast-ultrasound-nanobubbles-2026-09-28",
+        "radboud-multimodal-agentic-ai-prostate-2026-09-28"
+      ],
+      "freshJobIds": [
+        "tue-contrast-ultrasound-nanobubbles-2026-09-28",
+        "radboud-multimodal-agentic-ai-prostate-2026-09-28"
+      ],
+      "excludedJobIds": [],
+      "researchLayers": [
+        "Germany maximum-exhaustion official employer/ATS and research-portal sweep",
+        "Federal Employment Agency / Bund verification",
+        "Major MedTech employer false-negative sweep",
+        "Fraunhofer / DLR / university and biomedical-AI research sweep",
+        "Tier-2 Ireland/Netherlands/Switzerland sweep",
+        "Broader Europe research and doctoral-network sweep",
+        "English/German synonym, function-based and standards/tooling probes",
+        "Historical fingerprint deduplication and material-change detection",
+        "Active-vacancy revalidation and deadline/closing-date hunt",
+        "False-negative hunt with strict 0-years gate, technical/degree/language/work-authorization assessment"
+      ],
+      "sourcesSearched": [
+        "University of Rostock official vacancy",
+        "Bund.de / HSU official listing",
+        "Federal Employment Agency Jobsuche",
+        "Böhme Medizintechnik official careers",
+        "FERCHAU official vacancy",
+        "Siemens Healthineers / BA vacancy evidence",
+        "Max Planck School of Biomedical AI official vacancy",
+        "Stryker official careers",
+        "Ottobock official careers",
+        "Terumo Europe official careers",
+        "HPRA official careers",
+        "EURAXESS",
+        "CDTnet official project vacancies",
+        "KTH official careers",
+        "KBR official Workday",
+        "ETH Zürich official jobs",
+        "TU/e official Varbi vacancy",
+        "Radboudumc official vacancy"
+      ],
+      "falseNegativeHunts": [
+        "major MedTech employer ATS",
+        "Germany graduate/entry-level title variants",
+        "biomedical/DSP/signal-processing/embedded/medical-imaging synonyms",
+        "research and doctoral-network opportunities",
+        "regulatory/standards/tooling-adjacent roles",
+        "small-company and direct-employer searches",
+        "closing-soon vacancy recheck",
+        "historical exclusion re-adjudication"
+      ],
+      "candidateUniverseCount": null,
+      "excludedCount": null,
+      "coverage": {
+        "protocolVersion": "EUROPE-MEDTECH-v5",
+        "searchExhaustion": "MAXIMUM_EXHAUSTION",
+        "germanyPriority": "70%",
+        "publicationThreshold": "75% minimum; 90% strong match",
+        "acceptanceAssessment": "PASS. Two additional fresh gate-passing opportunities were published after official-source verification. Unstated work authorization is flagged WORK_AUTHORIZATION_VERIFY and does not suppress discovery.",
+        "limitations": [
+          "No search can guarantee literal 100% web recall",
+          "Discovery boards are corroboration/discovery signals only",
+          "Where work authorization is not explicitly stated by the employer, the vacancy is published with a verify-with-employer flag rather than excluded."
+        ]
+      },
+      "findings": [
+        {
+          "id": "rostock-signal-processing-implants-2026-09-09",
+          "status": "published",
+          "note": "Official vacancy revalidated; deadline 2026-09-28."
+        },
+        {
+          "id": "hsu-sigma-signal-processing-2026-09-12",
+          "status": "published",
+          "note": "Official Bund listing revalidated; deadline 2026-10-05."
+        },
+        {
+          "id": "tue-contrast-ultrasound-nanobubbles-2026-09-28",
+          "status": "published",
+          "note": "Fresh official TU/e PhD; MSc Biomedical Engineering accepted; work authorization flagged WORK_AUTHORIZATION_VERIFY."
+        },
+        {
+          "id": "radboud-multimodal-agentic-ai-prostate-2026-09-28",
+          "status": "published",
+          "note": "Fresh official Radboudumc PhD; MSc Biomedical Engineering accepted; strong AI prerequisites noted; work authorization flagged WORK_AUTHORIZATION_VERIFY."
+        },
+        {
+          "id": "kbr-biomedical-engineer-2026-09-26",
+          "status": "published",
+          "note": "Previously listed; authorization remains unspecified and flagged for verification."
+        },
+        {
+          "id": "eth-machine-perfusion-phd-2026-09-26",
+          "status": "published",
+          "note": "Previously listed; authorization remains unspecified and flagged for verification."
+        },
+        {
+          "id": "lake-lucerne-movement-biomarkers-2026-09-26",
+          "status": "published",
+          "note": "Previously listed; deadline 2026-09-30."
+        }
+      ],
+      "reportStatus": "NORMAL",
+      "reportType": "normal daily",
+      "newGatePassing": 2,
+      "provisionalFindings": 0,
+      "provisionalFindingIds": []
     }
   ]
 }
