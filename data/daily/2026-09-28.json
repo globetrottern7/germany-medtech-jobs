@@ -1,0 +1,102 @@
+{
+  "date": "2026-09-28",
+  "reportType": "normal daily",
+  "reportStatus": "NORMAL",
+  "activeJobs": 5,
+  "freshJobs": 0,
+  "previouslyListed": 5,
+  "closingWithin7Days": 3,
+  "jobIds": [
+    "hsu-sigma-signal-processing-2026-09-12",
+    "rostock-signal-processing-implants-2026-09-09",
+    "kbr-biomedical-engineer-2026-09-26",
+    "eth-machine-perfusion-phd-2026-09-26",
+    "lake-lucerne-movement-biomarkers-2026-09-26"
+  ],
+  "freshJobIds": [],
+  "excludedJobIds": [
+    "kth-computer-vision-vital-signs-2026-09-14"
+  ],
+  "newGatePassing": 0,
+  "provisionalFindings": 0,
+  "provisionalFindingIds": [],
+  "researchLayers": [
+    "Germany ~70% maximum-exhaustion official-source sweep",
+    "Tier-2 Ireland/Netherlands/Switzerland sweep",
+    "Broader Europe official-source sweep",
+    "Strict 0-years gate and technical/degree/language assessment",
+    "Work-authorization assessment with WORK_AUTHORIZATION_VERIFY rule",
+    "Historical fingerprint deduplication and material-change detection",
+    "False-negative hunt and closing-soon recheck"
+  ],
+  "sourcesSearched": [
+    "University of Rostock",
+    "Bund.de / HSU",
+    "KBR Workday",
+    "ETH Zürich",
+    "Lake Lucerne Institute",
+    "MAICO/Demant DSP listing",
+    "Terumo Europe",
+    "Johnson & Johnson",
+    "Federal Employment Agency",
+    "CDTnet",
+    "KTH",
+    "EURAXESS"
+  ],
+  "falseNegativeHunts": [
+    "Germany employer ATS",
+    "German/English title synonyms",
+    "DSP/signal processing/embedded/medical imaging",
+    "research/PhD",
+    "regulatory/standards/tooling",
+    "small-company/direct employer",
+    "Tier-2 Ireland/Netherlands/Switzerland",
+    "closing-soon recheck",
+    "historical exclusion re-adjudication"
+  ],
+  "findings": [
+    {
+      "id": "rostock-signal-processing-implants-2026-09-09",
+      "status": "published",
+      "note": "Deadline is 2026-09-28; still open at the production run and therefore remains published."
+    },
+    {
+      "id": "hsu-sigma-signal-processing-2026-09-12",
+      "status": "published",
+      "note": "Official Bund listing remains open; deadline 2026-10-05."
+    },
+    {
+      "id": "kbr-biomedical-engineer-2026-09-26",
+      "status": "published",
+      "note": "Current; work authorization not explicitly stated — WORK_AUTHORIZATION_VERIFY."
+    },
+    {
+      "id": "eth-machine-perfusion-phd-2026-09-26",
+      "status": "published",
+      "note": "Current ETH Zürich vacancy; work authorization not explicitly stated — WORK_AUTHORIZATION_VERIFY."
+    },
+    {
+      "id": "lake-lucerne-movement-biomarkers-2026-09-26",
+      "status": "published",
+      "note": "Current; deadline 2026-09-30; work authorization not explicitly stated — WORK_AUTHORIZATION_VERIFY."
+    },
+    {
+      "id": "kth-computer-vision-vital-signs-2026-09-14",
+      "status": "expired",
+      "note": "Deadline reached 2026-09-27; removed from active publication."
+    }
+  ],
+  "coverage": {
+    "protocolVersion": "EUROPE-MEDTECH-v5",
+    "searchExhaustion": "MAXIMUM_EXHAUSTION",
+    "germanyPriority": "70%",
+    "publicationThreshold": "75% minimum; 90% strong match",
+    "acceptanceAssessment": "PASS. Five active published opportunities remain. No new vacancy cleared the 75% gate after strict 0-years adjudication, official-source verification and deduplication. KTH reached its deadline and was removed.",
+    "limitations": [
+      "No search guarantees literal 100% web recall",
+      "Discovery boards are corroboration signals only"
+    ],
+    "workAuthorizationRule": "Unknown or unstated authorization is flagged WORK_AUTHORIZATION_VERIFY and does not suppress an otherwise gate-passing vacancy."
+  },
+  "productionProtocol": "EUROPE-MEDTECH-v5"
+}
