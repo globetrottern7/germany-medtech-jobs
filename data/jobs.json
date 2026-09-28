@@ -872,6 +872,69 @@
       "deadline": "2026-09-30",
       "url": "https://www.jobs.ethz.ch/job/view/12048",
       "workAuthorization": "NOT_EXPLICITLY_STATED"
+    },
+    {
+      "id": "tue-contrast-ultrasound-nanobubbles-2026-09-28",
+      "title": "PhD in Contrast Ultrasound Imaging of Nanobubbles for Cancer Diagnostics",
+      "company": "Eindhoven University of Technology (TU/e)",
+      "location": "Eindhoven, Netherlands",
+      "country": "Netherlands",
+      "category": [
+        "Research",
+        "Biomedical Engineering",
+        "Signal Processing",
+        "Medical Imaging",
+        "Ultrasound",
+        "PhD"
+      ],
+      "match": 86,
+      "fresh": true,
+      "status": "active",
+      "deadline": "2026-11-06",
+      "url": "https://tue.varbi.com/en/apply/positionquick/968956/",
+      "fit": [
+        "MSc Biomedical Engineering or related field accepted",
+        "Strong signal processing and quantitative data-analysis alignment",
+        "MATLAB/Python programming relevant",
+        "Medical ultrasound and cancer-diagnostics application",
+        "Four-year PhD; no professional experience requirement stated"
+      ],
+      "gaps": [
+        "Direct ultrasound/physics modelling experience should be confirmed",
+        "Work authorization/immigration details require verification"
+      ],
+      "workAuthorization": "WORK_AUTHORIZATION_VERIFY"
+    },
+    {
+      "id": "radboud-multimodal-agentic-ai-prostate-2026-09-28",
+      "title": "PhD Candidate — Multimodal and Agentic AI for Precision Prostate Cancer Care",
+      "company": "Radboud University Medical Center (Radboudumc)",
+      "location": "Nijmegen, Netherlands",
+      "country": "Netherlands",
+      "category": [
+        "Research",
+        "Biomedical Engineering",
+        "Medical Imaging",
+        "AI",
+        "PhD"
+      ],
+      "match": 79,
+      "fresh": true,
+      "status": "active",
+      "deadline": "2026-10-01",
+      "url": "https://www.werkenbijradboudumc.nl/vacatures/phd-candidate-multimodal-and-agentic-ai-for-precision-prostate-cancer-care-nijmegen-380490",
+      "fit": [
+        "MSc Biomedical Engineering explicitly accepted",
+        "Medical imaging and clinically grounded AI research",
+        "Four-year PhD candidate position",
+        "No professional experience requirement stated"
+      ],
+      "gaps": [
+        "Strong Python/PyTorch required",
+        "Deep learning, multimodal learning and longitudinal modelling are emphasized",
+        "Work authorization/VOG requirements require verification"
+      ],
+      "workAuthorization": "WORK_AUTHORIZATION_VERIFY"
     }
   ]
 }
