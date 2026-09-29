@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-27",
+  "generated": "2026-09-29",
   "startDate": "2026-09-09",
   "entries": [
     {
@@ -241,6 +241,18 @@
       "newGatePassing": 2,
       "provisionalFindings": 0,
       "notes": "Production v5 manual refresh completed. Two fresh Netherlands PhD opportunities passed the 75% gate after official-source verification. Rostock remains open through 28 Sep; KTH remains expired from 27 Sep. Unknown work authorization is flagged WORK_AUTHORIZATION_VERIFY and does not suppress an otherwise gate-passing vacancy."
+    },
+    {
+      "date": "2026-09-29",
+      "reportStatus": "PUBLISHED",
+      "reportType": "normal daily",
+      "activePublishedEquivalent": 19,
+      "freshJobs": 2,
+      "previouslyListed": 17,
+      "closingWithin7Days": 8,
+      "newGatePassing": 2,
+      "provisionalFindings": 0,
+      "notes": "Manual production recovery completed and published as the normal dated report. Rostock expired after its 28 September deadline. Two fresh Germany PhD opportunities were added after official-source verification: Helmholtz Munich optoacoustic tomography and University Hospital Tübingen quantitative multi-tracer PET. No candidate PII stored."
     }
   ]
 }
