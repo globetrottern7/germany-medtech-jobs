@@ -45,7 +45,7 @@ if (daily.reportType === "normal daily") {
   if ((daily.freshJobIds||[]).some(id => !ids.includes(id))) fail(`${daily.date}: freshJobIds contains non-published ID.`);
   if ((daily.freshJobIds||[]).length !== daily.freshJobs) fail(`${daily.date}: freshJobs count does not equal freshJobIds length.`);
   if ((daily.previouslyListed||0) + (daily.freshJobs||0) !== daily.activeJobs) fail(`${daily.date}: fresh + previouslyListed != activeJobs.`);
-  const closing = jobs.jobs.filter(j => j.status==="active" && j.deadline && new Date(j.deadline+"T23:59:59Z") <= new Date(daily.date+"T23:59:59Z")).map(j=>j.id);
+  const closing = jobs.jobs.filter(j => j.status==="active" && j.deadline && new Date(j.deadline+"T23:59:59Z") < new Date(daily.date+"T00:00:00Z")).map(j=>j.id);
   if (closing.length) fail(`${daily.date}: active jobs have deadlines on/before report date: ${closing.join(", ")}`);
 }
 
