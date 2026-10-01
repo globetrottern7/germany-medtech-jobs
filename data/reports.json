@@ -1056,6 +1056,100 @@
           "Unstated work authorization is flagged WORK_AUTHORIZATION_VERIFY and does not suppress an otherwise gate-passing vacancy."
         ]
       }
+    },
+    {
+      "date": "2026-10-01",
+      "reportType": "normal daily",
+      "reportStatus": "NORMAL",
+      "productionProtocol": "EUROPE-MEDTECH-v5",
+      "activeJobs": 10,
+      "freshJobs": 0,
+      "previouslyListed": 10,
+      "closingWithin7Days": 2,
+      "newGatePassing": 0,
+      "provisionalFindings": 0,
+      "provisionalFindingIds": [],
+      "jobIds": [
+        "maico-dsp-engineer-2026-09-09",
+        "siemens-embedded-xray-2026-09-09",
+        "max-planck-bmai-phd-2026-09-10",
+        "hsu-sigma-signal-processing-2026-09-12",
+        "bohme-medtech-graduate-xray-2026-09-12",
+        "ferchau-junior-embedded-cpp-2026-09-13",
+        "kbr-biomedical-engineer-2026-09-26",
+        "eth-machine-perfusion-phd-2026-09-26",
+        "tue-contrast-ultrasound-nanobubbles-2026-09-28",
+        "radboud-multimodal-agentic-ai-prostate-2026-09-28"
+      ],
+      "freshJobIds": [],
+      "excludedJobIds": [],
+      "researchLayers": [
+        "Germany ~70% maximum-exhaustion official-source sweep",
+        "Tier-2 Ireland/Netherlands/Switzerland sweep",
+        "Broader Europe official-source sweep",
+        "Strict 0-years gate",
+        "Technical/degree/language/work-authorization assessment",
+        "Historical fingerprint deduplication and material-change detection",
+        "False-negative hunt",
+        "Closing-soon revalidation"
+      ],
+      "sourcesSearched": [
+        "Helmut-Schmidt-Universität official federal careers",
+        "DKFZ official careers",
+        "Ferdinand-Braun-Institut official federal careers",
+        "Helmholtz official careers",
+        "TUM/University Hospital Munich official careers",
+        "Federal Employment Agency Jobsuche",
+        "CDTnet official projects",
+        "KBR official careers",
+        "ETH Zürich official jobs",
+        "TU/e official vacancy",
+        "Radboudumc official vacancy"
+      ],
+      "falseNegativeHunts": [
+        "major MedTech employer ATS",
+        "Germany graduate/entry-level title variants",
+        "biomedical/DSP/signal-processing/embedded/medical-imaging synonyms",
+        "research and doctoral-network opportunities",
+        "regulatory/standards/tooling-adjacent roles",
+        "small-company/direct-employer searches",
+        "closing-soon recheck",
+        "historical exclusion re-adjudication"
+      ],
+      "findings": [
+        {
+          "id": "hsu-sigma-signal-processing-2026-09-12",
+          "status": "closing-soon",
+          "note": "Official federal careers source confirms the Signal Processing for Medical Applications research-assistant vacancy remains open through 2026-10-05."
+        },
+        {
+          "id": "radboud-multimodal-agentic-ai-prostate-2026-09-28",
+          "status": "closing-today",
+          "note": "Existing published opportunity remains active at the 17:20 verification point; deadline 2026-10-01."
+        },
+        {
+          "id": "dkfz-phd-immunotherapy-optical-crispr-2026-10-01",
+          "status": "excluded",
+          "note": "Current DKFZ PhD opportunity was reviewed but did not clear the established technical MedTech publication threshold for the target profile."
+        },
+        {
+          "id": "fbh-digital-signal-processing-rf-2026-10-01",
+          "status": "excluded",
+          "note": "Current FBH digital signal-processing/HF-circuit vacancy was reviewed but is not sufficiently direct to the MedTech technical-fit publication set."
+        }
+      ],
+      "coverage": {
+        "protocolVersion": "EUROPE-MEDTECH-v5",
+        "searchExhaustion": "MAXIMUM_EXHAUSTION",
+        "germanyPriority": "70%",
+        "publicationThreshold": "75% minimum; 90% strong match",
+        "acceptanceAssessment": "PASS. Existing active opportunities were revalidated after the 30 September deadlines. No genuinely new vacancy cleared the 75% publication threshold after strict 0-years adjudication, historical fingerprinting and official-source verification. Two existing opportunities are within seven days of their deadlines. Unknown work authorization is flagged rather than used as an exclusion.",
+        "limitations": [
+          "No search guarantees literal 100% web recall",
+          "Discovery boards are corroboration signals only",
+          "Unstated work authorization is flagged WORK_AUTHORIZATION_VERIFY and does not suppress an otherwise gate-passing vacancy."
+        ]
+      }
     }
   ]
 }
