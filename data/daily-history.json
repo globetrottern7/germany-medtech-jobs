@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-29",
+  "generated": "2026-10-01",
   "startDate": "2026-09-09",
   "entries": [
     {
@@ -253,6 +253,18 @@
       "newGatePassing": 2,
       "provisionalFindings": 0,
       "notes": "Manual production recovery completed and published as the normal dated report. Rostock expired after its 28 September deadline. Two fresh Germany PhD opportunities were added after official-source verification: Helmholtz Munich optoacoustic tomography and University Hospital Tübingen quantitative multi-tracer PET. No candidate PII stored."
+    },
+    {
+      "date": "2026-10-01",
+      "reportStatus": "PUBLISHED",
+      "reportType": "normal daily",
+      "activePublishedEquivalent": 10,
+      "freshJobs": 0,
+      "previouslyListed": 10,
+      "closingWithin7Days": 2,
+      "newGatePassing": 0,
+      "provisionalFindings": 0,
+      "notes": "Normal 1 October production recovery completed and published after reconciling the 30 September deadline expiries and revalidating the active set. No new vacancy cleared the 75% publication threshold in the current official-source sweep. No candidate PII stored."
     }
   ]
 }
