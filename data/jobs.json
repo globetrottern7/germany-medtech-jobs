@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-26",
+  "lastUpdated": "2026-10-01",
   "jobs": [
     {
       "id": "maico-dsp-engineer-2026-09-09",
@@ -31,9 +31,10 @@
       ],
       "match": 94,
       "fresh": false,
-      "status": "active",
+      "status": "expired",
       "deadline": "2026-09-28",
-      "url": "https://jobs.uni-rostock.de/jobposting/433175ea8804a2fe0bf7a8bb7225a0a3ab494a510"
+      "url": "https://jobs.uni-rostock.de/jobposting/433175ea8804a2fe0bf7a8bb7225a0a3ab494a510",
+      "expiredDate": "2026-09-30"
     },
     {
       "id": "charite-physiological-signal-processing-2026-09-09",
@@ -193,9 +194,10 @@
       ],
       "match": 94,
       "fresh": true,
-      "status": "active",
+      "status": "expired",
       "deadline": "2026-09-30",
-      "url": "https://www.cdtnet.eu/projects"
+      "url": "https://www.cdtnet.eu/projects",
+      "expiredDate": "2026-09-30"
     },
     {
       "id": "cochlear-microlaser-digital-twin-2026-09-12",
@@ -445,7 +447,7 @@
       ],
       "match": 95,
       "fresh": true,
-      "status": "active",
+      "status": "expired",
       "deadline": "2026-09-25",
       "url": "https://emploi.cnrs.fr/Offres/Doctorant/UMR7271-VICZAR-001/Default.aspx?lang=EN",
       "fit": [
@@ -461,7 +463,8 @@
         "Graph signal processing/mathematical modelling is deeper than demonstrated",
         "French work authorization and PhD eligibility must be confirmed"
       ],
-      "workAuthorization": "unknown; French work authorization and PhD admission requirements apply"
+      "workAuthorization": "unknown; French work authorization and PhD admission requirements apply",
+      "expiredDate": "2026-09-30"
     },
     {
       "id": "kth-computer-vision-vital-signs-2026-09-14",
@@ -702,7 +705,7 @@
       ],
       "match": 76,
       "fresh": true,
-      "status": "active",
+      "status": "expired",
       "deadline": "2026-09-24",
       "url": "https://www.kth.se/lediga-jobb/962597?l=en",
       "fit": [
@@ -717,7 +720,8 @@
         "Biomechanical simulation is a stronger emphasis than the candidate's background",
         "Swedish doctoral employment/eligibility requirements apply"
       ],
-      "workAuthorization": "unknown; Swedish employment authorization and doctoral admission requirements apply"
+      "workAuthorization": "unknown; Swedish employment authorization and doctoral admission requirements apply",
+      "expiredDate": "2026-09-30"
     },
     {
       "id": "cdtnet-wearable-biosignatures-f3-2026-09-24",
@@ -734,9 +738,10 @@
       ],
       "match": 93,
       "fresh": true,
-      "status": "active",
+      "status": "expired",
       "deadline": "2026-09-30",
-      "url": "https://www.cdtnet.eu/projects"
+      "url": "https://www.cdtnet.eu/projects",
+      "expiredDate": "2026-09-30"
     },
     {
       "id": "cdtnet-arrhythmic-risk-f6-2026-09-24",
@@ -753,9 +758,10 @@
       ],
       "match": 97,
       "fresh": true,
-      "status": "active",
+      "status": "expired",
       "deadline": "2026-09-30",
-      "url": "https://www.cdtnet.eu/projects"
+      "url": "https://www.cdtnet.eu/projects",
+      "expiredDate": "2026-09-30"
     },
     {
       "id": "cdtnet-intramyocardial-sensing-f9-2026-09-24",
@@ -772,9 +778,10 @@
       ],
       "match": 88,
       "fresh": true,
-      "status": "active",
+      "status": "expired",
       "deadline": "2026-09-30",
-      "url": "https://www.cdtnet.eu/projects"
+      "url": "https://www.cdtnet.eu/projects",
+      "expiredDate": "2026-09-30"
     },
     {
       "id": "cdtnet-pacing-digital-twin-f10-2026-09-24",
@@ -791,9 +798,10 @@
       ],
       "match": 94,
       "fresh": true,
-      "status": "active",
+      "status": "expired",
       "deadline": "2026-09-30",
-      "url": "https://www.cdtnet.eu/projects"
+      "url": "https://www.cdtnet.eu/projects",
+      "expiredDate": "2026-09-30"
     },
     {
       "id": "cdtnet-diastolic-echo-f4-2026-09-24",
@@ -810,9 +818,10 @@
       ],
       "match": 80,
       "fresh": true,
-      "status": "active",
+      "status": "expired",
       "deadline": "2026-09-30",
-      "url": "https://www.cdtnet.eu/projects"
+      "url": "https://www.cdtnet.eu/projects",
+      "expiredDate": "2026-09-30"
     },
     {
       "id": "kbr-biomedical-engineer-2026-09-26",
@@ -868,10 +877,11 @@
       ],
       "match": 88,
       "fresh": true,
-      "status": "active",
+      "status": "expired",
       "deadline": "2026-09-30",
       "url": "https://www.jobs.ethz.ch/job/view/12048",
-      "workAuthorization": "NOT_EXPLICITLY_STATED"
+      "workAuthorization": "NOT_EXPLICITLY_STATED",
+      "expiredDate": "2026-09-30"
     },
     {
       "id": "tue-contrast-ultrasound-nanobubbles-2026-09-28",
