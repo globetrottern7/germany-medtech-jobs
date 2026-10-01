@@ -1082,7 +1082,18 @@
         "radboud-multimodal-agentic-ai-prostate-2026-09-28"
       ],
       "freshJobIds": [],
-      "excludedJobIds": [],
+      "excludedJobIds": [
+        "rostock-signal-processing-implants-2026-09-09",
+        "cdtnet-corify-arrhythmia-2026-09-12",
+        "cnrs-af-graph-signal-processing-2026-09-14",
+        "kth-medical-imaging-pelvic-floor-2026-09-03",
+        "cdtnet-wearable-biosignatures-f3-2026-09-24",
+        "cdtnet-arrhythmic-risk-f6-2026-09-24",
+        "cdtnet-intramyocardial-sensing-f9-2026-09-24",
+        "cdtnet-pacing-digital-twin-f10-2026-09-24",
+        "cdtnet-diastolic-echo-f4-2026-09-24",
+        "lake-lucerne-movement-biomarkers-2026-09-26"
+      ],
       "researchLayers": [
         "Germany ~70% maximum-exhaustion official-source sweep",
         "Tier-2 Ireland/Netherlands/Switzerland sweep",
