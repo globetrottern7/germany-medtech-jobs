@@ -1161,6 +1161,83 @@
           "Unstated work authorization is flagged WORK_AUTHORIZATION_VERIFY and does not suppress an otherwise gate-passing vacancy."
         ]
       }
+    },
+    {
+      "date": "2026-10-02",
+      "reportType": "normal daily",
+      "reportStatus": "PUBLISHED",
+      "productionProtocol": "EUROPE-MEDTECH-v5",
+      "activeJobs": 13,
+      "freshJobs": 1,
+      "previouslyListed": 12,
+      "closingWithin7Days": 1,
+      "newGatePassing": 1,
+      "provisionalFindings": 0,
+      "provisionalFindingIds": [],
+      "jobIds": [
+        "maico-dsp-engineer-2026-09-09",
+        "siemens-embedded-xray-2026-09-09",
+        "max-planck-bmai-phd-2026-09-10",
+        "hsu-sigma-signal-processing-2026-09-12",
+        "bohme-medtech-graduate-xray-2026-09-12",
+        "ferchau-junior-embedded-cpp-2026-09-13",
+        "kbr-biomedical-engineer-2026-09-26",
+        "eth-machine-perfusion-phd-2026-09-26",
+        "tue-contrast-ultrasound-nanobubbles-2026-09-28",
+        "helmholtz-optoacoustic-tomography-2026-09-29",
+        "tue-quantitative-multitracer-pet-2026-09-29",
+        "ovgu-precision-neuroimaging-2026-10-02",
+        "maico-dsp-engineer-2026-09-09"
+      ],
+      "freshJobIds": [
+        "ovgu-precision-neuroimaging-2026-10-02"
+      ],
+      "excludedJobIds": [
+        "radboud-multimodal-agentic-ai-prostate-2026-09-28"
+      ],
+      "researchLayers": [
+        "Germany ~70% maximum-exhaustion official-source sweep",
+        "Tier-2 Europe sweep",
+        "Strict 0-years gate",
+        "Technical/degree/language/work-authorization assessment",
+        "Historical fingerprint deduplication",
+        "False-negative hunt",
+        "Closing-soon revalidation"
+      ],
+      "findings": [
+        {
+          "id": "ovgu-precision-neuroimaging-2026-10-02",
+          "status": "fresh-gate-passing",
+          "note": "Fresh Germany opportunity cleared the 75% publication gate after official-source verification."
+        },
+        {
+          "id": "radboud-multimodal-agentic-ai-prostate-2026-09-28",
+          "status": "expired",
+          "note": "Deadline 1 October 2026 has passed and the opportunity was removed from active publication."
+        },
+        {
+          "id": "helmholtz-optoacoustic-tomography-2026-09-29",
+          "status": "reconciled",
+          "note": "Published 29 September opportunity reconciled into persistent state."
+        },
+        {
+          "id": "tue-quantitative-multitracer-pet-2026-09-29",
+          "status": "reconciled",
+          "note": "Published 29 September opportunity reconciled into persistent state."
+        }
+      ],
+      "coverage": {
+        "protocolVersion": "EUROPE-MEDTECH-v5",
+        "searchExhaustion": "MAXIMUM_EXHAUSTION",
+        "germanyPriority": "70%",
+        "publicationThreshold": "75% minimum; 90% strong match",
+        "acceptanceAssessment": "PASS. One fresh Germany opportunity cleared the gate; expired opportunities were retired and the 29 September state inconsistency was reconciled.",
+        "limitations": [
+          "No search guarantees literal 100% web recall",
+          "Discovery boards are corroboration signals only",
+          "Unstated work authorization is flagged and does not suppress an otherwise gate-passing vacancy."
+        ]
+      }
     }
   ]
 }
