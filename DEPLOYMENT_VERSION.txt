@@ -1,2 +1,1 @@
-2026-09-27-production-v5
-Production v5 daily refresh published. Normal daily report, persistent state, daily history and portal report data refreshed for 2026-09-27.
+2026-10-02-production-publish-v1
