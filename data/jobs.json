@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-01",
+  "lastUpdated": "2026-10-02",
   "jobs": [
     {
       "id": "maico-dsp-engineer-2026-09-09",
@@ -930,7 +930,7 @@
       ],
       "match": 79,
       "fresh": true,
-      "status": "active",
+      "status": "expired",
       "deadline": "2026-10-01",
       "url": "https://www.werkenbijradboudumc.nl/vacatures/phd-candidate-multimodal-and-agentic-ai-for-precision-prostate-cancer-care-nijmegen-380490",
       "fit": [
@@ -944,7 +944,66 @@
         "Deep learning, multimodal learning and longitudinal modelling are emphasized",
         "Work authorization/VOG requirements require verification"
       ],
-      "workAuthorization": "WORK_AUTHORIZATION_VERIFY"
+      "workAuthorization": "WORK_AUTHORIZATION_VERIFY",
+      "expiredDate": "2026-10-02"
+    },
+    {
+      "id": "helmholtz-optoacoustic-tomography-2026-09-29",
+      "title": "PhD Candidate in Optoacoustic Tomography (f/m/x)",
+      "company": "Helmholtz Zentrum München",
+      "location": "Neuherberg near Munich, Germany",
+      "country": "Germany",
+      "category": [
+        "Research",
+        "Biomedical Engineering",
+        "Medical Imaging",
+        "Ultrasound",
+        "Optoacoustics",
+        "MedTech"
+      ],
+      "match": 91,
+      "fresh": false,
+      "status": "active",
+      "url": "https://jobs.helmholtz-muenchen.de/jobposting/3c2d535985809b397c395eec81cca0b8f84279ca"
+    },
+    {
+      "id": "tue-quantitative-multitracer-pet-2026-09-29",
+      "title": "PhD Quantitative Multi-Tracer PET (f/m/d)",
+      "company": "University Hospital Tübingen",
+      "location": "Tübingen, Germany",
+      "country": "Germany",
+      "category": [
+        "Research",
+        "Biomedical Engineering",
+        "Medical Imaging",
+        "PET",
+        "Signal Processing",
+        "PhD"
+      ],
+      "match": 90,
+      "fresh": false,
+      "status": "active",
+      "deadline": "2026-10-31",
+      "url": "https://jobs.medizin.uni-tuebingen.de/Job/de/7721"
+    },
+    {
+      "id": "ovgu-precision-neuroimaging-2026-10-02",
+      "title": "Wissenschaftliche*r Mitarbeiter*in / Postdoc (m/w/d) Precision Neuroimaging",
+      "company": "Otto-von-Guericke-Universität Magdeburg",
+      "location": "Magdeburg, Germany",
+      "country": "Germany",
+      "category": [
+        "Research",
+        "Biomedical Engineering",
+        "Medical Imaging",
+        "Neuroimaging",
+        "PhD"
+      ],
+      "match": 82,
+      "fresh": true,
+      "status": "active",
+      "deadline": "2026-11-15",
+      "url": "https://www.ovgu.de/Karriere_wissenschaftlichesPersonal.html"
     }
   ]
 }
