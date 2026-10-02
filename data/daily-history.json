@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-01",
+  "generated": "2026-10-02",
   "startDate": "2026-09-09",
   "entries": [
     {
@@ -265,6 +265,18 @@
       "newGatePassing": 0,
       "provisionalFindings": 0,
       "notes": "Normal 1 October production recovery completed and published after reconciling the 30 September deadline expiries and revalidating the active set. No new vacancy cleared the 75% publication threshold in the current official-source sweep. No candidate PII stored."
+    },
+    {
+      "date": "2026-10-02",
+      "reportStatus": "PUBLISHED",
+      "reportType": "normal daily",
+      "activePublishedEquivalent": 13,
+      "freshJobs": 1,
+      "previouslyListed": 12,
+      "closingWithin7Days": 1,
+      "newGatePassing": 1,
+      "provisionalFindings": 0,
+      "notes": "2 October production refresh completed. Passed-deadline opportunities were retired, two 29 September published opportunities were reconciled into persistent state, and one fresh Germany opportunity cleared the 75% publication gate. No provisional findings published."
     }
   ]
 }
