@@ -18,10 +18,11 @@ jobs:
   validate:
     name: Validate production publication
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Validate publication state
+      - name: Validate production publication
         run: node scripts/validate-publication.js
 
   deploy:
@@ -31,6 +32,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v4
