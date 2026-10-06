@@ -1482,6 +1482,89 @@
           "Unstated work authorization is flagged WORK_AUTHORIZATION_VERIFY and does not suppress an otherwise gate-passing vacancy."
         ]
       }
+    },
+    {
+      "date": "2026-10-06",
+      "reportType": "normal daily",
+      "reportStatus": "PUBLISHED",
+      "productionProtocol": "EUROPE-MEDTECH-v5",
+      "activeJobs": 11,
+      "freshJobs": 0,
+      "previouslyListed": 11,
+      "closingWithin7Days": 0,
+      "newGatePassing": 0,
+      "provisionalFindings": 0,
+      "provisionalFindingIds": [],
+      "jobIds": [
+        "maico-dsp-engineer-2026-09-09",
+        "siemens-embedded-xray-2026-09-09",
+        "max-planck-bmai-phd-2026-09-10",
+        "bohme-medtech-graduate-xray-2026-09-12",
+        "ferchau-junior-embedded-cpp-2026-09-13",
+        "kbr-biomedical-engineer-2026-09-26",
+        "eth-machine-perfusion-phd-2026-09-26",
+        "tue-contrast-ultrasound-nanobubbles-2026-09-28",
+        "helmholtz-optoacoustic-tomography-2026-09-29",
+        "tue-quantitative-multitracer-pet-2026-09-29",
+        "ovgu-precision-neuroimaging-2026-10-02"
+      ],
+      "freshJobIds": [],
+      "excludedJobIds": [
+        "hsu-sigma-signal-processing-2026-09-12"
+      ],
+      "researchLayers": [
+        "Germany ~70% maximum-exhaustion official-source sweep",
+        "Tier-2 Europe sweep",
+        "Broader Europe official-source sweep",
+        "Strict 0-years gate",
+        "Technical/degree/language/work-authorization assessment",
+        "Historical fingerprint deduplication and material-change detection",
+        "False-negative hunt",
+        "Closing-soon revalidation"
+      ],
+      "sourcesSearched": [
+        "Siemens Healthineers official careers",
+        "Getinge official careers",
+        "Ottobock official careers",
+        "ZEISS official careers",
+        "Fraunhofer careers",
+        "Alcon official careers",
+        "Stryker official careers"
+      ],
+      "findings": [
+        {
+          "id": "hsu-sigma-signal-processing-2026-09-12",
+          "status": "expired",
+          "note": "Deadline 5 October 2026 passed; removed from active publication."
+        },
+        {
+          "id": "alcon-principal-embedded-qnx-medical-devices-2026-10-06",
+          "status": "reviewed-excluded",
+          "note": "Strong MedTech relevance but requires 7+ years software development and 2+ years technical leadership, so it fails the strict target-profile gate."
+        },
+        {
+          "id": "siemens-4d-ice-clinical-application-specialist-2026-10-06",
+          "status": "reviewed-excluded",
+          "note": "Requires long-standing clinical echocardiography/interventional cardiology/EP experience; not an entry-level target-profile match."
+        },
+        {
+          "id": "zeiss-ai-innovation-medical-devices-intern-2026-10-06",
+          "status": "reviewed-excluded",
+          "note": "Student internship requiring current Bachelor/Master enrollment."
+        }
+      ],
+      "coverage": {
+        "protocolVersion": "EUROPE-MEDTECH-v5",
+        "searchExhaustion": "MAXIMUM_EXHAUSTION",
+        "germanyPriority": "70%",
+        "publicationThreshold": "75% minimum; 90% strong match",
+        "acceptanceAssessment": "PASS. HSU was retired after its 5 October deadline. No fresh opportunity cleared the strict target-profile publication gate in the Oct 6 official-source sweep.",
+        "limitations": [
+          "No search guarantees literal 100% web recall",
+          "Discovery boards are corroboration signals only",
+          "Unstated work authorization is flagged WORK_AUTHORIZATION_VERIFY and does not suppress an otherwise gate-passing vacancy."
+        ]
+      }
     }
   ]
 }
