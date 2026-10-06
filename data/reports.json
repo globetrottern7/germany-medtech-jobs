@@ -1392,6 +1392,96 @@
         "closing-soon recheck",
         "historical exclusion re-adjudication"
       ]
+    },
+    {
+      "date": "2026-10-05",
+      "reportType": "normal daily",
+      "reportStatus": "PUBLISHED",
+      "productionProtocol": "EUROPE-MEDTECH-v5",
+      "activeJobs": 12,
+      "freshJobs": 0,
+      "previouslyListed": 12,
+      "closingWithin7Days": 1,
+      "newGatePassing": 0,
+      "provisionalFindings": 0,
+      "provisionalFindingIds": [],
+      "jobIds": [
+        "maico-dsp-engineer-2026-09-09",
+        "siemens-embedded-xray-2026-09-09",
+        "max-planck-bmai-phd-2026-09-10",
+        "hsu-sigma-signal-processing-2026-09-12",
+        "bohme-medtech-graduate-xray-2026-09-12",
+        "ferchau-junior-embedded-cpp-2026-09-13",
+        "kbr-biomedical-engineer-2026-09-26",
+        "eth-machine-perfusion-phd-2026-09-26",
+        "tue-contrast-ultrasound-nanobubbles-2026-09-28",
+        "helmholtz-optoacoustic-tomography-2026-09-29",
+        "tue-quantitative-multitracer-pet-2026-09-29",
+        "ovgu-precision-neuroimaging-2026-10-02"
+      ],
+      "freshJobIds": [],
+      "excludedJobIds": [],
+      "findings": [
+        {
+          "id": "hsu-sigma-signal-processing-2026-09-12",
+          "status": "closing-today",
+          "note": "The official federal careers listing remains open through 5 October 2026; retained in the active publication set for the 5 October dated run."
+        },
+        {
+          "id": "getinge-testing-engineer-rastatt-2026-10-05",
+          "status": "reviewed-excluded",
+          "note": "Getinge's 5 October Germany posting was reviewed but did not clear the established fresh publication gate for the target entry-level technical profile; no fresh publication added."
+        },
+        {
+          "id": "getinge-npi-buyer-hechingen-2026-10-05",
+          "status": "reviewed-excluded",
+          "note": "Getinge's 5 October NPI Buyer posting was reviewed but is sourcing/purchasing rather than a direct target technical MedTech role."
+        },
+        {
+          "id": "bbraun-devops-clinical-applications-2026-10-05",
+          "status": "reviewed-excluded",
+          "note": "B. Braun DevOps Engineer for clinical applications was reviewed; technical relevance is strong but the role does not clear the strict target-profile publication gate without demonstrated experience."
+        }
+      ],
+      "researchLayers": [
+        "Germany ~70% maximum-exhaustion official-source sweep",
+        "Tier-2 Europe sweep",
+        "Broader Europe official-source sweep",
+        "Strict 0-years gate",
+        "Technical/degree/language/work-authorization assessment",
+        "Historical fingerprint deduplication and material-change detection",
+        "False-negative hunt",
+        "Closing-soon revalidation"
+      ],
+      "sourcesSearched": [
+        "Getinge official careers",
+        "B. Braun official careers",
+        "Siemens Healthineers official careers",
+        "Ottobock official careers",
+        "ZEISS Germany careers",
+        "Federal Employment Agency / official employer sources"
+      ],
+      "falseNegativeHunts": [
+        "major MedTech employer ATS",
+        "Germany graduate/entry-level title variants",
+        "biomedical/DSP/signal-processing/embedded/medical-imaging synonyms",
+        "research and doctoral-network opportunities",
+        "small-company/direct-employer searches",
+        "closing-soon recheck",
+        "historical exclusion re-adjudication"
+      ],
+      "coverage": {
+        "protocolVersion": "EUROPE-MEDTECH-v5",
+        "searchExhaustion": "MAXIMUM_EXHAUSTION",
+        "germanyPriority": "70%",
+        "publicationThreshold": "75% minimum; 90% strong match",
+        "acceptanceAssessment": "PASS. The active set was revalidated and no fresh candidate cleared the strict publication gate. Three newly surfaced official-source roles were reviewed and excluded for target-profile or technical-fit reasons.",
+        "limitations": [
+          "No search guarantees literal 100% web recall",
+          "Discovery boards are corroboration signals only",
+          "Unstated work authorization is flagged WORK_AUTHORIZATION_VERIFY and does not suppress an otherwise gate-passing vacancy."
+        ]
+      }
     }
   ]
 }
