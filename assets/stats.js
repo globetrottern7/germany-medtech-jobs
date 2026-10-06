@@ -19,9 +19,27 @@ function renderVisitors(d){
   status.className='history-status '+(d.connected?'published':'gap');
   document.getElementById('visitorBody').innerHTML=(d.daily||[]).map(x=>'<tr><td>'+esc(x.date)+'</td><td>'+esc(x.visits??0)+'</td><td>'+esc(x.uniqueVisitors??0)+'</td><td>'+esc(x.pageViews??0)+'</td><td>'+esc(x.topCountry||'—')+'</td><td>'+esc(x.topReferrer||'—')+'</td></tr>').join('')||'<tr><td colspan="6" class="empty">No visitor data recorded yet.</td></tr>';
 }
-function renderUnique(records){
-  document.getElementById('uniqueCount').textContent=records.length+' unique qualifying opportunities';
+function renderUnique(records,history){
+  document.getElementById('uniqueCount').textContent=records.length+' unique qualifying opportunities to date';
   document.getElementById('uniqueBody').innerHTML=records.map(j=>'<tr><td>'+esc(j.first_seen||'—')+'</td><td>'+esc(j.title||j.id)+'</td><td>'+esc(j.company||'—')+'</td><td>'+esc(j.country||'—')+'</td><td>'+esc(j.match||0)+'%</td><td>'+esc(j.status||'—')+'</td></tr>').join('')||'<tr><td colspan="6" class="empty">No qualifying opportunities found.</td></tr>';
+}
+function renderUniqueHistory(data,jobs){
+  const map=new Map((jobs||[]).map(j=>[j.id,j]));
+  const seen=new Set(), rows=[];
+  for(const r of (data.reports||[]).slice().sort((a,b)=>String(a.date).localeCompare(String(b.date)))){
+    let added=0;
+    for(const id of (r.jobIds||[])){
+      if(seen.has(id)) continue;
+      const j=map.get(id);
+      if(!j || (j.match||0)<75) continue;
+      seen.add(id); added++;
+    }
+    const records=[...seen].map(id=>map.get(id)).filter(Boolean);
+    rows.push({date:r.date,added,total:records.length,n75:records.filter(j=>(j.match||0)>=75).length,n80:records.filter(j=>(j.match||0)>=80).length,n90:records.filter(j=>(j.match||0)>=90).length});
+  }
+  let card=document.getElementById('uniqueHistoryBody');
+  if(!card)return;
+  card.innerHTML=rows.slice().reverse().map(x=>'<tr><td>'+esc(x.date)+'</td><td>'+x.added+'</td><td>'+x.total+'</td><td>'+x.n90+'</td><td>'+x.n80+'</td><td>'+x.n75+'</td></tr>').join('')||'<tr><td colspan="6" class="empty">No historical unique-opportunity data available.</td></tr>';
 }
 function renderDays(data){
   const rows=(data.reports||[]).slice().sort((a,b)=>String(b.date).localeCompare(String(a.date)));
@@ -37,13 +55,14 @@ function renderCountries(records){
 }
 async function load(){
   try{
-    const [visitor,reports,state]=await Promise.all([
+    const [visitor,reports,state,jobsData]=await Promise.all([
       getJson('./data/visitor-stats.json'),
       getJson('./data/reports.json'),
-      fetch('./state/vacancies.jsonl?v='+Date.now(),{cache:'no-store'}).then(r=>r.text())
+      fetch('./state/vacancies.jsonl?v='+Date.now(),{cache:'no-store'}).then(r=>r.text()),
+      getJson('./data/jobs.json')
     ]);
-    const records=uniqueRecords(state);
-    renderVisitors(visitor);renderUnique(records);renderDays(reports);renderCountries(records);
+    const records=uniqueRecords(state), jobs=jobsData.jobs||[];
+    renderVisitors(visitor);renderUnique(records,reports);renderUniqueHistory(reports,jobs);renderDays(reports);renderCountries(records);
   }catch(e){
     document.getElementById('uniqueBody').innerHTML='<tr><td colspan="6" class="empty">Statistics data could not be loaded.</td></tr>';
     document.getElementById('dayBody').innerHTML='<tr><td colspan="9" class="empty">Statistics data could not be loaded.</td></tr>';
