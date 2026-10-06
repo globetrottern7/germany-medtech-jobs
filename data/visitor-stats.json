@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "connected": false,
+  "summary": {
+    "todayVisits": 0,
+    "todayUniqueVisitors": 0,
+    "last30DaysVisits": 0,
+    "totalVisits": 0
+  },
+  "daily": [],
+  "note": "Replace this bootstrap file with collector-generated aggregates. Raw IP addresses must never be published here."
+}
