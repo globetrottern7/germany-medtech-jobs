@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-04",
+  "lastUpdated": "2026-10-06",
   "jobs": [
     {
       "id": "maico-dsp-engineer-2026-09-09",
@@ -140,9 +140,10 @@
       ],
       "match": 96,
       "fresh": false,
-      "status": "active",
+      "status": "expired",
       "deadline": "2026-10-05",
-      "url": "https://karriere.bund.de/arbeiten-bei-uns/stellenangebote/research-assistant-m-f-d-at-professorship-for-chair-in-signal-processing-for-medical-applications-sigma/25793814"
+      "url": "https://karriere.bund.de/arbeiten-bei-uns/stellenangebote/research-assistant-m-f-d-at-professorship-for-chair-in-signal-processing-for-medical-applications-sigma/25793814",
+      "expiredDate": "2026-10-06"
     },
     {
       "id": "bosch-nv-magnetometer-phd-2026-09-12",
