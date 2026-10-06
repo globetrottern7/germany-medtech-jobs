@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Portal Statistics — Europe MedTech Jobs</title>
+<link rel="stylesheet" href="./assets/style.css?v=20261006-stats-1">
+</head>
+<body>
+<div class="wrap">
+<section class="hero">
+  <div class="hero-flag" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="hero-content">
+    <h1>Portal Statistics</h1>
+    <p>Europe MedTech Jobs · publication, opportunity and visitor intelligence</p>
+    <p class="small hero-small">A separate analytics view for the portal. Public visitor reporting is aggregate-only.</p>
+  </div>
+</section>
+
+<section class="card" id="visitorSummary">
+  <div class="section-title">
+    <div><h2>👥 Visitor Traffic</h2><span class="small">Visitor volume is the primary KPI on this page</span></div>
+    <span class="history-status gap" id="visitorStatus">Collector not connected</span>
+  </div>
+  <div class="grid visitor-grid">
+    <div class="stat"><strong id="vTotal">—</strong><span>TOTAL VISITS</span></div>
+    <div class="stat"><strong id="vToday">—</strong><span>VISITS TODAY</span></div>
+    <div class="stat"><strong id="v30">—</strong><span>30-DAY VISITS</span></div>
+    <div class="stat"><strong id="vUnique">—</strong><span>UNIQUE VISITORS TODAY</span></div>
+  </div>
+  <div class="history-wrap"><table class="history-table"><thead><tr><th>Date</th><th>Visits</th><th>Unique visitors</th><th>Page views</th><th>Top country</th><th>Top referrer</th></tr></thead><tbody id="visitorBody"></tbody></table></div>
+  <p class="small history-note">Raw visitor IP addresses are never displayed here. IP-level records, if enabled by the private collector, must remain administrator-only.</p>
+</section>
+
+<section class="card">
+  <div class="section-title"><div><h2>🎯 Unique Opportunity Listing</h2><span class="small">Every qualifying opportunity counted once using its stable identity</span></div><span class="small" id="uniqueCount">Loading…</span></div>
+  <div class="history-wrap"><table class="history-table"><thead><tr><th>First seen</th><th>Opportunity</th><th>Company</th><th>Country</th><th>Match</th><th>Status</th></tr></thead><tbody id="uniqueBody"></tbody></table></div>
+</section>
+
+<section class="card">
+  <div class="section-title"><div><h2>📅 Day-wise Publication Status</h2><span class="small">What the portal published on each verified report date</span></div></div>
+  <div class="history-wrap"><table class="history-table"><thead><tr><th>Date</th><th>Status</th><th>Type</th><th>Active</th><th>Fresh</th><th>Previously listed</th><th>Closing ≤7d</th><th>New gate-passing</th><th>Provisional</th></tr></thead><tbody id="dayBody"></tbody></table></div>
+</section>
+
+<section class="card">
+  <div class="section-title"><div><h2>🌍 Country-wise Publication Status</h2><span class="small">Unique published opportunities grouped by country</span></div></div>
+  <div class="history-wrap"><table class="history-table"><thead><tr><th>Country</th><th>Unique ≥75%</th><th>Unique ≥80%</th><th>Unique ≥90%</th><th>Active now</th><th>Fresh discoveries</th></tr></thead><tbody id="countryBody"></tbody></table></div>
+</section>
+
+<div class="small">Europe MedTech Jobs · Statistics view · No candidate PII is stored in the public research dataset.</div>
+</div>
+<script src="./assets/stats.js?v=20261006-1"></script>
+</body>
+</html>
