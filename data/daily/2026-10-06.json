@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-06",
+  "reportType": "normal daily",
+  "reportStatus": "PUBLISHED",
+  "productionProtocol": "EUROPE-MEDTECH-v5",
+  "activeJobs": 11,
+  "freshJobs": 0,
+  "previouslyListed": 11,
+  "closingWithin7Days": 0,
+  "newGatePassing": 0,
+  "provisionalFindings": 0,
+  "provisionalFindingIds": [],
+  "jobIds": [
+    "maico-dsp-engineer-2026-09-09",
+    "siemens-embedded-xray-2026-09-09",
+    "max-planck-bmai-phd-2026-09-10",
+    "bohme-medtech-graduate-xray-2026-09-12",
+    "ferchau-junior-embedded-cpp-2026-09-13",
+    "kbr-biomedical-engineer-2026-09-26",
+    "eth-machine-perfusion-phd-2026-09-26",
+    "tue-contrast-ultrasound-nanobubbles-2026-09-28",
+    "helmholtz-optoacoustic-tomography-2026-09-29",
+    "tue-quantitative-multitracer-pet-2026-09-29",
+    "ovgu-precision-neuroimaging-2026-10-02"
+  ],
+  "freshJobIds": [],
+  "excludedJobIds": [
+    "hsu-sigma-signal-processing-2026-09-12"
+  ],
+  "notes": "6 October production refresh completed. HSU SigMA was retired after its 5 October deadline. No fresh vacancy cleared the strict publication gate after official-source verification, 0-years adjudication and historical deduplication."
+}
