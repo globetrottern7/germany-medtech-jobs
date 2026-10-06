@@ -313,6 +313,18 @@
       "newGatePassing": 0,
       "provisionalFindings": 0,
       "notes": "5 October production refresh completed. No fresh vacancy cleared the publication gate after official-source verification, strict 0-years adjudication and historical deduplication. HSU SigMA remained closing on 5 October."
+    },
+    {
+      "date": "2026-10-06",
+      "reportStatus": "PUBLISHED",
+      "reportType": "normal daily",
+      "activePublishedEquivalent": 11,
+      "freshJobs": 0,
+      "previouslyListed": 11,
+      "closingWithin7Days": 0,
+      "newGatePassing": 0,
+      "provisionalFindings": 0,
+      "notes": "6 October production refresh completed. HSU SigMA was retired after its 5 October deadline. No fresh vacancy cleared the strict publication gate."
     }
   ]
 }
