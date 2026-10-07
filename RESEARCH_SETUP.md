@@ -224,3 +224,10 @@ Claude or another external reviewer may audit the methodology, but the productio
 
 ### P0 controls
 Experience, language, authorization, current/open status and source verification are hard gates. Score cannot override a failed gate. FRESH is determined from the stable historical fingerprint registry, not from posting date or URL.
+
+
+### Expanded source universe — 7 October 2026
+
+The production source universe is now explicitly expanded to include all approved discovery families and named sources: EURAXESS, StepStone, MedTech Jobs Germany, LinkedIn Jobs, EURES, Make it in Germany, Absolventa, Indeed, Monster, XING, Jobware, meinestadt.de, stellenanzeigen.de, Yourfirm, Kimeta, Jooble, Jobvector, JobTeaser, Stellenwerk, Nature Careers, Academic Positions, ResearchGate Jobs, CORDIS/MSCA/Marie Curie, specialist MedTech and life-science clusters, notified-body/regulatory/standards ecosystems, and the named priority MedTech employer universe. Existing ATS, government, university, research-institute and employer-direct sources remain active.
+
+**Operating rule:** these sources are additive recall layers. Broad boards, social networks and aggregators can discover candidates but cannot by themselves promote a vacancy. Every published vacancy still requires current official evidence, duplicate/fingerprint resolution, the zero-years eligibility gate, degree/technical/language/work-authorization checks and a score of at least 75. The daily discovery budget has been increased to 60 query units to support the expanded universe; Germany remains the deepest priority layer.
