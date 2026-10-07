@@ -236,7 +236,15 @@
       "linkedin",
       "stellenanzeigen.de",
       "joblift",
-      "wqs"
+      "wqs",
+      "medtechjobs.de",
+      "medicaltechnology.jobs",
+      "monster",
+      "meinestadt.de",
+      "kimeta",
+      "jooble",
+      "jobteaser",
+      "stellenwerk"
     ],
     "public": [
       "interamt",
@@ -245,7 +253,8 @@
       "Bund.de",
       "Karriere Bund",
       "BfArM",
-      "PEI"
+      "PEI",
+      "Make it in Germany"
     ],
     "research": [
       "fraunhofer",
@@ -258,7 +267,19 @@
       "university-hospitals",
       "Nature Careers",
       "Academic Positions",
-      "ResearchGate Jobs"
+      "ResearchGate Jobs",
+      "EURAXESS",
+      "CORDIS",
+      "MSCA",
+      "Marie Curie",
+      "Leibniz",
+      "Jülich",
+      "MDC",
+      "DZHK",
+      "DZL",
+      "DZD",
+      "DKFZ",
+      "DZNE"
     ],
     "regulatory": [
       "nando",
@@ -272,7 +293,11 @@
       "seleon",
       "mdss",
       "qserve",
-      "WQS"
+      "WQS",
+      "VDE",
+      "IEEE EMBS",
+      "MedTech Europe",
+      "BVMed"
     ],
     "regionalSpecialist": [
       "WDM / Weltzentrum der Medizintechnik",
@@ -313,7 +338,9 @@
     "MDC",
     "DZHK",
     "DZL",
-    "DZD"
+    "DZD",
+    "Forschungszentrum Jülich",
+    "Leibniz Association"
   ],
   "germanyClusters": [
     "Tuttlingen",
@@ -341,15 +368,17 @@
     "Switzerland"
   ],
   "queryBudget": {
-    "dailyTotal": 40,
+    "dailyTotal": 60,
     "ats": 10,
-    "employerT1": 7,
-    "regionalCluster": 5,
+    "employerT1": 10,
+    "regionalCluster": 6,
     "BA_Interamt_Bund": 4,
     "standardsTooling": 4,
     "graduate": 3,
-    "research": 4,
-    "tier2Europe": 3
+    "research": 6,
+    "tier2Europe": 3,
+    "specialist": 6,
+    "ATS": 12
   },
   "falseNegativeHunt": {
     "dailyProbes": 4,
@@ -382,7 +411,7 @@
     "employer": 5,
     "anchors": "integer-only; stored sub-scores; no interpolation"
   },
-  "sourceExpansionDate": "2026-09-24",
+  "sourceExpansionDate": "2026-10-07",
   "germanyDiscoveryBudgetPercent": 70,
   "employerUniverse": {
     "primaryDirectories": [
@@ -394,7 +423,9 @@
       "TechnologyMountains",
       "Medical Valley EMN",
       "HealthCapital Berlin-Brandenburg",
-      "Life Science Nord"
+      "Life Science Nord",
+      "MedTech Jobs Germany",
+      "Medical Technology Jobs"
     ],
     "eventDirectories": [
       "MEDICA",
@@ -412,7 +443,44 @@
       "specialist board",
       "broad board"
     ],
-    "deduplication": "resolve employer first, then vacancy fingerprint"
+    "deduplication": "resolve employer first, then vacancy fingerprint",
+    "priorityEmployers": [
+      "Siemens Healthineers",
+      "Philips",
+      "GE HealthCare",
+      "Stryker",
+      "Medtronic",
+      "Abbott",
+      "Boston Scientific",
+      "B. Braun",
+      "Fresenius",
+      "Getinge",
+      "Ottobock",
+      "ZEISS",
+      "KARL STORZ",
+      "Dräger",
+      "Smith+Nephew",
+      "Johnson & Johnson",
+      "Roche",
+      "BD",
+      "Edwards Lifesciences",
+      "Intuitive Surgical",
+      "Olympus",
+      "Carl Zeiss Meditec",
+      "Dornier MedTech",
+      "Brainlab",
+      "Sonova",
+      "Cochlear",
+      "Elekta",
+      "Varian",
+      "Richard Wolf",
+      "seca",
+      "Löwenstein Medical",
+      "Alcon",
+      "MAICO Diagnostics",
+      "Aesculap",
+      "Novanta Medical"
+    ]
   },
   "canaryQueries": [
     "site:wdm.world/jobs (m/w/d) Entwicklungsingenieur Medizintechnik Absolvent",
@@ -434,5 +502,6 @@
       "branch": "main"
     },
     "note": "Fallback exists to avoid transient Contents API safety-layer failures. Never claim write failure until post-write repository readback confirms absence."
-  }
+  },
+  "searchUniversePolicy": "All named discovery portals, specialist boards, public/EU/research sources, regional MedTech ecosystems, regulatory/standards sources and priority MedTech employer universes are included as additive discovery sources. Discovery never overrides official-source verification or hard publication gates."
 }
