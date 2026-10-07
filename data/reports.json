@@ -1565,6 +1565,95 @@
           "Unstated work authorization is flagged WORK_AUTHORIZATION_VERIFY and does not suppress an otherwise gate-passing vacancy."
         ]
       }
+    },
+    {
+      "date": "2026-10-07",
+      "reportType": "normal daily",
+      "reportStatus": "PUBLISHED",
+      "productionProtocol": "EUROPE-MEDTECH-v5",
+      "activeJobs": 11,
+      "freshJobs": 0,
+      "previouslyListed": 11,
+      "closingWithin7Days": 0,
+      "newGatePassing": 0,
+      "provisionalFindings": 0,
+      "provisionalFindingIds": [],
+      "jobIds": [
+        "maico-dsp-engineer-2026-09-09",
+        "siemens-embedded-xray-2026-09-09",
+        "max-planck-bmai-phd-2026-09-10",
+        "bohme-medtech-graduate-xray-2026-09-12",
+        "ferchau-junior-embedded-cpp-2026-09-13",
+        "kbr-biomedical-engineer-2026-09-26",
+        "eth-machine-perfusion-phd-2026-09-26",
+        "tue-contrast-ultrasound-nanobubbles-2026-09-28",
+        "helmholtz-optoacoustic-tomography-2026-09-29",
+        "tue-quantitative-multitracer-pet-2026-09-29",
+        "ovgu-precision-neuroimaging-2026-10-02"
+      ],
+      "freshJobIds": [],
+      "excludedJobIds": [
+        "bosch-lab-on-chip-mdx-2026-09-14",
+        "alcon-principal-embedded-qnx-medical-devices-2026-10-06",
+        "bbraun-devops-clinical-applications-2026-10-05"
+      ],
+      "findings": [
+        {
+          "id": "bosch-lab-on-chip-mdx-2026-09-14",
+          "status": "reviewed-excluded",
+          "note": "Official Bosch posting remains open, but the role requires strong microfluidics/fluid dynamics/multiphysics and very good German/English; it does not clear the established target-profile publication gate."
+        },
+        {
+          "id": "alcon-principal-embedded-qnx-medical-devices-2026-10-06",
+          "status": "reviewed-excluded",
+          "note": "Principal embedded medical-device role requires substantial prior software/technical-leadership experience; fails the strict target-profile gate."
+        },
+        {
+          "id": "bbraun-devops-clinical-applications-2026-10-05",
+          "status": "reviewed-excluded",
+          "note": "Strong healthcare-software relevance, but requires demonstrated professional experience and does not clear the strict target-profile gate."
+        }
+      ],
+      "researchLayers": [
+        "Germany ~70% maximum-exhaustion official-source sweep",
+        "Tier-2 Europe sweep",
+        "Broader Europe official-source sweep",
+        "Strict 0-years gate",
+        "Technical/degree/language/work-authorization assessment",
+        "Historical fingerprint deduplication and material-change detection",
+        "False-negative hunt",
+        "Closing-soon revalidation"
+      ],
+      "sourcesSearched": [
+        "Bosch official careers",
+        "Alcon official careers",
+        "B. Braun official careers",
+        "Getinge official careers",
+        "Siemens Healthineers official careers",
+        "Weltzentrum der Medizintechnik",
+        "Federal Employment Agency / official employer sources"
+      ],
+      "falseNegativeHunts": [
+        "major MedTech employer ATS",
+        "Germany graduate/entry-level title variants",
+        "biomedical/DSP/signal-processing/embedded/medical-imaging synonyms",
+        "research and doctoral-network opportunities",
+        "small-company/direct-employer searches",
+        "closing-soon recheck",
+        "historical exclusion re-adjudication"
+      ],
+      "coverage": {
+        "protocolVersion": "EUROPE-MEDTECH-v5",
+        "searchExhaustion": "MAXIMUM_EXHAUSTION",
+        "germanyPriority": "70%",
+        "publicationThreshold": "75% minimum; 90% strong match",
+        "acceptanceAssessment": "PASS. Eleven active opportunities were revalidated. No fresh vacancy cleared the strict 75% target-profile publication gate after official-source verification, 0-years adjudication, historical deduplication and closing-soon recheck.",
+        "limitations": [
+          "No search guarantees literal 100% web recall",
+          "Discovery boards are corroboration signals only",
+          "Unstated work authorization is flagged WORK_AUTHORIZATION_VERIFY and does not suppress an otherwise gate-passing vacancy."
+        ]
+      }
     }
   ]
 }
