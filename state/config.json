@@ -238,13 +238,13 @@
       "joblift",
       "wqs",
       "medtechjobs.de",
-      "medicaltechnology.jobs",
       "monster",
       "meinestadt.de",
       "kimeta",
       "jooble",
       "jobteaser",
-      "stellenwerk"
+      "stellenwerk",
+      "MedTech-Jobs.de (medtechjobs.de)"
     ],
     "public": [
       "interamt",
@@ -423,9 +423,7 @@
       "TechnologyMountains",
       "Medical Valley EMN",
       "HealthCapital Berlin-Brandenburg",
-      "Life Science Nord",
-      "MedTech Jobs Germany",
-      "Medical Technology Jobs"
+      "Life Science Nord"
     ],
     "eventDirectories": [
       "MEDICA",
@@ -503,5 +501,5 @@
     },
     "note": "Fallback exists to avoid transient Contents API safety-layer failures. Never claim write failure until post-write repository readback confirms absence."
   },
-  "searchUniversePolicy": "All named discovery portals, specialist boards, public/EU/research sources, regional MedTech ecosystems, regulatory/standards sources and priority MedTech employer universes are included as additive discovery sources. Discovery never overrides official-source verification or hard publication gates."
+  "searchUniversePolicy": "All named discovery portals use exact identifiable names/domains. MedTech-Jobs.de (medtechjobs.de) is a specialist job board. Associations and regional clusters are discovery/employer-universe sources, not job boards. Discovery never overrides official-source verification or hard publication gates."
 }
