@@ -1746,6 +1746,151 @@
           "No search guarantees literal 100% web recall."
         ]
       }
+    },
+    {
+      "date": "2026-10-09",
+      "reportType": "normal daily rerun after source-recall audit",
+      "reportStatus": "PUBLISHED",
+      "productionProtocol": "EUROPE-MEDTECH-v6",
+      "activeJobs": 11,
+      "freshJobs": 0,
+      "previouslyListed": 11,
+      "closingWithin7Days": 0,
+      "newGatePassing": 0,
+      "provisionalFindings": 0,
+      "provisionalFindingIds": [],
+      "jobIds": [
+        "maico-dsp-engineer-2026-09-09",
+        "siemens-embedded-xray-2026-09-09",
+        "max-planck-bmai-phd-2026-09-10",
+        "bohme-medtech-graduate-xray-2026-09-12",
+        "ferchau-junior-embedded-cpp-2026-09-13",
+        "kbr-biomedical-engineer-2026-09-26",
+        "eth-machine-perfusion-phd-2026-09-26",
+        "tue-contrast-ultrasound-nanobubbles-2026-09-28",
+        "helmholtz-optoacoustic-tomography-2026-09-29",
+        "tue-quantitative-multitracer-pet-2026-09-29",
+        "ovgu-precision-neuroimaging-2026-10-02"
+      ],
+      "freshJobIds": [],
+      "excludedJobIds": [
+        "brunel-young-professional-medizintechnik-wurzburg-2026-10-09",
+        "brunel-development-engineer-medizintechnik-rostock-2026-10-09",
+        "bytec-embedded-software-medical-devices-2026-10-09",
+        "uni-due-on-device-ai-eeg-2026-10-09",
+        "juelich-multiscale-scientific-imaging-phd-2026-10-09"
+      ],
+      "findings": [
+        {
+          "id": "brunel-young-professional-medizintechnik-wurzburg-2026-10-09",
+          "status": "reviewed-excluded-language-gate",
+          "note": "Official Brunel posting explicitly targets graduates and accepts first experience from internships/thesis; medical-device development/analysis/construction. However, it requires secure German and English. Candidate profile German B1; under the documented conservative language rule this does not pass without employer confirmation. Keep as high-priority near-match, not published."
+        },
+        {
+          "id": "brunel-development-engineer-medizintechnik-rostock-2026-10-09",
+          "status": "reviewed-excluded-experience-gate",
+          "note": "Official Brunel posting lists 0–2 years but explicitly requires practical experience in medical-device development. No evidence that the candidate's project work satisfies this employer-specific requirement; hold out pending confirmation."
+        },
+        {
+          "id": "bytec-embedded-software-medical-devices-2026-10-09",
+          "status": "reviewed-excluded-experience-language",
+          "note": "Official BYTEC page requires multiple years of embedded medical-device software experience, Class C / IEC 62304 or equivalent, strong C/C++ and very good German/English; fails experience and likely language gates."
+        },
+        {
+          "id": "uni-due-on-device-ai-eeg-2026-10-09",
+          "status": "reviewed-expired",
+          "note": "University of Duisburg-Essen EEG on-device AI / embedded signal-processing role is highly relevant technically, but the official page states application deadline 30 June 2026; expired."
+        },
+        {
+          "id": "juelich-multiscale-scientific-imaging-phd-2026-10-09",
+          "status": "reviewed-not-published",
+          "note": "EURAXESS discovery lead posted 3 October: PhD on representation and active learning for multi-scale scientific imaging at Forschungszentrum Jülich, deadline 31 December 2026. Needs detailed official Jülich vacancy and eligibility/technical-fit confirmation before publication; not counted as gate-passing yet."
+        }
+      ],
+      "researchLayers": [
+        "Germany-first broad recall: Medizintechnik/Absolvent/Young Professional",
+        "Specialist board and employer-direct sweep",
+        "Government employment service discovery",
+        "EURAXESS research discovery",
+        "Official employer/university source verification for surfaced leads",
+        "Zero-years, language, degree and technical-fit gates",
+        "Historical deduplication",
+        "False-negative title variants"
+      ],
+      "sourcesSearched": [
+        "Brunel official careers — Young Professional / Absolvent Medizintechnik",
+        "Brunel official careers — Entwicklungsingenieur Medizintechnik Rostock",
+        "BYTEC Medizintechnik official careers",
+        "University of Duisburg-Essen official careers",
+        "EURAXESS research jobs",
+        "Jobvector Germany Medizintechnik listings (discovery only)",
+        "Bundesagentur für Arbeit Jobsuche (discovery only)",
+        "Ottobock official careers"
+      ],
+      "sourceExecutionLedger": [
+        {
+          "source": "Brunel official careers",
+          "status": "searched",
+          "leads": 2,
+          "notes": "Graduate vacancy and 0–2-year vacancy reviewed."
+        },
+        {
+          "source": "BYTEC official careers",
+          "status": "searched",
+          "leads": 1,
+          "notes": "Embedded medical-device vacancy excluded on experience/language."
+        },
+        {
+          "source": "University of Duisburg-Essen",
+          "status": "searched",
+          "leads": 1,
+          "notes": "Strong technical fit, expired deadline."
+        },
+        {
+          "source": "EURAXESS",
+          "status": "searched",
+          "leads": 1,
+          "notes": "Jülich PhD lead requires primary-source eligibility verification."
+        },
+        {
+          "source": "Jobvector",
+          "status": "searched",
+          "leads": "category-level discovery",
+          "notes": "Broad category contains many unrelated/senior roles; not a count of eligible vacancies."
+        },
+        {
+          "source": "Bundesagentur für Arbeit",
+          "status": "searched",
+          "leads": "discovery cross-check",
+          "notes": "Listings are leads only; official employer pages used when available."
+        },
+        {
+          "source": "All remaining configured sources",
+          "status": "not fully searched in this rerun",
+          "leads": null,
+          "notes": "This is a focused audit rerun, not a claim that every configured source was searched."
+        }
+      ],
+      "falseNegativeHunts": [
+        "Absolvent / Young Professional / Berufseinsteiger",
+        "Medizintechnik / medical-device development",
+        "embedded C/C++ and IEC 62304",
+        "EEG / biosignal / on-device AI",
+        "PhD / scientific imaging"
+      ],
+      "coverage": {
+        "protocolVersion": "EUROPE-MEDTECH-v6",
+        "searchExhaustion": "FOCUSED_AUDIT_RERUN_NOT_FULL_UNIVERSE",
+        "germanyPriority": "Germany-first; configured 70% target not measured as actual query share in this focused rerun",
+        "publicationThreshold": "75% minimum; 90% strong match",
+        "acceptanceAssessment": "No new vacancy was admitted. One strong graduate-labelled lead fails the documented German-language gate pending employer confirmation; one 0–2-year lead needs experience confirmation; one embedded role requires multiple years; one highly relevant university role has expired; one Jülich PhD remains unverified against the primary vacancy and candidate gates.",
+        "limitations": [
+          "Not every configured source was searched in this focused rerun.",
+          "Do not interpret zero published new jobs as zero relevant vacancies in the market.",
+          "Broad board counts are not candidate-eligible vacancy counts.",
+          "Official-source verification and all hard gates remain mandatory."
+        ]
+      }
     }
   ]
 }
