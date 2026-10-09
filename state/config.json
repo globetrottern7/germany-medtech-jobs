@@ -25,7 +25,8 @@
     "dedup_and_change_detection",
     "gates_and_scoring",
     "false_negative_hunt",
-    "GitHub_update"
+    "GitHub_update",
+    "per_source_execution_ledger"
   ],
   "weekly": [
     "full_false_negative_hunt",
@@ -369,7 +370,7 @@
   ],
   "queryBudget": {
     "dailyTotal": 60,
-    "ats": 10,
+    "ATS": 12,
     "employerT1": 10,
     "regionalCluster": 6,
     "BA_Interamt_Bund": 4,
@@ -378,7 +379,7 @@
     "research": 6,
     "tier2Europe": 3,
     "specialist": 6,
-    "ATS": 12
+    "activeVerificationAndFalseNegativeReserve": 6
   },
   "falseNegativeHunt": {
     "dailyProbes": 4,
@@ -501,5 +502,6 @@
     },
     "note": "Fallback exists to avoid transient Contents API safety-layer failures. Never claim write failure until post-write repository readback confirms absence."
   },
-  "searchUniversePolicy": "All named discovery portals use exact identifiable names/domains. MedTech-Jobs.de (medtechjobs.de) is a specialist job board. Associations and regional clusters are discovery/employer-universe sources, not job boards. Discovery never overrides official-source verification or hard publication gates."
+  "searchUniversePolicy": "All named discovery portals use exact identifiable names/domains. MedTech-Jobs.de (medtechjobs.de) is a specialist job board. Associations and regional clusters are discovery/employer-universe sources, not job boards. Discovery never overrides official-source verification or hard publication gates.",
+  "queryBudgetSemantics": "Planning allocation only, not evidence of executed searches. Actual source coverage must be logged per run; total daily target is 60 query units. Do not claim full coverage without a per-source execution ledger."
 }
