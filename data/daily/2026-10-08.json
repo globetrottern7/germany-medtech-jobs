@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-08",
+  "reportType": "normal daily",
+  "reportStatus": "PUBLISHED",
+  "productionProtocol": "EUROPE-MEDTECH-v6",
+  "activeJobs": 11,
+  "freshJobs": 0,
+  "previouslyListed": 11,
+  "closingWithin7Days": 0,
+  "newGatePassing": 0,
+  "provisionalFindings": 0,
+  "provisionalFindingIds": [],
+  "jobIds": [
+    "maico-dsp-engineer-2026-09-09",
+    "siemens-embedded-xray-2026-09-09",
+    "max-planck-bmai-phd-2026-09-10",
+    "bohme-medtech-graduate-xray-2026-09-12",
+    "ferchau-junior-embedded-cpp-2026-09-13",
+    "kbr-biomedical-engineer-2026-09-26",
+    "eth-machine-perfusion-phd-2026-09-26",
+    "tue-contrast-ultrasound-nanobubbles-2026-09-28",
+    "helmholtz-optoacoustic-tomography-2026-09-29",
+    "tue-quantitative-multitracer-pet-2026-09-29",
+    "ovgu-precision-neuroimaging-2026-10-02"
+  ],
+  "freshJobIds": [],
+  "excludedJobIds": [
+    "epo-medical-device-patent-examiner-2026-10-08",
+    "pulsion-medical-engineer-qms-2026-10-08",
+    "ekf-quality-control-manager-2026-10-08",
+    "ottobock-mechatronics-embedded-2026-10-08"
+  ],
+  "findings": [
+    {
+      "id": "epo-medical-device-patent-examiner-2026-10-08",
+      "status": "reviewed-excluded",
+      "note": "Official EPO vacancy discovered for Munich/Berlin or The Hague, deadline 2 November 2026. The technical patent-examiner role does not establish zero-years/graduate eligibility; excluded under the strict 0-years gate."
+    },
+    {
+      "id": "pulsion-medical-engineer-qms-2026-10-08",
+      "status": "reviewed-excluded",
+      "note": "Jobvector surfaced a Medical Engineer — QMS/Compliance role at PULSION Medical Systems/GETINGE. Official-source and zero-years eligibility confirmation was not established in this run; not published."
+    },
+    {
+      "id": "ekf-quality-control-manager-2026-10-08",
+      "status": "reviewed-excluded",
+      "note": "Jobvector surfaced a Quality Control Manager vacancy at EKF-diagnostic. Management-level title and insufficient evidence of fresh-graduate eligibility; excluded."
+    },
+    {
+      "id": "ottobock-mechatronics-embedded-2026-10-08",
+      "status": "reviewed-excluded",
+      "note": "Official Ottobock vacancy requires 5–8 years of embedded/mechatronic product-development experience; fails the zero-years gate."
+    }
+  ],
+  "researchLayers": [
+    "Expanded source universe discovery",
+    "Germany-focused MedTech board sweep",
+    "Government and research discovery",
+    "Official employer/ATS verification where candidate surfaced",
+    "Strict 0-years eligibility adjudication",
+    "Historical fingerprint comparison",
+    "False-negative/adjacent-title hunt"
+  ],
+  "sourcesSearched": [
+    "Jobvector Germany Medizintechnik listings (discovery only)",
+    "Bundesagentur für Arbeit Jobsuche",
+    "EURAXESS Germany jobs/funding",
+    "Ottobock official careers / vacancy page",
+    "Stryker official Workday careers",
+    "European Patent Office official careers"
+  ],
+  "falseNegativeHunts": [
+    "German Medizintechnik title variants",
+    "medical-device engineering / embedded / mechatronics",
+    "quality and regulatory adjacent roles",
+    "research and PhD sources",
+    "major employer ATS discovery"
+  ],
+  "coverage": {
+    "protocolVersion": "EUROPE-MEDTECH-v6",
+    "searchExhaustion": "EXPANDED_DISCOVERY_PARTIAL_OFFICIAL_VERIFICATION",
+    "germanyPriority": "70%",
+    "publicationThreshold": "75% minimum; 90% strong match",
+    "acceptanceAssessment": "No fresh vacancy was published. Four surfaced candidates were excluded or held out because the strict zero-years gate and/or official-source eligibility evidence was not satisfied. Existing published set retained at 11.",
+    "limitations": [
+      "This is an Oct 8 backfill, not a claim that the scheduled 5 PM run executed automatically.",
+      "The expanded source universe was searched selectively in this run; not every configured source was individually searched.",
+      "Job boards are discovery only; all new publications require official vacancy verification and full eligibility adjudication.",
+      "No search guarantees literal 100% web recall."
+    ]
+  }
+}
