@@ -231,3 +231,13 @@ Experience, language, authorization, current/open status and source verification
 The production source universe is now explicitly expanded to include all approved discovery families and named sources: EURAXESS, StepStone, MedTech Jobs Germany, LinkedIn Jobs, EURES, Make it in Germany, Absolventa, Indeed, Monster, XING, Jobware, meinestadt.de, stellenanzeigen.de, Yourfirm, Kimeta, Jooble, Jobvector, JobTeaser, Stellenwerk, Nature Careers, Academic Positions, ResearchGate Jobs, CORDIS/MSCA/Marie Curie, specialist MedTech and life-science clusters, notified-body/regulatory/standards ecosystems, and the named priority MedTech employer universe. Existing ATS, government, university, research-institute and employer-direct sources remain active.
 
 **Operating rule:** these sources are additive recall layers. Broad boards, social networks and aggregators can discover candidates but cannot by themselves promote a vacancy. Every published vacancy still requires current official evidence, duplicate/fingerprint resolution, the zero-years eligibility gate, degree/technical/language/work-authorization checks and a score of at least 75. The daily discovery budget has been increased to 60 query units to support the expanded universe; Germany remains the deepest priority layer.
+
+
+### Source naming and classification correction — 9 October 2026
+
+- Use the exact name **MedTech-Jobs.de** and domain **medtechjobs.de** for the specialist German MedTech/Homecare job board.
+- Remove the ambiguous label “MedTech Jobs Germany” and the unverified placeholder “medicaltechnology.jobs”; neither is a configured source unless independently verified in future.
+- Classify BVMed, MedTech Europe, SPECTARIS and VDGH as association/employer-universe discovery sources, not job boards.
+- Classify MedicalMountains, Medical Valley EMN, Life Science Nord and HealthCapital as regional ecosystem/employer-discovery sources, not job boards.
+- Classify Make it in Germany as a government information/recruitment ecosystem; classify CORDIS/MSCA as EU research/funding discovery. These categories may lead to vacancies but are not treated as conventional job boards.
+- A source entry must have an identifiable exact name/domain and a source type. Do not claim a source has been searched unless the relevant run actually searched it; source-registry inclusion alone is not evidence of run coverage.
