@@ -1,7 +1,7 @@
 {
   "status": "product-baseline-updated",
-  "message": "Production methodology and portal UX updated. Daily research remains Germany-first and Europe-wide, with expanded ecosystem sources, direct ATS checks where legitimately available, incremental plus periodic broad-recall searching, mandatory official-source verification, vacancy change detection, fixed scoring and a 75% publication floor.",
-  "updatedAt": "2026-09-12T10:50:00+02:00",
+  "message": "Source recall audit found the 8 October zero-new result does not demonstrate a full sweep of the configured source universe. Strict publication gates remain unchanged. Query budget semantics corrected; per-source execution evidence required for future runs.",
+  "updatedAt": "2026-10-09T07:15:00+05:30",
   "reportDate": "2026-09-12",
   "activeJobs": 10,
   "freshJobs": 5,
@@ -29,5 +29,8 @@
     ],
     "backup": "data/backups/2026-09-12-pre-expanded-acceptance/ contains the pre-refresh jobs.json and reports.json snapshots for rollback.",
     "nextRecurringRun": "Daily at 17:00 Europe/Berlin"
-  }
+  },
+  "auditDate": "2026-10-09",
+  "auditOutcome": "INCOMPLETE_SOURCE_EXECUTION_EVIDENCE",
+  "auditFile": "data/audits/2026-10-09-source-recall-audit.md"
 }
