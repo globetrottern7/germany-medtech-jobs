@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-08",
+  "generated": "2026-10-09",
   "startDate": "2026-09-09",
   "entries": [
     {
@@ -349,6 +349,18 @@
       "newGatePassing": 0,
       "provisionalFindings": 0,
       "notes": "8 October production backfill using expanded source discovery. No new vacancy met all publication gates; four surfaced leads were excluded/held out for experience or verification reasons. Source coverage was selective, not a claim that every configured source was searched."
+    },
+    {
+      "date": "2026-10-09",
+      "reportStatus": "PUBLISHED",
+      "reportType": "normal daily rerun after source-recall audit",
+      "activePublishedEquivalent": 11,
+      "freshJobs": 0,
+      "previouslyListed": 11,
+      "closingWithin7Days": 0,
+      "newGatePassing": 0,
+      "provisionalFindings": 0,
+      "notes": "Focused rerun after source-recall audit. Five additional leads were reviewed; none passed every gate. Source execution is logged explicitly; remaining configured sources were not fully searched."
     }
   ]
 }
