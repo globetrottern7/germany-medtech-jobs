@@ -241,3 +241,30 @@ The production source universe is now explicitly expanded to include all approve
 - Classify MedicalMountains, Medical Valley EMN, Life Science Nord and HealthCapital as regional ecosystem/employer-discovery sources, not job boards.
 - Classify Make it in Germany as a government information/recruitment ecosystem; classify CORDIS/MSCA as EU research/funding discovery. These categories may lead to vacancies but are not treated as conventional job boards.
 - A source entry must have an identifiable exact name/domain and a source type. Do not claim a source has been searched unless the relevant run actually searched it; source-registry inclusion alone is not evidence of run coverage.
+
+## Source-coverage control — effective 10 October 2026
+
+The 60-query-unit figure is a planning allocation only. It must never be used as evidence that searches actually ran.
+
+### Mandatory weekly baseline
+The weekly false-negative hunt must account for each source individually: Indeed, LinkedIn Jobs, XING Jobs, StepStone, Jobware, Monster, meinestadt.de, stellenanzeigen.de, Yourfirm, Kimeta, Jooble, Jobvector, Absolventa, JobTeaser and Stellenwerk. Also record the actual status of the configured employer/ATS, government/EU, university/research, specialist MedTech, regulatory/standards and regional-cluster families.
+
+### Source execution ledger
+Each source must be classified as one of:
+- `official_page_checked`
+- `indexed_search_attempted`
+- `unavailable_or_blocked`
+- `not_searched`
+
+Record method/query family, result count, candidate leads, official-source verification result and exclusion reason. An indexed search is not the same as directly searching a portal. A source in `state/config.json` is not evidence that it was executed.
+
+### Coverage grade and zero-result wording
+- `FULL`: every mandatory baseline source and required source family has a ledger entry with execution evidence.
+- `PARTIAL`: one or more required sources were not searched, were blocked, or have only incomplete indexed evidence.
+- `MISSED`: no valid run occurred; record a missed run rather than manufacturing a report.
+
+When coverage is `PARTIAL`, the only acceptable zero-result conclusion is: “No new vacancy passed the gates in the sources searched.” Do not imply that no suitable vacancy exists in the market. Do not use “maximum exhaustion” without a complete ledger.
+
+### Gate stability
+Coverage controls do not relax the existing zero-years, degree, language, authorization, technical-fit, official-verification, deduplication or 75/100 score gates. Near-matches can be recorded separately with explicit missing evidence, but must not be counted as qualified listings.
+
