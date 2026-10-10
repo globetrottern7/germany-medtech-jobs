@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-09",
+  "generated": "2026-10-10",
   "startDate": "2026-09-09",
   "entries": [
     {
@@ -361,6 +361,18 @@
       "newGatePassing": 0,
       "provisionalFindings": 0,
       "notes": "Focused rerun after source-recall audit. Five additional leads were reviewed; none passed every gate. Source execution is logged explicitly; remaining configured sources were not fully searched."
+    },
+    {
+      "date": "2026-10-10",
+      "reportStatus": "PUBLISHED",
+      "reportType": "normal daily production refresh",
+      "activePublishedEquivalent": 11,
+      "freshJobs": 0,
+      "previouslyListed": 11,
+      "closingWithin7Days": 0,
+      "newGatePassing": 0,
+      "provisionalFindings": 0,
+      "notes": "10 October documented daily sweep. Six leads were excluded/expired/held out for explicit eligibility or verification reasons; four existing official listings rechecked. Remaining configured source universe not exhaustively searched."
     }
   ]
 }
