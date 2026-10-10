@@ -31,7 +31,8 @@
   "weekly": [
     "full_false_negative_hunt",
     "employer_universe_sweep",
-    "specialist_portal_sweep"
+    "specialist_portal_sweep",
+    "mandatory_source_baseline_ledger_and_coverage_grade"
   ],
   "monthly": [
     "gold_set_recall",
@@ -503,5 +504,49 @@
     "note": "Fallback exists to avoid transient Contents API safety-layer failures. Never claim write failure until post-write repository readback confirms absence."
   },
   "searchUniversePolicy": "All named discovery portals use exact identifiable names/domains. MedTech-Jobs.de (medtechjobs.de) is a specialist job board. Associations and regional clusters are discovery/employer-universe sources, not job boards. Discovery never overrides official-source verification or hard publication gates.",
-  "queryBudgetSemantics": "Planning allocation only, not evidence of executed searches. Actual source coverage must be logged per run; total daily target is 60 query units. Do not claim full coverage without a per-source execution ledger."
+  "queryBudgetSemantics": "Planning allocation only, not evidence of executed searches. Actual source coverage must be logged per run; total daily target is 60 query units. Do not claim full coverage without a per-source execution ledger.",
+  "weeklySourceBaseline": [
+    "Indeed",
+    "LinkedIn Jobs",
+    "XING Jobs",
+    "StepStone",
+    "Jobware",
+    "Monster",
+    "meinestadt.de",
+    "stellenanzeigen.de",
+    "Yourfirm",
+    "Kimeta",
+    "Jooble",
+    "Jobvector",
+    "Absolventa",
+    "JobTeaser",
+    "Stellenwerk"
+  ],
+  "coveragePolicy": {
+    "sourceStatusValues": [
+      "official_page_checked",
+      "indexed_search_attempted",
+      "unavailable_or_blocked",
+      "not_searched"
+    ],
+    "coverageStatusValues": [
+      "FULL",
+      "PARTIAL",
+      "MISSED"
+    ],
+    "fullCoverageRequirements": [
+      "Record a sourceExecutionLedger entry for every source in weeklySourceBaseline during the weekly hunt.",
+      "Record each priority employer, ATS, public/research, specialist, regulatory and regional source family as checked or explicitly not searched.",
+      "For every searched source record the method used, query family, result count, leads surfaced and official-verification outcome.",
+      "An indexed web query is not equivalent to direct portal validation; label it indexed_search_attempted.",
+      "A planned query budget is not evidence of executed searches."
+    ],
+    "zeroResultInterpretation": {
+      "FULL": "No new vacancy passed the gates in the documented coverage; this does not prove that no suitable vacancies exist.",
+      "PARTIAL": "No new vacancy passed the gates in the sources actually searched; no market-wide absence conclusion is supported.",
+      "MISSED": "Do not publish a zero-result daily report as if a run occurred; record the missed run."
+    },
+    "prohibitMaximumExhaustionClaimWithoutLedger": true,
+    "preservePublicationGates": true
+  }
 }
