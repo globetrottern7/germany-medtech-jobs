@@ -1,0 +1,184 @@
+{
+  "date": "2026-10-10",
+  "reportType": "normal daily production refresh",
+  "reportStatus": "PUBLISHED",
+  "productionProtocol": "EUROPE-MEDTECH-v6",
+  "activeJobs": 11,
+  "freshJobs": 0,
+  "previouslyListed": 11,
+  "closingWithin7Days": 0,
+  "newGatePassing": 0,
+  "provisionalFindings": 0,
+  "provisionalFindingIds": [],
+  "jobIds": [
+    "maico-dsp-engineer-2026-09-09",
+    "siemens-embedded-xray-2026-09-09",
+    "max-planck-bmai-phd-2026-09-10",
+    "bohme-medtech-graduate-xray-2026-09-12",
+    "ferchau-junior-embedded-cpp-2026-09-13",
+    "kbr-biomedical-engineer-2026-09-26",
+    "eth-machine-perfusion-phd-2026-09-26",
+    "tue-contrast-ultrasound-nanobubbles-2026-09-28",
+    "helmholtz-optoacoustic-tomography-2026-09-29",
+    "tue-quantitative-multitracer-pet-2026-09-29",
+    "ovgu-precision-neuroimaging-2026-10-02"
+  ],
+  "freshJobIds": [],
+  "excludedJobIds": [
+    "brunel-young-professional-medizintechnik-2026-10-10",
+    "bosch-phd-lab-on-chip-single-cells-2026-10-10",
+    "rwth-medical-information-technology-researcher-2026-10-10",
+    "fraunhofer-hhi-medical-sensing-working-student-2026-10-10",
+    "ude-microbem-researcher-2026-10-10",
+    "matching-graduate-medical-device-software-2026-10-10"
+  ],
+  "findings": [
+    {
+      "id": "brunel-young-professional-medizintechnik-2026-10-10",
+      "status": "reviewed-excluded-language-gate",
+      "note": "Official Brunel vacancy, Würzburg, deadline 6 November 2026. Explicitly graduate-oriented and relevant to medical-device development, but requires secure German and English. Candidate profile records German B1; exclude unless employer confirms B1 is acceptable."
+    },
+    {
+      "id": "bosch-phd-lab-on-chip-single-cells-2026-10-10",
+      "status": "reviewed-excluded-fit-language",
+      "note": "Official Bosch graduate PhD vacancy REF292078S, posted 11 September 2026. Requires detailed MEMS/microfluidics/lab-on-chip expertise and very good German/English; these are not established in candidate profile. Excluded despite graduate label."
+    },
+    {
+      "id": "rwth-medical-information-technology-researcher-2026-10-10",
+      "status": "reviewed-excluded-language-gate",
+      "note": "Official RWTH Aachen vacancy deadline 31 October 2026; relevant to biomedical signal processing and physiological sensing. Requires secure German and English, not established at candidate German B1. Excluded under current language gate."
+    },
+    {
+      "id": "fraunhofer-hhi-medical-sensing-working-student-2026-10-10",
+      "status": "reviewed-excluded-student-status",
+      "note": "Fraunhofer HHI Medical Sensing, Communication and Modelling; deadline 31 October 2026. Relevant physiological signals and DSP, but categorized as Werkstudent/student assistant and limited to 20 h/week; candidate profile is fresh graduate, not current student."
+    },
+    {
+      "id": "ude-microbem-researcher-2026-10-10",
+      "status": "reviewed-expired",
+      "note": "University of Duisburg-Essen MikroBEM EMG/EEG signal-processing research role is technically relevant but official deadline was 4 August 2026; expired."
+    },
+    {
+      "id": "matching-graduate-medical-device-software-2026-10-10",
+      "status": "reviewed-not-published-stale-source",
+      "note": "Aggregator surfaced graduate C/C++ medical-device software role at matchING in Schweinfurt, but available listing dates to May 2026 and no current primary employer vacancy was verified; not counted as a fresh opportunity."
+    }
+  ],
+  "researchLayers": [
+    "Germany-first official employer and university discovery",
+    "Specialist MedTech board discovery",
+    "Graduate/Absolvent and entry-level title variants",
+    "Medical imaging, biosignal, embedded C/C++ and lab-on-chip probes",
+    "Official-source and deadline checks for surfaced leads",
+    "Strict zero-years, degree, language and technical-fit gates",
+    "Historical duplicate and stale-source checks"
+  ],
+  "sourcesSearched": [
+    "Brunel official careers",
+    "Robert Bosch official careers",
+    "RWTH Aachen official job portal",
+    "Fraunhofer HHI / Stellenticket university jobs portal",
+    "University of Duisburg-Essen official careers",
+    "Jobvector signal-processing / Medizintechnik listings (discovery only)",
+    "Bundesagentur für Arbeit Jobsuche (discovery only)",
+    "Helmholtz Munich official vacancy",
+    "University Hospital Tübingen official vacancy",
+    "TU/e official vacancy",
+    "ETH Zürich official vacancy"
+  ],
+  "sourceExecutionLedger": [
+    {
+      "source": "Brunel official careers",
+      "status": "searched",
+      "leads": 2,
+      "notes": "Graduate role excluded on documented language gate; process-engineer role requires 3–5 years and very good German/English."
+    },
+    {
+      "source": "Bosch official careers",
+      "status": "searched",
+      "leads": 1,
+      "notes": "Graduate PhD excluded on specific MEMS/microfluidics and language requirements."
+    },
+    {
+      "source": "RWTH Aachen official portal",
+      "status": "searched",
+      "leads": 1,
+      "notes": "Strong technical adjacency; language gate not met; deadline 31 October."
+    },
+    {
+      "source": "Fraunhofer HHI / Stellenticket",
+      "status": "searched",
+      "leads": 1,
+      "notes": "Relevant student position; student-status requirement not met."
+    },
+    {
+      "source": "University of Duisburg-Essen",
+      "status": "searched",
+      "leads": 1,
+      "notes": "Technically relevant role, expired deadline."
+    },
+    {
+      "source": "Jobvector",
+      "status": "searched",
+      "leads": "category and keyword discovery",
+      "notes": "Discovery only; listings require individual primary-source verification."
+    },
+    {
+      "source": "BA Jobsuche",
+      "status": "searched",
+      "leads": "Brunel and C++ MedTech leads",
+      "notes": "Discovery and official public employment record; primary employer pages used when available."
+    },
+    {
+      "source": "Helmholtz Munich",
+      "status": "rechecked official listing",
+      "leads": 0,
+      "notes": "Existing PhD remains active; no new posting added."
+    },
+    {
+      "source": "University Hospital Tübingen",
+      "status": "rechecked official listing",
+      "leads": 0,
+      "notes": "Existing PET PhD deadline 31 October 2026."
+    },
+    {
+      "source": "TU/e",
+      "status": "rechecked official listing",
+      "leads": 0,
+      "notes": "Existing contrast-ultrasound PhD deadline 6 November 2026."
+    },
+    {
+      "source": "ETH Zürich",
+      "status": "rechecked official listing",
+      "leads": 0,
+      "notes": "Existing machine-perfusion PhD listing reviewed."
+    },
+    {
+      "source": "Remaining configured source universe",
+      "status": "not fully searched",
+      "leads": null,
+      "notes": "This report is a documented daily sweep, not a claim that every configured source was individually searched."
+    }
+  ],
+  "falseNegativeHunts": [
+    "Absolvent / Young Professional / graduate roles",
+    "Medical-device development / lab-on-chip / MEMS",
+    "ECG/EEG/EMG and physiological signal processing",
+    "embedded C/C++ and medical-device software",
+    "university research and student-role status",
+    "expired and stale aggregator checks"
+  ],
+  "coverage": {
+    "protocolVersion": "EUROPE-MEDTECH-v6",
+    "searchExhaustion": "DOCUMENTED_DAILY_SWEEP_NOT_FULL_SOURCE_UNIVERSE",
+    "germanyPriority": "Germany-first; exact query share not instrumented",
+    "publicationThreshold": "75% minimum; 90% strong match",
+    "acceptanceAssessment": "No fresh vacancy passed all hard gates and the 75% publication floor. Six surfaced leads were excluded, expired or held out with explicit reasons. Four existing official listings were rechecked. The full configured source universe was not exhaustively searched in this run.",
+    "limitations": [
+      "A zero-new report means no new vacancy passed the gates in the sources actually searched; it does not mean no suitable jobs exist.",
+      "Remaining configured sources were not fully searched.",
+      "Board/aggregator listings are discovery only unless authoritative vacancy evidence is verified.",
+      "No automatic scheduled-run execution is claimed; this is today's manually executed production refresh."
+    ]
+  }
+}
