@@ -1087,6 +1087,68 @@
       },
       "exclusionReason": "Held out of active publication after a current status conflict: the official Workday URL remains accessible, but a recent job-board mirror says the vacancy is no longer accepting applications. Current official application availability could not be established conclusively; do not present as an active job until reverified.",
       "lastAttempted": "2026-10-11"
+    },
+    {
+      "id": "stryker-rd-biomedical-mechanical-graduate-2027-ireland",
+      "title": "R&D Biomedical/Mechanical Engineering Graduate Program — September 2027",
+      "company": "Stryker",
+      "location": "Cork, Ireland",
+      "country": "Ireland",
+      "category": [
+        "MedTech",
+        "Biomedical Engineering",
+        "R&D",
+        "Test Engineering",
+        "Validation",
+        "Graduate Program"
+      ],
+      "match": 82,
+      "fresh": true,
+      "status": "provisional",
+      "url": "https://careers.stryker.com/r-d-biomedical-mechanical-engineering-graduate-program-september-2027/job/7C1433160499E856F8E5CA898E41FC5D",
+      "deadline": "2026-10-24",
+      "sourceType": "official employer careers",
+      "sourceLayers": [
+        "Employer direct",
+        "Graduate program",
+        "Europe-wide employment"
+      ],
+      "openVerified": true,
+      "lastVerified": "2026-10-11",
+      "experienceRequirement": "GRADUATE_PROGRAM",
+      "languageRequirement": "UNSTATED",
+      "workAuthorization": "WORK_AUTHORIZATION_VERIFY",
+      "sponsorship": {
+        "offered": "unclear",
+        "evidence": "Official posting does not establish visa sponsorship."
+      },
+      "relocation": {
+        "offered": "no",
+        "evidence": "Official listing shows Relocation: No."
+      },
+      "fingerprint": "stryker|r d biomedical mechanical engineering graduate program september 2027|cork ireland|ireland",
+      "evidence": "Official Stryker careers page is live with an Apply Now route and an application deadline of 24 October 2026. The 24-month R&D graduate programme starts September 2027; the stated eligible degree disciplines explicitly include Biomedical Engineering, and graduation timing is June 2025–September 2027.",
+      "fit": [
+        "Biomedical Engineering explicitly accepted",
+        "Structured graduate programme, compatible with a fresh graduate",
+        "R&D rotations include design, advanced quality engineering, test/prototype lab, process validation and test-equipment qualification",
+        "Strong medical-device domain relevance"
+      ],
+      "gaps": [
+        "A 2.1 result or equivalent is required; candidate's degree classification/equivalence is not present in the stored profile and must be confirmed before treating as eligible",
+        "Ireland work authorization must be verified independently; German status does not automatically authorize work in Ireland",
+        "Relocation is listed as unavailable"
+      ],
+      "confidence": "HIGH",
+      "scoreBreakdown": {
+        "technicalSkillFit": 19,
+        "domainRelevance": 15,
+        "educationRelevance": 15,
+        "experienceCompatibility": 10,
+        "languageFit": 9,
+        "materialRequirements": 7,
+        "roleAlignment": 7
+      }
     }
   ]
 }
