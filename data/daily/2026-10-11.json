@@ -8,9 +8,10 @@
   "previouslyListed": 5,
   "closingWithin7Days": 0,
   "newGatePassing": 0,
-  "provisionalFindings": 1,
+  "provisionalFindings": 2,
   "provisionalFindingIds": [
-    "soring-hardware-lifecycle-2026-10-10"
+    "soring-hardware-lifecycle-2026-10-10",
+    "stryker-rd-biomedical-mechanical-graduate-2027-ireland"
   ],
   "jobIds": [
     "max-planck-bmai-phd-2026-09-10",
@@ -100,6 +101,11 @@
       "id": "novanta-junior-test-verification-2026-10-11",
       "status": "held-out-current-status-unverified",
       "note": "Novanta Workday detail URL remains accessible, but a recent job-board mirror reports that the vacancy is no longer accepting applications. Official current application availability could not be established conclusively, so it is not published as active."
+    },
+    {
+      "id": "stryker-rd-biomedical-mechanical-graduate-2027-ireland",
+      "status": "provisional-eligibility-check",
+      "note": "Official Stryker careers page confirms an active R&D Biomedical/Mechanical Engineering Graduate Programme in Cork, Ireland, deadline 24 October 2026. Biomedical Engineering is explicitly accepted. Hold provisional until the candidate's 2.1 degree-classification equivalence and Ireland work authorization are verified; relocation is listed as unavailable."
     }
   ],
   "researchLayers": [
@@ -131,7 +137,8 @@
     "B. Braun official careers — embedded C/C++ role checked and excluded (professional experience and very good German required)",
     "Philips official careers indexed search — clinical application and engineering role family probe; exact entry-level role not confirmed sufficiently for publication",
     "StepStone and Kimeta junior embedded C/C++ searches — indexed discovery only",
-    "Novanta official Workday ATS — Junior Test Engineer, Berlin; entry-level and recent-graduate eligibility verified"
+    "Novanta official Workday ATS — Junior Test Engineer, Berlin; entry-level and recent-graduate eligibility verified",
+    "Stryker official careers — R&D Biomedical/Mechanical Engineering Graduate Program, Cork, Ireland"
   ],
   "sourceExecutionLedger": [
     {
@@ -259,6 +266,12 @@
       "status": "current_status_unverified",
       "leads": 1,
       "notes": "Entry-level fit is strong, but official ATS detail page accessibility conflicts with a recent mirror reporting applications closed; held out of active publication pending definitive official revalidation."
+    },
+    {
+      "source": "Stryker official careers / ATS",
+      "status": "official_page_checked",
+      "leads": 1,
+      "notes": "Live graduate programme, Biomedical Engineering explicitly accepted, deadline 24 October 2026. Provisional pending 2.1 grade equivalence and Ireland work authorization; relocation unavailable."
     }
   ],
   "falseNegativeHunts": [
@@ -276,7 +289,7 @@
     "searchExhaustion": "DOCUMENTED_DAILY_SWEEP_NOT_FULL_SOURCE_UNIVERSE",
     "germanyPriority": "Germany-first; exact query share not instrumented",
     "publicationThreshold": "75% minimum; 90% strong match",
-    "acceptanceAssessment": "No new typical employment vacancy was published after final current-status adjudication. Novanta Junior Test Engineer looked like an entry-level match, but conflicting availability evidence means it is held out. Five retained doctoral/research opportunities remain active in their separate category. Coverage remains PARTIAL; the configured source universe was not exhaustively searched.",
+    "acceptanceAssessment": "No new typical employment role is currently published after strict current-status adjudication. One promising Stryker R&D graduate programme is retained as provisional, pending the required 2.1 degree-classification equivalence and Ireland work-authorization checks. Five retained doctoral/research opportunities remain active in the separate category. Coverage remains PARTIAL.",
     "limitations": [
       "The full configured source universe was not individually searched.",
       "Job boards and aggregators remain discovery-only unless primary vacancy evidence is verified.",
