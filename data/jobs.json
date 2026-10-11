@@ -1020,6 +1020,71 @@
       "exclusionReason": "Official vacancy requires research experience in MRI, ideally ultra-high-field MRI; the stored candidate profile does not establish MRI research experience. Degree and English fit alone are insufficient.",
       "lastAttempted": "2026-10-11",
       "lastVerified": "2026-10-11"
+    },
+    {
+      "id": "novanta-junior-test-verification-2026-10-11",
+      "title": "Junior Test Engineer (m/f/d) — Test & Verification",
+      "company": "Novanta Medical GmbH",
+      "location": "Berlin, Germany",
+      "country": "Germany",
+      "category": [
+        "MedTech",
+        "Biomedical Engineering",
+        "Test Engineering",
+        "Verification",
+        "Validation",
+        "Medical Device",
+        "Python",
+        "Sensors"
+      ],
+      "match": 87,
+      "fresh": true,
+      "status": "active",
+      "url": "https://novanta.wd5.myworkdayjobs.com/en-US/Novanta-Careers/job/Berlin-Germany/Junior-Test-Engineer--m-f-d-_R009292",
+      "sourceType": "official ATS",
+      "sourceLayers": [
+        "Employer ATS",
+        "Graduate and entry-level",
+        "Test and verification",
+        "Medical-device manufacturer"
+      ],
+      "openVerified": true,
+      "lastVerified": "2026-10-11",
+      "experienceRequirement": "ENTRY_LEVEL_ZERO_TO_LOW",
+      "languageRequirement": "UNSTATED",
+      "workAuthorization": "WORK_AUTHORIZATION_VERIFY",
+      "sponsorship": {
+        "offered": "unclear",
+        "evidence": "Official vacancy does not establish sponsorship."
+      },
+      "relocation": {
+        "offered": "unclear",
+        "evidence": "Official vacancy does not establish relocation support."
+      },
+      "evidence": "Official Novanta Workday vacancy page is accessible with an Apply route. The description explicitly says this is entry-level and little to no professional experience is required; recent graduates are encouraged. Role tests medical devices and tubing sets, creates/executes test cases, validates test stations and uses test equipment/sensors. No explicit language requirement was stated on the accessible posting.",
+      "confidence": "HIGH",
+      "fingerprint": "novanta medical gmbh|junior test engineer|berlin germany|germany",
+      "fit": [
+        "M.Sc. Biomedical Engineering accepted as a relevant discipline",
+        "Explicit entry-level role; little to no professional experience required",
+        "Strong alignment with academic device validation, algorithm testing, sensor interfacing and reference-monitor validation",
+        "Python/C++ background is relevant to the stated interest in test automation",
+        "Direct medical-device testing and verification work"
+      ],
+      "gaps": [
+        "No explicit German/English level is stated; language expectations should be confirmed during application",
+        "Specific test-lab equipment and regulated-device standards experience are advantages, not stated as mandatory",
+        "Work authorization in Germany must be confirmed for the candidate's individual status"
+      ],
+      "scoreBreakdown": {
+        "technicalSkillFit": 22,
+        "domainRelevance": 14,
+        "educationRelevance": 14,
+        "experienceCompatibility": 10,
+        "languageFit": 7,
+        "materialRequirements": 12,
+        "roleAlignment": 8
+      }
     }
   ]
 }
