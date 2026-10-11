@@ -268,3 +268,8 @@ When coverage is `PARTIAL`, the only acceptable zero-result conclusion is: “No
 ### Gate stability
 Coverage controls do not relax the existing zero-years, degree, language, authorization, technical-fit, official-verification, deduplication or 75/100 score gates. Near-matches can be recorded separately with explicit missing evidence, but must not be counted as qualified listings.
 
+
+
+## Employment-first publication policy — effective 11 October 2026
+
+The main public view is **Typical jobs** for a fresh M.Sc. Biomedical Engineering graduate: graduate/entry-level permanent or fixed-term employment, junior engineering/software, embedded C/C++, Python, biosignal processing, sensors, verification/validation/testing, medical-device R&D, clinical/field application specialist, graduate trainee and feasible quality/regulatory roles. PhD/doctoral studentships and doctoral-track research positions must be displayed in a separate **Research & PhD** view and separate counts. Research results must not dominate the default Jobs view. Increase employment-first query allocation and employer/ATS discovery; reduce research-only query allocation accordingly. This changes search prioritization and presentation only: keep the zero-professional-experience, degree, language, work-authorization, technical-fit, official-source, deduplication and 75% score gates unchanged. If no typical job passes, state that honestly rather than filling the category with PhDs or relaxing the gates.
