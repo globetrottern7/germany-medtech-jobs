@@ -3,7 +3,9 @@
   "candidateProfile": "data/candidate-profile.json",
   "publication": {
     "minScore": 75,
-    "strongMatch": 90
+    "strongMatch": 90,
+    "defaultRoleView": "jobs",
+    "separateResearchPhD": true
   },
   "hardGates": [
     "current_open",
@@ -372,15 +374,15 @@
   "queryBudget": {
     "dailyTotal": 60,
     "ATS": 12,
-    "employerT1": 10,
+    "employerT1": 12,
     "regionalCluster": 6,
     "BA_Interamt_Bund": 4,
     "standardsTooling": 4,
-    "graduate": 3,
-    "research": 6,
+    "graduate": 8,
+    "research": 3,
     "tier2Europe": 3,
     "specialist": 6,
-    "activeVerificationAndFalseNegativeReserve": 6
+    "activeVerificationAndFalseNegativeReserve": 7
   },
   "falseNegativeHunt": {
     "dailyProbes": 4,
@@ -548,5 +550,20 @@
     },
     "prohibitMaximumExhaustionClaimWithoutLedger": true,
     "preservePublicationGates": true
+  },
+  "rolePriorities": {
+    "primaryEmployment": [
+      "Graduate/entry-level permanent or fixed-term employment",
+      "Junior engineering and software roles",
+      "Medical-device R&D, embedded C/C++, Python, signal processing, sensors, validation/test",
+      "Clinical application specialist, field clinical specialist and graduate trainee roles",
+      "Quality/regulatory/conformity assessment roles where degree and language fit"
+    ],
+    "separateResearchTrack": [
+      "PhD/doctoral studentships",
+      "Research associate roles that are explicitly doctoral-track",
+      "Research fellowships"
+    ],
+    "policy": "Employment roles are the default/primary published view. Research/PhD roles are reported separately and must not crowd out or be counted as typical employment. Search effort must prioritize employment role families first; do not relax hard gates or fabricate a balanced result set."
   }
 }
