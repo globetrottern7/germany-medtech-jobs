@@ -2086,9 +2086,10 @@
       "previouslyListed": 5,
       "closingWithin7Days": 0,
       "newGatePassing": 0,
-      "provisionalFindings": 1,
+      "provisionalFindings": 2,
       "provisionalFindingIds": [
-        "soring-hardware-lifecycle-2026-10-10"
+        "soring-hardware-lifecycle-2026-10-10",
+        "stryker-rd-biomedical-mechanical-graduate-2027-ireland"
       ],
       "jobIds": [
         "max-planck-bmai-phd-2026-09-10",
@@ -2358,7 +2359,7 @@
         "researchPhd": 5
       },
       "publicationInterpretation": "No typical employment vacancy passed all gates in today's verified sources. Five retained opportunities are doctoral/research-track roles and are displayed separately from the default Jobs view.",
-      "notes": "11 October production refresh plus focused employment-first false-negative hunt. No new typical employment role published after final current-status adjudication; Novanta Junior Test Engineer is held out because current application availability conflicts across sources. Five PhD/research roles remain separate. Coverage remains PARTIAL."
+      "notes": "11 October production refresh plus focused employment-first false-negative hunt. No typical employment role published after final current-status adjudication; one Stryker R&D graduate programme is provisional pending grade equivalence and Ireland work authorization. Five PhD/research roles remain separate. Coverage remains PARTIAL."
     }
   ]
 }
