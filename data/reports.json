@@ -2075,6 +2075,246 @@
           "No automatic scheduled-run execution is claimed; this is today's manually executed production refresh."
         ]
       }
+    },
+    {
+      "date": "2026-10-11",
+      "reportType": "normal daily production refresh",
+      "reportStatus": "PUBLISHED",
+      "productionProtocol": "EUROPE-MEDTECH-v6",
+      "activeJobs": 5,
+      "freshJobs": 0,
+      "previouslyListed": 5,
+      "closingWithin7Days": 0,
+      "newGatePassing": 0,
+      "provisionalFindings": 1,
+      "provisionalFindingIds": [
+        "soring-hardware-lifecycle-2026-10-10"
+      ],
+      "jobIds": [
+        "max-planck-bmai-phd-2026-09-10",
+        "eth-machine-perfusion-phd-2026-09-26",
+        "tue-contrast-ultrasound-nanobubbles-2026-09-28",
+        "helmholtz-optoacoustic-tomography-2026-09-29",
+        "tue-quantitative-multitracer-pet-2026-09-29"
+      ],
+      "freshJobIds": [],
+      "excludedJobIds": [
+        "maico-dsp-engineer-2026-09-09",
+        "siemens-embedded-xray-2026-09-09",
+        "bohme-medtech-graduate-xray-2026-09-12",
+        "ferchau-junior-embedded-cpp-2026-09-13",
+        "kbr-biomedical-engineer-2026-09-26",
+        "ovgu-precision-neuroimaging-2026-10-02",
+        "getinge-cybersecurity-medical-systems-2026-10-11",
+        "fraunhofer-rostock-industrial-robotics-student-2026-10-11"
+      ],
+      "findings": [
+        {
+          "id": "siemens-embedded-xray-2026-09-09",
+          "status": "re-adjudicated-excluded-language-gate",
+          "note": "Official BA vacancy is current, but explicitly requires very good German; candidate is B1. Removed from the published active set."
+        },
+        {
+          "id": "ferchau-junior-embedded-cpp-2026-09-13",
+          "status": "re-adjudicated-excluded-language-gate",
+          "note": "Current official/BA listing specifies at least B2 German and English. Candidate German B1 fails the existing language gate."
+        },
+        {
+          "id": "maico-dsp-engineer-2026-09-09",
+          "status": "excluded-current-source-unverified",
+          "note": "No official vacancy URL is stored and no current primary-source posting was established today; removed from public active listings."
+        },
+        {
+          "id": "bohme-medtech-graduate-xray-2026-09-12",
+          "status": "excluded-stale-source-and-technical-gap",
+          "note": "Employer career page remains online but appears to be a legacy undated 'ab sofort' listing; DICOM and radiation-physics basics are not evidenced in the candidate profile."
+        },
+        {
+          "id": "kbr-biomedical-engineer-2026-09-26",
+          "status": "held-out-current-status-unverified",
+          "note": "Official Workday URL could not be revalidated today and last successful verification exceeds the 72-hour window; removed from public active listings pending recheck."
+        },
+        {
+          "id": "ovgu-precision-neuroimaging-2026-10-02",
+          "status": "excluded-technical-fit",
+          "note": "Official ATS vacancy remains open until 15 November, but requires MRI research experience (ideally ultra-high-field MRI), which is not in the stored candidate profile."
+        },
+        {
+          "id": "getinge-cybersecurity-medical-systems-2026-10-11",
+          "status": "reviewed-excluded-language-and-technical-fit",
+          "note": "Official Getinge posting dated 4 October; German/English required and medical-device cybersecurity standards, threat modelling and Jenkins security automation are not evidenced."
+        },
+        {
+          "id": "fraunhofer-rostock-industrial-robotics-student-2026-10-11",
+          "status": "reviewed-excluded-student-status",
+          "note": "Official Fraunhofer posting surfaced yesterday; it requires current student enrolment, which the fresh-graduate profile does not meet."
+        },
+        {
+          "id": "eth-machine-perfusion-phd-2026-09-26",
+          "status": "reverified-active",
+          "note": "Official ETH vacancy page is live. Biomedical engineering accepted; English fluency required; sensor integration and embedded/control software are relevant. Work authorization remains a separate verification item."
+        },
+        {
+          "id": "helmholtz-optoacoustic-tomography-2026-09-29",
+          "status": "reverified-active",
+          "note": "Official Helmholtz Munich vacancy is live and accepts Biomedical Engineering; strong alignment with biomedical imaging/sensing and computational engineering."
+        },
+        {
+          "id": "tue-quantitative-multitracer-pet-2026-09-29",
+          "status": "reverified-active",
+          "note": "Official University Hospital Tübingen vacancy is live; deadline 31 October 2026; Biomedical Engineering MSc and Python/MATLAB accepted; English required."
+        },
+        {
+          "id": "tue-contrast-ultrasound-nanobubbles-2026-09-28",
+          "status": "official-application-endpoint-rechecked",
+          "note": "Official TU/e application endpoint remains accessible; deadline 6 November 2026 recorded from the vacancy. Ultrasound/physics-modeling depth remains a fit caveat; work authorization for the Netherlands must be verified."
+        },
+        {
+          "id": "max-planck-bmai-phd-2026-09-10",
+          "status": "reverified-active",
+          "note": "Official Max Planck page confirms the 25-position call is open, with application deadline 1 December 2026. Computational/research-group fit should be assessed project by project."
+        }
+      ],
+      "researchLayers": [
+        "Germany-first official employer and university discovery",
+        "Active-list revalidation against the 72-hour verification window",
+        "Graduate and entry-level title variants",
+        "Embedded C/C++, biosignal processing, medical imaging, sensing, validation and PhD probes",
+        "Official vacancy verification before publication",
+        "Strict zero-years, degree, language, technical-fit, source and current-status gates",
+        "Historical identity/fingerprint deduplication and stale-source checks"
+      ],
+      "sourcesSearched": [
+        "Bundesagentur für Arbeit Jobsuche — Siemens Healthineers and FERCHAU detail pages",
+        "FERCHAU official vacancy",
+        "Getinge official careers",
+        "Fraunhofer official careers",
+        "Max Planck School of Biomedical AI official page",
+        "Helmholtz Munich official vacancy",
+        "University Hospital Tübingen official vacancy",
+        "Otto-von-Guericke University Magdeburg official careers and ATS",
+        "ETH Zürich official vacancy",
+        "TU Eindhoven official application endpoint",
+        "Böhme Medizintechnik official careers",
+        "KBR official Workday URL attempted but not revalidated",
+        "Jobvector and BA keyword/category searches (discovery only)"
+      ],
+      "sourceExecutionLedger": [
+        {
+          "source": "Bundesagentur für Arbeit — Siemens Healthineers vacancy",
+          "status": "official_page_checked",
+          "leads": 1,
+          "notes": "Live vacancy verified; excluded because it requires very good German."
+        },
+        {
+          "source": "FERCHAU official vacancy / BA record",
+          "status": "official_page_checked",
+          "leads": 1,
+          "notes": "Live junior embedded role verified; excluded because German and English at least B2 are required."
+        },
+        {
+          "source": "Getinge official careers",
+          "status": "official_page_checked",
+          "leads": 1,
+          "notes": "Live posting dated 4 October 2026; excluded on language and cybersecurity/standards evidence."
+        },
+        {
+          "source": "Fraunhofer official careers",
+          "status": "official_page_checked",
+          "leads": 1,
+          "notes": "Rostock industrial robotics student assistant posted yesterday; excluded because current student status is required."
+        },
+        {
+          "source": "Max Planck School of Biomedical AI",
+          "status": "official_page_checked",
+          "leads": 0,
+          "notes": "Existing call confirmed open; deadline 1 December 2026."
+        },
+        {
+          "source": "Helmholtz Munich",
+          "status": "official_page_checked",
+          "leads": 0,
+          "notes": "Existing optoacoustic tomography PhD confirmed open."
+        },
+        {
+          "source": "University Hospital Tübingen",
+          "status": "official_page_checked",
+          "leads": 0,
+          "notes": "Existing multi-tracer PET PhD confirmed open; deadline 31 October 2026."
+        },
+        {
+          "source": "Otto-von-Guericke University Magdeburg / official ATS",
+          "status": "official_page_checked",
+          "leads": 1,
+          "notes": "Precision Neuroimaging vacancy open to 15 November, but MRI research experience is required; excluded on technical fit."
+        },
+        {
+          "source": "ETH Zürich official vacancy",
+          "status": "official_page_checked",
+          "leads": 0,
+          "notes": "Existing machine-perfusion PhD page confirmed live; application fit retained for now."
+        },
+        {
+          "source": "TU Eindhoven official application endpoint",
+          "status": "official_page_checked",
+          "leads": 0,
+          "notes": "Existing contrast-ultrasound application endpoint accessible; original vacancy record retained with fit and work-authorization caveats."
+        },
+        {
+          "source": "Böhme Medizintechnik official careers",
+          "status": "official_page_checked",
+          "leads": 1,
+          "notes": "Page still online but legacy/undated 'ab sofort' wording and missing candidate evidence for DICOM/radiation physics mean it is not treated as current-qualified."
+        },
+        {
+          "source": "KBR official Workday posting",
+          "status": "unavailable_or_blocked",
+          "leads": 0,
+          "notes": "Current status could not be revalidated; last successful verification exceeds 72 hours, so held out of public active listings."
+        },
+        {
+          "source": "MAICO Diagnostics",
+          "status": "not_searched",
+          "leads": 0,
+          "notes": "No primary vacancy URL was present in the tracker and no current official listing was established; removed from public active listings."
+        },
+        {
+          "source": "Jobvector and Bundesagentur für Arbeit category searches",
+          "status": "indexed_search_attempted",
+          "leads": "category/keyword discovery",
+          "notes": "Discovery only; each candidate vacancy was assessed against primary evidence and the existing candidate gates."
+        },
+        {
+          "source": "Remaining configured source universe",
+          "status": "not_searched",
+          "leads": null,
+          "notes": "The complete configured source universe was not individually searched; coverage remains PARTIAL."
+        }
+      ],
+      "falseNegativeHunts": [
+        "Graduate / Berufseinsteiger / Absolvent role variants",
+        "Embedded C/C++ and medical-device software",
+        "Biosignal processing and physiological sensing",
+        "Medical imaging, PET and optoacoustic imaging",
+        "New postings from the last seven days",
+        "Language-gate regression checks on previously published listings",
+        "Stale, unverified and student-only posting checks"
+      ],
+      "coverage": {
+        "protocolVersion": "EUROPE-MEDTECH-v6",
+        "coverageGrade": "PARTIAL",
+        "searchExhaustion": "DOCUMENTED_DAILY_SWEEP_NOT_FULL_SOURCE_UNIVERSE",
+        "germanyPriority": "Germany-first; exact query share not instrumented",
+        "publicationThreshold": "75% minimum; 90% strong match",
+        "acceptanceAssessment": "No newly discovered vacancy passed every hard gate and the 75% publication floor. Six previously active listings were removed after language, technical-fit, stale-source or current-status re-adjudication. Five previously listed opportunities remain active in the public set. Two new leads were excluded with documented reasons. One unresolved Söring hardware/lifecycle lead remains held for technical evidence. The configured source universe was not exhaustively searched.",
+        "limitations": [
+          "A zero-new report means no new vacancy passed the gates in the sources actually searched; it does not mean no suitable jobs exist.",
+          "The full configured source universe was not individually searched.",
+          "Job boards and aggregators remain discovery-only unless primary vacancy evidence is verified.",
+          "Current status could not be revalidated for the KBR posting; it is not included in the active public set.",
+          "Work authorization remains vacancy-country-specific and must not be assumed for countries outside Germany."
+        ]
+      }
     }
   ]
 }
