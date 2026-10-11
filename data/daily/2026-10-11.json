@@ -3,11 +3,11 @@
   "reportType": "normal daily production refresh",
   "reportStatus": "PUBLISHED",
   "productionProtocol": "EUROPE-MEDTECH-v6",
-  "activeJobs": 5,
-  "freshJobs": 0,
+  "activeJobs": 6,
+  "freshJobs": 1,
   "previouslyListed": 5,
   "closingWithin7Days": 0,
-  "newGatePassing": 0,
+  "newGatePassing": 1,
   "provisionalFindings": 1,
   "provisionalFindingIds": [
     "soring-hardware-lifecycle-2026-10-10"
@@ -17,9 +17,12 @@
     "eth-machine-perfusion-phd-2026-09-26",
     "tue-contrast-ultrasound-nanobubbles-2026-09-28",
     "helmholtz-optoacoustic-tomography-2026-09-29",
-    "tue-quantitative-multitracer-pet-2026-09-29"
+    "tue-quantitative-multitracer-pet-2026-09-29",
+    "novanta-junior-test-verification-2026-10-11"
   ],
-  "freshJobIds": [],
+  "freshJobIds": [
+    "novanta-junior-test-verification-2026-10-11"
+  ],
   "excludedJobIds": [
     "maico-dsp-engineer-2026-09-09",
     "siemens-embedded-xray-2026-09-09",
@@ -95,6 +98,11 @@
       "id": "max-planck-bmai-phd-2026-09-10",
       "status": "reverified-active",
       "note": "Official Max Planck page confirms the 25-position call is open, with application deadline 1 December 2026. Computational/research-group fit should be assessed project by project."
+    },
+    {
+      "id": "novanta-junior-test-verification-2026-10-11",
+      "status": "verified-active-published",
+      "note": "Official Novanta Workday vacancy is accessible with an Apply route. Explicit entry-level wording says little to no professional experience is required and recent graduates are encouraged. Strong alignment with biomedical engineering, testing/validation, sensors and Python; language expectations are unstated and work authorization remains candidate-specific."
     }
   ],
   "researchLayers": [
@@ -104,7 +112,8 @@
     "Embedded C/C++, biosignal processing, medical imaging, sensing, validation and PhD probes",
     "Official vacancy verification before publication",
     "Strict zero-years, degree, language, technical-fit, source and current-status gates",
-    "Historical identity/fingerprint deduplication and stale-source checks"
+    "Historical identity/fingerprint deduplication and stale-source checks",
+    "Employment-first false-negative hunt: entry-level medical-device test/verification roles"
   ],
   "sourcesSearched": [
     "Bundesagentur für Arbeit Jobsuche — Siemens Healthineers and FERCHAU detail pages",
@@ -124,7 +133,8 @@
     "KaVo Dental official careers — specific entry-level electronics URL redirected to current careers list; vacancy not present in current list",
     "B. Braun official careers — embedded C/C++ role checked and excluded (professional experience and very good German required)",
     "Philips official careers indexed search — clinical application and engineering role family probe; exact entry-level role not confirmed sufficiently for publication",
-    "StepStone and Kimeta junior embedded C/C++ searches — indexed discovery only"
+    "StepStone and Kimeta junior embedded C/C++ searches — indexed discovery only",
+    "Novanta official Workday ATS — Junior Test Engineer, Berlin; entry-level and recent-graduate eligibility verified"
   ],
   "sourceExecutionLedger": [
     {
@@ -246,6 +256,12 @@
       "status": "indexed_search_attempted",
       "leads": 3,
       "notes": "Results include roles requiring fluent German, first practical experience, or no confirmed medical-device connection; no new record passed all gates."
+    },
+    {
+      "source": "Novanta official Workday ATS",
+      "status": "official_page_checked",
+      "leads": 1,
+      "notes": "Junior Test Engineer in Berlin; official page accessible with Apply route, explicit little-to-no-experience eligibility and biomedical engineering accepted. Language requirement unstated; work authorization to verify."
     }
   ],
   "falseNegativeHunts": [
@@ -263,21 +279,21 @@
     "searchExhaustion": "DOCUMENTED_DAILY_SWEEP_NOT_FULL_SOURCE_UNIVERSE",
     "germanyPriority": "Germany-first; exact query share not instrumented",
     "publicationThreshold": "75% minimum; 90% strong match",
-    "acceptanceAssessment": "No newly discovered vacancy passed every hard gate and the 75% publication floor. Six previously active listings were removed after language, technical-fit, stale-source or current-status re-adjudication. Five previously listed opportunities remain active in the public set. Two new leads were excluded with documented reasons. One unresolved Söring hardware/lifecycle lead remains held for technical evidence. The configured source universe was not exhaustively searched.",
+    "acceptanceAssessment": "One new-to-archive typical employment vacancy passed the publication threshold after official ATS verification: Novanta Junior Test Engineer (87%). Five retained doctoral/research opportunities remain active in their separate category. Other candidate leads were excluded or held where language, technical fit, stale status or official-source evidence did not pass. Coverage remains PARTIAL; the configured source universe was not exhaustively searched.",
     "limitations": [
-      "A zero-new report means no new vacancy passed the gates in the sources actually searched; it does not mean no suitable jobs exist.",
       "The full configured source universe was not individually searched.",
       "Job boards and aggregators remain discovery-only unless primary vacancy evidence is verified.",
       "Current status could not be revalidated for the KBR posting; it is not included in the active public set.",
-      "Work authorization remains vacancy-country-specific and must not be assumed for countries outside Germany."
+      "Work authorization remains vacancy-country-specific and must not be assumed for countries outside Germany.",
+      "Novanta's accessible official posting did not state a language level; confirm working-language expectations with the employer."
     ]
   },
-  "typicalEmploymentJobs": 0,
+  "typicalEmploymentJobs": 1,
   "researchPhdJobs": 5,
   "defaultView": "Typical jobs",
   "roleTypeBreakdown": {
-    "typicalEmployment": 0,
+    "typicalEmployment": 1,
     "researchPhd": 5
   },
-  "publicationInterpretation": "No typical employment vacancy passed all gates in today's verified sources. Five retained opportunities are doctoral/research-track roles and are displayed separately from the default Jobs view."
+  "publicationInterpretation": "One typical employment role passed the publication gates in today's verified sources: Novanta's Berlin Junior Test Engineer role explicitly welcomes recent graduates and requires little to no professional experience. Five retained doctoral/research opportunities remain separate under Research & PhD. Language expectations were unstated on the Novanta posting and work authorization still needs individual confirmation."
 }
