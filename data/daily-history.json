@@ -384,7 +384,10 @@
       "closingWithin7Days": 0,
       "newGatePassing": 0,
       "provisionalFindings": 1,
-      "notes": "11 October production refresh. No new vacancy cleared all gates. Six prior active listings were removed after strict language, technical-fit, stale-source or current-status checks; five remain active. Coverage is PARTIAL, not an exhaustive market claim."
+      "notes": "11 October production refresh. No new vacancy cleared all gates. Six prior active listings were removed after strict language, technical-fit, stale-source or current-status checks; five remain active. Coverage is PARTIAL, not an exhaustive market claim.",
+      "typicalEmploymentJobs": 0,
+      "researchPhdJobs": 5,
+      "defaultView": "Typical jobs"
     }
   ]
 }
