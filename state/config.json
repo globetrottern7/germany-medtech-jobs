@@ -374,15 +374,15 @@
   "queryBudget": {
     "dailyTotal": 60,
     "ATS": 12,
-    "employerT1": 12,
+    "employerT1": 10,
     "regionalCluster": 6,
     "BA_Interamt_Bund": 4,
     "standardsTooling": 4,
     "graduate": 8,
     "research": 3,
     "tier2Europe": 3,
-    "specialist": 6,
-    "activeVerificationAndFalseNegativeReserve": 7
+    "specialist": 5,
+    "activeVerificationAndFalseNegativeReserve": 5
   },
   "falseNegativeHunt": {
     "dailyProbes": 4,
