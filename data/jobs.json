@@ -1039,7 +1039,7 @@
       ],
       "match": 87,
       "fresh": true,
-      "status": "active",
+      "status": "excluded",
       "url": "https://novanta.wd5.myworkdayjobs.com/en-US/Novanta-Careers/job/Berlin-Germany/Junior-Test-Engineer--m-f-d-_R009292",
       "sourceType": "official ATS",
       "sourceLayers": [
@@ -1048,7 +1048,7 @@
         "Test and verification",
         "Medical-device manufacturer"
       ],
-      "openVerified": true,
+      "openVerified": false,
       "lastVerified": "2026-10-11",
       "experienceRequirement": "ENTRY_LEVEL_ZERO_TO_LOW",
       "languageRequirement": "UNSTATED",
@@ -1084,7 +1084,9 @@
         "languageFit": 7,
         "materialRequirements": 12,
         "roleAlignment": 8
-      }
+      },
+      "exclusionReason": "Held out of active publication after a current status conflict: the official Workday URL remains accessible, but a recent job-board mirror says the vacancy is no longer accepting applications. Current official application availability could not be established conclusively; do not present as an active job until reverified.",
+      "lastAttempted": "2026-10-11"
     }
   ]
 }
