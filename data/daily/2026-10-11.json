@@ -119,7 +119,12 @@
     "TU Eindhoven official application endpoint",
     "Böhme Medizintechnik official careers",
     "KBR official Workday URL attempted but not revalidated",
-    "Jobvector and BA keyword/category searches (discovery only)"
+    "Jobvector and BA keyword/category searches (discovery only)",
+    "Indeed Germany Medizintechnik Absolvent results — indexed discovery only",
+    "KaVo Dental official careers — specific entry-level electronics URL redirected to current careers list; vacancy not present in current list",
+    "B. Braun official careers — embedded C/C++ role checked and excluded (professional experience and very good German required)",
+    "Philips official careers indexed search — clinical application and engineering role family probe; exact entry-level role not confirmed sufficiently for publication",
+    "StepStone and Kimeta junior embedded C/C++ searches — indexed discovery only"
   ],
   "sourceExecutionLedger": [
     {
@@ -211,6 +216,36 @@
       "status": "not_searched",
       "leads": null,
       "notes": "The complete configured source universe was not individually searched; coverage remains PARTIAL."
+    },
+    {
+      "source": "Indeed Germany — Medizintechnik Absolvent",
+      "status": "indexed_search_attempted",
+      "leads": 4,
+      "notes": "Results included an old Böhme graduate role, an electronics graduate role outside clear MedTech fit, and non-engineering/production leads. Discovery only."
+    },
+    {
+      "source": "KaVo Dental official careers",
+      "status": "official_page_checked",
+      "leads": 1,
+      "notes": "Specific electronics role URL redirects to current careers page and is not in the current vacancy list; not published."
+    },
+    {
+      "source": "B. Braun official careers",
+      "status": "official_page_checked",
+      "leads": 1,
+      "notes": "C/C++ medical-device embedded role requires practical experience and very good German; candidate's German B1 and zero years fail hard gates."
+    },
+    {
+      "source": "Philips official careers",
+      "status": "indexed_search_attempted",
+      "leads": 1,
+      "notes": "Clinical application role-family probe; no exact role was verified with language and zero-years fit sufficient to publish."
+    },
+    {
+      "source": "StepStone and Kimeta junior embedded C/C++",
+      "status": "indexed_search_attempted",
+      "leads": 3,
+      "notes": "Results include roles requiring fluent German, first practical experience, or no confirmed medical-device connection; no new record passed all gates."
     }
   ],
   "falseNegativeHunts": [
@@ -236,5 +271,13 @@
       "Current status could not be revalidated for the KBR posting; it is not included in the active public set.",
       "Work authorization remains vacancy-country-specific and must not be assumed for countries outside Germany."
     ]
-  }
+  },
+  "typicalEmploymentJobs": 0,
+  "researchPhdJobs": 5,
+  "defaultView": "Typical jobs",
+  "roleTypeBreakdown": {
+    "typicalEmployment": 0,
+    "researchPhd": 5
+  },
+  "publicationInterpretation": "No typical employment vacancy passed all gates in today's verified sources. Five retained opportunities are doctoral/research-track roles and are displayed separately from the default Jobs view."
 }
