@@ -2081,11 +2081,11 @@
       "reportType": "normal daily production refresh",
       "reportStatus": "PUBLISHED",
       "productionProtocol": "EUROPE-MEDTECH-v6",
-      "activeJobs": 5,
-      "freshJobs": 0,
+      "activeJobs": 6,
+      "freshJobs": 1,
       "previouslyListed": 5,
       "closingWithin7Days": 0,
-      "newGatePassing": 0,
+      "newGatePassing": 1,
       "provisionalFindings": 1,
       "provisionalFindingIds": [
         "soring-hardware-lifecycle-2026-10-10"
@@ -2095,9 +2095,12 @@
         "eth-machine-perfusion-phd-2026-09-26",
         "tue-contrast-ultrasound-nanobubbles-2026-09-28",
         "helmholtz-optoacoustic-tomography-2026-09-29",
-        "tue-quantitative-multitracer-pet-2026-09-29"
+        "tue-quantitative-multitracer-pet-2026-09-29",
+        "novanta-junior-test-verification-2026-10-11"
       ],
-      "freshJobIds": [],
+      "freshJobIds": [
+        "novanta-junior-test-verification-2026-10-11"
+      ],
       "excludedJobIds": [
         "maico-dsp-engineer-2026-09-09",
         "siemens-embedded-xray-2026-09-09",
@@ -2350,14 +2353,15 @@
           "Work authorization remains vacancy-country-specific and must not be assumed for countries outside Germany."
         ]
       },
-      "typicalEmploymentJobs": 0,
+      "typicalEmploymentJobs": 1,
       "researchPhdJobs": 5,
       "defaultView": "Typical jobs",
       "roleTypeBreakdown": {
         "typicalEmployment": 0,
         "researchPhd": 5
       },
-      "publicationInterpretation": "No typical employment vacancy passed all gates in today's verified sources. Five retained opportunities are doctoral/research-track roles and are displayed separately from the default Jobs view."
+      "publicationInterpretation": "No typical employment vacancy passed all gates in today's verified sources. Five retained opportunities are doctoral/research-track roles and are displayed separately from the default Jobs view.",
+      "notes": "11 October production refresh plus focused employment-first false-negative hunt. One verified entry-level typical job (Novanta Junior Test Engineer, 87%) added after official ATS confirmation. Five PhD/research roles remain in the separate category. Coverage remains PARTIAL."
     }
   ]
 }
