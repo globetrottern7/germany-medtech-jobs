@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-10",
+  "lastUpdated": "2026-10-11",
   "jobs": [
     {
       "id": "maico-dsp-engineer-2026-09-09",
@@ -15,7 +15,9 @@
       ],
       "match": 78,
       "fresh": false,
-      "status": "active"
+      "status": "excluded",
+      "exclusionReason": "No official vacancy URL is recorded and today's search did not establish a current employer/ATS posting. Removed from active publication until a current primary source can be verified.",
+      "lastAttempted": "2026-10-11"
     },
     {
       "id": "rostock-signal-processing-implants-2026-09-09",
@@ -68,8 +70,11 @@
       ],
       "match": 82,
       "fresh": false,
-      "status": "active",
-      "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12465-1628199-1-S"
+      "status": "excluded",
+      "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12465-1628199-1-S",
+      "exclusionReason": "Official Bundesagentur für Arbeit vacancy explicitly requires very good German; candidate profile records German B1. Current role is live but fails the existing language gate.",
+      "lastAttempted": "2026-10-11",
+      "lastVerified": "2026-10-11"
     },
     {
       "id": "boston-scientific-ep-graduate-2026-09-09",
@@ -325,8 +330,10 @@
       ],
       "match": 75,
       "fresh": false,
-      "status": "active",
-      "url": "https://boehme-medizintechnik.de/karriere/"
+      "status": "excluded",
+      "url": "https://boehme-medizintechnik.de/karriere/",
+      "exclusionReason": "Employer page remains online but is an undated/legacy 'ab sofort' posting; today's search result dates the page to an old crawl. The profile also does not evidence the stated DICOM and radiation-physics/radiation-protection basics. Not safe to treat as a verified current vacancy.",
+      "lastAttempted": "2026-10-11"
     },
     {
       "id": "medsoto-junior-polarion-alm-medtech-2026-09-12",
@@ -360,9 +367,12 @@
         "Adjacent"
       ],
       "match": 75,
-      "fresh": true,
-      "status": "active",
-      "url": "https://touch.ferchau.com/de/de/job/370024/junior-softwareentwickler-embedded-c-c-c"
+      "fresh": false,
+      "status": "excluded",
+      "url": "https://touch.ferchau.com/de/de/job/370024/junior-softwareentwickler-embedded-c-c-c",
+      "exclusionReason": "Current official/BA listing specifies German and English at least B2; candidate profile records German B1. Entry-level and technical fit do not override the language gate.",
+      "lastAttempted": "2026-10-11",
+      "lastVerified": "2026-10-11"
     },
     {
       "id": "charite-audiology-language-2026-09-13",
@@ -837,10 +847,12 @@
         "Validation"
       ],
       "match": 86,
-      "fresh": true,
-      "status": "active",
+      "fresh": false,
+      "status": "excluded",
       "url": "https://kbr.wd1.myworkdayjobs.com/en-US/KBR_Careers/job/Cologne-Germany/Biomedical-Engineer_R2080211",
-      "workAuthorization": "NOT_EXPLICITLY_STATED"
+      "workAuthorization": "NOT_EXPLICITLY_STATED",
+      "exclusionReason": "The official Workday vacancy URL could not be revalidated in today's run. Last successful verification is outside the 72-hour window; removed from public active listings pending a current-status check.",
+      "lastAttempted": "2026-10-11"
     },
     {
       "id": "eth-machine-perfusion-phd-2026-09-26",
@@ -1001,10 +1013,13 @@
         "PhD"
       ],
       "match": 82,
-      "fresh": true,
-      "status": "active",
+      "fresh": false,
+      "status": "excluded",
       "deadline": "2026-11-15",
-      "url": "https://www.ovgu.de/Karriere_wissenschaftlichesPersonal.html"
+      "url": "https://www.ovgu.de/Karriere_wissenschaftlichesPersonal.html",
+      "exclusionReason": "Official vacancy requires research experience in MRI, ideally ultra-high-field MRI; the stored candidate profile does not establish MRI research experience. Degree and English fit alone are insufficient.",
+      "lastAttempted": "2026-10-11",
+      "lastVerified": "2026-10-11"
     }
   ]
 }
