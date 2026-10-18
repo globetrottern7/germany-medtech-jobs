@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-11",
+  "lastUpdated": "2026-10-18",
   "jobs": [
     {
       "id": "maico-dsp-engineer-2026-09-09",
@@ -1039,7 +1039,7 @@
       ],
       "match": 87,
       "fresh": true,
-      "status": "excluded",
+      "status": "active",
       "url": "https://novanta.wd5.myworkdayjobs.com/en-US/Novanta-Careers/job/Berlin-Germany/Junior-Test-Engineer--m-f-d-_R009292",
       "sourceType": "official ATS",
       "sourceLayers": [
@@ -1048,8 +1048,8 @@
         "Test and verification",
         "Medical-device manufacturer"
       ],
-      "openVerified": false,
-      "lastVerified": "2026-10-11",
+      "openVerified": true,
+      "lastVerified": "2026-10-18",
       "experienceRequirement": "ENTRY_LEVEL_ZERO_TO_LOW",
       "languageRequirement": "UNSTATED",
       "workAuthorization": "WORK_AUTHORIZATION_VERIFY",
@@ -1061,7 +1061,7 @@
         "offered": "unclear",
         "evidence": "Official vacancy does not establish relocation support."
       },
-      "evidence": "Official Novanta Workday vacancy page is accessible with an Apply route. The description explicitly says this is entry-level and little to no professional experience is required; recent graduates are encouraged. Role tests medical devices and tubing sets, creates/executes test cases, validates test stations and uses test equipment/sensors. No explicit language requirement was stated on the accessible posting.",
+      "evidence": "Reverified on 18 October 2026: official Novanta Workday vacancy displays Apply, Berlin location, and Posted 4 Days Ago. Description explicitly welcomes recent graduates and says little to no professional experience is required. Language level is not stated; work authorization must be confirmed.",
       "confidence": "HIGH",
       "fingerprint": "novanta medical gmbh|junior test engineer|berlin germany|germany",
       "fit": [
@@ -1085,8 +1085,7 @@
         "materialRequirements": 12,
         "roleAlignment": 8
       },
-      "exclusionReason": "Held out of active publication after a current status conflict: the official Workday URL remains accessible, but a recent job-board mirror says the vacancy is no longer accepting applications. Current official application availability could not be established conclusively; do not present as an active job until reverified.",
-      "lastAttempted": "2026-10-11"
+      "lastAttempted": "2026-10-18"
     },
     {
       "id": "stryker-rd-biomedical-mechanical-graduate-2027-ireland",
