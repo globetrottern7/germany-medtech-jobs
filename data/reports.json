@@ -2360,6 +2360,47 @@
       },
       "publicationInterpretation": "No typical employment vacancy passed all gates in today's verified sources. Five retained opportunities are doctoral/research-track roles and are displayed separately from the default Jobs view.",
       "notes": "11 October production refresh plus focused employment-first false-negative hunt. No typical employment role published after final current-status adjudication; one Stryker R&D graduate programme is provisional pending grade equivalence and Ireland work authorization. Five PhD/research roles remain separate. Coverage remains PARTIAL."
+    },
+    {
+      "date": "2026-10-18",
+      "reportType": "focused daily production refresh",
+      "reportStatus": "PUBLISHED",
+      "productionProtocol": "EUROPE-MEDTECH-v6",
+      "activeJobs": 6,
+      "freshJobs": 1,
+      "previouslyListed": 5,
+      "closingWithin7Days": 1,
+      "newGatePassing": 1,
+      "provisionalFindings": 2,
+      "provisionalFindingIds": [
+        "soring-hardware-lifecycle-2026-10-10",
+        "stryker-rd-biomedical-mechanical-graduate-2027-ireland"
+      ],
+      "jobIds": [
+        "max-planck-bmai-phd-2026-09-10",
+        "eth-machine-perfusion-phd-2026-09-26",
+        "tue-contrast-ultrasound-nanobubbles-2026-09-28",
+        "helmholtz-optoacoustic-tomography-2026-09-29",
+        "tue-quantitative-multitracer-pet-2026-09-29",
+        "novanta-junior-test-verification-2026-10-11"
+      ],
+      "freshJobIds": [
+        "novanta-junior-test-verification-2026-10-11"
+      ],
+      "excludedJobIds": [
+        "maico-dsp-engineer-2026-09-09",
+        "siemens-embedded-xray-2026-09-09",
+        "bohme-medtech-graduate-xray-2026-09-12",
+        "ferchau-junior-embedded-cpp-2026-09-13",
+        "kbr-biomedical-engineer-2026-09-26",
+        "ovgu-precision-neuroimaging-2026-10-02",
+        "getinge-cybersecurity-medical-systems-2026-10-11",
+        "fraunhofer-rostock-industrial-robotics-student-2026-10-11"
+      ],
+      "typicalEmploymentJobs": 1,
+      "researchPhdJobs": 5,
+      "defaultView": "Typical jobs",
+      "notes": "18 October focused revalidation: Novanta Junior Test Engineer (Berlin) confirmed open on official Workday with Apply and posted 4 days ago; published as the first typical employment role. Stryker graduate programme remains provisional; deadline 24 October. Coverage partial, not full-source-universe exhaustion."
     }
   ]
 }
