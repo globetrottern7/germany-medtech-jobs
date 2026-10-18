@@ -388,6 +388,18 @@
       "typicalEmploymentJobs": 0,
       "researchPhdJobs": 5,
       "defaultView": "Typical jobs"
+    },
+    {
+      "date": "2026-10-18",
+      "reportStatus": "PUBLISHED",
+      "reportType": "focused daily production refresh",
+      "activePublishedEquivalent": 6,
+      "freshJobs": 1,
+      "previouslyListed": 5,
+      "closingWithin7Days": 1,
+      "newGatePassing": 1,
+      "provisionalFindings": 2,
+      "notes": "Focused revalidation: Novanta Junior Test Engineer (Berlin) confirmed open on official Workday and published as a typical job (87%). Stryker graduate programme remains provisional pending grade and Ireland work authorization. Coverage partial."
     }
   ]
 }
