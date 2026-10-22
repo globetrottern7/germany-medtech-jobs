@@ -2410,13 +2410,15 @@
       "activeJobs": 5,
       "freshJobs": 0,
       "previouslyListed": 5,
-      "closingWithin7Days": 1,
+      "closingWithin7Days": 2,
       "newGatePassing": 0,
-      "provisionalFindings": 3,
+      "provisionalFindings": 5,
       "provisionalFindingIds": [
         "soring-hardware-lifecycle-2026-10-10",
         "stryker-rd-biomedical-mechanical-graduate-2027-ireland",
-        "edwards-clinical-graduate-program-germany-2027"
+        "edwards-clinical-graduate-program-germany-2027",
+        "stryker-rd-software-graduate-2027-ireland",
+        "stryker-advanced-operations-engineering-graduate-2027-ireland"
       ],
       "jobIds": [
         "max-planck-bmai-phd-2026-09-10",
@@ -2434,7 +2436,124 @@
       "typicalEmploymentJobs": 1,
       "researchPhdJobs": 4,
       "defaultView": "Typical jobs",
-      "notes": "Full source-recall recovery after discovering scheduled research automations were disabled. Five current official-source opportunities remain publishable (one typical employment, four PhD/research). Helmholtz vacancy URL returned 410 Gone and was removed. Edwards clinical graduate programme is a provisional finding pending driving-licence/language checks; Stryker deadline is 24 October and remains provisional pending grade/work authorization. Coverage remains PARTIAL; not every configured portal was directly inspected."
+      "notes": "22 October normal report reconciled with per-source execution ledger. Five published opportunities remain active (one typical employment, four research/PhD); no new role passed every hard gate and the 75% floor. Five provisional findings are tracked separately, including two Stryker programmes closing 24 October. Coverage remains PARTIAL.",
+      "closingWithin7DaysPublished": 0,
+      "closingWithin7DaysProvisional": 2,
+      "closingWithin7DaysScope": "Published roles plus provisional findings with explicit deadlines; published-only count is separately exposed.",
+      "sourceCoverage": {
+        "grade": "PARTIAL",
+        "sourceExecutionLedgerPath": "data/daily/2026-10-22.json#sourceCoverage.sourceExecutionLedger",
+        "sourceExecutionLedgerEntries": 177,
+        "statusCounts": {
+          "official_page_checked": 27,
+          "indexed_search_attempted": 20,
+          "unavailable_or_blocked": 1,
+          "not_searched": 129
+        }
+      },
+      "findings": [
+        {
+          "id": "novanta-junior-test-verification-2026-10-11",
+          "status": "ACTIVE_PUBLISHED",
+          "note": "Official Workday result checked today shows Apply and Posted 4 Days Ago; explicit recent-graduate and little-to-no-experience language. 87% CV match. German/English level not specified by employer; work authorization remains candidate-specific."
+        },
+        {
+          "id": "helmholtz-optoacoustic-tomography-2026-09-29",
+          "status": "REMOVED_CLOSED_SOURCE_410",
+          "note": "Official employer job URL returns HTTP 410 Gone on 22 October. Removed from active publication; do not keep stale vacancy in public count."
+        },
+        {
+          "id": "edwards-clinical-graduate-program-germany-2027",
+          "status": "PROVISIONAL_NOT_COUNTED_AS_ACTIVE",
+          "note": "Official page posted 5 days ago; Biomedical Engineering accepted; April 2027 start. Requires a valid European driving licence recognized in Germany and proficiency in an additional European language. Candidate licence status and language proficiency evidence are missing."
+        },
+        {
+          "id": "stryker-rd-biomedical-mechanical-graduate-2027-ireland",
+          "status": "PROVISIONAL_DEADLINE_SOON",
+          "note": "Official page checked 22 Oct; deadline 24 Oct 2026; grade equivalence unresolved; Ireland authorization flagged separately.",
+          "url": "https://careers.stryker.com/r-d-biomedical-mechanical-engineering-graduate-program-september-2027/job/7C1433160499E856F8E5CA898E41FC5D"
+        },
+        {
+          "id": "philips-test-development-engineer-588485",
+          "status": "EXCLUDED_OFFICIAL_PAGE_NOT_CURRENT",
+          "note": "Official Philips page returned no matching jobs on 22 October; not counted open.",
+          "url": "https://www.careers.philips.com/emea/en/job/588485/Test-Development-Engineer-fixed-term-All-genders"
+        },
+        {
+          "id": "biotronik-software-engineer-test-61147",
+          "status": "EXCLUDED_CLOSED_AND_EXPERIENCE_LANGUAGE_GATES",
+          "note": "LinkedIn result states applications are no longer accepted. Posting asks for software-development and test-automation experience and confident German/English; not publishable."
+        },
+        {
+          "id": "dlr-medizininformatiker-5649",
+          "status": "EXCLUDED_LANGUAGE_GATE",
+          "note": "Official DLR posting is current and technically relevant to ECG/EEG, sensor data and Python/C++; it requires very good German and English. Candidate German B1 fails the documented language gate; no exception assumed."
+        },
+        {
+          "id": "pentracor-production-validation-engineer-2026-10-22",
+          "status": "EXCLUDED_LANGUAGE_GATE",
+          "note": "Fresh LinkedIn discovery explicitly welcomes entry-level candidates and covers medical-device production qualification/validation, but requires very good German and good English. German B1 fails current gate; not published."
+        },
+        {
+          "id": "philips-rd-measurement-algorithms-583382",
+          "status": "EXCLUDED_LANGUAGE_GATE_AND_CURRENT_SOURCE_CHECK",
+          "note": "Indexed result has very strong skill alignment (physiological signal processing, C++, Python/MATLAB, real-time platforms and validation), but requires fluent German and English. Official current vacancy status was not independently confirmed; discovery only, not published."
+        },
+        {
+          "id": "tuv-rheinland-medical-device-auditor-family",
+          "status": "EXCLUDED_EXPERIENCE_LANGUAGE_SCOPE",
+          "note": "Official specialist board shows active medical-device auditor/product-expert roles, but no role-specific zero-years evidence was established and the German-language requirements are likely material. Not published without role-level verification."
+        },
+        {
+          "id": "alten-vie-electronics-medical-devices-2026-10-22",
+          "status": "EXCLUDED_PROGRAM_ELIGIBILITY_LANGUAGE",
+          "note": "Official ALTEN page describes a V.I.E. route restricted to EU graduates aged 18–28 and fluent German/English, with electronics experience; candidate eligibility is not established and German B1 fails the language gate."
+        },
+        {
+          "id": "stryker-rd-software-graduate-2027-ireland",
+          "status": "PROVISIONAL_DEADLINE_SOON",
+          "note": "Official page checked 22 Oct; deadline 24 Oct 2026; degree-discipline equivalence unresolved; Ireland authorization flagged separately.",
+          "url": "https://careers.stryker.com/r-d-software-engineering-graduate-program-september-2027/job/5A4464A6EB34988086F170005CA7C7F4"
+        },
+        {
+          "id": "stryker-advanced-operations-engineering-graduate-2027-ireland",
+          "status": "PROVISIONAL_GRADE_EQUIVALENCE",
+          "note": "Official page checked 22 Oct; Biomedical Engineering is accepted, but Irish 2.1 grade equivalence unresolved.",
+          "url": "https://careers.stryker.com/advanced-operations-engineering-graduate-program-september-2027/job/62D71BD5DCB807D2FDC72B1E8CEF8A75"
+        },
+        {
+          "id": "b-braun-rd-electrical-engineer-14175",
+          "status": "NOT_PUBLISHED_ZERO_YEARS_AND_SKILL_EVIDENCE",
+          "note": "Official page live, but circuit/E-CAD requirements are not evidenced and zero-years eligibility is not established; not published.",
+          "url": "https://jobs.bbraun.com/job/Melsungen-R%26D-Electrical-Engineer-%28fmd%29-Medical-Device-Development/14175-en_US/"
+        },
+        {
+          "id": "boston-scientific-graduate-process-development-2027-ireland",
+          "status": "NOT_PUBLISHED_TECHNICAL_FIT_BELOW_THRESHOLD",
+          "note": "Official graduate role is current, but process/manufacturing fit does not clear 75% on documented evidence.",
+          "url": "https://jobs.bostonscientific.com/job/Clonmel-Graduate-Process-Development-Engineer-Boston-Scientific-2027-Graduate-Programme%2C-Clonmel-TA/1433030300/"
+        },
+        {
+          "id": "wdm-erbe-embedded-image-processing-2026-09-03",
+          "status": "DISCOVERY_ONLY_OFFICIAL_VERIFICATION_PENDING",
+          "note": "WDM lists September-dated Erbe Embedded Systems and Image Processing FPGA roles; employer ATS status not revalidated, so not active.",
+          "url": "https://wdm.world/jobs"
+        }
+      ],
+      "sourcesSearched": [
+        "Official employer ATS/career pages: Novanta Workday, Stryker Careers, Edwards Lifesciences, Philips Careers, BIOTRONIK career/LinkedIn posting",
+        "Official research/university pages: Max Planck School of Biomedical AI, ETH Zürich, TU/e Varbi, Helmholtz München, University Hospital Tübingen",
+        "Official public research employer: DLR careers",
+        "Employer career discovery: B. Braun and Dräger",
+        "Indexed job-board and web discovery queries: LinkedIn Jobs, Jobvector/StepStone-style indexed results and general English/German role-family queries",
+        "Additional false-negative probes: Pentracor production/validation engineering, Philips R&D Measurement Algorithms, TÜV Rheinland medical-device job board, ALTEN V.I.E electronics development",
+        "15-portal Germany baseline: site-scoped indexed searches submitted for each configured portal",
+        "Official Stryker Careers graduate programme checks",
+        "Official B. Braun and Philips current-page checks",
+        "Official Boston Scientific and Intuitive role-family checks",
+        "WDM, Life Science Nord and Medical Valley regional job boards",
+        "EURES, EURAXESS, DLR and BA probes"
+      ]
     }
   ]
 }

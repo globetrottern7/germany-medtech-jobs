@@ -408,10 +408,28 @@
       "activeJobs": 5,
       "freshJobs": 0,
       "previouslyListed": 5,
-      "closingWithin7Days": 1,
+      "closingWithin7Days": 2,
       "newGatePassing": 0,
-      "provisionalFindings": 3,
-      "notes": "Recovered after finding the scheduled daily research automations disabled. Rechecked current official sources; removed Helmholtz PhD after 410 Gone. Published one typical employment role and four research/PhD roles. Coverage PARTIAL; no evidence of a full direct sweep of every configured portal."
+      "provisionalFindings": 5,
+      "notes": "Normal report reconciled after source-matrix verification; coverage PARTIAL, not full-universe.",
+      "closingWithin7DaysPublished": 0,
+      "closingWithin7DaysProvisional": 2,
+      "provisionalFindingIds": [
+        "soring-hardware-lifecycle-2026-10-10",
+        "stryker-rd-biomedical-mechanical-graduate-2027-ireland",
+        "edwards-clinical-graduate-program-germany-2027",
+        "stryker-rd-software-graduate-2027-ireland",
+        "stryker-advanced-operations-engineering-graduate-2027-ireland"
+      ],
+      "sourceCoverageGrade": "PARTIAL",
+      "sourceExecutionLedgerEntries": 177,
+      "sourceExecutionLedgerStatusCounts": {
+        "official_page_checked": 27,
+        "indexed_search_attempted": 20,
+        "unavailable_or_blocked": 1,
+        "not_searched": 129
+      },
+      "sourceExecutionLedgerPath": "data/daily/2026-10-22.json#sourceCoverage.sourceExecutionLedger"
     }
   ]
 }

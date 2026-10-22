@@ -87,3 +87,35 @@ The extended title-family search also surfaced:
 - **ALTEN V.I.E Electronics Development Engineer — Medical Devices, Jena:** official page requires EU-graduate status, age 18–28, electronics experience and fluent German/English. Eligibility is not established and German B1 fails the language gate.
 
 These findings show that the search taxonomy is surfacing adjacent and technically relevant roles. They also reinforce why a raw search count cannot be treated as the number of eligible jobs. The remaining operational gap is broad, source-by-source execution evidence across the configured portal matrix.
+
+
+## 17:20 production verification update — 22 October 2026
+
+### Publication and state reconciliation
+- Normal daily report: `data/daily/2026-10-22.json`, status `PUBLISHED`.
+- Reconciled the same date in `data/reports.json`, `data/daily-history.json`, and `data/research-status.json`.
+- Published opportunities: 5 (1 typical employment, 4 research/PhD); fresh 0; previously listed 5; new gate-passing 0.
+- Provisional findings: 5. Two Stryker graduate programmes have an explicit 24 October 2026 deadline; degree/grade equivalence remains unresolved. Ireland work authorization is flagged separately and is not used as a rejection.
+- Published-only roles closing within seven days: 0. Provisional deadline-soon leads: 2. Combined metric: 2.
+
+### Official-source status
+- Max Planck BMAI: official page live, deadline 1 December 2026.
+- ETH Zürich machine-perfusion PhD: official page live and application route available.
+- TU/e contrast-ultrasound PhD: official posting live, deadline 6 November 2026.
+- University Hospital Tübingen multi-tracer PET PhD: official posting live, deadline 31 October 2026.
+- Novanta Junior Test Engineer: direct Workday extraction failed in this verification. Earlier same-day official Workday result showed Apply and “Posted 4 Days Ago”; retained with this limitation and direct recheck required.
+- Helmholtz Munich optoacoustic PhD: official URL returned HTTP 410 Gone during the same-day recovery and is not active.
+
+### Additional findings
+- Stryker R&D Software Engineering Graduate Programme: official page live; deadline 24 October; provisional because degree-discipline equivalence is unresolved.
+- Stryker Advanced Operations Engineering Graduate Programme: official page live; Biomedical Engineering is accepted; provisional pending 2.1-grade equivalence.
+- B. Braun R&D Electrical Engineer: official page live, but circuit/E-CAD requirements and zero-years eligibility are not established; not published.
+- Philips Test Development Engineer: official page returned no matching jobs; excluded as not confirmed open.
+- Boston Scientific Graduate Process Development Engineer: current graduate listing found, but technical fit does not clear the 75% threshold on documented evidence.
+- B. Braun Senior Computer Vision and Intuitive Senior Product Support roles require several years; excluded.
+- WDM and Life Science Nord leads remain discovery-only pending employer-level current status and zero-years verification.
+
+### Source execution ledger
+The daily report now includes per-source statuses for the configured source matrix: 177 entries, 48 with an execution attempt/check and 129 explicitly `not_searched`. Statuses use the configured values `official_page_checked`, `indexed_search_attempted`, `unavailable_or_blocked`, and `not_searched`. Indexed searches are discovery-only; each indexed entry records its method and query. The 15 baseline portals have individual entries.
+
+**Coverage remains PARTIAL.** The ledger does not prove full execution of every configured source, and no maximum-exhaustion or market-wide absence claim is made. No candidate PII was added.

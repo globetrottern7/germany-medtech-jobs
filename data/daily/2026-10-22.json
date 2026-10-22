@@ -6,13 +6,15 @@
   "activeJobs": 5,
   "freshJobs": 0,
   "previouslyListed": 5,
-  "closingWithin7Days": 1,
+  "closingWithin7Days": 2,
   "newGatePassing": 0,
-  "provisionalFindings": 3,
+  "provisionalFindings": 5,
   "provisionalFindingIds": [
     "soring-hardware-lifecycle-2026-10-10",
     "stryker-rd-biomedical-mechanical-graduate-2027-ireland",
-    "edwards-clinical-graduate-program-germany-2027"
+    "edwards-clinical-graduate-program-germany-2027",
+    "stryker-rd-software-graduate-2027-ireland",
+    "stryker-advanced-operations-engineering-graduate-2027-ireland"
   ],
   "jobIds": [
     "max-planck-bmai-phd-2026-09-10",
@@ -33,40 +35,2857 @@
     "Official public research employer: DLR careers",
     "Employer career discovery: B. Braun and Dräger",
     "Indexed job-board and web discovery queries: LinkedIn Jobs, Jobvector/StepStone-style indexed results and general English/German role-family queries",
-    "Additional false-negative probes: Pentracor production/validation engineering, Philips R&D Measurement Algorithms, TÜV Rheinland medical-device job board, ALTEN V.I.E electronics development"
+    "Additional false-negative probes: Pentracor production/validation engineering, Philips R&D Measurement Algorithms, TÜV Rheinland medical-device job board, ALTEN V.I.E electronics development",
+    "15-portal Germany baseline: site-scoped indexed searches submitted for each configured portal",
+    "Official Stryker Careers graduate programme checks",
+    "Official B. Braun and Philips current-page checks",
+    "Official Boston Scientific and Intuitive role-family checks",
+    "WDM, Life Science Nord and Medical Valley regional job boards",
+    "EURES, EURAXESS, DLR and BA probes"
   ],
   "sourceCoverage": {
     "grade": "PARTIAL",
-    "note": "This is a targeted current-source sweep, not evidence that every configured portal was directly inspected. No current per-source execution ledger existed for 19–21 October, and the scheduled research automations were disabled. The configured 15-portal Germany baseline and wider ATS/employer universe remain the intended source universe.",
-    "directOfficialChecks": [
-      "Novanta Workday",
-      "Stryker Careers",
-      "Edwards Lifesciences",
-      "Philips Careers",
-      "BIOTRONIK listing",
-      "DLR careers",
-      "Max Planck",
-      "ETH Zürich",
-      "TU/e",
-      "Helmholtz München",
-      "University Hospital Tübingen"
+    "coverageStatus": "PARTIAL",
+    "ledgerVersion": "EUROPE-MEDTECH-source-ledger-v1",
+    "coverageDate": "2026-10-22",
+    "runTimestamp": "2026-10-22T13:47:48+02:00",
+    "fullCoverageClaim": false,
+    "queryBudgetTarget": 60,
+    "queryRecordsSubmitted": 63,
+    "configuredSourceCount": 177,
+    "executedSourceCount": 48,
+    "notSearchedCount": 129,
+    "statusCounts": {
+      "official_page_checked": 27,
+      "indexed_search_attempted": 20,
+      "unavailable_or_blocked": 1,
+      "not_searched": 129
+    },
+    "sourceExecutionLedger": [
+      {
+        "source": "Indeed",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "sourceTiers.specialist"
+        ],
+        "status": "indexed_search_attempted",
+        "method": "site_scoped_indexed_web_search",
+        "query": "site:indeed.com Germany MedTech biomedical engineer graduate 0 years October 2026",
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "No matching item surfaced in this search response; not an absence claim.",
+        "evidenceUrls": [],
+        "lastAttempted": "2026-10-22",
+        "notes": "Indexed search is not direct portal validation."
+      },
+      {
+        "source": "LinkedIn Jobs",
+        "sourceGroups": [
+          "weeklySourceBaseline"
+        ],
+        "status": "indexed_search_attempted",
+        "method": "site_scoped_indexed_web_search",
+        "query": "site:linkedin.com/jobs Germany junior biomedical engineer medical device test validation October 2026",
+        "indexedResultsSurfaced": 1,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Discovery only; no new vacancy from this source passed all gates.",
+        "evidenceUrls": [],
+        "lastAttempted": "2026-10-22",
+        "notes": "Indexed search is not direct portal validation."
+      },
+      {
+        "source": "XING Jobs",
+        "sourceGroups": [
+          "weeklySourceBaseline"
+        ],
+        "status": "indexed_search_attempted",
+        "method": "site_scoped_indexed_web_search",
+        "query": "site:xing.com/jobs Medizintechnik Absolvent Ingenieur Deutschland Oktober 2026",
+        "indexedResultsSurfaced": 2,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Discovery only; no new vacancy from this source passed all gates.",
+        "evidenceUrls": [],
+        "lastAttempted": "2026-10-22",
+        "notes": "Indexed search is not direct portal validation."
+      },
+      {
+        "source": "StepStone",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "addedSources",
+          "sourceTiers.specialist"
+        ],
+        "status": "indexed_search_attempted",
+        "method": "site_scoped_indexed_web_search",
+        "query": "site:stepstone.de/jobs Medizintechnik Berufseinsteiger Ingenieur Deutschland 2026",
+        "indexedResultsSurfaced": 2,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Discovery only; no new vacancy from this source passed all gates.",
+        "evidenceUrls": [],
+        "lastAttempted": "2026-10-22",
+        "notes": "Indexed search is not direct portal validation."
+      },
+      {
+        "source": "Jobware",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "addedSources",
+          "sourceTiers.specialist"
+        ],
+        "status": "indexed_search_attempted",
+        "method": "site_scoped_indexed_web_search",
+        "query": "site:jobware.de/jobs Medizintechnik Ingenieur Berufseinsteiger Deutschland 2026",
+        "indexedResultsSurfaced": 1,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Discovery only; no new vacancy from this source passed all gates.",
+        "evidenceUrls": [],
+        "lastAttempted": "2026-10-22",
+        "notes": "Indexed search is not direct portal validation."
+      },
+      {
+        "source": "Monster",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "sourceTiers.specialist"
+        ],
+        "status": "indexed_search_attempted",
+        "method": "site_scoped_indexed_web_search",
+        "query": "site:monster.de Medizintechnik Ingenieur Junior Deutschland 2026",
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "No matching item surfaced in this search response; not an absence claim.",
+        "evidenceUrls": [],
+        "lastAttempted": "2026-10-22",
+        "notes": "Indexed search is not direct portal validation."
+      },
+      {
+        "source": "meinestadt.de",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "sourceTiers.specialist"
+        ],
+        "status": "indexed_search_attempted",
+        "method": "site_scoped_indexed_web_search",
+        "query": "site:meinestadt.de/jobs Medizintechnik Ingenieur Deutschland Oktober 2026",
+        "indexedResultsSurfaced": 2,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Discovery only; no new vacancy from this source passed all gates.",
+        "evidenceUrls": [],
+        "lastAttempted": "2026-10-22",
+        "notes": "Indexed search is not direct portal validation."
+      },
+      {
+        "source": "stellenanzeigen.de",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "sourceTiers.specialist"
+        ],
+        "status": "indexed_search_attempted",
+        "method": "site_scoped_indexed_web_search",
+        "query": "site:stellenanzeigen.de Medizintechnik Ingenieur Absolvent 2026",
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "No matching item surfaced in this search response; not an absence claim.",
+        "evidenceUrls": [],
+        "lastAttempted": "2026-10-22",
+        "notes": "Indexed search is not direct portal validation."
+      },
+      {
+        "source": "Yourfirm",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "addedSources",
+          "sourceTiers.specialist"
+        ],
+        "status": "indexed_search_attempted",
+        "method": "site_scoped_indexed_web_search",
+        "query": "site:yourfirm.de Medizintechnik Ingenieur Berufseinsteiger 2026",
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "No matching item surfaced in this search response; not an absence claim.",
+        "evidenceUrls": [],
+        "lastAttempted": "2026-10-22",
+        "notes": "Indexed search is not direct portal validation."
+      },
+      {
+        "source": "Kimeta",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "sourceTiers.specialist"
+        ],
+        "status": "indexed_search_attempted",
+        "method": "site_scoped_indexed_web_search",
+        "query": "site:kimeta.de Medizintechnik Ingenieur Deutschland 2026",
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "No matching item surfaced in this search response; not an absence claim.",
+        "evidenceUrls": [],
+        "lastAttempted": "2026-10-22",
+        "notes": "Indexed search is not direct portal validation."
+      },
+      {
+        "source": "Jooble",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "sourceTiers.specialist"
+        ],
+        "status": "indexed_search_attempted",
+        "method": "site_scoped_indexed_web_search",
+        "query": "site:jooble.org Medizintechnik Ingenieur Junior Germany 2026",
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "No matching item surfaced in this search response; not an absence claim.",
+        "evidenceUrls": [],
+        "lastAttempted": "2026-10-22",
+        "notes": "Indexed search is not direct portal validation."
+      },
+      {
+        "source": "Jobvector",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "addedSources",
+          "sourceTiers.specialist"
+        ],
+        "status": "indexed_search_attempted",
+        "method": "site_scoped_indexed_web_search",
+        "query": "site:jobvector.de Medizintechnik Ingenieur Absolvent 2026",
+        "indexedResultsSurfaced": 1,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Discovery only; no new vacancy from this source passed all gates.",
+        "evidenceUrls": [],
+        "lastAttempted": "2026-10-22",
+        "notes": "Indexed search is not direct portal validation."
+      },
+      {
+        "source": "Absolventa",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "sourceTiers.specialist"
+        ],
+        "status": "indexed_search_attempted",
+        "method": "site_scoped_indexed_web_search",
+        "query": "site:absolventa.de Medizintechnik Ingenieur Berufseinsteiger 2026",
+        "indexedResultsSurfaced": 3,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Discovery only; no new vacancy from this source passed all gates.",
+        "evidenceUrls": [],
+        "lastAttempted": "2026-10-22",
+        "notes": "Indexed search is not direct portal validation."
+      },
+      {
+        "source": "JobTeaser",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "sourceTiers.specialist"
+        ],
+        "status": "indexed_search_attempted",
+        "method": "site_scoped_indexed_web_search",
+        "query": "site:jobteaser.com biomedical engineering Germany graduate 2026",
+        "indexedResultsSurfaced": 1,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Discovery only; no new vacancy from this source passed all gates.",
+        "evidenceUrls": [],
+        "lastAttempted": "2026-10-22",
+        "notes": "Indexed search is not direct portal validation."
+      },
+      {
+        "source": "Stellenwerk",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "sourceTiers.specialist"
+        ],
+        "status": "indexed_search_attempted",
+        "method": "site_scoped_indexed_web_search",
+        "query": "site:stellenwerk.de Medizintechnik Ingenieur Absolvent 2026",
+        "indexedResultsSurfaced": 2,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Discovery only; no new vacancy from this source passed all gates.",
+        "evidenceUrls": [],
+        "lastAttempted": "2026-10-22",
+        "notes": "Indexed search is not direct portal validation."
+      },
+      {
+        "source": "jobs.personio.de",
+        "sourceGroups": [
+          "ATS domains"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "softgarden",
+        "sourceGroups": [
+          "ATS domains",
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "successfactors",
+        "sourceGroups": [
+          "ATS domains",
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "workday",
+        "sourceGroups": [
+          "ATS domains",
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "join.com",
+        "sourceGroups": [
+          "ATS domains"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "greenhouse",
+        "sourceGroups": [
+          "ATS domains",
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "lever",
+        "sourceGroups": [
+          "ATS domains",
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "smartrecruiters",
+        "sourceGroups": [
+          "ATS domains",
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "taleo",
+        "sourceGroups": [
+          "ATS domains"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "icims",
+        "sourceGroups": [
+          "ATS domains"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "recruitee",
+        "sourceGroups": [
+          "ATS domains",
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "ashby",
+        "sourceGroups": [
+          "ATS domains",
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "jobvite",
+        "sourceGroups": [
+          "ATS domains"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "teamtailor",
+        "sourceGroups": [
+          "ATS domains",
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "interamt",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.public"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "eures",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.public"
+        ],
+        "status": "official_page_checked",
+        "method": "official European jobs portal",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Portal loads; no candidate-filtered individual vacancy verified.",
+        "evidenceUrls": [
+          "https://europa.eu/eures/portal/"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "nando",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regulatory",
+          "sourceTiers.associationEmployerUniverse",
+          "employerUniverse.regulatoryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "zlg",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regulatory",
+          "sourceTiers.associationEmployerUniverse",
+          "employerUniverse.regulatoryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "jobs.zeit.de",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "fraunhofer",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.research"
+        ],
+        "status": "official_page_checked",
+        "method": "same-day official employer page",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Student assistant listing requires current student status; excluded.",
+        "evidenceUrls": [
+          "https://jobs.fraunhofer.de/job/Rostock-Studentische-Hilfskraft-%28mwd%29-im-Bereich-Industrierobotik-%28IGP-2026-15%29-18059/1436113533/"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "helmholtz",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.research"
+        ],
+        "status": "official_page_checked",
+        "method": "same-day official page check",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Official URL returned HTTP 410 Gone; removed from active publication.",
+        "evidenceUrls": [],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "dgbmt",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.associationEmployerUniverse"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "fkt",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.associationEmployerUniverse"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "dgmp",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.associationEmployerUniverse"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "johner",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "metecon",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "seleon",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "mdss",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "qserve",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "WDM",
+        "sourceGroups": [
+          "addedSources",
+          "employerUniverse.primaryDirectories"
+        ],
+        "status": "official_page_checked",
+        "method": "regional specialist job board",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "259 listings; September-dated leads remain discovery-only pending employer ATS verification.",
+        "evidenceUrls": [
+          "https://wdm.world/jobs"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "Life Science Nord Jobs",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regionalSpecialist"
+        ],
+        "status": "official_page_checked",
+        "method": "regional cluster job board",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Current board checked; individual leads need primary verification.",
+        "evidenceUrls": [
+          "https://www.lifesciencenord.de/en/career/job-board.html"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "SPECTARIS",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.associationEmployerUniverse",
+          "employerUniverse.primaryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "VDGH",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.associationEmployerUniverse",
+          "employerUniverse.primaryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Bund.de",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.public"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Medical Valley EMN",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regionalSpecialist",
+          "employerUniverse.primaryDirectories"
+        ],
+        "status": "official_page_checked",
+        "method": "regional cluster posting",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Clinical studies project-manager lead does not clear technical-fit gate.",
+        "evidenceUrls": [
+          "https://www.medical-valley-emn.de/jobangebot-projektmanager-clinical-studies-m-w-d-bei-fast-track-medtech/"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "HealthCapital Berlin-Brandenburg",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regionalSpecialist",
+          "employerUniverse.primaryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "WQS",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.specialist",
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "personio",
+        "sourceGroups": [
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "join",
+        "sourceGroups": [
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "dvinci",
+        "sourceGroups": [
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "rexx",
+        "sourceGroups": [
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "haufe-umantis",
+        "sourceGroups": [
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "concludis",
+        "sourceGroups": [
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "umantis",
+        "sourceGroups": [
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "academics.de",
+        "sourceGroups": [
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "ingenieur.de",
+        "sourceGroups": [
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "staufenbiel",
+        "sourceGroups": [
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "berufsstart",
+        "sourceGroups": [
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "xing",
+        "sourceGroups": [
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "linkedin",
+        "sourceGroups": [
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "joblift",
+        "sourceGroups": [
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "medtechjobs.de",
+        "sourceGroups": [
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "MedTech-Jobs.de (medtechjobs.de)",
+        "sourceGroups": [
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "BA",
+        "sourceGroups": [
+          "sourceTiers.public"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Karriere Bund",
+        "sourceGroups": [
+          "sourceTiers.public"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "BfArM",
+        "sourceGroups": [
+          "sourceTiers.public"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "PEI",
+        "sourceGroups": [
+          "sourceTiers.public"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Make it in Germany",
+        "sourceGroups": [
+          "sourceTiers.public"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "DZG",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "max-planck",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "leibniz",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "DLR",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "indexed_search_attempted",
+        "method": "site-scoped indexed search",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Surfaced student thesis and earlier language-gated role; no new passing role.",
+        "evidenceUrls": [
+          "https://jobs.dlr.de/default/job/Masterarbeit-%28wmd%29-Bildverarbeitung-und-ML-zur-Partikeldetektion-in-optischen-Raumfahrtsystemen/5670-de_DE"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "charite",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "university-hospitals",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Nature Careers",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Academic Positions",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "ResearchGate Jobs",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "EURAXESS",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "indexed_search_attempted",
+        "method": "site-scoped indexed search",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Surfaced MHH/TUD/DKFZ calls with expired deadlines; no new passing role.",
+        "evidenceUrls": [
+          "https://euraxess.ec.europa.eu/jobs/467053"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "CORDIS",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "MSCA",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Marie Curie",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Jülich",
+        "sourceGroups": [
+          "sourceTiers.research",
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "MDC",
+        "sourceGroups": [
+          "sourceTiers.research",
+          "sourceTiers.regulatory",
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "DZHK",
+        "sourceGroups": [
+          "sourceTiers.research",
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "DZL",
+        "sourceGroups": [
+          "sourceTiers.research",
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "DZD",
+        "sourceGroups": [
+          "sourceTiers.research",
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "DKFZ",
+        "sourceGroups": [
+          "sourceTiers.research",
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "DZNE",
+        "sourceGroups": [
+          "sourceTiers.research",
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "tuv-nord",
+        "sourceGroups": [
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "medcert",
+        "sourceGroups": [
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "berlin-cert",
+        "sourceGroups": [
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "VDE",
+        "sourceGroups": [
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "IEEE EMBS",
+        "sourceGroups": [
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "MedTech Europe",
+        "sourceGroups": [
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "BVMed",
+        "sourceGroups": [
+          "sourceTiers.regulatory",
+          "sourceTiers.associationEmployerUniverse",
+          "employerUniverse.primaryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "WDM / Weltzentrum der Medizintechnik",
+        "sourceGroups": [
+          "sourceTiers.regionalSpecialist"
+        ],
+        "status": "official_page_checked",
+        "method": "regional specialist job board",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "259 listings; September-dated leads remain discovery-only pending employer ATS verification.",
+        "evidenceUrls": [
+          "https://wdm.world/jobs"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "MedicalMountains",
+        "sourceGroups": [
+          "sourceTiers.regionalSpecialist",
+          "employerUniverse.primaryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "TechnologyMountains",
+        "sourceGroups": [
+          "sourceTiers.regionalSpecialist",
+          "employerUniverse.primaryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Life Science Nord",
+        "sourceGroups": [
+          "sourceTiers.regionalSpecialist",
+          "employerUniverse.primaryDirectories"
+        ],
+        "status": "official_page_checked",
+        "method": "regional cluster job board",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Current board checked; individual leads need primary verification.",
+        "evidenceUrls": [
+          "https://www.lifesciencenord.de/en/career/job-board.html"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "Tuttlingen MedTech cluster",
+        "sourceGroups": [
+          "sourceTiers.regionalSpecialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "MEDICA exhibitors",
+        "sourceGroups": [
+          "sourceTiers.associationEmployerUniverse"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "COMPAMED exhibitors",
+        "sourceGroups": [
+          "sourceTiers.associationEmployerUniverse"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "MedtecLIVE exhibitors",
+        "sourceGroups": [
+          "sourceTiers.associationEmployerUniverse"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Fraunhofer IBMT",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "official_page_checked",
+        "method": "same-day official employer page",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Student assistant listing requires current student status; excluded.",
+        "evidenceUrls": [
+          "https://jobs.fraunhofer.de/job/Rostock-Studentische-Hilfskraft-%28mwd%29-im-Bereich-Industrierobotik-%28IGP-2026-15%29-18059/1436113533/"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "Fraunhofer MEVIS",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "official_page_checked",
+        "method": "same-day official employer page",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Student assistant listing requires current student status; excluded.",
+        "evidenceUrls": [
+          "https://jobs.fraunhofer.de/job/Rostock-Studentische-Hilfskraft-%28mwd%29-im-Bereich-Industrierobotik-%28IGP-2026-15%29-18059/1436113533/"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "Fraunhofer IIS",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "official_page_checked",
+        "method": "same-day official employer page",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Student assistant listing requires current student status; excluded.",
+        "evidenceUrls": [
+          "https://jobs.fraunhofer.de/job/Rostock-Studentische-Hilfskraft-%28mwd%29-im-Bereich-Industrierobotik-%28IGP-2026-15%29-18059/1436113533/"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "Fraunhofer IPA",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "official_page_checked",
+        "method": "same-day official employer page",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Student assistant listing requires current student status; excluded.",
+        "evidenceUrls": [
+          "https://jobs.fraunhofer.de/job/Rostock-Studentische-Hilfskraft-%28mwd%29-im-Bereich-Industrierobotik-%28IGP-2026-15%29-18059/1436113533/"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "Fraunhofer ITEM",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "official_page_checked",
+        "method": "same-day official employer page",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Student assistant listing requires current student status; excluded.",
+        "evidenceUrls": [
+          "https://jobs.fraunhofer.de/job/Rostock-Studentische-Hilfskraft-%28mwd%29-im-Bereich-Industrierobotik-%28IGP-2026-15%29-18059/1436113533/"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "Fraunhofer IZI",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "official_page_checked",
+        "method": "same-day official employer page",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Student assistant listing requires current student status; excluded.",
+        "evidenceUrls": [
+          "https://jobs.fraunhofer.de/job/Rostock-Studentische-Hilfskraft-%28mwd%29-im-Bereich-Industrierobotik-%28IGP-2026-15%29-18059/1436113533/"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "Fraunhofer IGD",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "official_page_checked",
+        "method": "same-day official employer page",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Student assistant listing requires current student status; excluded.",
+        "evidenceUrls": [
+          "https://jobs.fraunhofer.de/job/Rostock-Studentische-Hilfskraft-%28mwd%29-im-Bereich-Industrierobotik-%28IGP-2026-15%29-18059/1436113533/"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "Helmholtz Munich",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "official_page_checked",
+        "method": "same-day official page check",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Official URL returned HTTP 410 Gone; removed from active publication.",
+        "evidenceUrls": [],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "Forschungszentrum Jülich",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Leibniz Association",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Tuttlingen",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Erlangen/Nuremberg",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Jena",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Freiburg",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Hamburg",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Berlin",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Lübeck",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Aachen",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Tuttlingen / WDM / MedicalMountains",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "official_page_checked",
+        "method": "regional specialist job board",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "259 listings; September-dated leads remain discovery-only pending employer ATS verification.",
+        "evidenceUrls": [
+          "https://wdm.world/jobs"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "Erlangen/Nuremberg / Medical Valley",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "official_page_checked",
+        "method": "regional cluster posting",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Clinical studies project-manager lead does not clear technical-fit gate.",
+        "evidenceUrls": [
+          "https://www.medical-valley-emn.de/jobangebot-projektmanager-clinical-studies-m-w-d-bei-fast-track-medtech/"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "Jena / medtech",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Freiburg / MedTech",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Hamburg / Life Science Nord",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "official_page_checked",
+        "method": "regional cluster job board",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Current board checked; individual leads need primary verification.",
+        "evidenceUrls": [
+          "https://www.lifesciencenord.de/en/career/job-board.html"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "Berlin / HealthCapital",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Lübeck / Life Science Nord",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "official_page_checked",
+        "method": "regional cluster job board",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Current board checked; individual leads need primary verification.",
+        "evidenceUrls": [
+          "https://www.lifesciencenord.de/en/career/job-board.html"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "Aachen / MedTech",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Tübingen / MedTech",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "official_page_checked",
+        "method": "official university-hospital page",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Open; deadline 2026-10-31.",
+        "evidenceUrls": [
+          "https://jobs.medizin.uni-tuebingen.de/Job/de/7721"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "München / MedTech",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Ireland",
+        "sourceGroups": [
+          "tier2Europe"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Netherlands",
+        "sourceGroups": [
+          "tier2Europe"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Switzerland",
+        "sourceGroups": [
+          "tier2Europe"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "MEDICA",
+        "sourceGroups": [
+          "employerUniverse.eventDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "COMPAMED",
+        "sourceGroups": [
+          "employerUniverse.eventDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "MedtecLIVE",
+        "sourceGroups": [
+          "employerUniverse.eventDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Siemens Healthineers",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "indexed_search_attempted",
+        "method": "site-scoped indexed search",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Surfaced older student/administrative listings; no current graduate technical role verified.",
+        "evidenceUrls": [
+          "https://jobs.siemens-healthineers.com/es_ES/searchjobs/JobDetail/479995"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "Philips",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "official_page_checked",
+        "method": "official careers page",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Direct page returned no matching jobs; do not count as open.",
+        "evidenceUrls": [
+          "https://www.careers.philips.com/emea/en/job/588485/Test-Development-Engineer-fixed-term-All-genders"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "GE HealthCare",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Stryker",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "official_page_checked",
+        "method": "official employer careers pages",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Three graduate pages live; two close 2026-10-24; degree/grade checks remain provisional.",
+        "evidenceUrls": [
+          "https://careers.stryker.com/r-d-software-engineering-graduate-program-september-2027/job/5A4464A6EB34988086F170005CA7C7F4"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "Medtronic",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "indexed_search_attempted",
+        "method": "indexed search/job-board corroboration",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Older clinical graduate listing requires fluent German and English; not published.",
+        "evidenceUrls": [
+          "https://www.absolventa.de/stellenangebote/11820708-b-nextgen-academy-associate-clinical-specialist-m-f-d"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "Abbott",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Boston Scientific",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "official_page_checked",
+        "method": "official careers page",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Graduate process role current but below 75% technical-fit threshold on documented evidence.",
+        "evidenceUrls": [
+          "https://jobs.bostonscientific.com/job/Clonmel-Graduate-Process-Development-Engineer-Boston-Scientific-2027-Graduate-Programme%2C-Clonmel-TA/1433030300/"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "B. Braun",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "official_page_checked",
+        "method": "official SuccessFactors page",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "R&D electrical role requires circuit/E-CAD experience; senior CV role requires years; not published.",
+        "evidenceUrls": [
+          "https://jobs.bbraun.com/job/Melsungen-R%26D-Electrical-Engineer-%28fmd%29-Medical-Device-Development/14175-en_US/"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "Fresenius",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Getinge",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Ottobock",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "ZEISS",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "KARL STORZ",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Dräger",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "indexed_search_attempted",
+        "method": "site-scoped indexed search",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Query submitted; no matching result surfaced; not an absence claim.",
+        "evidenceUrls": [],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "Smith+Nephew",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Johnson & Johnson",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Roche",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "BD",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Edwards Lifesciences",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "official_page_checked",
+        "method": "same-day official page evidence",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Provisional; driving-licence and additional-language requirements unconfirmed.",
+        "evidenceUrls": [
+          "https://www.edwards.com/gb/job/51322/clinical-graduate-program"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "Intuitive Surgical",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "official_page_checked",
+        "method": "official careers pages",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Germany roles surfaced require multiple years; excluded by zero-years gate.",
+        "evidenceUrls": [
+          "https://careers.intuitive.com/de/jobs/744000074570308/JOB206290/sr-product-support-engineer-mwd/"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      },
+      {
+        "source": "Olympus",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Carl Zeiss Meditec",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Dornier MedTech",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Brainlab",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Sonova",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Cochlear",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Elekta",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Varian",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Richard Wolf",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "seca",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Löwenstein Medical",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Alcon",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "MAICO Diagnostics",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Aesculap",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "not_attempted",
+        "evidenceUrls": [],
+        "lastAttempted": null,
+        "notes": "Not executed in this run; no vacancy-absence inference is supported."
+      },
+      {
+        "source": "Novanta Medical",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "unavailable_or_blocked",
+        "method": "official ATS URL attempted",
+        "query": "Source-specific current MedTech/graduate vacancy check",
+        "indexedResultsSurfaced": null,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Direct text extraction failed; earlier same-day official Workday result showed Apply and Posted 4 Days Ago; recheck required.",
+        "evidenceUrls": [
+          "https://novanta.wd5.myworkdayjobs.com/en-US/Novanta-Careers/job/Berlin-Germany/Junior-Test-Engineer--m-f-d-_R009292"
+        ],
+        "lastAttempted": "2026-10-22",
+        "notes": "Coverage remains partial."
+      }
     ],
-    "notClaimedAsDirectlyChecked": [
-      "Indeed",
-      "LinkedIn Jobs",
-      "XING Jobs",
-      "StepStone",
-      "Jobware",
-      "Monster",
-      "meinestadt.de",
-      "stellenanzeigen.de",
-      "Yourfirm",
-      "Kimeta",
-      "Jooble",
-      "Jobvector",
-      "Absolventa",
-      "JobTeaser",
-      "Stellenwerk"
+    "coverageStatement": "Every configured weekly baseline source and source-family entry has a status. Indexed searches are not direct portal validation. Many configured sources remain not_searched; coverage is PARTIAL and no market-wide absence claim is made.",
+    "activeRoleEvidence": [
+      {
+        "id": "max-planck-bmai-phd-2026-09-10",
+        "status": "official_page_checked",
+        "evidenceUrl": "https://www.biochem.mpg.de/9016603/job_full_offer_26960440",
+        "checkedDate": "2026-10-22",
+        "outcome": "Open; deadline 2026-12-01."
+      },
+      {
+        "id": "eth-machine-perfusion-phd-2026-09-26",
+        "status": "official_page_checked",
+        "evidenceUrl": "https://jobs.ethz.ch/job/view/JOPG_ethz_KpOW7lYfI0yXlUiUCo",
+        "checkedDate": "2026-10-22",
+        "outcome": "Official page live; application route available."
+      },
+      {
+        "id": "tue-contrast-ultrasound-nanobubbles-2026-09-28",
+        "status": "official_page_checked",
+        "evidenceUrl": "https://tue.varbi.com/pl/what%3Ajob/jobID%3A968956/",
+        "checkedDate": "2026-10-22",
+        "outcome": "Open; deadline 2026-11-06."
+      },
+      {
+        "id": "tue-quantitative-multitracer-pet-2026-09-29",
+        "status": "official_page_checked",
+        "evidenceUrl": "https://jobs.medizin.uni-tuebingen.de/Job/de/7721",
+        "checkedDate": "2026-10-22",
+        "outcome": "Open; deadline 2026-10-31."
+      },
+      {
+        "id": "novanta-junior-test-verification-2026-10-11",
+        "status": "unavailable_or_blocked",
+        "evidenceUrl": "https://novanta.wd5.myworkdayjobs.com/en-US/Novanta-Careers/job/Berlin-Germany/Junior-Test-Engineer--m-f-d-_R009292",
+        "checkedDate": "2026-10-22",
+        "outcome": "Direct extraction failed; same-day earlier official Workday result showed Apply and Posted 4 Days Ago; recheck required."
+      }
     ]
   },
   "findings": [
@@ -88,12 +2907,14 @@
     {
       "id": "stryker-rd-biomedical-mechanical-graduate-2027-ireland",
       "status": "PROVISIONAL_DEADLINE_SOON",
-      "note": "Official page rechecked today; application deadline Friday 24 October 2026, 2.1 or equivalent required, relocation listed No. Grade equivalence and Ireland work authorization remain unresolved."
+      "note": "Official page checked 22 Oct; deadline 24 Oct 2026; grade equivalence unresolved; Ireland authorization flagged separately.",
+      "url": "https://careers.stryker.com/r-d-biomedical-mechanical-engineering-graduate-program-september-2027/job/7C1433160499E856F8E5CA898E41FC5D"
     },
     {
       "id": "philips-test-development-engineer-588485",
-      "status": "EXCLUDED_NOT_CURRENT_AND_EXPERIENCE_UNCLEAR",
-      "note": "Search index surfaced a recent result, but official Philips page opened today to a no-matching-jobs response; posting also asks for experience in electronics/hardware test development and effective German and English. Not published."
+      "status": "EXCLUDED_OFFICIAL_PAGE_NOT_CURRENT",
+      "note": "Official Philips page returned no matching jobs on 22 October; not counted open.",
+      "url": "https://www.careers.philips.com/emea/en/job/588485/Test-Development-Engineer-fixed-term-All-genders"
     },
     {
       "id": "biotronik-software-engineer-test-61147",
@@ -124,6 +2945,36 @@
       "id": "alten-vie-electronics-medical-devices-2026-10-22",
       "status": "EXCLUDED_PROGRAM_ELIGIBILITY_LANGUAGE",
       "note": "Official ALTEN page describes a V.I.E. route restricted to EU graduates aged 18–28 and fluent German/English, with electronics experience; candidate eligibility is not established and German B1 fails the language gate."
+    },
+    {
+      "id": "stryker-rd-software-graduate-2027-ireland",
+      "status": "PROVISIONAL_DEADLINE_SOON",
+      "note": "Official page checked 22 Oct; deadline 24 Oct 2026; degree-discipline equivalence unresolved; Ireland authorization flagged separately.",
+      "url": "https://careers.stryker.com/r-d-software-engineering-graduate-program-september-2027/job/5A4464A6EB34988086F170005CA7C7F4"
+    },
+    {
+      "id": "stryker-advanced-operations-engineering-graduate-2027-ireland",
+      "status": "PROVISIONAL_GRADE_EQUIVALENCE",
+      "note": "Official page checked 22 Oct; Biomedical Engineering is accepted, but Irish 2.1 grade equivalence unresolved.",
+      "url": "https://careers.stryker.com/advanced-operations-engineering-graduate-program-september-2027/job/62D71BD5DCB807D2FDC72B1E8CEF8A75"
+    },
+    {
+      "id": "b-braun-rd-electrical-engineer-14175",
+      "status": "NOT_PUBLISHED_ZERO_YEARS_AND_SKILL_EVIDENCE",
+      "note": "Official page live, but circuit/E-CAD requirements are not evidenced and zero-years eligibility is not established; not published.",
+      "url": "https://jobs.bbraun.com/job/Melsungen-R%26D-Electrical-Engineer-%28fmd%29-Medical-Device-Development/14175-en_US/"
+    },
+    {
+      "id": "boston-scientific-graduate-process-development-2027-ireland",
+      "status": "NOT_PUBLISHED_TECHNICAL_FIT_BELOW_THRESHOLD",
+      "note": "Official graduate role is current, but process/manufacturing fit does not clear 75% on documented evidence.",
+      "url": "https://jobs.bostonscientific.com/job/Clonmel-Graduate-Process-Development-Engineer-Boston-Scientific-2027-Graduate-Programme%2C-Clonmel-TA/1433030300/"
+    },
+    {
+      "id": "wdm-erbe-embedded-image-processing-2026-09-03",
+      "status": "DISCOVERY_ONLY_OFFICIAL_VERIFICATION_PENDING",
+      "note": "WDM lists September-dated Erbe Embedded Systems and Image Processing FPGA roles; employer ATS status not revalidated, so not active.",
+      "url": "https://wdm.world/jobs"
     }
   ],
   "coverage": {
@@ -132,8 +2983,18 @@
       "No normal report was published for 19–21 October.",
       "No source execution ledger proves the full configured portal matrix was searched on those dates.",
       "Research automations were disabled; GitHub Pages workflow only validates and deploys static files and does not perform job research.",
-      "Search result count is not the same as candidate-eligible count; strict zero-years, language, technical fit, official-source and work-authorization gates remain in force."
-    ]
+      "Search result count is not the same as candidate-eligible count; strict zero-years, language, technical fit, official-source and work-authorization gates remain in force.",
+      "Per-source ledger attached; many configured employer, ATS, regulatory, research and regional sources remain not_searched.",
+      "Indexed searches are discovery only, not direct portal validation.",
+      "Novanta direct extraction failed in this verification; same-day official Workday evidence retained with recheck required.",
+      "Two Stryker graduate leads close 24 October and remain provisional pending degree/grade review.",
+      "No full-source-universe or maximum-exhaustion claim is made."
+    ],
+    "coverageStatus": "PARTIAL",
+    "searchExhaustion": "DOCUMENTED_SOURCE_MATRIX_WITH_EXPLICIT_NOT_SEARCHED_STATES"
   },
-  "notes": "Database refreshed and report generated after recovery. Targeted false-negative probes surfaced strong technical near-matches, but German fluency and source/experience requirements prevent publication. Typical employment remains the default category; research/PhD is separate. No gate was relaxed to inflate the count."
+  "notes": "22 October normal report reconciled with per-source execution ledger. Five published opportunities remain active (one typical employment, four research/PhD); no new role passed every hard gate and the 75% floor. Five provisional findings are tracked separately, including two Stryker programmes closing 24 October. Coverage remains PARTIAL.",
+  "closingWithin7DaysPublished": 0,
+  "closingWithin7DaysProvisional": 2,
+  "closingWithin7DaysScope": "Published roles plus provisional findings with explicit deadlines; published-only count is separately exposed."
 }

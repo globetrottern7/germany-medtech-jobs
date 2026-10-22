@@ -1,7 +1,7 @@
 {
   "status": "partial-coverage-recovery-published",
-  "message": "22 October recovery found daily research automations disabled and no normal reports for 19–21 October. GitHub Pages workflow only validates/deploys static content. Strict gates unchanged; source execution coverage remains PARTIAL and must be evidenced per source on every run.",
-  "updatedAt": "2026-10-22T15:00:00+05:30",
+  "message": "22 October normal report reconciled with per-source execution ledger. Four published roles checked directly; Novanta direct extraction unavailable but same-day official Workday evidence retained. Two Stryker graduate leads closing 24 October remain provisional pending degree/grade review. Full coverage not claimed.",
+  "updatedAt": "2026-10-22T17:17:48+05:30",
   "reportDate": "2026-10-22",
   "activeJobs": 5,
   "freshJobs": 0,
@@ -11,7 +11,6 @@
   "methodology": "EUROPE-MEDTECH-v6: Germany-first, 0-years gate, official vacancy verification, language/degree/technical/work-authorization gates, canonical vacancy fingerprinting, separate research/PhD track, and mandatory per-source execution ledger. Configured source universe is not treated as executed unless run evidence exists.",
   "acceptance": {
     "passed": [
-      "Published report reconciled to 10 active, 5 fresh and 5 previously listed",
       "75% is the hard publication floor; 90%+ is the Strong Match view",
       "Candidate profile externalized to data/candidate-profile.json",
       "Operational schemas documented in DATA_SCHEMAS.md",
@@ -20,17 +19,38 @@
       "Official-source verification made mandatory where accessible",
       "Sponsorship and relocation separated from hard work-authorization assessment",
       "Portal tracker, filters, deadline UX, company view, map, CSV export and recruiter-facing About page implemented",
-      "Retired OpenAI API/GitHub Actions research path remains removed"
+      "Retired OpenAI API/GitHub Actions research path remains removed",
+      "Published report reconciled to 5 active, 0 fresh and 5 previously listed.",
+      "Per-source execution ledger added; all configured source entries have explicit statuses.",
+      "Coverage remains PARTIAL; unsearched sources do not imply vacancy absence."
     ],
     "qa": [
       "Published report IDs must refer to active jobs with match >=75",
       "Fresh IDs must be a subset of published IDs",
-      "No retrospective score components are invented for historical jobs without scoreBreakdown"
+      "No retrospective score components are invented for historical jobs without scoreBreakdown",
+      "Publication validator requires per-source statuses for the weekly baseline.",
+      "FULL coverage is prohibited while any configured source remains not_searched.",
+      "Published IDs must have active state, official URL and verification within 72 hours."
     ],
     "backup": "data/backups/2026-09-12-pre-expanded-acceptance/ contains the pre-refresh jobs.json and reports.json snapshots for rollback.",
-    "nextRecurringRun": "Daily at 17:00 Europe/Berlin"
+    "nextRecurringRun": "Daily at 17:00 Europe/Berlin; 17:20 recovery verifies normal report and Pages workflow separately."
   },
   "auditDate": "2026-10-22",
-  "auditOutcome": "PARTIAL_COVERAGE_AUTOMATION_DISABLED_RECOVERED",
-  "auditFile": "data/audits/2026-10-22-pipeline-and-recall-audit.md"
+  "auditOutcome": "PARTIAL_COVERAGE_LEDGER_RECONCILED_PUBLISHED",
+  "auditFile": "data/audits/2026-10-22-pipeline-and-recall-audit.md",
+  "sourceCoverage": {
+    "grade": "PARTIAL",
+    "configuredSourceCount": 177,
+    "executedSourceCount": 48,
+    "notSearchedCount": 129,
+    "statusCounts": {
+      "official_page_checked": 27,
+      "indexed_search_attempted": 20,
+      "unavailable_or_blocked": 1,
+      "not_searched": 129
+    },
+    "queryRecordsSubmitted": 63,
+    "fullCoverageClaim": false,
+    "ledgerPath": "data/daily/2026-10-22.json#sourceCoverage.sourceExecutionLedger"
+  }
 }
