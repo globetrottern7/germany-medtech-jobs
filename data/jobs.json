@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-18",
+  "lastUpdated": "2026-10-22",
   "jobs": [
     {
       "id": "maico-dsp-engineer-2026-09-09",
@@ -111,7 +111,11 @@
       "fresh": false,
       "status": "active",
       "deadline": "2026-12-01",
-      "url": "https://www.biochem.mpg.de/9016603/job_full_offer_26960440"
+      "url": "https://www.biochem.mpg.de/9016603/job_full_offer_26960440",
+      "lastVerified": "2026-10-22",
+      "lastAttempted": "2026-10-22",
+      "openVerified": true,
+      "evidence": "Official Max Planck Institute page checked 22 October 2026; application deadline 1 December 2026 and September 2027 start are stated on the official page."
     },
     {
       "id": "kit-miniaturized-electrodes-2026-09-10",
@@ -869,10 +873,14 @@
         "PhD"
       ],
       "match": 90,
-      "fresh": true,
+      "fresh": false,
       "status": "active",
       "url": "https://jobs.ethz.ch/job/view/JOPG_ethz_KpOW7lYfI0yXlUiUCo",
-      "workAuthorization": "NOT_EXPLICITLY_STATED"
+      "workAuthorization": "NOT_EXPLICITLY_STATED",
+      "lastVerified": "2026-10-22",
+      "lastAttempted": "2026-10-22",
+      "openVerified": true,
+      "evidence": "Official ETH Zürich vacancy page checked 22 October 2026; PhD role remains listed, accepts MSc Biomedical Engineering, requires fluent English, and highlights sensor integration/control software."
     },
     {
       "id": "lake-lucerne-movement-biomarkers-2026-09-26",
@@ -911,7 +919,7 @@
         "PhD"
       ],
       "match": 86,
-      "fresh": true,
+      "fresh": false,
       "status": "active",
       "deadline": "2026-11-06",
       "url": "https://tue.varbi.com/en/apply/positionquick/968956/",
@@ -926,7 +934,11 @@
         "Direct ultrasound/physics modelling experience should be confirmed",
         "Work authorization/immigration details require verification"
       ],
-      "workAuthorization": "WORK_AUTHORIZATION_VERIFY"
+      "workAuthorization": "WORK_AUTHORIZATION_VERIFY",
+      "lastVerified": "2026-10-22",
+      "lastAttempted": "2026-10-22",
+      "openVerified": true,
+      "evidence": "Official TU/e Varbi application route checked 22 October 2026 and remains accessible. Previous official posting records deadline 6 November 2026; verify detailed vacancy conditions before application."
     },
     {
       "id": "radboud-multimodal-agentic-ai-prostate-2026-09-28",
@@ -976,8 +988,13 @@
       ],
       "match": 91,
       "fresh": false,
-      "status": "active",
-      "url": "https://jobs.helmholtz-muenchen.de/jobposting/3c2d535985809b397c395eec81cca0b8f84279ca"
+      "status": "expired",
+      "url": "https://jobs.helmholtz-muenchen.de/jobposting/3c2d535985809b397c395eec81cca0b8f84279ca",
+      "openVerified": false,
+      "lastVerified": "2026-10-22",
+      "lastAttempted": "2026-10-22",
+      "exclusionReason": "Official employer job URL returned HTTP 410 Gone on 22 October 2026. Removed from active publication until the employer republishes the vacancy.",
+      "evidence": "Rechecked 22 October 2026; official job URL returns 410 Gone."
     },
     {
       "id": "tue-quantitative-multitracer-pet-2026-09-29",
@@ -997,7 +1014,11 @@
       "fresh": false,
       "status": "active",
       "deadline": "2026-10-31",
-      "url": "https://jobs.medizin.uni-tuebingen.de/Job/de/7721"
+      "url": "https://jobs.medizin.uni-tuebingen.de/Job/de/7721",
+      "lastVerified": "2026-10-22",
+      "lastAttempted": "2026-10-22",
+      "openVerified": true,
+      "evidence": "Official University Hospital Tübingen page checked 22 October 2026; application deadline 31 October 2026, MSc Biomedical Engineering accepted, Python/MATLAB programming and excellent English required."
     },
     {
       "id": "ovgu-precision-neuroimaging-2026-10-02",
@@ -1038,7 +1059,7 @@
         "Sensors"
       ],
       "match": 87,
-      "fresh": true,
+      "fresh": false,
       "status": "active",
       "url": "https://novanta.wd5.myworkdayjobs.com/en-US/Novanta-Careers/job/Berlin-Germany/Junior-Test-Engineer--m-f-d-_R009292",
       "sourceType": "official ATS",
@@ -1049,7 +1070,7 @@
         "Medical-device manufacturer"
       ],
       "openVerified": true,
-      "lastVerified": "2026-10-18",
+      "lastVerified": "2026-10-22",
       "experienceRequirement": "ENTRY_LEVEL_ZERO_TO_LOW",
       "languageRequirement": "UNSTATED",
       "workAuthorization": "WORK_AUTHORIZATION_VERIFY",
@@ -1061,7 +1082,7 @@
         "offered": "unclear",
         "evidence": "Official vacancy does not establish relocation support."
       },
-      "evidence": "Reverified on 18 October 2026: official Novanta Workday vacancy displays Apply, Berlin location, and Posted 4 Days Ago. Description explicitly welcomes recent graduates and says little to no professional experience is required. Language level is not stated; work authorization must be confirmed.",
+      "evidence": "Rechecked 22 October 2026 against the official Novanta Workday listing surfaced in current results with Apply and Posted 4 Days Ago. Listing explicitly welcomes recent graduates and states little to no professional experience is required. Language level is unstated; candidate-specific German work authorization still requires confirmation.",
       "confidence": "HIGH",
       "fingerprint": "novanta medical gmbh|junior test engineer|berlin germany|germany",
       "fit": [
@@ -1085,7 +1106,7 @@
         "materialRequirements": 12,
         "roleAlignment": 8
       },
-      "lastAttempted": "2026-10-18"
+      "lastAttempted": "2026-10-22"
     },
     {
       "id": "stryker-rd-biomedical-mechanical-graduate-2027-ireland",
@@ -1113,7 +1134,7 @@
         "Europe-wide employment"
       ],
       "openVerified": true,
-      "lastVerified": "2026-10-11",
+      "lastVerified": "2026-10-22",
       "experienceRequirement": "GRADUATE_PROGRAM",
       "languageRequirement": "UNSTATED",
       "workAuthorization": "WORK_AUTHORIZATION_VERIFY",
@@ -1126,7 +1147,7 @@
         "evidence": "Official listing shows Relocation: No."
       },
       "fingerprint": "stryker|r d biomedical mechanical engineering graduate program september 2027|cork ireland|ireland",
-      "evidence": "Official Stryker careers page is live with an Apply Now route and an application deadline of 24 October 2026. The 24-month R&D graduate programme starts September 2027; the stated eligible degree disciplines explicitly include Biomedical Engineering, and graduation timing is June 2025–September 2027.",
+      "evidence": "Official Stryker careers page rechecked 22 October 2026; Apply Now is present, application closes Friday 24 October 2026, Biomedical Engineering is eligible with a 2.1 result or equivalent, programme starts September 2027, and relocation is listed as No. Remains provisional pending degree equivalence and Ireland work authorization.",
       "fit": [
         "Biomedical Engineering explicitly accepted",
         "Structured graduate programme, compatible with a fresh graduate",
@@ -1147,6 +1168,69 @@
         "languageFit": 9,
         "materialRequirements": 7,
         "roleAlignment": 7
+      },
+      "lastAttempted": "2026-10-22"
+    },
+    {
+      "id": "edwards-clinical-graduate-program-germany-2027",
+      "title": "Clinical Graduate Program",
+      "company": "Edwards Lifesciences",
+      "location": "Germany-Field (initial training in Munich)",
+      "country": "Germany",
+      "category": [
+        "MedTech",
+        "Biomedical Engineering",
+        "Clinical Applications",
+        "Medical Devices",
+        "Graduate Program"
+      ],
+      "match": 80,
+      "fresh": true,
+      "status": "provisional",
+      "deadline": null,
+      "url": "https://www.edwards.com/gb/job/51322/clinical-graduate-program",
+      "sourceType": "official employer careers",
+      "sourceLayers": [
+        "Employer direct",
+        "Graduate program",
+        "Clinical applications"
+      ],
+      "openVerified": true,
+      "lastVerified": "2026-10-22",
+      "lastAttempted": "2026-10-22",
+      "experienceRequirement": "GRADUATE_PROGRAM_2026_2027",
+      "languageRequirement": "Strong English plus proficiency in an additional European language; level unspecified",
+      "workAuthorization": "WORK_AUTHORIZATION_VERIFY",
+      "sponsorship": {
+        "offered": "unclear",
+        "evidence": "Official posting does not establish sponsorship."
+      },
+      "relocation": {
+        "offered": "unclear",
+        "evidence": "Munich-based training required; relocation assistance not stated."
+      },
+      "evidence": "Official Edwards Lifesciences page checked 22 October 2026; posted 5 days ago, April 2027 start, 10-month full-time programme, Biomedical Engineering explicitly accepted. Candidate suitability remains provisional because the required European driving licence recognized in Germany is not recorded in the candidate profile and the required proficiency level for the additional European language is unspecified.",
+      "confidence": "MEDIUM",
+      "fingerprint": "edwards lifesciences|clinical graduate program|germany field|germany",
+      "fit": [
+        "MSc Biomedical Engineering is explicitly accepted",
+        "Graduate programme designed for early-career candidates; no professional-experience minimum stated",
+        "Device programming, troubleshooting and clinical technology exposure align with biomedical-device background",
+        "Strong English aligns with the posting's English requirement"
+      ],
+      "gaps": [
+        "Valid European driving licence recognized in Germany is mandatory; candidate possession/status is unknown",
+        "German B1 is recorded, but the posting does not define the proficiency level required for the additional European language",
+        "Germany work authorization must be assessed for the candidate's individual status"
+      ],
+      "scoreBreakdown": {
+        "technicalSkillFit": 17,
+        "domainRelevance": 14,
+        "educationRelevance": 15,
+        "experienceCompatibility": 10,
+        "languageFit": 7,
+        "materialRequirements": 9,
+        "roleAlignment": 8
       }
     }
   ]
