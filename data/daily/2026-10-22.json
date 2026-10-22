@@ -32,7 +32,8 @@
     "Official research/university pages: Max Planck School of Biomedical AI, ETH Zürich, TU/e Varbi, Helmholtz München, University Hospital Tübingen",
     "Official public research employer: DLR careers",
     "Employer career discovery: B. Braun and Dräger",
-    "Indexed job-board and web discovery queries: LinkedIn Jobs, Jobvector/StepStone-style indexed results and general English/German role-family queries"
+    "Indexed job-board and web discovery queries: LinkedIn Jobs, Jobvector/StepStone-style indexed results and general English/German role-family queries",
+    "Additional false-negative probes: Pentracor production/validation engineering, Philips R&D Measurement Algorithms, TÜV Rheinland medical-device job board, ALTEN V.I.E electronics development"
   ],
   "sourceCoverage": {
     "grade": "PARTIAL",
@@ -103,6 +104,26 @@
       "id": "dlr-medizininformatiker-5649",
       "status": "EXCLUDED_LANGUAGE_GATE",
       "note": "Official DLR posting is current and technically relevant to ECG/EEG, sensor data and Python/C++; it requires very good German and English. Candidate German B1 fails the documented language gate; no exception assumed."
+    },
+    {
+      "id": "pentracor-production-validation-engineer-2026-10-22",
+      "status": "EXCLUDED_LANGUAGE_GATE",
+      "note": "Fresh LinkedIn discovery explicitly welcomes entry-level candidates and covers medical-device production qualification/validation, but requires very good German and good English. German B1 fails current gate; not published."
+    },
+    {
+      "id": "philips-rd-measurement-algorithms-583382",
+      "status": "EXCLUDED_LANGUAGE_GATE_AND_CURRENT_SOURCE_CHECK",
+      "note": "Indexed result has very strong skill alignment (physiological signal processing, C++, Python/MATLAB, real-time platforms and validation), but requires fluent German and English. Official current vacancy status was not independently confirmed; discovery only, not published."
+    },
+    {
+      "id": "tuv-rheinland-medical-device-auditor-family",
+      "status": "EXCLUDED_EXPERIENCE_LANGUAGE_SCOPE",
+      "note": "Official specialist board shows active medical-device auditor/product-expert roles, but no role-specific zero-years evidence was established and the German-language requirements are likely material. Not published without role-level verification."
+    },
+    {
+      "id": "alten-vie-electronics-medical-devices-2026-10-22",
+      "status": "EXCLUDED_PROGRAM_ELIGIBILITY_LANGUAGE",
+      "note": "Official ALTEN page describes a V.I.E. route restricted to EU graduates aged 18–28 and fluent German/English, with electronics experience; candidate eligibility is not established and German B1 fails the language gate."
     }
   ],
   "coverage": {
@@ -114,5 +135,5 @@
       "Search result count is not the same as candidate-eligible count; strict zero-years, language, technical fit, official-source and work-authorization gates remain in force."
     ]
   },
-  "notes": "Database refreshed and report generated after recovery. Typical employment remains the default category; research/PhD is separated. No gate was relaxed to inflate the count."
+  "notes": "Database refreshed and report generated after recovery. Targeted false-negative probes surfaced strong technical near-matches, but German fluency and source/experience requirements prevent publication. Typical employment remains the default category; research/PhD is separate. No gate was relaxed to inflate the count."
 }
