@@ -25,7 +25,7 @@ const daily = readJson(dailyPath);
 const report = reports.find(r => r.date === latest.date);
 
 if (latest.reportStatus === "PUBLISHED" && !report) fail(`PUBLISHED date ${latest.date} is absent from data/reports.json.`);
-if (report && daily.reportType === "normal daily") {
+if (report && (String(daily.reportType || "").startsWith("normal daily") || String(daily.reportType || "").includes("daily production refresh"))) {
   const keys = ["activeJobs","freshJobs","previouslyListed","closingWithin7Days","newGatePassing","provisionalFindings"];
   for (const k of keys) {
     if (daily[k] !== undefined && report[k] !== undefined && daily[k] !== report[k]) fail(`${latest.date}: ${k} differs between dated report and reports index.`);
