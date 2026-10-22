@@ -77,3 +77,13 @@ The configured source universe includes the 15-portal Germany baseline (Indeed, 
 5. Run false-negative searches across validation/test, embedded C/C++, biosignal processing, sensor interfaces, clinical applications, regulatory/conformity assessment, and graduate/trainee titles.
 6. Do not lower the zero-years, degree/technical fit, language, official-source, open-status or country-specific work-authorization gates to inflate counts.
 7. The report is not considered live until the GitHub Pages deployment for the current commit succeeds.
+
+## 8. Additional false-negative probes
+
+The extended title-family search also surfaced:
+- **Pentracor — Ingenieur Produktion & Validierung, Berlin:** recent job-board discovery explicitly welcomes entry-level candidates and aligns with qualification/validation in a regulated medical-device manufacturer. It requires very good German and good English; German B1 fails the existing gate.
+- **Philips — R&D Engineer Measurement Algorithms, Böblingen:** indexed result is an unusually strong technical match (physiological-signal algorithms, C++, Python/MATLAB, real-time platforms and verification/validation), but requires fluent German and English. The current official vacancy status was not independently confirmed, so it remains discovery-only.
+- **TÜV Rheinland medical-device auditor/product-expert roles:** official specialist board exposes openings, but role-specific zero-years eligibility and language requirements were not established. Not promoted without individual vacancy verification.
+- **ALTEN V.I.E Electronics Development Engineer — Medical Devices, Jena:** official page requires EU-graduate status, age 18–28, electronics experience and fluent German/English. Eligibility is not established and German B1 fails the language gate.
+
+These findings show that the search taxonomy is surfacing adjacent and technically relevant roles. They also reinforce why a raw search count cannot be treated as the number of eligible jobs. The remaining operational gap is broad, source-by-source execution evidence across the configured portal matrix.
