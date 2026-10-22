@@ -38,6 +38,9 @@ if(normal){
   if(JSON.stringify(daily.sourceCoverage.statusCounts)!==JSON.stringify(c))fail("source status counts != ledger.");
   if(c.not_searched>0&&daily.sourceCoverage.grade==="FULL")fail("FULL coverage claimed while sources remain not_searched.");
   if(c.not_searched>0&&daily.sourceCoverage.fullCoverageClaim!==false)fail("fullCoverageClaim must be false while sources remain not_searched.");
+  const requiredCount=config.searchExecutionPolicy?.expectedMasterLedgerEntries||577;
+  if(daily.sourceCoverage.fullCoverageClaim===true){if(ledger.length!==requiredCount)fail(`FULL coverage requires ${requiredCount} source entries; found ${ledger.length}.`);if(c.not_searched!==0)fail("FULL coverage requires every source entry to have been attempted.");if(daily.sourceCoverage.configuredSourceCount!==requiredCount)fail(`FULL coverage configuredSourceCount must equal ${requiredCount}.`);}
+  if(daily.sourceCoverage.grade==="FULL"&&daily.sourceCoverage.fullCoverageClaim!==true)fail("Coverage grade FULL requires fullCoverageClaim=true and all exhaustive gates.");
  }
  if(daily.closingWithin7DaysPublished!==undefined&&daily.closingWithin7DaysProvisional!==undefined&&daily.closingWithin7Days!==daily.closingWithin7DaysPublished+daily.closingWithin7DaysProvisional)fail("closingWithin7Days split does not reconcile.");
 }
