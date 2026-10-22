@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-11",
+  "generated": "2026-10-22",
   "startDate": "2026-09-09",
   "entries": [
     {
@@ -400,6 +400,18 @@
       "newGatePassing": 1,
       "provisionalFindings": 2,
       "notes": "Focused revalidation: Novanta Junior Test Engineer (Berlin) confirmed open on official Workday and published as a typical job (87%). Stryker graduate programme remains provisional pending grade and Ireland work authorization. Coverage partial."
+    },
+    {
+      "date": "2026-10-22",
+      "reportStatus": "PUBLISHED",
+      "reportType": "normal daily production refresh",
+      "activeJobs": 5,
+      "freshJobs": 0,
+      "previouslyListed": 5,
+      "closingWithin7Days": 1,
+      "newGatePassing": 0,
+      "provisionalFindings": 3,
+      "notes": "Recovered after finding the scheduled daily research automations disabled. Rechecked current official sources; removed Helmholtz PhD after 410 Gone. Published one typical employment role and four research/PhD roles. Coverage PARTIAL; no evidence of a full direct sweep of every configured portal."
     }
   ]
 }
