@@ -537,11 +537,12 @@
       "MISSED"
     ],
     "fullCoverageRequirements": [
-      "Record a sourceExecutionLedger entry for every source in weeklySourceBaseline during the weekly hunt.",
-      "Record each priority employer, ATS, public/research, specialist, regulatory and regional source family as checked or explicitly not searched.",
-      "For every searched source record the method used, query family, result count, leads surfaced and official-verification outcome.",
+      "Record an execution ledger entry for every source in the complete master source ledger on every user-requested search, not only the weekly baseline.",
+      "The expected master ledger contains 577 unique source entries and must be available at state/source-ledger.json.",
+      "Record method, query/endpoint, execution timestamp, result count, leads, official-verification outcome and blockers for every source entry.",
       "An indexed web query is not equivalent to direct portal validation; label it indexed_search_attempted.",
-      "A planned query budget is not evidence of executed searches."
+      "Unavailable or blocked counts as attempted only with evidence of the actual attempt.",
+      "A planned query budget is not evidence of executed searches and must not truncate the source sweep."
     ],
     "zeroResultInterpretation": {
       "FULL": "No new vacancy passed the gates in the documented coverage; this does not prove that no suitable vacancies exist.",
@@ -565,5 +566,41 @@
       "Research fellowships"
     ],
     "policy": "Employment roles are the default/primary published view. Research/PhD roles are reported separately and must not crowd out or be counted as typical employment. Search effort must prioritize employment role families first; do not relax hard gates or fabricate a balanced result set."
+  },
+  "searchExecutionPolicy": {
+    "version": "FULL-SOURCE-LEDGER-EXECUTION-v1",
+    "userRequestedSearchMode": "exhaustive",
+    "expectedMasterLedgerEntries": 577,
+    "requiredManifestPath": "state/source-ledger.json",
+    "currentManifestStatus": "MISSING_FROM_REPOSITORY",
+    "requiredBehavior": [
+      "Before any requested search, load the complete master source ledger and enumerate all unique source entries.",
+      "Execute a source-specific search or direct check for every ledger entry on every user-requested search; batching network calls is allowed, silently skipping entries is not.",
+      "For each entry record sourceId, sourceName, sourceUrlOrQueryDomain, executionStatus, method, queryOrEndpoint, executedAt, resultCount, leadIds, officialVerificationOutcome, and blocker when applicable.",
+      "Unavailable or blocked sources count as attempted only when an actual access attempt and evidence are recorded.",
+      "not_searched is a failed execution, never a zero-result source.",
+      "Do not stop after the daily queryBudget; queryBudget is planning metadata only and cannot cap the required ledger sweep.",
+      "Do not report zero fresh opportunities as a market conclusion unless all 577 ledger entries were attempted and source coverage is fully evidenced.",
+      "If the complete 577-entry manifest is unavailable, stop and report SOURCE_LEDGER_MISSING; do not claim an exhaustive search or publish a zero-result report as complete.",
+      "Do not lower candidate gates to manufacture fresh results; preserve strict zero-years, language, degree, technical-fit, official verification, work authorization, and deduplication rules.",
+      "Separate search execution success, research/eligibility success, repository reconciliation, and Pages deployment success."
+    ],
+    "requiredStatuses": [
+      "official_page_checked",
+      "indexed_search_attempted",
+      "unavailable_or_blocked",
+      "not_searched"
+    ],
+    "fullCoverageRequirements": [
+      "Master ledger has exactly 577 unique source entries or an audited replacement count approved in config.",
+      "Every master-ledger entry has an execution record for this run.",
+      "No entry is not_searched.",
+      "Every unavailable_or_blocked entry records a concrete attempt and blocker evidence.",
+      "sourceCoverage configuredSourceCount equals master-ledger count and execution ledger length.",
+      "sourceCoverage fullCoverageClaim is true only after all checks pass."
+    ],
+    "onMissingManifest": "BLOCK_EXHAUSTIVE_SEARCH_AND_REPORT_SOURCE_LEDGER_MISSING",
+    "onIncompleteRun": "RECORD_PARTIAL_OR_NOT_PUBLISHED_WITH_EXPLICIT_BLOCKER",
+    "piiPolicy": "Never store candidate PII."
   }
 }
