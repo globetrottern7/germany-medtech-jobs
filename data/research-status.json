@@ -1,14 +1,14 @@
 {
-  "status": "product-baseline-updated",
-  "message": "Source recall audit found the 8 October zero-new result does not demonstrate a full sweep of the configured source universe. Strict publication gates remain unchanged. Query budget semantics corrected; per-source execution evidence required for future runs.",
-  "updatedAt": "2026-10-09T07:15:00+05:30",
-  "reportDate": "2026-09-12",
-  "activeJobs": 10,
-  "freshJobs": 5,
+  "status": "partial-coverage-recovery-published",
+  "message": "22 October recovery found daily research automations disabled and no normal reports for 19–21 October. GitHub Pages workflow only validates/deploys static content. Strict gates unchanged; source execution coverage remains PARTIAL and must be evidenced per source on every run.",
+  "updatedAt": "2026-10-22T15:00:00+05:30",
+  "reportDate": "2026-10-22",
+  "activeJobs": 5,
+  "freshJobs": 0,
   "previouslyListed": 5,
   "publicationThreshold": 75,
   "strongMatchThreshold": 90,
-  "methodology": "EUROPE-MEDTECH-v3: fixed 15-portal Germany baseline + XING DACH priority + notified bodies/conformity assessment + BVMed/MedicalMountains/VDE/IEEE EMBS + specialist recruiters + academic sources + direct public ATS/employer polling where available + daily incremental discovery + periodic broad recall + standing alerts as discovery signals only + mandatory official verification + vacancy fingerprint/change detection + strict candidate gates + false-negative hunt.",
+  "methodology": "EUROPE-MEDTECH-v6: Germany-first, 0-years gate, official vacancy verification, language/degree/technical/work-authorization gates, canonical vacancy fingerprinting, separate research/PhD track, and mandatory per-source execution ledger. Configured source universe is not treated as executed unless run evidence exists.",
   "acceptance": {
     "passed": [
       "Published report reconciled to 10 active, 5 fresh and 5 previously listed",
@@ -30,7 +30,7 @@
     "backup": "data/backups/2026-09-12-pre-expanded-acceptance/ contains the pre-refresh jobs.json and reports.json snapshots for rollback.",
     "nextRecurringRun": "Daily at 17:00 Europe/Berlin"
   },
-  "auditDate": "2026-10-09",
-  "auditOutcome": "INCOMPLETE_SOURCE_EXECUTION_EVIDENCE",
-  "auditFile": "data/audits/2026-10-09-source-recall-audit.md"
+  "auditDate": "2026-10-22",
+  "auditOutcome": "PARTIAL_COVERAGE_AUTOMATION_DISABLED_RECOVERED",
+  "auditFile": "data/audits/2026-10-22-pipeline-and-recall-audit.md"
 }
