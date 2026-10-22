@@ -2401,6 +2401,40 @@
       "researchPhdJobs": 5,
       "defaultView": "Typical jobs",
       "notes": "18 October focused revalidation: Novanta Junior Test Engineer (Berlin) confirmed open on official Workday with Apply and posted 4 days ago; published as the first typical employment role. Stryker graduate programme remains provisional; deadline 24 October. Coverage partial, not full-source-universe exhaustion."
+    },
+    {
+      "date": "2026-10-22",
+      "reportType": "normal daily production refresh",
+      "reportStatus": "PUBLISHED",
+      "productionProtocol": "EUROPE-MEDTECH-v6",
+      "activeJobs": 5,
+      "freshJobs": 0,
+      "previouslyListed": 5,
+      "closingWithin7Days": 1,
+      "newGatePassing": 0,
+      "provisionalFindings": 3,
+      "provisionalFindingIds": [
+        "soring-hardware-lifecycle-2026-10-10",
+        "stryker-rd-biomedical-mechanical-graduate-2027-ireland",
+        "edwards-clinical-graduate-program-germany-2027"
+      ],
+      "jobIds": [
+        "max-planck-bmai-phd-2026-09-10",
+        "eth-machine-perfusion-phd-2026-09-26",
+        "tue-contrast-ultrasound-nanobubbles-2026-09-28",
+        "tue-quantitative-multitracer-pet-2026-09-29",
+        "novanta-junior-test-verification-2026-10-11"
+      ],
+      "freshJobIds": [],
+      "excludedJobIds": [
+        "helmholtz-optoacoustic-tomography-2026-09-29",
+        "siemens-embedded-xray-2026-09-09",
+        "ferchau-junior-embedded-cpp-2026-09-13"
+      ],
+      "typicalEmploymentJobs": 1,
+      "researchPhdJobs": 4,
+      "defaultView": "Typical jobs",
+      "notes": "Full source-recall recovery after discovering scheduled research automations were disabled. Five current official-source opportunities remain publishable (one typical employment, four PhD/research). Helmholtz vacancy URL returned 410 Gone and was removed. Edwards clinical graduate programme is a provisional finding pending driving-licence/language checks; Stryker deadline is 24 October and remains provisional pending grade/work authorization. Coverage remains PARTIAL; not every configured portal was directly inspected."
     }
   ]
 }
