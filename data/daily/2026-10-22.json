@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-22",
+  "reportType": "normal daily production refresh",
+  "reportStatus": "PUBLISHED",
+  "productionProtocol": "EUROPE-MEDTECH-v6",
+  "activeJobs": 5,
+  "freshJobs": 0,
+  "previouslyListed": 5,
+  "closingWithin7Days": 1,
+  "newGatePassing": 0,
+  "provisionalFindings": 3,
+  "provisionalFindingIds": [
+    "soring-hardware-lifecycle-2026-10-10",
+    "stryker-rd-biomedical-mechanical-graduate-2027-ireland",
+    "edwards-clinical-graduate-program-germany-2027"
+  ],
+  "jobIds": [
+    "max-planck-bmai-phd-2026-09-10",
+    "eth-machine-perfusion-phd-2026-09-26",
+    "tue-contrast-ultrasound-nanobubbles-2026-09-28",
+    "tue-quantitative-multitracer-pet-2026-09-29",
+    "novanta-junior-test-verification-2026-10-11"
+  ],
+  "freshJobIds": [],
+  "excludedJobIds": [
+    "helmholtz-optoacoustic-tomography-2026-09-29",
+    "siemens-embedded-xray-2026-09-09",
+    "ferchau-junior-embedded-cpp-2026-09-13"
+  ],
+  "sourcesSearched": [
+    "Official employer ATS/career pages: Novanta Workday, Stryker Careers, Edwards Lifesciences, Philips Careers, BIOTRONIK career/LinkedIn posting",
+    "Official research/university pages: Max Planck School of Biomedical AI, ETH Zürich, TU/e Varbi, Helmholtz München, University Hospital Tübingen",
+    "Official public research employer: DLR careers",
+    "Employer career discovery: B. Braun and Dräger",
+    "Indexed job-board and web discovery queries: LinkedIn Jobs, Jobvector/StepStone-style indexed results and general English/German role-family queries"
+  ],
+  "sourceCoverage": {
+    "grade": "PARTIAL",
+    "note": "This is a targeted current-source sweep, not evidence that every configured portal was directly inspected. No current per-source execution ledger existed for 19–21 October, and the scheduled research automations were disabled. The configured 15-portal Germany baseline and wider ATS/employer universe remain the intended source universe.",
+    "directOfficialChecks": [
+      "Novanta Workday",
+      "Stryker Careers",
+      "Edwards Lifesciences",
+      "Philips Careers",
+      "BIOTRONIK listing",
+      "DLR careers",
+      "Max Planck",
+      "ETH Zürich",
+      "TU/e",
+      "Helmholtz München",
+      "University Hospital Tübingen"
+    ],
+    "notClaimedAsDirectlyChecked": [
+      "Indeed",
+      "LinkedIn Jobs",
+      "XING Jobs",
+      "StepStone",
+      "Jobware",
+      "Monster",
+      "meinestadt.de",
+      "stellenanzeigen.de",
+      "Yourfirm",
+      "Kimeta",
+      "Jooble",
+      "Jobvector",
+      "Absolventa",
+      "JobTeaser",
+      "Stellenwerk"
+    ]
+  },
+  "findings": [
+    {
+      "id": "novanta-junior-test-verification-2026-10-11",
+      "status": "ACTIVE_PUBLISHED",
+      "note": "Official Workday result checked today shows Apply and Posted 4 Days Ago; explicit recent-graduate and little-to-no-experience language. 87% CV match. German/English level not specified by employer; work authorization remains candidate-specific."
+    },
+    {
+      "id": "helmholtz-optoacoustic-tomography-2026-09-29",
+      "status": "REMOVED_CLOSED_SOURCE_410",
+      "note": "Official employer job URL returns HTTP 410 Gone on 22 October. Removed from active publication; do not keep stale vacancy in public count."
+    },
+    {
+      "id": "edwards-clinical-graduate-program-germany-2027",
+      "status": "PROVISIONAL_NOT_COUNTED_AS_ACTIVE",
+      "note": "Official page posted 5 days ago; Biomedical Engineering accepted; April 2027 start. Requires a valid European driving licence recognized in Germany and proficiency in an additional European language. Candidate licence status and language proficiency evidence are missing."
+    },
+    {
+      "id": "stryker-rd-biomedical-mechanical-graduate-2027-ireland",
+      "status": "PROVISIONAL_DEADLINE_SOON",
+      "note": "Official page rechecked today; application deadline Friday 24 October 2026, 2.1 or equivalent required, relocation listed No. Grade equivalence and Ireland work authorization remain unresolved."
+    },
+    {
+      "id": "philips-test-development-engineer-588485",
+      "status": "EXCLUDED_NOT_CURRENT_AND_EXPERIENCE_UNCLEAR",
+      "note": "Search index surfaced a recent result, but official Philips page opened today to a no-matching-jobs response; posting also asks for experience in electronics/hardware test development and effective German and English. Not published."
+    },
+    {
+      "id": "biotronik-software-engineer-test-61147",
+      "status": "EXCLUDED_CLOSED_AND_EXPERIENCE_LANGUAGE_GATES",
+      "note": "LinkedIn result states applications are no longer accepted. Posting asks for software-development and test-automation experience and confident German/English; not publishable."
+    },
+    {
+      "id": "dlr-medizininformatiker-5649",
+      "status": "EXCLUDED_LANGUAGE_GATE",
+      "note": "Official DLR posting is current and technically relevant to ECG/EEG, sensor data and Python/C++; it requires very good German and English. Candidate German B1 fails the documented language gate; no exception assumed."
+    }
+  ],
+  "coverage": {
+    "grade": "PARTIAL",
+    "limitations": [
+      "No normal report was published for 19–21 October.",
+      "No source execution ledger proves the full configured portal matrix was searched on those dates.",
+      "Research automations were disabled; GitHub Pages workflow only validates and deploys static files and does not perform job research.",
+      "Search result count is not the same as candidate-eligible count; strict zero-years, language, technical fit, official-source and work-authorization gates remain in force."
+    ]
+  },
+  "notes": "Database refreshed and report generated after recovery. Typical employment remains the default category; research/PhD is separated. No gate was relaxed to inflate the count."
+}
