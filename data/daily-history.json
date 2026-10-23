@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-22",
+  "generated": "2026-10-23",
   "startDate": "2026-09-09",
   "entries": [
     {
@@ -430,6 +430,36 @@
         "not_searched": 129
       },
       "sourceExecutionLedgerPath": "data/daily/2026-10-22.json#sourceCoverage.sourceExecutionLedger"
+    },
+    {
+      "date": "2026-10-23",
+      "reportStatus": "PARTIAL",
+      "reportType": "normal daily production refresh",
+      "activeJobs": 2,
+      "freshJobs": 0,
+      "previouslyListed": 2,
+      "closingWithin7Days": 1,
+      "newGatePassing": 0,
+      "provisionalFindings": 5,
+      "notes": "23 October continuation: repository/history read first. Broad indexed discovery probes run across Indeed, StepStone, Jobvector, XING, and the official Bosch careers page. Germany source matrix remains materially incomplete; do not claim full coverage. ETH Zürich, TU/e and Tübingen research entries downgraded to provisional because current official status was not revalidated within 72 hours. Bosch PhD lead excluded because German B1 fails the official very-good-German requirement. No new role passed every publication gate.",
+      "closingWithin7DaysPublished": 0,
+      "closingWithin7DaysProvisional": 1,
+      "provisionalFindingIds": [
+        "eth-machine-perfusion-phd-2026-09-26",
+        "tue-contrast-ultrasound-nanobubbles-2026-09-28",
+        "tue-quantitative-multitracer-pet-2026-09-29",
+        "stryker-rd-biomedical-mechanical-graduate-2027-ireland",
+        "edwards-clinical-graduate-program-germany-2027"
+      ],
+      "sourceCoverageGrade": "PARTIAL",
+      "sourceExecutionLedgerEntries": 177,
+      "sourceExecutionLedgerStatusCounts": {
+        "official_page_checked": 1,
+        "indexed_search_attempted": 4,
+        "unavailable_or_blocked": 0,
+        "not_searched": 172
+      },
+      "sourceExecutionLedgerPath": "data/daily/2026-10-23.json#sourceCoverage.sourceExecutionLedger"
     }
   ]
 }
