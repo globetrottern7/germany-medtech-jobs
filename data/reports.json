@@ -2554,6 +2554,104 @@
         "WDM, Life Science Nord and Medical Valley regional job boards",
         "EURES, EURAXESS, DLR and BA probes"
       ]
+    },
+    {
+      "date": "2026-10-23",
+      "reportType": "normal daily production refresh",
+      "reportStatus": "PARTIAL_RESEARCH_NOT_FULL_COVERAGE",
+      "productionProtocol": "EUROPE-MEDTECH-v6",
+      "activeJobs": 2,
+      "freshJobs": 0,
+      "previouslyListed": 2,
+      "closingWithin7Days": 1,
+      "newGatePassing": 0,
+      "provisionalFindings": 5,
+      "provisionalFindingIds": [
+        "eth-machine-perfusion-phd-2026-09-26",
+        "tue-contrast-ultrasound-nanobubbles-2026-09-28",
+        "tue-quantitative-multitracer-pet-2026-09-29",
+        "stryker-rd-biomedical-mechanical-graduate-2027-ireland",
+        "edwards-clinical-graduate-program-germany-2027"
+      ],
+      "jobIds": [
+        "max-planck-bmai-phd-2026-09-10",
+        "novanta-junior-test-verification-2026-10-11"
+      ],
+      "freshJobIds": [],
+      "excludedJobIds": [
+        "bosch-lab-on-chip-single-cells-2026-09-14"
+      ],
+      "typicalEmploymentJobs": 1,
+      "researchPhdJobs": 1,
+      "defaultView": "Typical jobs",
+      "notes": "23 October continuation: repository/history read first. Broad indexed discovery probes run across Indeed, StepStone, Jobvector, XING, and the official Bosch careers page. Germany source matrix remains materially incomplete; do not claim full coverage. ETH Zürich, TU/e and Tübingen research entries downgraded to provisional because current official status was not revalidated within 72 hours. Bosch PhD lead excluded because German B1 fails the official very-good-German requirement. No new role passed every publication gate.",
+      "closingWithin7DaysPublished": 0,
+      "closingWithin7DaysProvisional": 1,
+      "closingWithin7DaysScope": "Published roles plus provisional findings with recorded deadlines; current deadline status not revalidated.",
+      "sourceCoverage": {
+        "grade": "PARTIAL",
+        "sourceExecutionLedgerPath": "data/daily/2026-10-23.json#sourceCoverage.sourceExecutionLedger",
+        "sourceExecutionLedgerEntries": 177,
+        "statusCounts": {
+          "official_page_checked": 1,
+          "indexed_search_attempted": 4,
+          "unavailable_or_blocked": 0,
+          "not_searched": 172
+        }
+      },
+      "findings": [
+        {
+          "id": "novanta-junior-test-verification-2026-10-11",
+          "status": "ACTIVE_PUBLISHED",
+          "note": "Carried forward from 22 October official Workday verification; this continuation did not revalidate the direct employer page today, so refresh-age compliance should be checked before any new publication assertion.",
+          "url": "https://novanta.wd5.myworkdayjobs.com/en-US/Novanta-Careers/job/Berlin-Germany/Junior-Test-Engineer--m-f-d-_R009292"
+        },
+        {
+          "id": "max-planck-bmai-phd-2026-09-10",
+          "status": "ACTIVE_PUBLISHED_RESEARCH",
+          "note": "Carried forward from 22 October official Max Planck source verification; research/PhD remains separate from typical employment.",
+          "url": "https://www.biochem.mpg.de/9016603/job_full_offer_26960440"
+        },
+        {
+          "id": "bosch-lab-on-chip-single-cells-2026-09-14",
+          "status": "EXCLUDED_LANGUAGE_GATE",
+          "note": "Official Bosch listing is current and accepts Biomedical Engineering M.Sc., but requires very good German and English; German B1 fails the language gate.",
+          "url": "https://jobs.bosch.de/en/job/PhD-Development-of-a-Novel-Lab-on-a-Chip-Component-for-the-Analysis-and-Sorting-of-Single-Cells-Renningen?id=844a66a1-c1c9-41d9-8269-b4c92de238c6"
+        },
+        {
+          "id": "eth-machine-perfusion-phd-2026-09-26",
+          "status": "PROVISIONAL_REVALIDATION_REQUIRED",
+          "note": "Not revalidated on an official source within today's 72-hour window; removed from active published count pending verification."
+        },
+        {
+          "id": "tue-contrast-ultrasound-nanobubbles-2026-09-28",
+          "status": "PROVISIONAL_REVALIDATION_REQUIRED",
+          "note": "Not revalidated on an official source within today's 72-hour window; removed from active published count pending verification."
+        },
+        {
+          "id": "tue-quantitative-multitracer-pet-2026-09-29",
+          "status": "PROVISIONAL_REVALIDATION_REQUIRED",
+          "note": "Not revalidated on an official source within today's 72-hour window; removed from active published count pending verification."
+        },
+        {
+          "id": "stryker-rd-biomedical-mechanical-graduate-2027-ireland",
+          "status": "PROVISIONAL_DEADLINE_TODAY_TOMORROW",
+          "note": "Deadline was recorded as 24 October 2026; official current status not revalidated today, so remains provisional."
+        },
+        {
+          "id": "edwards-clinical-graduate-program-germany-2027",
+          "status": "PROVISIONAL_NOT_COUNTED_AS_ACTIVE",
+          "note": "Candidate-specific licence and additional European-language gates remain unresolved."
+        }
+      ],
+      "sourcesSearched": [
+        "Indeed indexed results",
+        "StepStone indexed results",
+        "Jobvector indexed results",
+        "XING Jobs indexed results",
+        "Bosch official careers page",
+        "Broad-recall false-negative probe"
+      ]
     }
   ]
 }
