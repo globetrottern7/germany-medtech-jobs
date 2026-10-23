@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-22",
+  "lastUpdated": "2026-10-23",
   "jobs": [
     {
       "id": "maico-dsp-engineer-2026-09-09",
@@ -874,13 +874,13 @@
       ],
       "match": 90,
       "fresh": false,
-      "status": "active",
+      "status": "provisional",
       "url": "https://jobs.ethz.ch/job/view/JOPG_ethz_KpOW7lYfI0yXlUiUCo",
       "workAuthorization": "NOT_EXPLICITLY_STATED",
       "lastVerified": "2026-10-22",
-      "lastAttempted": "2026-10-22",
-      "openVerified": true,
-      "evidence": "Official ETH Zürich vacancy page checked 22 October 2026; PhD role remains listed, accepts MSc Biomedical Engineering, requires fluent English, and highlights sensor integration/control software."
+      "lastAttempted": "2026-10-23",
+      "openVerified": false,
+      "evidence": "Official ETH Zürich vacancy page checked 22 October 2026; PhD role remains listed, accepts MSc Biomedical Engineering, requires fluent English, and highlights sensor integration/control software. On 23 October, current official vacancy status was not revalidated within the required 72-hour window; retained as provisional pending fresh official-source verification."
     },
     {
       "id": "lake-lucerne-movement-biomarkers-2026-09-26",
@@ -920,7 +920,7 @@
       ],
       "match": 86,
       "fresh": false,
-      "status": "active",
+      "status": "provisional",
       "deadline": "2026-11-06",
       "url": "https://tue.varbi.com/en/apply/positionquick/968956/",
       "fit": [
@@ -936,9 +936,9 @@
       ],
       "workAuthorization": "WORK_AUTHORIZATION_VERIFY",
       "lastVerified": "2026-10-22",
-      "lastAttempted": "2026-10-22",
-      "openVerified": true,
-      "evidence": "Official TU/e Varbi application route checked 22 October 2026 and remains accessible. Previous official posting records deadline 6 November 2026; verify detailed vacancy conditions before application."
+      "lastAttempted": "2026-10-23",
+      "openVerified": false,
+      "evidence": "Official TU/e Varbi application route checked 22 October 2026 and remains accessible. Previous official posting records deadline 6 November 2026; verify detailed vacancy conditions before application. On 23 October, current official vacancy status was not revalidated within the required 72-hour window; retained as provisional pending fresh official-source verification."
     },
     {
       "id": "radboud-multimodal-agentic-ai-prostate-2026-09-28",
@@ -1012,13 +1012,13 @@
       ],
       "match": 90,
       "fresh": false,
-      "status": "active",
+      "status": "provisional",
       "deadline": "2026-10-31",
       "url": "https://jobs.medizin.uni-tuebingen.de/Job/de/7721",
       "lastVerified": "2026-10-22",
-      "lastAttempted": "2026-10-22",
-      "openVerified": true,
-      "evidence": "Official University Hospital Tübingen page checked 22 October 2026; application deadline 31 October 2026, MSc Biomedical Engineering accepted, Python/MATLAB programming and excellent English required."
+      "lastAttempted": "2026-10-23",
+      "openVerified": false,
+      "evidence": "Official University Hospital Tübingen page checked 22 October 2026; application deadline 31 October 2026, MSc Biomedical Engineering accepted, Python/MATLAB programming and excellent English required. On 23 October, current official vacancy status was not revalidated within the required 72-hour window; retained as provisional pending fresh official-source verification."
     },
     {
       "id": "ovgu-precision-neuroimaging-2026-10-02",
