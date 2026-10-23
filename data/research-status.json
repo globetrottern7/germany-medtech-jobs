@@ -41,13 +41,13 @@
   "sourceCoverage": {
     "grade": "PARTIAL",
     "configuredSourceCount": 177,
-    "executedSourceCount": 6,
-    "notSearchedCount": 171,
+    "executedSourceCount": 4,
+    "notSearchedCount": 173,
     "statusCounts": {
-      "official_page_checked": 1,
+      "official_page_checked": 0,
       "indexed_search_attempted": 4,
       "unavailable_or_blocked": 0,
-      "not_searched": 172
+      "not_searched": 173
     },
     "queryRecordsSubmitted": 5,
     "fullCoverageClaim": false,
