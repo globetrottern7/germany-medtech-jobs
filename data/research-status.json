@@ -1,11 +1,11 @@
 {
-  "status": "partial-coverage-recovery-published",
-  "message": "22 October normal report reconciled with per-source execution ledger. Four published roles checked directly; Novanta direct extraction unavailable but same-day official Workday evidence retained. Two Stryker graduate leads closing 24 October remain provisional pending degree/grade review. Full coverage not claimed.",
-  "updatedAt": "2026-10-22T17:17:48+05:30",
-  "reportDate": "2026-10-22",
-  "activeJobs": 5,
+  "status": "partial-coverage-continuation-recorded",
+  "message": "23 October continuation recorded with an explicit partial source ledger. Most configured sources were not searched today. No full-coverage claim. Three research vacancies moved to provisional pending official revalidation within 72 hours.",
+  "updatedAt": "2026-10-23T20:43:00+05:30",
+  "reportDate": "2026-10-23",
+  "activeJobs": 2,
   "freshJobs": 0,
-  "previouslyListed": 5,
+  "previouslyListed": 2,
   "publicationThreshold": 75,
   "strongMatchThreshold": 90,
   "methodology": "EUROPE-MEDTECH-v6: Germany-first, 0-years gate, official vacancy verification, language/degree/technical/work-authorization gates, canonical vacancy fingerprinting, separate research/PhD track, and mandatory per-source execution ledger. Configured source universe is not treated as executed unless run evidence exists.",
@@ -35,22 +35,22 @@
     "backup": "data/backups/2026-09-12-pre-expanded-acceptance/ contains the pre-refresh jobs.json and reports.json snapshots for rollback.",
     "nextRecurringRun": "Daily at 17:00 Europe/Berlin; 17:20 recovery verifies normal report and Pages workflow separately."
   },
-  "auditDate": "2026-10-22",
-  "auditOutcome": "PARTIAL_COVERAGE_LEDGER_RECONCILED_PUBLISHED",
+  "auditDate": "2026-10-23",
+  "auditOutcome": "PARTIAL_CONTINUATION_RECORDED",
   "auditFile": "data/audits/2026-10-22-pipeline-and-recall-audit.md",
   "sourceCoverage": {
     "grade": "PARTIAL",
     "configuredSourceCount": 177,
-    "executedSourceCount": 48,
-    "notSearchedCount": 129,
+    "executedSourceCount": 6,
+    "notSearchedCount": 171,
     "statusCounts": {
-      "official_page_checked": 27,
-      "indexed_search_attempted": 20,
-      "unavailable_or_blocked": 1,
-      "not_searched": 129
+      "official_page_checked": 1,
+      "indexed_search_attempted": 4,
+      "unavailable_or_blocked": 0,
+      "not_searched": 172
     },
-    "queryRecordsSubmitted": 63,
+    "queryRecordsSubmitted": 5,
     "fullCoverageClaim": false,
-    "ledgerPath": "data/daily/2026-10-22.json#sourceCoverage.sourceExecutionLedger"
+    "ledgerPath": "data/daily/2026-10-23.json#sourceCoverage.sourceExecutionLedger"
   }
 }
