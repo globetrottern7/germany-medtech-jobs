@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-04",
+  "reportType": "normal daily production refresh",
+  "reportStatus": "PARTIAL_RESEARCH_NOT_FULL_COVERAGE",
+  "productionProtocol": "EUROPE-MEDTECH-v6",
+  "activeJobs": 0,
+  "freshJobs": 0,
+  "previouslyListed": 0,
+  "closingWithin7Days": 0,
+  "newGatePassing": 0,
+  "provisionalFindings": 7,
+  "provisionalFindingIds": [
+    "novanta-junior-test-verification-2026-10-11",
+    "max-planck-bmai-phd-2026-09-10",
+    "eth-machine-perfusion-phd-2026-09-26",
+    "tue-contrast-ultrasound-nanobubbles-2026-09-28",
+    "tue-quantitative-multitracer-pet-2026-09-29",
+    "edwards-clinical-graduate-program-germany-2027",
+    "brunel-young-professional-medizintechnik-wuerzburg-2026-11-04"
+  ],
+  "jobIds": [],
+  "freshJobIds": [],
+  "excludedJobIds": [
+    "stryker-rd-biomedical-mechanical-graduate-2027-ireland"
+  ],
+  "typicalEmploymentJobs": 0,
+  "researchPhdJobs": 0,
+  "defaultView": "Typical jobs",
+  "notes": "4 November recovery refresh after 12-day publication gap. No role meets verified-active publication because previously active roles were not revalidated on official pages within 72 hours. Brunel Würzburg graduate Medizintechnik role was verified on the official page but remains provisional because secure German/English is required and candidate German B1 does not establish eligibility. Stryker Ireland graduate role retired after 24 October deadline. Research/source coverage remains PARTIAL; this is not an exhaustive 177-source run.",
+  "sourceCoverage": {
+    "grade": "PARTIAL",
+    "sourceExecutionLedgerEntries": 177,
+    "statusCounts": {
+      "official_page_checked": 0,
+      "indexed_search_attempted": 4,
+      "unavailable_or_blocked": 0,
+      "not_searched": 173
+    },
+    "sourceExecutionLedgerPath": "data/daily/2026-10-23.json#sourceCoverage.sourceExecutionLedger",
+    "coverageStatement": "Four configured discovery sources (Indeed, XING Jobs, StepStone, Jobvector) had indexed-search attempts. Brunel official listing was separately inspected as a lead but is not represented as a configured source-ledger entry. 173 configured entries remain not searched; no full coverage claim."
+  },
+  "findings": [
+    {
+      "id": "brunel-young-professional-medizintechnik-wuerzburg-2026-11-04",
+      "status": "PROVISIONAL_LANGUAGE_GATE",
+      "note": "Official Brunel page checked 4 Nov. Graduate-entry; experience not applicable; Medizintechnik degree accepted; first practical exposure via internship/thesis requested. Secure German and English required; German B1 eligibility unresolved. Deadline 6 Nov.",
+      "url": "https://cloudsites.brunel.net/de-de/jobs/young-professional-absolvent-medizintechnik-wmd-tr-303345"
+    },
+    {
+      "id": "novanta-junior-test-verification-2026-10-11",
+      "status": "PROVISIONAL_REVALIDATION_REQUIRED",
+      "note": "Last official verification 22 Oct, outside 72-hour window; recheck Workday before publication."
+    },
+    {
+      "id": "max-planck-bmai-phd-2026-09-10",
+      "status": "PROVISIONAL_REVALIDATION_REQUIRED",
+      "note": "Research/PhD; last official verification 22 Oct, outside 72-hour window; recheck official Max Planck page."
+    },
+    {
+      "id": "stryker-rd-biomedical-mechanical-graduate-2027-ireland",
+      "status": "EXPIRED",
+      "note": "Recorded deadline 24 Oct 2026 has passed; no verified extension."
+    }
+  ],
+  "sourcesSearched": [
+    "Indeed indexed discovery",
+    "XING Jobs indexed discovery",
+    "StepStone indexed discovery",
+    "Jobvector indexed discovery",
+    "Brunel official careers page"
+  ]
+}
