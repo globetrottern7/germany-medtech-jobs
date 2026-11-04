@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-23",
+  "lastUpdated": "2026-11-04",
   "jobs": [
     {
       "id": "maico-dsp-engineer-2026-09-09",
@@ -109,13 +109,14 @@
       ],
       "match": 80,
       "fresh": false,
-      "status": "active",
+      "status": "provisional",
       "deadline": "2026-12-01",
       "url": "https://www.biochem.mpg.de/9016603/job_full_offer_26960440",
       "lastVerified": "2026-10-22",
       "lastAttempted": "2026-10-22",
       "openVerified": true,
-      "evidence": "Official Max Planck Institute page checked 22 October 2026; application deadline 1 December 2026 and September 2027 start are stated on the official page."
+      "evidence": "Official Max Planck Institute page checked 22 October 2026; application deadline 1 December 2026 and September 2027 start are stated on the official page.",
+      "provisionalReason": "Not revalidated on official employer page within 72 hours; pending recheck."
     },
     {
       "id": "kit-miniaturized-electrodes-2026-09-10",
@@ -1060,7 +1061,7 @@
       ],
       "match": 87,
       "fresh": false,
-      "status": "active",
+      "status": "provisional",
       "url": "https://novanta.wd5.myworkdayjobs.com/en-US/Novanta-Careers/job/Berlin-Germany/Junior-Test-Engineer--m-f-d-_R009292",
       "sourceType": "official ATS",
       "sourceLayers": [
@@ -1106,7 +1107,8 @@
         "materialRequirements": 12,
         "roleAlignment": 8
       },
-      "lastAttempted": "2026-10-22"
+      "lastAttempted": "2026-10-22",
+      "provisionalReason": "Not revalidated on official employer page within 72 hours; pending recheck."
     },
     {
       "id": "stryker-rd-biomedical-mechanical-graduate-2027-ireland",
@@ -1123,8 +1125,8 @@
         "Graduate Program"
       ],
       "match": 82,
-      "fresh": true,
-      "status": "provisional",
+      "fresh": false,
+      "status": "expired",
       "url": "https://careers.stryker.com/r-d-biomedical-mechanical-engineering-graduate-program-september-2027/job/7C1433160499E856F8E5CA898E41FC5D",
       "deadline": "2026-10-24",
       "sourceType": "official employer careers",
@@ -1169,7 +1171,8 @@
         "materialRequirements": 7,
         "roleAlignment": 7
       },
-      "lastAttempted": "2026-10-22"
+      "lastAttempted": "2026-10-22",
+      "expiredDate": "2026-10-24"
     },
     {
       "id": "edwards-clinical-graduate-program-germany-2027",
@@ -1232,6 +1235,30 @@
         "materialRequirements": 9,
         "roleAlignment": 8
       }
+    },
+    {
+      "id": "brunel-young-professional-medizintechnik-wuerzburg-2026-11-04",
+      "title": "Young Professional / Absolvent Medizintechnik (w/m/d)",
+      "company": "Brunel GmbH",
+      "location": "Würzburg, Bavaria, Germany",
+      "country": "Germany",
+      "category": [
+        "Graduate",
+        "Medical Device",
+        "Biomedical Engineering",
+        "Product Development"
+      ],
+      "match": null,
+      "fresh": true,
+      "status": "provisional",
+      "deadline": "2026-11-06",
+      "url": "https://cloudsites.brunel.net/de-de/jobs/young-professional-absolvent-medizintechnik-wmd-tr-303345",
+      "lastAttempted": "2026-11-04",
+      "lastVerified": "2026-11-04",
+      "openVerified": true,
+      "evidence": "Official graduate-entry listing; experience not applicable; Medizintechnik degree accepted; medical-device development work.",
+      "provisionalReason": "Requires secure German and English; candidate German B1 is not confirmed to meet this. Internship/thesis experience also requested.",
+      "sourceType": "official_employer_page"
     }
   ]
 }
