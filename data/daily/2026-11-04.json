@@ -29,15 +29,2598 @@
   "notes": "4 November recovery refresh after 12-day publication gap. No role meets verified-active publication because previously active roles were not revalidated on official pages within 72 hours. Brunel Würzburg graduate Medizintechnik role was verified on the official page but remains provisional because secure German/English is required and candidate German B1 does not establish eligibility. Stryker Ireland graduate role retired after 24 October deadline. Research/source coverage remains PARTIAL; this is not an exhaustive 177-source run.",
   "sourceCoverage": {
     "grade": "PARTIAL",
-    "sourceExecutionLedgerEntries": 177,
+    "coverageStatus": "PARTIAL",
+    "ledgerVersion": "EUROPE-MEDTECH-v6",
+    "coverageDate": "2026-11-04",
+    "runTimestamp": "2026-11-04",
+    "fullCoverageClaim": false,
+    "queryBudgetTarget": 0,
+    "queryRecordsSubmitted": 4,
+    "configuredSourceCount": 177,
+    "executedSourceCount": 4,
+    "notSearchedCount": 173,
     "statusCounts": {
       "official_page_checked": 0,
       "indexed_search_attempted": 4,
       "unavailable_or_blocked": 0,
       "not_searched": 173
     },
-    "sourceExecutionLedgerPath": "data/daily/2026-10-23.json#sourceCoverage.sourceExecutionLedger",
-    "coverageStatement": "Four configured discovery sources (Indeed, XING Jobs, StepStone, Jobvector) had indexed-search attempts. Brunel official listing was separately inspected as a lead but is not represented as a configured source-ledger entry. 173 configured entries remain not searched; no full coverage claim."
+    "sourceExecutionLedger": [
+      {
+        "source": "Indeed",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "sourceTiers.specialist"
+        ],
+        "status": "indexed_search_attempted",
+        "method": "web_indexed_discovery",
+        "query": "Germany graduate biomedical engineering MedTech entry-level vacancies current November 2026",
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [
+          "https://de.indeed.com/q-germany-biomedical-engineer-jobs.html",
+          "https://de.indeed.com/Jobs?lang=de&q=biomedical+engineering"
+        ],
+        "officialVerificationOutcome": "Discovery only; individual leads require official employer-page verification.",
+        "evidenceUrls": [
+          "https://de.indeed.com/q-germany-biomedical-engineer-jobs.html",
+          "https://de.indeed.com/Jobs?lang=de&q=biomedical+engineering"
+        ],
+        "lastAttempted": "2026-11-04",
+        "notes": "Executed during 23 October continuation; discovery results are not equivalent to direct portal/API execution."
+      },
+      {
+        "source": "LinkedIn Jobs",
+        "sourceGroups": [
+          "weeklySourceBaseline"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "XING Jobs",
+        "sourceGroups": [
+          "weeklySourceBaseline"
+        ],
+        "status": "indexed_search_attempted",
+        "method": "web_indexed_discovery",
+        "query": "Germany Biomedical Engineering graduate jobs English German current November 2026",
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [
+          "https://www.xing.com/jobs/k-student/t-biomedical-engineering"
+        ],
+        "officialVerificationOutcome": "Discovery only; individual leads require official employer-page verification.",
+        "evidenceUrls": [
+          "https://www.xing.com/jobs/k-student/t-biomedical-engineering"
+        ],
+        "lastAttempted": "2026-11-04",
+        "notes": "Executed during 23 October continuation; discovery results are not equivalent to direct portal/API execution."
+      },
+      {
+        "source": "StepStone",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "addedSources",
+          "sourceTiers.specialist"
+        ],
+        "status": "indexed_search_attempted",
+        "method": "web_indexed_discovery",
+        "query": "Germany Biomedical Engineer graduate entry-level current November 2026",
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [
+          "https://www.stepstone.de/jobs/biomedical-engineer"
+        ],
+        "officialVerificationOutcome": "Discovery only; individual leads require official employer-page verification.",
+        "evidenceUrls": [
+          "https://www.stepstone.de/jobs/biomedical-engineer"
+        ],
+        "lastAttempted": "2026-11-04",
+        "notes": "Executed during 23 October continuation; discovery results are not equivalent to direct portal/API execution."
+      },
+      {
+        "source": "Jobware",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "addedSources",
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Monster",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "meinestadt.de",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "stellenanzeigen.de",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Yourfirm",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "addedSources",
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Kimeta",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Jooble",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Jobvector",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "addedSources",
+          "sourceTiers.specialist"
+        ],
+        "status": "indexed_search_attempted",
+        "method": "web_indexed_discovery",
+        "query": "Germany biomedical engineering MedTech entry-level current November 2026",
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [
+          "https://www.jobvector.de/jobs/biomedical%2Bengineering/deutschland/"
+        ],
+        "officialVerificationOutcome": "Discovery only; individual leads require official employer-page verification.",
+        "evidenceUrls": [
+          "https://www.jobvector.de/jobs/biomedical%2Bengineering/deutschland/"
+        ],
+        "lastAttempted": "2026-11-04",
+        "notes": "Executed during 23 October continuation; discovery results are not equivalent to direct portal/API execution."
+      },
+      {
+        "source": "Absolventa",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "JobTeaser",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Stellenwerk",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "jobs.personio.de",
+        "sourceGroups": [
+          "ATS domains"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "softgarden",
+        "sourceGroups": [
+          "ATS domains",
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "successfactors",
+        "sourceGroups": [
+          "ATS domains",
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "workday",
+        "sourceGroups": [
+          "ATS domains",
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "join.com",
+        "sourceGroups": [
+          "ATS domains"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "greenhouse",
+        "sourceGroups": [
+          "ATS domains",
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "lever",
+        "sourceGroups": [
+          "ATS domains",
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "smartrecruiters",
+        "sourceGroups": [
+          "ATS domains",
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "taleo",
+        "sourceGroups": [
+          "ATS domains"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "icims",
+        "sourceGroups": [
+          "ATS domains"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "recruitee",
+        "sourceGroups": [
+          "ATS domains",
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "ashby",
+        "sourceGroups": [
+          "ATS domains",
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "jobvite",
+        "sourceGroups": [
+          "ATS domains"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "teamtailor",
+        "sourceGroups": [
+          "ATS domains",
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "interamt",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.public"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "eures",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.public"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "nando",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regulatory",
+          "sourceTiers.associationEmployerUniverse",
+          "employerUniverse.regulatoryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "zlg",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regulatory",
+          "sourceTiers.associationEmployerUniverse",
+          "employerUniverse.regulatoryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "jobs.zeit.de",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "fraunhofer",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "helmholtz",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "dgbmt",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.associationEmployerUniverse"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "fkt",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.associationEmployerUniverse"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "dgmp",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.associationEmployerUniverse"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "johner",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "metecon",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "seleon",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "mdss",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "qserve",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "WDM",
+        "sourceGroups": [
+          "addedSources",
+          "employerUniverse.primaryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Life Science Nord Jobs",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regionalSpecialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "SPECTARIS",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.associationEmployerUniverse",
+          "employerUniverse.primaryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "VDGH",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.associationEmployerUniverse",
+          "employerUniverse.primaryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Bund.de",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.public"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Medical Valley EMN",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regionalSpecialist",
+          "employerUniverse.primaryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "HealthCapital Berlin-Brandenburg",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regionalSpecialist",
+          "employerUniverse.primaryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "WQS",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.specialist",
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "personio",
+        "sourceGroups": [
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "join",
+        "sourceGroups": [
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "dvinci",
+        "sourceGroups": [
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "rexx",
+        "sourceGroups": [
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "haufe-umantis",
+        "sourceGroups": [
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "concludis",
+        "sourceGroups": [
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "umantis",
+        "sourceGroups": [
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "academics.de",
+        "sourceGroups": [
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "ingenieur.de",
+        "sourceGroups": [
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "staufenbiel",
+        "sourceGroups": [
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "berufsstart",
+        "sourceGroups": [
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "xing",
+        "sourceGroups": [
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "linkedin",
+        "sourceGroups": [
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "joblift",
+        "sourceGroups": [
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "medtechjobs.de",
+        "sourceGroups": [
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "MedTech-Jobs.de (medtechjobs.de)",
+        "sourceGroups": [
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "BA",
+        "sourceGroups": [
+          "sourceTiers.public"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Karriere Bund",
+        "sourceGroups": [
+          "sourceTiers.public"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "BfArM",
+        "sourceGroups": [
+          "sourceTiers.public"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "PEI",
+        "sourceGroups": [
+          "sourceTiers.public"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Make it in Germany",
+        "sourceGroups": [
+          "sourceTiers.public"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "DZG",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "max-planck",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "leibniz",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "DLR",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "charite",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "university-hospitals",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Nature Careers",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Academic Positions",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "ResearchGate Jobs",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "EURAXESS",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "CORDIS",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "MSCA",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Marie Curie",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Jülich",
+        "sourceGroups": [
+          "sourceTiers.research",
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "MDC",
+        "sourceGroups": [
+          "sourceTiers.research",
+          "sourceTiers.regulatory",
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "DZHK",
+        "sourceGroups": [
+          "sourceTiers.research",
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "DZL",
+        "sourceGroups": [
+          "sourceTiers.research",
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "DZD",
+        "sourceGroups": [
+          "sourceTiers.research",
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "DKFZ",
+        "sourceGroups": [
+          "sourceTiers.research",
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "DZNE",
+        "sourceGroups": [
+          "sourceTiers.research",
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "tuv-nord",
+        "sourceGroups": [
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "medcert",
+        "sourceGroups": [
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "berlin-cert",
+        "sourceGroups": [
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "VDE",
+        "sourceGroups": [
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "IEEE EMBS",
+        "sourceGroups": [
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "MedTech Europe",
+        "sourceGroups": [
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "BVMed",
+        "sourceGroups": [
+          "sourceTiers.regulatory",
+          "sourceTiers.associationEmployerUniverse",
+          "employerUniverse.primaryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "WDM / Weltzentrum der Medizintechnik",
+        "sourceGroups": [
+          "sourceTiers.regionalSpecialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "MedicalMountains",
+        "sourceGroups": [
+          "sourceTiers.regionalSpecialist",
+          "employerUniverse.primaryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "TechnologyMountains",
+        "sourceGroups": [
+          "sourceTiers.regionalSpecialist",
+          "employerUniverse.primaryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Life Science Nord",
+        "sourceGroups": [
+          "sourceTiers.regionalSpecialist",
+          "employerUniverse.primaryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Tuttlingen MedTech cluster",
+        "sourceGroups": [
+          "sourceTiers.regionalSpecialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "MEDICA exhibitors",
+        "sourceGroups": [
+          "sourceTiers.associationEmployerUniverse"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "COMPAMED exhibitors",
+        "sourceGroups": [
+          "sourceTiers.associationEmployerUniverse"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "MedtecLIVE exhibitors",
+        "sourceGroups": [
+          "sourceTiers.associationEmployerUniverse"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Fraunhofer IBMT",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Fraunhofer MEVIS",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Fraunhofer IIS",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Fraunhofer IPA",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Fraunhofer ITEM",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Fraunhofer IZI",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Fraunhofer IGD",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Helmholtz Munich",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Forschungszentrum Jülich",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Leibniz Association",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Tuttlingen",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Erlangen/Nuremberg",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Jena",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Freiburg",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Hamburg",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Berlin",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Lübeck",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Aachen",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Tuttlingen / WDM / MedicalMountains",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Erlangen/Nuremberg / Medical Valley",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Jena / medtech",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Freiburg / MedTech",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Hamburg / Life Science Nord",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Berlin / HealthCapital",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Lübeck / Life Science Nord",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Aachen / MedTech",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Tübingen / MedTech",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "München / MedTech",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Ireland",
+        "sourceGroups": [
+          "tier2Europe"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Netherlands",
+        "sourceGroups": [
+          "tier2Europe"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Switzerland",
+        "sourceGroups": [
+          "tier2Europe"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "MEDICA",
+        "sourceGroups": [
+          "employerUniverse.eventDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "COMPAMED",
+        "sourceGroups": [
+          "employerUniverse.eventDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "MedtecLIVE",
+        "sourceGroups": [
+          "employerUniverse.eventDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Siemens Healthineers",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Philips",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "GE HealthCare",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Stryker",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Medtronic",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Abbott",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Boston Scientific",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "B. Braun",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Fresenius",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Getinge",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Ottobock",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "ZEISS",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "KARL STORZ",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Dräger",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Smith+Nephew",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Johnson & Johnson",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Roche",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "BD",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Edwards Lifesciences",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Intuitive Surgical",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Olympus",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Carl Zeiss Meditec",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Dornier MedTech",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Brainlab",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Sonova",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Cochlear",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Elekta",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Varian",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Richard Wolf",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "seca",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Löwenstein Medical",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Alcon",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "MAICO Diagnostics",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Aesculap",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      },
+      {
+        "source": "Novanta Medical",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched during 4 November run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Explicitly not searched during 23 October run; query budget is not evidence of execution."
+      }
+    ],
+    "coverageStatement": "Partial execution only. Four configured Germany discovery portals had indexed-search attempts. Brunel's official careers page was independently checked as a lead, but it is not a configured source-ledger entry. Remaining configured sources are explicitly not searched. The 577-entry master source manifest is missing from the repository; no exhaustive search claim is made.",
+    "activeRoleEvidence": "No role is published as verified active in this report. Previously active records are provisional pending official revalidation.",
+    "weeklyBaselineMissing": []
   },
   "findings": [
     {
