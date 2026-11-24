@@ -4,6 +4,13 @@ on:
   push:
     branches: ["main"]
   workflow_dispatch:
+  # Called by daily-research.yml: commits pushed with GITHUB_TOKEN do not trigger `push` workflows.
+  workflow_call:
+    inputs:
+      ref:
+        description: Commit to deploy
+        type: string
+        required: false
 
 permissions:
   contents: read
@@ -22,6 +29,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref || github.sha }}
+      - name: Unit tests
+        run: node --test scripts/test/*.test.js
       - name: Validate production publication
         run: node scripts/validate-publication.js
 
@@ -36,6 +47,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref || github.sha }}
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload static site

@@ -207,3 +207,17 @@ The state layer is append/transition oriented. Existing reports remain historica
 
 ### Independence from external reviewers
 External AI review (including Claude) is optional architecture QA. It is not a production dependency. The daily engine must be capable of discovering, verifying, adjudicating, fingerprinting, scoring and publishing independently under this contract.
+
+
+## Automated pipeline — effective 24 November 2026
+
+Manual research runs were missed for extended periods (for example 12–17 October, 24 October–3 November and 5–23 November 2026) without missed-run records. A scheduled GitHub Actions pipeline (`.github/workflows/daily-research.yml` → `scripts/daily-run.js`, configured by `state/automation.json`) now runs the deterministic parts of the daily cadence without depending on an interactive session:
+
+- missed-run recording for every date without a report (`reportStatus: MISSED`, no synthesised counts);
+- deadline expiry, official-URL link checks and the 72-hour verification window (active roles outside the window are downgraded to provisional);
+- discovery through public, documented job APIs only (Bundesagentur für Arbeit Jobsuche, Arbeitnow, and configured employer ATS boards) — each recorded in the per-source execution ledger with its real status;
+- registry deduplication with a normalised match key (gender tags, punctuation, legal suffixes);
+- deterministic pre-screening into a review queue (`state/leads.jsonl`);
+- report, index, history and status generation followed by `scripts/validate-publication.js` and Pages deployment.
+
+Sources without a public API (LinkedIn, Indeed, XING, StepStone and most others) remain `not_searched` in automated runs; coverage stays `PARTIAL` and manual/browser research is still needed for them. The pipeline never relaxes a hard gate: without adjudication, leads are not published. Optional LLM adjudication is disabled by default and, when enabled, only extracts evidence and rubric sub-scores — every gate and the 75-point floor are enforced in code. This supersedes the earlier statement that no API-based path may run; it remains off unless explicitly enabled.

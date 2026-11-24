@@ -1,0 +1,60 @@
+{
+  "version": "AUTOMATION-v1",
+  "description": "Configuration for scripts/daily-run.js (GitHub Actions: .github/workflows/daily-research.yml). Automated discovery adds leads to a review queue; nothing is published unless every hard gate passes.",
+  "schedule": { "timezone": "Europe/Berlin", "earliestHour": 17 },
+  "recordMissedRuns": true,
+  "linkCheck": {
+    "enabled": true,
+    "statuses": ["active", "provisional"],
+    "closedStatusCodes": [404, 410],
+    "closedTextPatterns": [
+      "no longer available", "no longer accepting applications", "this job has expired", "position has been filled",
+      "job not found", "stelle ist nicht mehr verfügbar", "stellenanzeige ist nicht mehr verfügbar",
+      "nicht mehr verfügbar", "bereits besetzt", "stelle wurde besetzt", "bewerbungsfrist ist abgelaufen"
+    ]
+  },
+  "sources": {
+    "bundesagentur": {
+      "enabled": true,
+      "ledgerName": "Bundesagentur für Arbeit — Jobsuche API",
+      "publishedSinceDays": 7,
+      "pageSize": 50,
+      "maxPages": 2,
+      "queries": [
+        "Medizintechnik Absolvent",
+        "Medizintechnik Berufseinsteiger",
+        "Biomedizintechnik",
+        "Biomedical Engineer",
+        "Ingenieur Medizintechnik",
+        "Embedded Software Medizintechnik",
+        "Signalverarbeitung Medizintechnik",
+        "Verifikation Validierung Medizinprodukte",
+        "Testingenieur Medizintechnik",
+        "Applikationsspezialist Medizintechnik",
+        "Regulatory Affairs Medizinprodukte",
+        "Softwareentwickler Medizinprodukte"
+      ]
+    },
+    "arbeitnow": {
+      "enabled": true,
+      "ledgerName": "Arbeitnow — public job-board API",
+      "maxPages": 4
+    },
+    "ats": []
+  },
+  "atsExamples": {
+    "_note": "Copy entries into sources.ats after confirming the board identifier on the employer's official careers page. Board identifiers below are placeholders, not verified.",
+    "greenhouse": { "adapter": "greenhouse", "company": "Example MedTech GmbH", "board": "examplemedtech" },
+    "lever": { "adapter": "lever", "company": "Example MedTech GmbH", "site": "examplemedtech" },
+    "smartrecruiters": { "adapter": "smartrecruiters", "company": "Example MedTech GmbH", "companyId": "ExampleMedTech", "country": "de" },
+    "personio": { "adapter": "personio", "company": "Example MedTech GmbH", "subdomain": "examplemedtech" },
+    "workday": { "adapter": "workday", "company": "Example MedTech GmbH", "host": "example.wd3.myworkdayjobs.com", "tenant": "example", "site": "External", "searchText": "graduate" }
+  },
+  "adjudication": {
+    "enabled": false,
+    "provider": "openai",
+    "model": "gpt-5-mini",
+    "maxLeadsPerRun": 15,
+    "_note": "Off by default (the earlier API research path was retired after credit exhaustion). Enable here and add the OPENAI_API_KEY repository secret to let the pipeline adjudicate queued leads. Gates are enforced in code; the model only extracts evidence and rubric sub-scores."
+  }
+}

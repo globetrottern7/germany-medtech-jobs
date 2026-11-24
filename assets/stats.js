@@ -53,6 +53,13 @@ function renderCountries(records){
     return '<tr><td>'+esc(c)+'</td><td>'+t[0]+'</td><td>'+t[1]+'</td><td>'+t[2]+'</td><td>'+active+'</td><td>'+fresh+'</td></tr>';
   }).join('')||'<tr><td colspan="6" class="empty">No country data available.</td></tr>';
 }
+function renderLeads(text){
+  const body=document.getElementById('leadBody');if(!body)return;
+  const rows=String(text||'').split(/\r?\n/).filter(l=>l.trim()).map(l=>{try{return JSON.parse(l)}catch{return null}}).filter(Boolean)
+    .filter(l=>!/exclude/.test(l.status||'')).sort((a,b)=>String(b.first_seen).localeCompare(String(a.first_seen))||((b.prescreen?.relevance||0)-(a.prescreen?.relevance||0)));
+  document.getElementById('leadCount').textContent=rows.length+' lead'+(rows.length===1?'':'s')+' in queue';
+  body.innerHTML=rows.slice(0,200).map(l=>'<tr><td>'+esc(l.first_seen)+'</td><td>'+(/^https?:\/\//.test(l.url||'')?'<a href="'+esc(l.url)+'" target="_blank" rel="noopener">'+esc(l.title)+'</a>':esc(l.title))+'</td><td>'+esc(l.company)+'</td><td>'+esc(l.location)+'</td><td>'+esc(l.source)+'</td><td>'+esc(l.prescreen?.relevance??'—')+'</td><td>'+esc(String(l.status||'').replace(/_/g,' '))+'</td></tr>').join('')||'<tr><td colspan="7" class="empty">No automated leads queued yet.</td></tr>';
+}
 async function load(){
   try{
     const [visitor,reports,state,jobsData]=await Promise.all([
@@ -62,6 +69,7 @@ async function load(){
       getJson('./data/jobs.json')
     ]);
     const records=uniqueRecords(state), jobs=jobsData.jobs||[];
+    fetch('./state/leads.jsonl?v='+Date.now(),{cache:'no-store'}).then(r=>r.ok?r.text():'').then(renderLeads).catch(()=>renderLeads(''));
     renderVisitors(visitor);renderUnique(records,reports);renderUniqueHistory(reports,jobs);renderDays(reports);renderCountries(records);
   }catch(e){
     document.getElementById('uniqueBody').innerHTML='<tr><td colspan="6" class="empty">Statistics data could not be loaded.</td></tr>';

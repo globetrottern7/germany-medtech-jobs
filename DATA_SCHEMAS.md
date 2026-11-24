@@ -62,3 +62,18 @@ Records false-negative probes, canaries, sources searched, discoveries and limit
 
 ### `state/config.json`
 Production thresholds and operating controls. Candidate-specific professional information remains in `data/candidate-profile.json`; no PII is permitted in research state.
+
+
+## Automation additions (v1)
+
+### `state/automation.json`
+Pipeline configuration: schedule, missed-run recording, link-check rules, discovery sources (`bundesagentur`, `arbeitnow`, `ats[]`) and optional adjudication settings.
+
+### `state/leads.jsonl`
+Review queue of automatically discovered leads that passed the deterministic pre-screen. Fields: `lead_id`, `match_key`, `identity_key`, `title`, `company`, `location`, `country`, `url`, `listingUrl`, `source`, `sourceType`, `verificationTier`, `externalId`, `postedAt`, `first_seen`, `last_seen`, `status` (`needs_review|adjudicated_publish|adjudicated_provisional|adjudicated_exclude`), `prescreen` (`relevance`, `notes`, `signals`), optional `adjudication`. Leads are not published vacancies.
+
+### History entries
+`data/daily-history.json` entries may have `reportStatus: MISSED` with null counts. `activeJobs` is the canonical count; `activePublishedEquivalent` is kept for older entries.
+
+### Daily report additions
+Automated reports add `automatedDiscovery` (listings retrieved, known matches, new lead IDs, pre-screen rejection counts, link checks) and `maintenance` (missed-run dates, status transitions).
