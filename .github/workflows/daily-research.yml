@@ -1,0 +1,74 @@
+name: Daily MedTech research run
+
+on:
+  schedule:
+    # 17:00 Europe/Berlin is 15:00 UTC in summer (CEST) and 16:00 UTC in winter (CET).
+    # Both fire; the script skips the early one and is idempotent once a report exists.
+    - cron: "0 15 * * *"
+    - cron: "0 16 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: Rebuild today's report even if it already exists
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-research
+  cancel-in-progress: false
+
+jobs:
+  research:
+    name: Discover, maintain and publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    outputs:
+      sha: ${{ steps.commit.outputs.sha }}
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Unit tests
+        run: node --test scripts/test/*.test.js
+      - name: Run daily pipeline
+        env:
+          # Optional. Only used when state/automation.json sets adjudication.enabled=true.
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          ARGS="--scheduled"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then ARGS=""; fi
+          if [ "${{ inputs.force }}" = "true" ]; then ARGS="$ARGS --force"; fi
+          node scripts/daily-run.js $ARGS
+      - name: Validate publication
+        run: node scripts/validate-publication.js
+      - name: Commit and push
+        id: commit
+        run: |
+          if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          git config user.name "medtech-jobs-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data state
+          git commit -m "Automated daily run $(TZ=Europe/Berlin date +%F)"
+          for i in 1 2 3; do git push origin HEAD:main && break; git pull --rebase origin main; done
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  deploy:
+    name: Deploy site
+    needs: research
+    if: needs.research.outputs.changed == 'true'
+    uses: ./.github/workflows/pages.yml
+    with:
+      ref: ${{ needs.research.outputs.sha }}

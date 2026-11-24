@@ -1,72 +1,60 @@
-async function getJson(path){const r=await fetch(path+'?v='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error(path);return r.json()}
-function esc(v){return String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
-function uniqueRecords(lines){
-  const map=new Map();
-  for(const line of lines.split(/\r?\n/)){if(!line.trim())continue;try{const j=JSON.parse(line);if((j.match||0)<75)continue;const key=j.identity_key||j.id;if(!key)continue;const old=map.get(key);if(!old||String(j.first_seen||'')<String(old.first_seen||''))map.set(key,j)}catch{}}
-  return [...map.values()].sort((a,b)=>String(b.first_seen||'').localeCompare(String(a.first_seen||''))||((b.match||0)-(a.match||0)));
+'use strict';
+const $ = (id) => document.getElementById(id);
+const esc = (v) => String(v ?? '').replace(/[&<>"']/g, (m) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]));
+const fmtDate = (d) => (d ? new Date(d + 'T12:00:00').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : '—');
+const text = (p) => fetch(`${p}?v=${Date.now()}`, { cache: 'no-store' }).then((r) => (r.ok ? r.text() : Promise.reject(new Error(p))));
+const jsonl = (t) => String(t || '').split(/\r?\n/).filter((l) => l.trim()).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean);
+const link = (url, label) => (/^https?:\/\//.test(url || '') ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>` : esc(label));
+const empty = (cols, msg) => `<tr><td colspan="${cols}" class="empty">${msg}</td></tr>`;
+
+const RUN_LABEL = { MISSED: ['Missed', 'gap'], ARCHIVE_GAP: ['No archive', 'gap'], MANUAL_ARCHIVE: ['Manual archive', 'manual'], PARTIAL: ['Partial', 'manual'], PUBLISHED: ['Completed', 'published'], NORMAL: ['Completed', 'published'] };
+
+function renderQueue(rows) {
+  const q = rows.filter((l) => l.status === 'needs_review').sort((a, b) => String(b.first_seen).localeCompare(String(a.first_seen)) || (b.prescreen?.relevance || 0) - (a.prescreen?.relevance || 0));
+  $('leadCount').textContent = `${q.length} lead${q.length === 1 ? '' : 's'}`;
+  $('leadBody').innerHTML = q.slice(0, 200).map((l) => `<tr><td>${fmtDate(l.first_seen)}</td><td class="wrap title">${link(l.url, l.title)}</td><td class="wrap">${esc(l.company)}</td><td>${esc(l.location)}</td><td>${esc(l.source)}</td></tr>`).join('')
+    || empty(5, 'The queue is empty. New leads appear here after each daily run.');
 }
-function thresholdRows(records){
-  return [75,80,90].map(n=>records.filter(j=>(j.match||0)>=n).length)
+
+function renderUnique(rows) {
+  const byKey = new Map();
+  for (const v of rows) { const k = v.identity_key || v.id; if (k) byKey.set(k, v); }
+  const list = [...byKey.values()].filter((v) => (v.match || 0) >= 75 && v.status !== 'excluded' && v.first_seen)
+    .sort((a, b) => String(b.first_seen).localeCompare(String(a.first_seen)) || (b.match || 0) - (a.match || 0));
+  $('uniqueCount').textContent = `${list.length} role${list.length === 1 ? '' : 's'}`;
+  $('uniqueBody').innerHTML = list.map((v) => `<tr><td>${fmtDate(v.first_seen)}</td><td class="wrap title">${link(v.url, v.title || v.id)}</td><td class="wrap">${esc(v.company)}</td><td class="left">${esc(v.country)}</td><td>${esc(v.match)}%</td><td>${esc(v.status)}</td></tr>`).join('')
+    || empty(6, 'No qualifying roles recorded yet.');
 }
-function renderVisitors(d){
-  const s=d.summary||{};
-  document.getElementById('vTotal').textContent=s.totalVisits??0;
-  document.getElementById('vToday').textContent=s.todayVisits??0;
-  document.getElementById('v30').textContent=s.last30DaysVisits??0;
-  document.getElementById('vUnique').textContent=s.todayUniqueVisitors??0;
-  const status=document.getElementById('visitorStatus');
-  status.textContent=d.connected?'Collector connected':'Collector not connected';
-  status.className='history-status '+(d.connected?'published':'gap');
-  document.getElementById('visitorBody').innerHTML=(d.daily||[]).map(x=>'<tr><td>'+esc(x.date)+'</td><td>'+esc(x.visits??0)+'</td><td>'+esc(x.uniqueVisitors??0)+'</td><td>'+esc(x.pageViews??0)+'</td><td>'+esc(x.topCountry||'—')+'</td><td>'+esc(x.topReferrer||'—')+'</td></tr>').join('')||'<tr><td colspan="6" class="empty">No visitor data recorded yet.</td></tr>';
+
+// Groups consecutive missed days into one row so real runs stay visible.
+function groupRuns(entries) {
+  const rows = [];
+  for (const x of entries.slice().sort((a, b) => String(b.date).localeCompare(String(a.date)))) {
+    const prev = rows.at(-1);
+    if (x.reportStatus === 'MISSED' && prev?.missed) { prev.from = x.date; prev.count++; continue; }
+    rows.push(x.reportStatus === 'MISSED' ? { missed: true, from: x.date, to: x.date, count: 1 } : x);
+  }
+  return rows;
 }
-function renderUnique(records,history){
-  document.getElementById('uniqueCount').textContent=records.length+' unique qualifying opportunities to date';
-  document.getElementById('uniqueBody').innerHTML=records.map(j=>'<tr><td>'+esc(j.first_seen||'—')+'</td><td>'+esc(j.title||j.id)+'</td><td>'+esc(j.company||'—')+'</td><td>'+esc(j.country||'—')+'</td><td>'+esc(j.match||0)+'%</td><td>'+esc(j.status||'—')+'</td></tr>').join('')||'<tr><td colspan="6" class="empty">No qualifying opportunities found.</td></tr>';
-}
-function renderUniqueHistory(data,jobs){
-  const map=new Map((jobs||[]).map(j=>[j.id,j]));
-  const seen=new Set(), rows=[];
-  for(const r of (data.reports||[]).slice().sort((a,b)=>String(a.date).localeCompare(String(b.date)))){
-    let added=0;
-    for(const id of (r.jobIds||[])){
-      if(seen.has(id)) continue;
-      const j=map.get(id);
-      if(!j || (j.match||0)<75) continue;
-      seen.add(id); added++;
+
+function renderDays(entries) {
+  const num = (v) => (v === null || v === undefined ? '—' : esc(v));
+  $('dayBody').innerHTML = groupRuns(entries).map((x) => {
+    if (x.missed) {
+      const range = x.count === 1 ? fmtDate(x.from) : `${fmtDate(x.from)} – ${fmtDate(x.to)}`;
+      return `<tr class="missed"><td>${range}</td><td><span class="history-status gap">Missed</span></td><td>—</td><td>—</td><td>—</td><td class="wrap">${x.count === 1 ? 'No run on this day.' : `No run on ${x.count} consecutive days.`}</td></tr>`;
     }
-    const records=[...seen].map(id=>map.get(id)).filter(Boolean);
-    rows.push({date:r.date,added,total:records.length,n75:records.filter(j=>(j.match||0)>=75).length,n80:records.filter(j=>(j.match||0)>=80).length,n90:records.filter(j=>(j.match||0)>=90).length});
-  }
-  let card=document.getElementById('uniqueHistoryBody');
-  if(!card)return;
-  card.innerHTML=rows.slice().reverse().map(x=>'<tr><td>'+esc(x.date)+'</td><td>'+x.added+'</td><td>'+x.total+'</td><td>'+x.n90+'</td><td>'+x.n80+'</td><td>'+x.n75+'</td></tr>').join('')||'<tr><td colspan="6" class="empty">No historical unique-opportunity data available.</td></tr>';
+    const [label, cls] = RUN_LABEL[x.reportStatus] || [x.reportStatus || '—', 'manual'];
+    const note = String(x.notes || '');
+    const short = note.length > 180 ? note.slice(0, 177) + '…' : note;
+    return `<tr><td>${fmtDate(x.date)}</td><td><span class="history-status ${cls}">${esc(label)}</span></td><td>${num(x.activeJobs ?? x.activePublishedEquivalent)}</td><td>${num(x.freshJobs)}</td><td>${num(x.provisionalFindings)}</td><td class="wrap small" title="${esc(note)}">${esc(short)}</td></tr>`;
+  }).join('') || empty(6, 'No runs recorded yet.');
 }
-function renderDays(data){
-  const rows=(data.reports||[]).slice().sort((a,b)=>String(b.date).localeCompare(String(a.date)));
-  document.getElementById('dayBody').innerHTML=rows.map(r=>'<tr><td>'+esc(r.date)+'</td><td>'+esc(r.reportStatus||'—')+'</td><td>'+esc(r.reportType||'—')+'</td><td>'+esc(r.activeJobs??0)+'</td><td>'+esc(r.freshJobs??0)+'</td><td>'+esc(r.previouslyListed??0)+'</td><td>'+esc(r.closingWithin7Days??0)+'</td><td>'+esc(r.newGatePassing??0)+'</td><td>'+esc(r.provisionalFindings??0)+'</td></tr>').join('')||'<tr><td colspan="9" class="empty">No publication history available.</td></tr>';
+
+async function load() {
+  const [leads, state, history] = await Promise.allSettled([text('./state/leads.jsonl'), text('./state/vacancies.jsonl'), text('./data/daily-history.json')]);
+  renderQueue(leads.status === 'fulfilled' ? jsonl(leads.value) : []);
+  if (state.status === 'fulfilled') renderUnique(jsonl(state.value)); else $('uniqueBody').innerHTML = empty(6, 'Could not load vacancy history.');
+  if (history.status === 'fulfilled') renderDays(JSON.parse(history.value).entries || []); else $('dayBody').innerHTML = empty(6, 'Could not load run history.');
 }
-function renderCountries(records){
-  const countries=[...new Set(records.map(j=>j.country||'Other Europe'))].sort((a,b)=>a.localeCompare(b));
-  document.getElementById('countryBody').innerHTML=countries.map(c=>{
-    const rs=records.filter(j=>(j.country||'Other Europe')===c), t=thresholdRows(rs);
-    const active=rs.filter(j=>j.status==='active').length, fresh=rs.filter(j=>j.fresh).length;
-    return '<tr><td>'+esc(c)+'</td><td>'+t[0]+'</td><td>'+t[1]+'</td><td>'+t[2]+'</td><td>'+active+'</td><td>'+fresh+'</td></tr>';
-  }).join('')||'<tr><td colspan="6" class="empty">No country data available.</td></tr>';
-}
-async function load(){
-  try{
-    const [visitor,reports,state,jobsData]=await Promise.all([
-      getJson('./data/visitor-stats.json'),
-      getJson('./data/reports.json'),
-      fetch('./state/vacancies.jsonl?v='+Date.now(),{cache:'no-store'}).then(r=>r.text()),
-      getJson('./data/jobs.json')
-    ]);
-    const records=uniqueRecords(state), jobs=jobsData.jobs||[];
-    renderVisitors(visitor);renderUnique(records,reports);renderUniqueHistory(reports,jobs);renderDays(reports);renderCountries(records);
-  }catch(e){
-    document.getElementById('uniqueBody').innerHTML='<tr><td colspan="6" class="empty">Statistics data could not be loaded.</td></tr>';
-    document.getElementById('dayBody').innerHTML='<tr><td colspan="9" class="empty">Statistics data could not be loaded.</td></tr>';
-    document.getElementById('countryBody').innerHTML='<tr><td colspan="6" class="empty">Statistics data could not be loaded.</td></tr>';
-  }
-}
-load();setInterval(load,3600000);
+load();

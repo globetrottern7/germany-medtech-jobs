@@ -1,100 +1,172 @@
-let currentFilter='all',selectedCountry='all',minMatch=0,reports=[],jobs=[],selectedDate=null;
-const BERLIN_TZ='Europe/Berlin',TRACKER_KEY='medtechJobTracker.v1';
-let sortMode='match',deadlineWindow='all',languageFilter='all',companyFilter='all',view='jobs',roleType='jobs';
-const tracker=JSON.parse(localStorage.getItem(TRACKER_KEY)||'{}');
-async function fetchJson(path){const response=await fetch(`${path}?v=${Date.now()}`,{cache:'no-store'});if(!response.ok)throw new Error(`Failed to load ${path}`);return response.json()}
-function esc(v){return String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
-function countryOf(j){return j.country||'Other Europe'}
-function fingerprint(j){return j.fingerprint||[j.company,j.title,j.location,j.country].map(v=>String(v||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim()).join('|')}
-function stateOf(j){return tracker[fingerprint(j)]||{status:'new',statusDate:'',notes:'',connection:'none',followUpDate:''}}
-function saveState(j,patch){const k=fingerprint(j);tracker[k]={...stateOf(j),...patch};localStorage.setItem(TRACKER_KEY,JSON.stringify(tracker));}
-function languageOf(j){return String(j.languageRequirement||j.language||'').toLowerCase()}
-function languageBucket(j){const x=languageOf(j);if(!x)return'unknown';if(/german|deutsch|deutschkenntnisse/.test(x))return'german';if(/english|englisch/.test(x)&&!/(german|deutsch)/.test(x))return'english';return'local'}
-function deadlineDays(j){if(!j.deadline)return null;return Math.ceil((new Date(j.deadline+'T23:59:59')-new Date())/86400000)}
-function deadlineLabel(j){const d=deadlineDays(j);if(d===null)return'No stated deadline';if(d<0)return'Deadline passed';if(d===0)return'Closes today';if(d===1)return'Closes tomorrow';return`Closes in ${d} days`}
-function statusLabel(s){return({new:'New',wishlist:'Wishlist',applied:'Applied',interviewing:'Interviewing',offer:'Offer',rejected:'Rejected'}[s]||'New')}
-function currentList(){const r=reports.find(x=>x.date===selectedDate);if(!r)return[];const ids=new Set(r.jobIds||[]);return jobs.filter(j=>ids.has(j.id)&&(j.match||0)>=75)}
-function roleTypeOf(j){const t=String(j.title||'').toLowerCase(),c=(j.category||[]).map(x=>String(x).toLowerCase());return /\bph\.?d\b|doctoral|doctorate|doctoral researcher/.test(t)||c.includes('phd')?'research':'jobs'}
-function roleList(list){return list.filter(j=>roleTypeOf(j)===roleType)}
-function renderRoleTypeSwitch(list){const jobsN=list.filter(j=>roleTypeOf(j)==='jobs').length,researchN=list.filter(j=>roleTypeOf(j)==='research').length;document.getElementById('jobsCount').textContent=jobsN;document.getElementById('researchCount').textContent=researchN;document.querySelectorAll('[data-role-type]').forEach(b=>b.classList.toggle('active',b.dataset.roleType===roleType));document.getElementById('jobListHeading').textContent=roleType==='jobs'?'Typical jobs for fresh graduates':'Research & PhD opportunities';document.getElementById('jobListSubheading').textContent=roleType==='jobs'?'Employment roles only · ≥75% match':'Doctoral/research track · shown separately · ≥75% match';}
-function updateSelectors(list){const c=document.getElementById('companyFilter');const companies=[...new Set(jobs.filter(j=>(j.match||0)>=75).map(j=>j.company).filter(Boolean))].sort();c.innerHTML='<option value="all">All companies</option>'+companies.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');c.value=companies.includes(companyFilter)?companyFilter:'all';companyFilter=c.value}
-async function loadData(){const[r,j]=await Promise.all([fetchJson('./data/reports.json'),fetchJson('./data/jobs.json')]);reports=r.reports||[];jobs=j.jobs||[];const ds=document.getElementById('dates');ds.innerHTML=reports.slice().reverse().map(r=>{return `<option value="${r.date}">${new Date(r.date+'T12:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'})}</option>`}).join('');selectedDate=reports.at(-1)?.date||null;ds.value=selectedDate||'';show(selectedDate);await renderUniqueOpportunityDayHistory();await renderUniqueOpportunityCountryHistory();}
-function show(date){selectedDate=date;const allList=currentList();renderRoleTypeSwitch(allList);const list=roleList(allList);updateSelectors(list);renderStats(list);renderJobs(list);renderCompanies(list);renderMap(list);renderTracker(list);document.getElementById('reportDate').textContent=date?new Date(date+'T12:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'}):'—';renderResearch(reports.find(x=>x.date===date)||{})}
-function filtered(list){let out=list.filter(j=>(selectedCountry==='all'||countryOf(j)===selectedCountry)&&(j.match||0)>=Math.max(75,minMatch)&&(currentFilter==='all'||(j.category||[]).some(c=>c===currentFilter||c.includes(currentFilter)))&&(companyFilter==='all'||j.company===companyFilter));if(languageFilter!=='all')out=out.filter(j=>languageBucket(j)===languageFilter);if(deadlineWindow!=='all')out=out.filter(j=>{const d=deadlineDays(j);return d!==null&&d>=0&&d<=Number(deadlineWindow)});out.sort((a,b)=>sortMode==='deadline'?(deadlineDays(a)??9999)-(deadlineDays(b)??9999):sortMode==='newest'?Number(!!b.fresh)-Number(!!a.fresh)||(b.match-a.match):sortMode==='company'?a.company.localeCompare(b.company)||(b.match-a.match):b.match-a.match);return out}
-function renderStats(list){document.getElementById('stats').innerHTML=`<div class="stat"><strong>${list.length}</strong><span>PUBLISHED OPPORTUNITIES</span></div><div class="stat"><strong>${list.filter(j=>j.fresh).length}</strong><span>FRESH</span></div><div class="stat"><strong>${list.filter(j=>countryOf(j)==='Germany').length}</strong><span>GERMANY</span></div><div class="stat"><strong>${list.filter(j=>j.match>=90).length}</strong><span>90%+ STRONG MATCH</span></div>`}
-function scoreHtml(j){const s=j.scoreBreakdown;if(!s)return`<div class="score-unavailable">Score components are not available for this historical record. No retrospective subscores are invented.</div>`;const rows=[['Technical / skill fit',s.technicalSkillFit,25],['MedTech / domain relevance',s.domainRelevance,15],['Education relevance',s.educationRelevance,15],['Experience compatibility',s.experienceCompatibility,10],['Language fit',s.languageFit,10],['Material requirements / gaps',s.materialRequirements,15],['Role / function alignment',s.roleAlignment,10]];return`<div class="score-grid">${rows.map(x=>`<div><span>${x[0]}</span><b>${x[1]}/${x[2]}</b></div>`).join('')}</div>`}
-function renderJobs(list){const out=filtered(list),el=document.getElementById('jobs');if(!out.length){el.innerHTML=roleType==='jobs'?'<div class="empty"><b>No typical employment roles passed every publication gate in this report.</b><br>Research and PhD opportunities are listed separately under Research &amp; PhD. The quality gates have not been lowered to fill this view.</div>':'<div class="empty">No Research &amp; PhD opportunities passed the current filters.</div>';return}el.innerHTML=out.map(j=>{const st=stateOf(j),d=deadlineDays(j);return`<article class="job"><div class="head"><div><h2>${esc(j.title)}</h2><div class="company">${esc(j.company)}</div><div class="meta">${esc(countryOf(j))} · ${esc(j.location)} · ${(j.category||[]).map(esc).join(' · ')}</div></div><div><div class="score">${j.match}%</div><div class="small">CV MATCH</div></div></div><div class="tags"><span class="tag ${j.fresh?'fresh':'old'}">${j.fresh?'FRESH':'Previously listed'}</span><span class="tag">${statusLabel(st.status)}</span><span class="tag ${d!==null&&d<=7?'deadline':''}">${esc(deadlineLabel(j))}</span><span class="tag">Sponsorship: ${esc(j.sponsorship?.offered||'unclear')}</span><span class="tag">Relocation: ${esc(j.relocation?.offered||'unclear')}</span></div><div class="why"><b>Why this matches</b><ul>${(j.fit||[]).map(x=>`<li>✓ ${esc(x)}</li>`).join('')}</ul>${j.gaps?.length?`<div class="small"><b>Gaps:</b> ${j.gaps.map(esc).join(' · ')}</div>`:''}</div><details><summary>Score breakdown</summary>${scoreHtml(j)}</details><details><summary>Track this opportunity</summary><div class="tracker-form"><label>Status<select data-action="status" data-id="${esc(fingerprint(j))}"><option value="new" ${st.status==='new'?'selected':''}>New</option><option value="wishlist" ${st.status==='wishlist'?'selected':''}>Wishlist</option><option value="applied" ${st.status==='applied'?'selected':''}>Applied</option><option value="interviewing" ${st.status==='interviewing'?'selected':''}>Interviewing</option><option value="offer" ${st.status==='offer'?'selected':''}>Offer</option><option value="rejected" ${st.status==='rejected'?'selected':''}>Rejected</option></select></label><label>Status date<input type="date" data-action="statusDate" data-id="${esc(fingerprint(j))}" value="${esc(st.statusDate)}"></label><label>Follow-up<input type="date" data-action="followUpDate" data-id="${esc(fingerprint(j))}" value="${esc(st.followUpDate)}"></label><label>Connection<select data-action="connection" data-id="${esc(fingerprint(j))}"><option value="none" ${st.connection==='none'?'selected':''}>None known</option><option value="potential" ${st.connection==='potential'?'selected':''}>Potential</option><option value="known" ${st.connection==='known'?'selected':''}>Known</option><option value="contacted" ${st.connection==='contacted'?'selected':''}>Contacted</option><option value="referral" ${st.connection==='referral'?'selected':''}>Referral</option></select></label><label class="wide">Notes<textarea data-action="notes" data-id="${esc(fingerprint(j))}" placeholder="Recruiter, cover-letter angle, follow-up notes...">${esc(st.notes)}</textarea></label></div></details><p><a class="apply" href="${esc(j.url)}" target="_blank" rel="noopener">Apply / View listing →</a></p><div class="small">${j.sourceType?`Source: ${esc(j.sourceType)} · `:''}Verified vacancy record.</div></article>`}).join('')}
-function renderTracker(list){const counts={new:0,wishlist:0,applied:0,interviewing:0,offer:0,rejected:0};list.forEach(j=>counts[stateOf(j).status]++);document.getElementById('pipeline').innerHTML=Object.keys(counts).map(s=>`<div class="pipe"><strong>${counts[s]}</strong><span>${statusLabel(s)}</span></div>`).join('');const tracked=list.filter(j=>{const s=stateOf(j);return s.status!=='new'||s.notes||s.followUpDate||s.connection!=='none'});document.getElementById('trackerList').innerHTML=tracked.length?tracked.map(j=>{const s=stateOf(j);return`<div class="tracker-row"><div><b>${esc(j.match)}% · ${esc(j.title)}</b><div class="small">${esc(j.company)} · ${esc(countryOf(j))}</div></div><span class="tag">${statusLabel(s.status)}</span><span class="small">${s.followUpDate?`Follow-up ${esc(s.followUpDate)}`:''}</span></div>`}).join(''):'<div class="empty">No tracked opportunities yet. Use “Track this opportunity” on a job.</div>'}
-function renderCompanies(){const map={};jobs.filter(j=>(j.match||0)>=75).forEach(j=>{map[j.company]??=[];map[j.company].push(j)});document.getElementById('companies').innerHTML=Object.keys(map).sort().map(c=>`<details class="company-group"><summary><b>${esc(c)}</b> · ${map[c].length} published/historical role${map[c].length>1?'s':''}</summary>${map[c].sort((a,b)=>b.match-a.match).map(j=>`<div class="company-row"><b>${esc(j.match)}%</b> ${esc(j.title)} <span class="small">· ${esc(j.status||'active')} · ${esc(countryOf(j))}</span></div>`).join('')}</details>`).join('')||'<div class="empty">No company data.</div>'}
-const cityCoords={Berlin:[52.52,13.405],Rostock:[54.09,12.14],Forchheim:[49.72,11.06],Hamburg:[53.55,10],Renningen:[48.77,8.93],Karlsruhe:[49.01,8.40],Eindhoven:[51.44,5.48],Mechelen:[51.03,4.48],Guimarães:[41.44,-8.30],Cork:[51.90,-8.47],Schönkirchen:[54.32,10.23],Peißen:[51.51,11.99],Pfungstadt:[49.80,8.60],Valencia:[39.47,-0.38],Madrid:[40.42,-3.70]};let mapInstance;
-function renderMap(list){if(!window.L)return;if(!mapInstance){mapInstance=L.map('map').setView([51,10],4);L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; OpenStreetMap contributors'}).addTo(mapInstance)}mapInstance.eachLayer(x=>{if(x instanceof L.Marker)L.removeLayer(x)});filtered(list).forEach(j=>{const city=Object.keys(cityCoords).find(c=>(j.location||'').includes(c));if(city){const [lat,lng]=cityCoords[city];L.marker([lat,lng]).addTo(mapInstance).bindPopup(`<b>${esc(j.match)}% ${esc(j.title)}</b><br>${esc(j.company)}<br>${esc(city)}`)}})}
-async function renderDailyPublicationHistory(){
-  const body=document.getElementById('dailyPublicationBody'); if(!body)return;
-  try{const r=await fetch('./data/daily-history.json?v='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error('history');const d=await r.json();
-    body.innerHTML=(d.entries||[]).map(x=>{const status=x.reportStatus==='MANUAL_ARCHIVE'?'Manual archive':x.reportStatus==='ARCHIVE_GAP'?'Archive gap':'Published';const cls=x.reportStatus==='MANUAL_ARCHIVE'?'manual':x.reportStatus==='ARCHIVE_GAP'?'gap':'published';return '<tr><td>'+esc(new Date(x.date+'T12:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}))+'</td><td><span class="history-status '+cls+'">'+status+'</span></td><td>'+esc(x.reportType||'—')+'</td><td>'+(x.activePublishedEquivalent??'—')+'</td><td>'+(x.freshJobs??'—')+'</td><td>'+(x.previouslyListed??'—')+'</td><td>'+(x.closingWithin7Days??'—')+'</td><td>'+(x.newGatePassing??'—')+'</td><td>'+(x.provisionalFindings??'—')+'</td><td>'+esc(x.notes||'')+'</td></tr>'}).join('');
-  }catch(e){body.innerHTML='<tr><td colspan="10" class="empty">Day-wise publication history could not be loaded.</td></tr>'}
+'use strict';
+const TRACKER_KEY = 'medtechJobTracker.v1';
+const STATUSES = { new: 'New', wishlist: 'Wishlist', applied: 'Applied', interviewing: 'Interviewing', offer: 'Offer', rejected: 'Rejected' };
+const CONNECTIONS = { none: 'None known', potential: 'Potential', known: 'Known', contacted: 'Contacted', referral: 'Referral' };
+const MIN_SCORE = 75;
+
+let jobs = [], report = null, queueSize = 0;
+let roleType = 'jobs', view = 'jobs', country = 'all', minMatch = 0, deadlineWindow = 'all', sortMode = 'match';
+
+const tracker = (() => { try { return JSON.parse(localStorage.getItem(TRACKER_KEY) || '{}') || {}; } catch (e) { return {}; } })();
+const $ = (id) => document.getElementById(id);
+const esc = (v) => String(v ?? '').replace(/[&<>"']/g, (m) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]));
+const fmtDate = (d) => new Date(d + 'T12:00:00').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+
+async function fetchText(path) { const r = await fetch(`${path}?v=${Date.now()}`, { cache: 'no-store' }); if (!r.ok) throw new Error(path); return r.text(); }
+const fetchJson = async (path) => JSON.parse(await fetchText(path));
+
+// Same key the tracker has always used, so saved tracker entries keep working.
+const fingerprint = (j) => j.fingerprint || [j.company, j.title, j.location, j.country].map((v) => String(v || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()).join('|');
+const stateOf = (j) => tracker[fingerprint(j)] || { status: 'new', statusDate: '', notes: '', connection: 'none', followUpDate: '' };
+function saveState(j, patch) { tracker[fingerprint(j)] = { ...stateOf(j), ...patch }; try { localStorage.setItem(TRACKER_KEY, JSON.stringify(tracker)); } catch (e) {} }
+
+const countryOf = (j) => j.country || 'Other Europe';
+const isResearch = (j) => /\bph\.?d\b|doctoral|doctorate|doktorand/i.test(j.title || '') || (j.category || []).map((c) => String(c).toLowerCase()).includes('phd');
+const deadlineDays = (j) => (j.deadline ? Math.ceil((new Date(j.deadline + 'T23:59:59') - new Date()) / 864e5) : null);
+function deadlineLabel(j) { const d = deadlineDays(j); if (d === null) return 'No stated deadline'; if (d < 0) return 'Deadline passed'; if (d === 0) return 'Closes today'; if (d === 1) return 'Closes tomorrow'; return `Closes in ${d} days`; }
+
+function published() {
+  if (!report) return [];
+  const ids = new Set(report.jobIds || []);
+  return jobs.filter((j) => ids.has(j.id) && (j.match || 0) >= MIN_SCORE);
 }
-async function loadUniqueOpportunityState(){
-  try{
-    const response=await fetch(`./state/vacancies.jsonl?v=${Date.now()}`,{cache:'no-store'});
-    if(!response.ok)throw new Error('Failed to load historical vacancy state');
-    const text=await response.text();
-    return text.split(/\r?\n/).filter(Boolean).map(x=>JSON.parse(x))
-      .filter(x=>Number.isFinite(x.match)&&x.match>=75&&x.status!=='excluded'&&x.first_seen);
-  }catch(e){return null}
+const ofRole = (list) => list.filter((j) => (roleType === 'research') === isResearch(j));
+
+function filtered(list) {
+  const out = list.filter((j) => (country === 'all' || countryOf(j) === country) && (j.match || 0) >= Math.max(MIN_SCORE, minMatch) &&
+    (deadlineWindow === 'all' || ((d) => d !== null && d >= 0 && d <= Number(deadlineWindow))(deadlineDays(j))));
+  const by = { match: (a, b) => b.match - a.match, deadline: (a, b) => (deadlineDays(a) ?? 1e4) - (deadlineDays(b) ?? 1e4), newest: (a, b) => Number(!!b.fresh) - Number(!!a.fresh) || b.match - a.match };
+  return out.sort(by[sortMode]);
 }
-function thresholdCounts(rows,thresholds=[95,90,85,80,75]){
-  return thresholds.map(t=>rows.filter(x=>x.match>=t).length)
+
+function render() {
+  const all = published(), list = ofRole(all), shown = filtered(list);
+  $('jobsCount').textContent = all.filter((j) => !isResearch(j)).length;
+  $('researchCount').textContent = all.filter(isResearch).length;
+  document.querySelectorAll('[data-role-type]').forEach((b) => b.classList.toggle('active', b.dataset.roleType === roleType));
+  $('jobListHeading').textContent = roleType === 'jobs' ? 'Jobs for fresh graduates' : 'Research & PhD opportunities';
+  $('jobListSubheading').textContent = `${shown.length} of ${list.length} shown`;
+
+  $('stats').innerHTML = [
+    [all.length, 'Published roles'], [all.filter((j) => j.fresh).length, 'Fresh today'],
+    [all.filter((j) => j.match >= 90).length, '90%+ strong match'], [all.filter((j) => { const d = deadlineDays(j); return d !== null && d >= 0 && d <= 7; }).length, 'Closing within 7 days'],
+  ].map(([n, l]) => `<div class="stat"><strong>${n}</strong><span>${l.toUpperCase()}</span></div>`).join('');
+
+  const countries = [...new Set(all.map(countryOf))].sort();
+  const cf = $('countryFilter');
+  cf.innerHTML = '<option value="all">All countries</option>' + countries.map((c) => `<option>${esc(c)}</option>`).join('');
+  cf.value = countries.includes(country) ? country : 'all';
+
+  renderJobs(shown, list.length);
+  renderTracker(all);
 }
-async function renderUniqueOpportunityDayHistory(){
-  const body=document.getElementById('uniqueDayHistoryBody'),stamp=document.getElementById('dayHistoryUpdated');
-  if(!body)return;
-  const qualifying=await loadUniqueOpportunityState();
-  if(!qualifying){body.innerHTML='<tr><td colspan="6" class="history-warning">Live historical state could not be refreshed.</td></tr>';if(stamp)stamp.textContent='State unavailable';return}
-  const dates=[...new Set((reports||[]).map(x=>x.date))].sort();
-  const rows=dates.map(date=>({date,vals:thresholdCounts(qualifying.filter(x=>x.first_seen<=date))}));
-  body.innerHTML=rows.length?rows.map(r=>`<tr><td>${esc(new Date(r.date+'T12:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}))}</td>${r.vals.map(v=>`<td>${v}</td>`).join('')}</tr>`).join(''):'<tr><td colspan="6" class="empty">No qualifying historical opportunities recorded yet.</td></tr>';
-  const latest=dates.at(-1);
-  if(latest){
-    const vals=thresholdCounts(qualifying.filter(x=>x.first_seen<=latest));
-    body.insertAdjacentHTML('beforeend',`<tr class="history-total"><td><b>Cumulative to ${esc(new Date(latest+'T12:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}))}</b></td>${vals.map(v=>`<td><b>${v}</b></td>`).join('')}</tr>`);
+
+function renderJobs(out, total) {
+  const el = $('jobs');
+  if (!out.length) {
+    const why = total ? 'No role matches the current filters.' : `No ${roleType === 'jobs' ? 'job' : 'research role'} passes every gate in the latest report.`;
+    const queue = queueSize ? ` ${queueSize} unverified lead${queueSize === 1 ? '' : 's'} are waiting in the <a href="./stats.html#queue">review queue</a>.` : '';
+    el.innerHTML = `<div class="empty"><b>${why}</b><br>The quality gates are not lowered to fill this list.${queue}</div>`;
+    return;
   }
-  if(stamp)stamp.textContent=`${qualifying.length} unique ≥75% records`;
+  el.innerHTML = out.map((j) => {
+    const st = stateOf(j), d = deadlineDays(j), id = esc(fingerprint(j));
+    const opt = (map, cur) => Object.entries(map).map(([k, v]) => `<option value="${k}" ${cur === k ? 'selected' : ''}>${v}</option>`).join('');
+    return `<article class="job"><div class="head"><div><h2>${esc(j.title)}</h2><div class="company">${esc(j.company)}</div><div class="meta">${esc(j.location)}${(j.category || []).length ? ' · ' + j.category.map(esc).join(' · ') : ''}</div></div><div><div class="score">${j.match}%</div><div class="small">CV MATCH</div></div></div>
+<div class="tags"><span class="tag ${j.fresh ? 'fresh' : 'old'}">${j.fresh ? 'FRESH' : 'Previously listed'}</span><span class="tag ${d !== null && d <= 7 ? 'deadline' : ''}">${esc(deadlineLabel(j))}</span>${st.status !== 'new' ? `<span class="tag">${STATUSES[st.status]}</span>` : ''}</div>
+${(j.fit || []).length ? `<div class="why"><b>Why it fits</b><ul>${j.fit.map((x) => `<li>✓ ${esc(x)}</li>`).join('')}</ul></div>` : ''}${(j.gaps || []).length ? `<div class="small"><b>Gaps:</b> ${j.gaps.map(esc).join(' · ')}</div>` : ''}
+<details><summary>Track this role</summary><div class="tracker-form"><label>Status<select data-action="status" data-id="${id}">${opt(STATUSES, st.status)}</select></label><label>Follow-up<input type="date" data-action="followUpDate" data-id="${id}" value="${esc(st.followUpDate)}"></label><label>Connection<select data-action="connection" data-id="${id}">${opt(CONNECTIONS, st.connection)}</select></label><label class="wide">Notes<textarea data-action="notes" data-id="${id}" placeholder="Recruiter, cover-letter angle, follow-up notes…">${esc(st.notes)}</textarea></label></div></details>
+<p><a class="apply" href="${esc(j.url)}" target="_blank" rel="noopener">Apply / view listing →</a></p></article>`;
+  }).join('');
 }
-async function renderUniqueOpportunityCountryHistory(){
-  const body=document.getElementById('uniqueCountryHistoryBody'),stamp=document.getElementById('countryHistoryUpdated');
-  if(!body)return;
-  const qualifying=await loadUniqueOpportunityState();
-  if(!qualifying){body.innerHTML='<tr><td colspan="6" class="history-warning">Live historical state could not be refreshed.</td></tr>';if(stamp)stamp.textContent='State unavailable';return}
-  const latest=[...new Set((reports||[]).map(x=>x.date))].sort().at(-1);
-  const countries=[...new Set(qualifying.map(x=>x.country||'Other Europe'))].sort((a,b)=>a.localeCompare(b));
-  const rows=countries.map(country=>({country,vals:thresholdCounts(qualifying.filter(x=>(x.country||'Other Europe')===country&&x.first_seen<=latest))}));
-  body.innerHTML=rows.length?rows.map(r=>`<tr><td>${esc(r.country)}</td>${r.vals.map(v=>`<td>${v}</td>`).join('')}</tr>`).join(''):'<tr><td colspan="6" class="empty">No country-level historical opportunities recorded yet.</td></tr>';
-  if(stamp)stamp.textContent=latest?`Cumulative through ${new Date(latest+'T12:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})}`:'No dated reports';
+
+function renderTracker(list) {
+  const counts = Object.fromEntries(Object.keys(STATUSES).map((s) => [s, 0]));
+  list.forEach((j) => counts[stateOf(j).status]++);
+  $('pipeline').innerHTML = Object.keys(counts).map((s) => `<div class="pipe"><strong>${counts[s]}</strong><span>${STATUSES[s]}</span></div>`).join('');
+  const tracked = list.filter((j) => { const s = stateOf(j); return s.status !== 'new' || s.notes || s.followUpDate || s.connection !== 'none'; });
+  $('trackerList').innerHTML = tracked.length ? tracked.map((j) => { const s = stateOf(j); return `<div class="tracker-row"><div><b>${esc(j.match)}% · ${esc(j.title)}</b><div class="small">${esc(j.company)} · ${esc(countryOf(j))}</div></div><span class="tag">${STATUSES[s.status]}</span><span class="small">${s.followUpDate ? `Follow-up ${esc(s.followUpDate)}` : ''}</span></div>`; }).join('')
+    : '<div class="empty">Nothing tracked yet. Use “Track this role” on a job.</div>';
 }
-async function loadVisitorStats(){
-  const status=document.getElementById('visitorStatsStatus'); if(!status)return;
-  try{
-    const response=await fetch('./data/visitor-stats.json?v='+Date.now(),{cache:'no-store'});
-    if(!response.ok)throw new Error('visitor stats unavailable');
-    const d=await response.json();
-    const s=d.summary||{};
-    document.getElementById('visitorToday').textContent=s.todayVisits??'—';
-    document.getElementById('visitorUniqueToday').textContent=s.todayUniqueVisitors??'—';
-    document.getElementById('visitor30').textContent=s.last30DaysVisits??'—';
-    document.getElementById('visitorAll').textContent=s.totalVisits??'—';
-    const body=document.getElementById('visitorDailyBody');
-    body.innerHTML=(d.daily||[]).map(x=>'<tr><td>'+esc(x.date)+'</td><td>'+esc(x.visits??'—')+'</td><td>'+esc(x.uniqueVisitors??'—')+'</td><td>'+esc(x.pageViews??'—')+'</td><td>'+esc(x.topCountry||'—')+'</td><td>'+esc(x.topReferrer||'—')+'</td></tr>').join('')||'<tr><td colspan="6" class="empty">No visitor data recorded yet.</td></tr>';
-    status.textContent=d.connected?'Collector connected':'Collector not connected';
-    status.className='history-status '+(d.connected?'published':'gap');
-  }catch(e){
-    status.textContent='Collector not connected'; status.className='history-status gap';
+
+function setView(v) {
+  view = v;
+  document.querySelectorAll('[data-view]').forEach((x) => x.classList.toggle('active', x.dataset.view === v));
+  document.querySelectorAll('.view-panel').forEach((x) => x.classList.toggle('hidden', x.id !== `view-${v}`));
+}
+
+function exportCsv() {
+  const cols = ['Company', 'Role', 'Country', 'Location', 'Match', 'Deadline', 'Status', 'StatusDate', 'Connection', 'FollowUp', 'Notes', 'URL'];
+  const rows = filtered(ofRole(published())).map((j) => { const s = stateOf(j); return [j.company, j.title, countryOf(j), j.location, j.match, j.deadline || '', STATUSES[s.status], s.statusDate, s.connection, s.followUpDate, s.notes, j.url]; });
+  const csv = [cols, ...rows].map((r) => r.map((v) => `"${String(v ?? '').replace(/"/g, '""')}"`).join(',')).join('\n');
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv' }));
+  a.download = `medtech-jobs-${report?.date || 'current'}.csv`;
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+// Countdown to the next 17:00 Europe/Berlin run.
+function berlinOffsetMs(date) {
+  const p = Object.fromEntries(new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Berlin', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }).formatToParts(date).filter((x) => x.type !== 'literal').map((x) => [x.type, +x.value]));
+  return Date.UTC(p.year, p.month - 1, p.day, p.hour % 24, p.minute, p.second) - date.getTime();
+}
+function nextRun(now = new Date()) {
+  for (let i = 0; i < 3; i++) {
+    const day = new Date(now.getTime() + berlinOffsetMs(now) + i * 864e5);
+    const pseudo = Date.UTC(day.getUTCFullYear(), day.getUTCMonth(), day.getUTCDate(), 17);
+    const t = new Date(pseudo - berlinOffsetMs(new Date(pseudo)));
+    if (t > now) return t;
   }
 }
-function renderResearch(r){const layers=r.researchLayers||[],sources=r.sourcesSearched||[],hunts=r.falseNegativeHunts||[];document.getElementById('researchSummary').innerHTML=`<div class="method-grid"><div><b>Candidate universe</b><br><span class="small">${r.candidateUniverseCount??'—'} screened</span></div><div><b>Exclusions</b><br><span class="small">${r.excludedCount??'—'} strict exclusions</span></div><div><b>Research layers</b><br><span class="small">${layers.length||'—'} recorded</span></div><div><b>Source groups</b><br><span class="small">${sources.length||'—'} recorded</span></div></div><details><summary>Research coverage</summary><p class="small">${layers.join(' · ')||'Coverage details appear after the upgraded research run.'}</p><p class="small"><b>False-negative hunts:</b> ${hunts.join(' · ')||'Not recorded'}</p></details>`}
-function setView(v){view=v;document.querySelectorAll('[data-view]').forEach(x=>x.classList.toggle('active',x.dataset.view===v));document.querySelectorAll('.view-panel').forEach(x=>x.classList.toggle('hidden',x.id!==`view-${v}`));if(v==='map'&&mapInstance)setTimeout(()=>mapInstance.invalidateSize(),100)}
-function exportCsv(){const rows=filtered(currentList()).map(j=>{const s=stateOf(j);return{Company:j.company,Role:j.title,Country:countryOf(j),Location:j.location,Match:j.match,Deadline:j.deadline||'',Status:statusLabel(s.status),StatusDate:s.statusDate,Connection:s.connection,FollowUp:s.followUpDate,Notes:s.notes,URL:j.url}});const cols=Object.keys(rows[0]||{Company:'',Role:'',Country:'',Location:'',Match:'',Deadline:'',Status:'',StatusDate:'',Connection:'',FollowUp:'',Notes:'',URL:''});const csv=[cols,...rows.map(r=>cols.map(c=>`"${String(r[c]??'').replace(/"/g,'""')}"`))].map(r=>r.join(',')).join('\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download=`medtech-jobs-${selectedDate||'current'}.csv`;a.click();URL.revokeObjectURL(a.href)}
-document.addEventListener('change',e=>{const a=e.target.dataset.action;if(!a)return;const j=jobs.find(x=>fingerprint(x)===e.target.dataset.id);if(!j)return;saveState(j,{[a]:e.target.value,statusDate:a==='status'?new Date().toISOString().slice(0,10):stateOf(j).statusDate});show(selectedDate)});
-document.addEventListener('click',e=>{const rt=e.target.closest('[data-role-type]');if(rt){roleType=rt.dataset.roleType;show(selectedDate);return}const b=e.target.closest('[data-view]');if(b){setView(b.dataset.view);return}const f=e.target.closest('.filter');if(f){document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));f.classList.add('active');currentFilter=f.dataset.filter;show(selectedDate)}});
-document.getElementById('countryFilter').addEventListener('change',e=>{selectedCountry=e.target.value;show(selectedDate)});document.getElementById('matchFilter').addEventListener('change',e=>{minMatch=Number(e.target.value)||0;show(selectedDate)});document.getElementById('deadlineFilter').addEventListener('change',e=>{deadlineWindow=e.target.value;show(selectedDate)});document.getElementById('languageFilter').addEventListener('change',e=>{languageFilter=e.target.value;show(selectedDate)});document.getElementById('companyFilter').addEventListener('change',e=>{companyFilter=e.target.value;show(selectedDate)});document.getElementById('sortFilter').addEventListener('change',e=>{sortMode=e.target.value;show(selectedDate)});document.getElementById('dates').addEventListener('change',e=>show(e.target.value));document.getElementById('exportCsv').addEventListener('click',exportCsv);
-function berlinParts(date){const parts=new Intl.DateTimeFormat('en-CA',{timeZone:BERLIN_TZ,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false}).formatToParts(date);return Object.fromEntries(parts.filter(x=>x.type!=='literal').map(x=>[x.type,x.value]))}function berlinOffset(date){const p=berlinParts(date),pseudo=Date.UTC(+p.year,+p.month-1,+p.day,+p.hour,+p.minute,+p.second);return date.getTime()-pseudo}function nextBerlin5(now){const p=berlinParts(now);let targetPseudo=Date.UTC(+p.year,+p.month-1,+p.day,17,0,0),candidate=new Date(targetPseudo-berlinOffset(new Date(targetPseudo)));if(candidate<=now){const tomorrow=new Date(targetPseudo+86400000);targetPseudo=Date.UTC(tomorrow.getUTCFullYear(),tomorrow.getUTCMonth(),tomorrow.getUTCDate(),17,0,0);candidate=new Date(targetPseudo-berlinOffset(new Date(targetPseudo)))}return candidate}function nextRefresh(){const diff=nextBerlin5(new Date())-new Date(),h=Math.floor(diff/36e5),m=Math.floor(diff%36e5/6e4),s=Math.floor(diff%6e4/1e3);document.getElementById('countdown').textContent=`${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`}setView('jobs');setInterval(nextRefresh,1000);nextRefresh();loadData();loadVisitorStats();setInterval(loadVisitorStats,3600000);renderDailyPublicationHistory();setInterval(renderUniqueOpportunityDayHistory,3600000);setInterval(renderUniqueOpportunityCountryHistory,3600000);setInterval(renderDailyPublicationHistory,3600000);
+function tick() {
+  const diff = nextRun() - new Date(), pad = (n) => String(n).padStart(2, '0');
+  $('countdown').textContent = `${pad(Math.floor(diff / 36e5))}:${pad(Math.floor((diff % 36e5) / 6e4))}:${pad(Math.floor((diff % 6e4) / 1e3))}`;
+}
+
+function renderFreshness() {
+  const el = $('lastReport');
+  if (!report) { el.textContent = 'No report yet'; return; }
+  const age = Math.floor((Date.now() - new Date(report.date + 'T17:00:00')) / 864e5);
+  el.textContent = `Last report: ${fmtDate(report.date)}${age > 1 ? ` · ${age} days old` : ''}`;
+  el.classList.toggle('stale', age > 1);
+}
+
+document.addEventListener('change', (e) => {
+  const a = e.target.dataset.action;
+  if (a) {
+    const j = jobs.find((x) => fingerprint(x) === e.target.dataset.id);
+    if (j) { saveState(j, { [a]: e.target.value, ...(a === 'status' ? { statusDate: new Date().toISOString().slice(0, 10) } : {}) }); render(); }
+    return;
+  }
+  const set = { countryFilter: (v) => (country = v), matchFilter: (v) => (minMatch = Number(v) || 0), deadlineFilter: (v) => (deadlineWindow = v), sortFilter: (v) => (sortMode = v) }[e.target.id];
+  if (set) { set(e.target.value); render(); }
+});
+document.addEventListener('click', (e) => {
+  const rt = e.target.closest('[data-role-type]');
+  if (rt) { roleType = rt.dataset.roleType; render(); return; }
+  const v = e.target.closest('[data-view]');
+  if (v) setView(v.dataset.view);
+});
+$('exportCsv').addEventListener('click', exportCsv);
+
+async function load() {
+  try {
+    const [r, j] = await Promise.all([fetchJson('./data/reports.json'), fetchJson('./data/jobs.json')]);
+    report = (r.reports || []).slice().sort((a, b) => a.date.localeCompare(b.date)).at(-1) || null;
+    jobs = j.jobs || [];
+  } catch (e) {
+    $('jobs').innerHTML = '<div class="empty">The job data could not be loaded. Please refresh.</div>';
+    return;
+  }
+  try {
+    queueSize = (await fetchText('./state/leads.jsonl')).split(/\r?\n/).filter((l) => l.includes('"needs_review"')).length;
+  } catch (e) { queueSize = 0; }
+  renderFreshness();
+  render();
+}
+
+setView('jobs');
+tick();
+setInterval(tick, 1000);
+load();

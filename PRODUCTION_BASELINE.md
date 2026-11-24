@@ -133,39 +133,25 @@ The former OpenAI API/GitHub Actions research path was retired after API credit 
 
 ## 10. Portal product
 
-The portal is a job-intelligence and candidate-tracking product.
+The portal is a focused job list plus a private application tracker. It shows only what helps the candidate act.
 
-### Discovery UX
+### Main page (`index.html`)
 
-Filters: country, CV match, language signal, deadline window, company, role family and application status. Sorting: best match, closing soon, fresh first, company. Combined filters are supported.
+- Summary cards: published roles, fresh, 90%+ strong match, closing within 7 days.
+- Jobs / Research & PhD switch; employment is the default view.
+- Filters: country, CV match, deadline window. Sorting: best match, closing soon, fresh first.
+- Job card: CV score, Fresh/Previously listed, deadline countdown, fit reasons, gaps, tracker controls and application link.
+- Tracker: New → Wishlist → Applied → Interviewing → Offer / Rejected, with follow-up date, connection and notes. Stored only in the browser (`localStorage`), never in public data.
+- CSV export of the current filtered view, including tracker fields.
+- A short collapsible "How roles are selected" explanation.
 
-### Job card
+### History page (`stats.html`)
 
-Show CV score, Fresh/Previously Listed state, deadline countdown, sponsorship/relocation signals, fit reasons, gaps, score breakdown when available, application link and tracking controls.
+- Review queue: unverified leads from automated discovery, clearly labelled as not recommendations.
+- Every qualifying role so far: each vacancy counted once, with its current status.
+- Daily runs: one row per date, including missed runs without synthesised counts.
 
-### Tracker
-
-Candidate-local workflow: **New → Wishlist → Applied → Interviewing → Offer / Rejected**. Store status date, notes, follow-up date and connection/referral status. This state is private browser-local state in the current static implementation and is not written to public research data.
-
-### Company view
-
-Group current and historical published vacancies by employer so strong employers remain visible even without a current match.
-
-### Map view
-
-Plot published vacancies where reliable coordinates are available and cluster nearby opportunities. Unknown/unmappable locations remain in the Jobs view.
-
-### Export
-
-Export the current filtered view to CSV, including candidate-local tracker fields only in the browser-generated export.
-
-### About page
-
-A recruiter-facing explanation of the problem, discovery pipeline, verification, scoring, historical controls, false-negative hunting and the product/system skills demonstrated by building it. The page must describe only capabilities actually running.
-
-### Opportunity Radar
-
-A concise explanation of adjacent role families being searched; it is context for discovery, not a second recommendation pool.
+Removed on 24 November 2026 because they added no decision value: cumulative threshold tables (day- and country-wise), the duplicated publication-history table, the never-connected visitor statistics, the research-intelligence panel, the opportunity-radar text, the companies view, the map and the past-report selector.
 
 ## 11. Source-of-truth files
 
@@ -207,3 +193,17 @@ The state layer is append/transition oriented. Existing reports remain historica
 
 ### Independence from external reviewers
 External AI review (including Claude) is optional architecture QA. It is not a production dependency. The daily engine must be capable of discovering, verifying, adjudicating, fingerprinting, scoring and publishing independently under this contract.
+
+
+## Automated pipeline — effective 24 November 2026
+
+Manual research runs were missed for extended periods (for example 12–17 October, 24 October–3 November and 5–23 November 2026) without missed-run records. A scheduled GitHub Actions pipeline (`.github/workflows/daily-research.yml` → `scripts/daily-run.js`, configured by `state/automation.json`) now runs the deterministic parts of the daily cadence without depending on an interactive session:
+
+- missed-run recording for every date without a report (`reportStatus: MISSED`, no synthesised counts);
+- deadline expiry, official-URL link checks and the 72-hour verification window (active roles outside the window are downgraded to provisional);
+- discovery through public, documented job APIs only (Bundesagentur für Arbeit Jobsuche, Arbeitnow, and configured employer ATS boards) — each recorded in the per-source execution ledger with its real status;
+- registry deduplication with a normalised match key (gender tags, punctuation, legal suffixes);
+- deterministic pre-screening into a review queue (`state/leads.jsonl`);
+- report, index, history and status generation followed by `scripts/validate-publication.js` and Pages deployment.
+
+Sources without a public API (LinkedIn, Indeed, XING, StepStone and most others) remain `not_searched` in automated runs; coverage stays `PARTIAL` and manual/browser research is still needed for them. The pipeline never relaxes a hard gate: without adjudication, leads are not published. Optional LLM adjudication is disabled by default and, when enabled, only extracts evidence and rubric sub-scores — every gate and the 75-point floor are enforced in code. This supersedes the earlier statement that no API-based path may run; it remains off unless explicitly enabled.
