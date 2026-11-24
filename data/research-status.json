@@ -1,8 +1,8 @@
 {
-  "status": "partial-coverage-refresh-recorded",
-  "message": "4 November 2026 recovery refresh recorded. Brunel Würzburg graduate Medizintechnik listing is provisional pending confirmation that German B1 meets the secure-German requirement. Previously active roles require official revalidation within 72 hours.",
-  "updatedAt": "2026-11-04",
-  "reportDate": "2026-11-04",
+  "status": "automated-partial-run-recorded",
+  "message": "Automated run 2026-11-24. 0 role(s) passed every publication gate (0 fresh). 1200 listing(s) retrieved from 1 automated source(s); 46 new lead(s) queued for adjudication, 0 matched known vacancies. Adjudication is disabled; 46 lead(s) await review in state/leads.jsonl. 4 status transition(s): tue-contrast-ultrasound-nanobubbles-2026-09-28, tue-quantitative-multitracer-pet-2026-09-29, brunel-young-professional-medizintechnik-wuerzburg-2026-11-04, edwards-clinical-graduate-program-germany-2027. 40 missed run date(s) recorded explicitly. Coverage is PARTIAL: only sources with public APIs were executed. No new vacancy passed the gates in the sources searched does not imply market absence.",
+  "updatedAt": "2026-11-24",
+  "reportDate": "2026-11-24",
   "activeJobs": 0,
   "freshJobs": 0,
   "previouslyListed": 0,
@@ -40,17 +40,30 @@
   "auditFile": "data/audits/2026-10-22-pipeline-and-recall-audit.md",
   "sourceCoverage": {
     "grade": "PARTIAL",
-    "configuredSourceCount": 177,
-    "executedSourceCount": 4,
-    "notSearchedCount": 173,
+    "coverageStatus": "PARTIAL",
+    "ledgerVersion": "EUROPE-MEDTECH-v6",
+    "coverageDate": "2026-11-24",
+    "runTimestamp": "2026-11-24T09:01:51.722Z",
+    "fullCoverageClaim": false,
+    "queryRecordsSubmitted": 2,
+    "configuredSourceCount": 179,
+    "executedSourceCount": 2,
+    "notSearchedCount": 177,
     "statusCounts": {
       "official_page_checked": 0,
-      "indexed_search_attempted": 4,
-      "unavailable_or_blocked": 0,
-      "not_searched": 173
+      "indexed_search_attempted": 1,
+      "unavailable_or_blocked": 1,
+      "not_searched": 177
     },
-    "queryRecordsSubmitted": 5,
-    "fullCoverageClaim": false,
-    "ledgerPath": "data/daily/2026-10-23.json#sourceCoverage.sourceExecutionLedger"
+    "coverageStatement": "Automated partial execution. Only sources exposing a public API were queried; every other configured source is explicitly not_searched. No exhaustive search claim is made.",
+    "ledgerPath": "data/daily/2026-11-24.json#sourceCoverage.sourceExecutionLedger"
+  },
+  "automation": {
+    "pipeline": "scripts/daily-run.js",
+    "config": "state/automation.json",
+    "reviewQueue": "state/leads.jsonl",
+    "reviewQueueSize": 46,
+    "adjudicationEnabled": false,
+    "lastRun": "2026-11-24T09:01:51.723Z"
   }
 }

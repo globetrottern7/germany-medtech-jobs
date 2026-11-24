@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-04",
+  "lastUpdated": "2026-11-24",
   "jobs": [
     {
       "id": "maico-dsp-engineer-2026-09-09",
@@ -116,7 +116,11 @@
       "lastAttempted": "2026-10-22",
       "openVerified": true,
       "evidence": "Official Max Planck Institute page checked 22 October 2026; application deadline 1 December 2026 and September 2027 start are stated on the official page.",
-      "provisionalReason": "Not revalidated on official employer page within 72 hours; pending recheck."
+      "provisionalReason": "Not revalidated on official employer page within 72 hours; pending recheck.",
+      "lastLinkCheck": {
+        "date": "2026-11-24",
+        "result": "reachable"
+      }
     },
     {
       "id": "kit-miniaturized-electrodes-2026-09-10",
@@ -881,7 +885,11 @@
       "lastVerified": "2026-10-22",
       "lastAttempted": "2026-10-23",
       "openVerified": false,
-      "evidence": "Official ETH Zürich vacancy page checked 22 October 2026; PhD role remains listed, accepts MSc Biomedical Engineering, requires fluent English, and highlights sensor integration/control software. On 23 October, current official vacancy status was not revalidated within the required 72-hour window; retained as provisional pending fresh official-source verification."
+      "evidence": "Official ETH Zürich vacancy page checked 22 October 2026; PhD role remains listed, accepts MSc Biomedical Engineering, requires fluent English, and highlights sensor integration/control software. On 23 October, current official vacancy status was not revalidated within the required 72-hour window; retained as provisional pending fresh official-source verification.",
+      "lastLinkCheck": {
+        "date": "2026-11-24",
+        "result": "reachable"
+      }
     },
     {
       "id": "lake-lucerne-movement-biomarkers-2026-09-26",
@@ -921,7 +929,7 @@
       ],
       "match": 86,
       "fresh": false,
-      "status": "provisional",
+      "status": "expired",
       "deadline": "2026-11-06",
       "url": "https://tue.varbi.com/en/apply/positionquick/968956/",
       "fit": [
@@ -939,7 +947,9 @@
       "lastVerified": "2026-10-22",
       "lastAttempted": "2026-10-23",
       "openVerified": false,
-      "evidence": "Official TU/e Varbi application route checked 22 October 2026 and remains accessible. Previous official posting records deadline 6 November 2026; verify detailed vacancy conditions before application. On 23 October, current official vacancy status was not revalidated within the required 72-hour window; retained as provisional pending fresh official-source verification."
+      "evidence": "Official TU/e Varbi application route checked 22 October 2026 and remains accessible. Previous official posting records deadline 6 November 2026; verify detailed vacancy conditions before application. On 23 October, current official vacancy status was not revalidated within the required 72-hour window; retained as provisional pending fresh official-source verification.",
+      "expiredDate": "2026-11-24",
+      "statusReason": "Deadline 2026-11-06 passed"
     },
     {
       "id": "radboud-multimodal-agentic-ai-prostate-2026-09-28",
@@ -1013,13 +1023,15 @@
       ],
       "match": 90,
       "fresh": false,
-      "status": "provisional",
+      "status": "expired",
       "deadline": "2026-10-31",
       "url": "https://jobs.medizin.uni-tuebingen.de/Job/de/7721",
       "lastVerified": "2026-10-22",
       "lastAttempted": "2026-10-23",
       "openVerified": false,
-      "evidence": "Official University Hospital Tübingen page checked 22 October 2026; application deadline 31 October 2026, MSc Biomedical Engineering accepted, Python/MATLAB programming and excellent English required. On 23 October, current official vacancy status was not revalidated within the required 72-hour window; retained as provisional pending fresh official-source verification."
+      "evidence": "Official University Hospital Tübingen page checked 22 October 2026; application deadline 31 October 2026, MSc Biomedical Engineering accepted, Python/MATLAB programming and excellent English required. On 23 October, current official vacancy status was not revalidated within the required 72-hour window; retained as provisional pending fresh official-source verification.",
+      "expiredDate": "2026-11-24",
+      "statusReason": "Deadline 2026-10-31 passed"
     },
     {
       "id": "ovgu-precision-neuroimaging-2026-10-02",
@@ -1108,7 +1120,12 @@
         "roleAlignment": 8
       },
       "lastAttempted": "2026-10-22",
-      "provisionalReason": "Not revalidated on official employer page within 72 hours; pending recheck."
+      "provisionalReason": "Not revalidated on official employer page within 72 hours; pending recheck.",
+      "lastLinkCheck": {
+        "date": "2026-11-24",
+        "result": "error",
+        "error": "HTTP 429 for https://novanta.wd5.myworkdayjobs.com/en-US/Novanta-Careers/job/Berlin-Germany/Junior-Test-Engineer--m-f-d-_R009292"
+      }
     },
     {
       "id": "stryker-rd-biomedical-mechanical-graduate-2027-ireland",
@@ -1189,7 +1206,7 @@
       ],
       "match": 80,
       "fresh": true,
-      "status": "provisional",
+      "status": "closed",
       "deadline": null,
       "url": "https://www.edwards.com/gb/job/51322/clinical-graduate-program",
       "sourceType": "official employer careers",
@@ -1234,7 +1251,9 @@
         "languageFit": 7,
         "materialRequirements": 9,
         "roleAlignment": 8
-      }
+      },
+      "closedDate": "2026-11-24",
+      "statusReason": "Official URL returned HTTP 404"
     },
     {
       "id": "brunel-young-professional-medizintechnik-wuerzburg-2026-11-04",
@@ -1250,7 +1269,7 @@
       ],
       "match": null,
       "fresh": true,
-      "status": "provisional",
+      "status": "expired",
       "deadline": "2026-11-06",
       "url": "https://cloudsites.brunel.net/de-de/jobs/young-professional-absolvent-medizintechnik-wmd-tr-303345",
       "lastAttempted": "2026-11-04",
@@ -1258,7 +1277,9 @@
       "openVerified": true,
       "evidence": "Official graduate-entry listing; experience not applicable; Medizintechnik degree accepted; medical-device development work.",
       "provisionalReason": "Requires secure German and English; candidate German B1 is not confirmed to meet this. Internship/thesis experience also requested.",
-      "sourceType": "official_employer_page"
+      "sourceType": "official_employer_page",
+      "expiredDate": "2026-11-24",
+      "statusReason": "Deadline 2026-11-06 passed"
     }
   ]
 }

@@ -1,0 +1,2815 @@
+{
+  "date": "2026-11-24",
+  "reportType": "normal daily automated refresh",
+  "reportStatus": "PARTIAL_AUTOMATED_COVERAGE",
+  "productionProtocol": "EUROPE-MEDTECH-v6",
+  "activeJobs": 0,
+  "freshJobs": 0,
+  "previouslyListed": 0,
+  "closingWithin7Days": 1,
+  "closingWithin7DaysPublished": 0,
+  "closingWithin7DaysProvisional": 1,
+  "newGatePassing": 0,
+  "provisionalFindings": 3,
+  "provisionalFindingIds": [
+    "max-planck-bmai-phd-2026-09-10",
+    "eth-machine-perfusion-phd-2026-09-26",
+    "novanta-junior-test-verification-2026-10-11"
+  ],
+  "jobIds": [],
+  "freshJobIds": [],
+  "excludedJobIds": [
+    "tue-contrast-ultrasound-nanobubbles-2026-09-28",
+    "tue-quantitative-multitracer-pet-2026-09-29",
+    "brunel-young-professional-medizintechnik-wuerzburg-2026-11-04",
+    "edwards-clinical-graduate-program-germany-2027"
+  ],
+  "typicalEmploymentJobs": 0,
+  "researchPhdJobs": 0,
+  "defaultView": "Typical jobs",
+  "notes": "Automated run 2026-11-24. 0 role(s) passed every publication gate (0 fresh). 1200 listing(s) retrieved from 1 automated source(s); 46 new lead(s) queued for adjudication, 0 matched known vacancies. Adjudication is disabled; 46 lead(s) await review in state/leads.jsonl. 4 status transition(s): tue-contrast-ultrasound-nanobubbles-2026-09-28, tue-quantitative-multitracer-pet-2026-09-29, brunel-young-professional-medizintechnik-wuerzburg-2026-11-04, edwards-clinical-graduate-program-germany-2027. 40 missed run date(s) recorded explicitly. Coverage is PARTIAL: only sources with public APIs were executed. No new vacancy passed the gates in the sources searched does not imply market absence.",
+  "sourceCoverage": {
+    "grade": "PARTIAL",
+    "coverageStatus": "PARTIAL",
+    "ledgerVersion": "EUROPE-MEDTECH-v6",
+    "coverageDate": "2026-11-24",
+    "runTimestamp": "2026-11-24T09:01:51.722Z",
+    "fullCoverageClaim": false,
+    "queryRecordsSubmitted": 2,
+    "configuredSourceCount": 179,
+    "executedSourceCount": 2,
+    "notSearchedCount": 177,
+    "statusCounts": {
+      "official_page_checked": 0,
+      "indexed_search_attempted": 1,
+      "unavailable_or_blocked": 1,
+      "not_searched": 177
+    },
+    "coverageStatement": "Automated partial execution. Only sources exposing a public API were queried; every other configured source is explicitly not_searched. No exhaustive search claim is made.",
+    "sourceExecutionLedger": [
+      {
+        "source": "Indeed",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "LinkedIn Jobs",
+        "sourceGroups": [
+          "weeklySourceBaseline"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "XING Jobs",
+        "sourceGroups": [
+          "weeklySourceBaseline"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "StepStone",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "addedSources",
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Jobware",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "addedSources",
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Monster",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "meinestadt.de",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "stellenanzeigen.de",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Yourfirm",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "addedSources",
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Kimeta",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Jooble",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Jobvector",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "addedSources",
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Absolventa",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "JobTeaser",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Stellenwerk",
+        "sourceGroups": [
+          "weeklySourceBaseline",
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "jobs.personio.de",
+        "sourceGroups": [
+          "ATS domains"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "softgarden",
+        "sourceGroups": [
+          "ATS domains",
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "successfactors",
+        "sourceGroups": [
+          "ATS domains",
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "workday",
+        "sourceGroups": [
+          "ATS domains",
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "join.com",
+        "sourceGroups": [
+          "ATS domains"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "greenhouse",
+        "sourceGroups": [
+          "ATS domains",
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "lever",
+        "sourceGroups": [
+          "ATS domains",
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "smartrecruiters",
+        "sourceGroups": [
+          "ATS domains",
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "taleo",
+        "sourceGroups": [
+          "ATS domains"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "icims",
+        "sourceGroups": [
+          "ATS domains"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "recruitee",
+        "sourceGroups": [
+          "ATS domains",
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "ashby",
+        "sourceGroups": [
+          "ATS domains",
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "jobvite",
+        "sourceGroups": [
+          "ATS domains"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "teamtailor",
+        "sourceGroups": [
+          "ATS domains",
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "interamt",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.public"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "eures",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.public"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "nando",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regulatory",
+          "sourceTiers.associationEmployerUniverse",
+          "employerUniverse.regulatoryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "zlg",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regulatory",
+          "sourceTiers.associationEmployerUniverse",
+          "employerUniverse.regulatoryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "jobs.zeit.de",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "fraunhofer",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "helmholtz",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "dgbmt",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.associationEmployerUniverse"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "fkt",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.associationEmployerUniverse"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "dgmp",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.associationEmployerUniverse"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "johner",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "metecon",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "seleon",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "mdss",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "qserve",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "WDM",
+        "sourceGroups": [
+          "addedSources",
+          "employerUniverse.primaryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Life Science Nord Jobs",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regionalSpecialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "SPECTARIS",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.associationEmployerUniverse",
+          "employerUniverse.primaryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "VDGH",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.associationEmployerUniverse",
+          "employerUniverse.primaryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Bund.de",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.public"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Medical Valley EMN",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regionalSpecialist",
+          "employerUniverse.primaryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "HealthCapital Berlin-Brandenburg",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.regionalSpecialist",
+          "employerUniverse.primaryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "WQS",
+        "sourceGroups": [
+          "addedSources",
+          "sourceTiers.specialist",
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "personio",
+        "sourceGroups": [
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "join",
+        "sourceGroups": [
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "dvinci",
+        "sourceGroups": [
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "rexx",
+        "sourceGroups": [
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "haufe-umantis",
+        "sourceGroups": [
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "concludis",
+        "sourceGroups": [
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "umantis",
+        "sourceGroups": [
+          "sourceTiers.employerDirect"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "academics.de",
+        "sourceGroups": [
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "ingenieur.de",
+        "sourceGroups": [
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "staufenbiel",
+        "sourceGroups": [
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "berufsstart",
+        "sourceGroups": [
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "xing",
+        "sourceGroups": [
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "linkedin",
+        "sourceGroups": [
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "joblift",
+        "sourceGroups": [
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "medtechjobs.de",
+        "sourceGroups": [
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "MedTech-Jobs.de (medtechjobs.de)",
+        "sourceGroups": [
+          "sourceTiers.specialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "BA",
+        "sourceGroups": [
+          "sourceTiers.public"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Karriere Bund",
+        "sourceGroups": [
+          "sourceTiers.public"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "BfArM",
+        "sourceGroups": [
+          "sourceTiers.public"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "PEI",
+        "sourceGroups": [
+          "sourceTiers.public"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Make it in Germany",
+        "sourceGroups": [
+          "sourceTiers.public"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "DZG",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "max-planck",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "leibniz",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "DLR",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "charite",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "university-hospitals",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Nature Careers",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Academic Positions",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "ResearchGate Jobs",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "EURAXESS",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "CORDIS",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "MSCA",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Marie Curie",
+        "sourceGroups": [
+          "sourceTiers.research"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Jülich",
+        "sourceGroups": [
+          "sourceTiers.research",
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "MDC",
+        "sourceGroups": [
+          "sourceTiers.research",
+          "sourceTiers.regulatory",
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "DZHK",
+        "sourceGroups": [
+          "sourceTiers.research",
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "DZL",
+        "sourceGroups": [
+          "sourceTiers.research",
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "DZD",
+        "sourceGroups": [
+          "sourceTiers.research",
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "DKFZ",
+        "sourceGroups": [
+          "sourceTiers.research",
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "DZNE",
+        "sourceGroups": [
+          "sourceTiers.research",
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "tuv-nord",
+        "sourceGroups": [
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "medcert",
+        "sourceGroups": [
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "berlin-cert",
+        "sourceGroups": [
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "VDE",
+        "sourceGroups": [
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "IEEE EMBS",
+        "sourceGroups": [
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "MedTech Europe",
+        "sourceGroups": [
+          "sourceTiers.regulatory"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "BVMed",
+        "sourceGroups": [
+          "sourceTiers.regulatory",
+          "sourceTiers.associationEmployerUniverse",
+          "employerUniverse.primaryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "WDM / Weltzentrum der Medizintechnik",
+        "sourceGroups": [
+          "sourceTiers.regionalSpecialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "MedicalMountains",
+        "sourceGroups": [
+          "sourceTiers.regionalSpecialist",
+          "employerUniverse.primaryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "TechnologyMountains",
+        "sourceGroups": [
+          "sourceTiers.regionalSpecialist",
+          "employerUniverse.primaryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Life Science Nord",
+        "sourceGroups": [
+          "sourceTiers.regionalSpecialist",
+          "employerUniverse.primaryDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Tuttlingen MedTech cluster",
+        "sourceGroups": [
+          "sourceTiers.regionalSpecialist"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "MEDICA exhibitors",
+        "sourceGroups": [
+          "sourceTiers.associationEmployerUniverse"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "COMPAMED exhibitors",
+        "sourceGroups": [
+          "sourceTiers.associationEmployerUniverse"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "MedtecLIVE exhibitors",
+        "sourceGroups": [
+          "sourceTiers.associationEmployerUniverse"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Fraunhofer IBMT",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Fraunhofer MEVIS",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Fraunhofer IIS",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Fraunhofer IPA",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Fraunhofer ITEM",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Fraunhofer IZI",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Fraunhofer IGD",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Helmholtz Munich",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Forschungszentrum Jülich",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Leibniz Association",
+        "sourceGroups": [
+          "researchInstitutes"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Tuttlingen",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Erlangen/Nuremberg",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Jena",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Freiburg",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Hamburg",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Berlin",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Lübeck",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Aachen",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Tuttlingen / WDM / MedicalMountains",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Erlangen/Nuremberg / Medical Valley",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Jena / medtech",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Freiburg / MedTech",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Hamburg / Life Science Nord",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Berlin / HealthCapital",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Lübeck / Life Science Nord",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Aachen / MedTech",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Tübingen / MedTech",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "München / MedTech",
+        "sourceGroups": [
+          "germanyClusters"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Ireland",
+        "sourceGroups": [
+          "tier2Europe"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Netherlands",
+        "sourceGroups": [
+          "tier2Europe"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Switzerland",
+        "sourceGroups": [
+          "tier2Europe"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "MEDICA",
+        "sourceGroups": [
+          "employerUniverse.eventDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "COMPAMED",
+        "sourceGroups": [
+          "employerUniverse.eventDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "MedtecLIVE",
+        "sourceGroups": [
+          "employerUniverse.eventDirectories"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Siemens Healthineers",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Philips",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "GE HealthCare",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Stryker",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Medtronic",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Abbott",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Boston Scientific",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "B. Braun",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Fresenius",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Getinge",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Ottobock",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "ZEISS",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "KARL STORZ",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Dräger",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Smith+Nephew",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Johnson & Johnson",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Roche",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "BD",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Edwards Lifesciences",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Intuitive Surgical",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Olympus",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Carl Zeiss Meditec",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Dornier MedTech",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Brainlab",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Sonova",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Cochlear",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Elekta",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Varian",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Richard Wolf",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "seca",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Löwenstein Medical",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Alcon",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "MAICO Diagnostics",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Aesculap",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Novanta Medical",
+        "sourceGroups": [
+          "employerUniverse.priorityEmployers"
+        ],
+        "status": "not_searched",
+        "method": null,
+        "query": null,
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Not searched by the automated 2026-11-24 run; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "Source has no public API reachable by the automated pipeline; requires manual or browser-based research."
+      },
+      {
+        "source": "Bundesagentur für Arbeit — Jobsuche API",
+        "sourceGroups": [
+          "automatedDiscovery"
+        ],
+        "status": "unavailable_or_blocked",
+        "method": "public_api",
+        "query": "bundesagentur",
+        "indexedResultsSurfaced": 0,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Attempt failed; no absence claim.",
+        "evidenceUrls": [],
+        "notes": "",
+        "lastAttempted": "2026-11-24",
+        "blocker": "HTTP 403 for https://rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v4/jobs?was=Medizintechnik+Absolvent&angebotsart=1&veroeffentlichtseit=7&size=50&page=1"
+      },
+      {
+        "source": "Arbeitnow — public job-board API",
+        "sourceGroups": [
+          "automatedDiscovery"
+        ],
+        "status": "indexed_search_attempted",
+        "method": "public_api_aggregator",
+        "query": "job-board-api pages 1-4 (1200)",
+        "indexedResultsSurfaced": 1200,
+        "leadsSurfaced": [],
+        "officialVerificationOutcome": "Aggregator discovery only; leads require official-source verification.",
+        "evidenceUrls": [],
+        "notes": "",
+        "lastAttempted": "2026-11-24"
+      }
+    ]
+  },
+  "automatedDiscovery": {
+    "listingsRetrieved": 1200,
+    "uniqueListings": 1186,
+    "knownVacancyMatches": 0,
+    "newLeadIds": [
+      "snke-advanced-software-engineer-embedded-syst-2026-11-24",
+      "esmc-quality-control-technician-semiconductor-2026-11-24",
+      "gpe-systemanalyst-in-entwickler-in-mit-schwe-2026-11-24",
+      "mone-consulting-gmbh-pflegekra-wirtschaftsinformatiker-in-m-w-d-2026-11-24",
+      "signal-processing-engineer-rf-operations-manager-2026-11-24",
+      "axle-careers-growth-marketing-2026-11-24",
+      "automation-consultants-ltd-software-engineer-2026-11-24",
+      "owkin-customer-support-specialist-2026-11-24",
+      "plenitude-arena-stage-assistant-e-support-informatique-h-2026-11-24",
+      "unik-and-co-data-analyst-2026-11-24",
+      "harmattan-ai-mechanical-engineer-2026-11-24",
+      "vdk-groep-b-v-junior-accountmanager-software-2026-11-24",
+      "cambridgeconsultantslimited-graduate-mechanical-biomedical-engineer-2026-11-24",
+      "cambridgeconsultantslimited-graduate-industrial-design-engineer-2027-2026-11-24",
+      "logex-healthcare-data-consultant-2026-11-24",
+      "amacuro-service-gmbh-marketing-manager-m-w-d-2026-11-24",
+      "lamm-hr-gmbh-sps-programmierer-m-w-d-twincat-3-2026-11-24",
+      "tandem-health-technical-project-manager-dach-m-f-d-2026-11-24",
+      "faculty-software-engineer-2026-11-24",
+      "faculty-associate-2026-11-24",
+      "trainline-machine-learning-engineer-2026-11-24",
+      "msf-international-supply-data-analyst-2026-11-24",
+      "signal-processing-engineer-rf-rf-electronics-engineer-electronic-warfa-2026-11-24",
+      "signal-processing-engineer-rf-rf-electronics-engineer-radio-2026-11-24",
+      "signal-processing-engineer-rf-embedded-electrical-engineer-som-2026-11-24",
+      "two-jobs-product-manager-risk-prevention-80-100-2026-11-24",
+      "harmattan-ai-embedded-electrical-engineer-som-2026-11-24",
+      "harmattan-ai-embedded-electrical-engineer-som-2026-11-24",
+      "two-jobs-service-desk-agent-m-w-d-80-100-2026-11-24",
+      "seiro-gmbh-personalberater-in-gesundheitswesen-pers-2026-11-24",
+      "pigment-solution-consultant-switzerland-2026-11-24",
+      "squid-support-software-engineer-starter-2026-11-24",
+      "squid-support-ai-engineer-llm-engineer-2026-11-24",
+      "squid-support-full-stack-developer-typescript-python-2026-11-24",
+      "squid-support-founding-engineer-ai-startup-2026-11-24",
+      "squid-support-ai-software-engineer-2026-11-24",
+      "le-saint-remy-chargee-de-mission-rse-qualite-certifica-2026-11-24",
+      "parallel-key-account-manager-private-accounts-2026-11-24",
+      "tandem-health-technical-project-manager-france-2026-11-24",
+      "doctolib-field-sales-fr-account-executive-lyon-x-2026-11-24",
+      "imc-it-operations-engineer-2026-11-24",
+      "vitestro-cloud-architect-2026-11-24",
+      "studytube-data-engineer-2026-11-24",
+      "studytube-mid-market-account-executive-2026-11-24",
+      "linkit-b-v-platform-engineer-2026-11-24",
+      "infomedics-helpdeskmedewerker-tandheelkundige-softw-2026-11-24"
+    ],
+    "reviewQueueSize": 46,
+    "prescreenRejectionsByReason": {
+      "no MedTech/biomedical domain signal": 586,
+      "seniority title": 404,
+      "student/trainee-only role": 83,
+      "requires 3+ years experience": 11,
+      "requires 5+ years experience": 9,
+      "no engineering/science/QA/clinical function signal": 8,
+      "requires 2+ years experience": 4,
+      "leadership title": 12,
+      "requires 8+ years experience": 4,
+      "German requirement appears above candidate level (B1)": 7,
+      "requires 4+ years experience": 4,
+      "requires multi-year professional experience": 4,
+      "requires 6+ years experience": 4
+    },
+    "adjudicated": [],
+    "linkChecks": [
+      {
+        "id": "max-planck-bmai-phd-2026-09-10",
+        "result": "reachable"
+      },
+      {
+        "id": "eth-machine-perfusion-phd-2026-09-26",
+        "result": "reachable"
+      },
+      {
+        "id": "novanta-junior-test-verification-2026-10-11",
+        "result": "error",
+        "error": "HTTP 429 for https://novanta.wd5.myworkdayjobs.com/en-US/Novanta-Careers/job/Berlin-Germany/Junior-Test-Engineer--m-f-d-_R009292"
+      },
+      {
+        "id": "edwards-clinical-graduate-program-germany-2027",
+        "result": "http_404"
+      }
+    ]
+  },
+  "maintenance": {
+    "missedRunDates": [
+      "2026-09-30",
+      "2026-10-12",
+      "2026-10-13",
+      "2026-10-14",
+      "2026-10-15",
+      "2026-10-16",
+      "2026-10-17",
+      "2026-10-19",
+      "2026-10-20",
+      "2026-10-21",
+      "2026-10-24",
+      "2026-10-25",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-10-31",
+      "2026-11-01",
+      "2026-11-02",
+      "2026-11-03",
+      "2026-11-05",
+      "2026-11-06",
+      "2026-11-07",
+      "2026-11-08",
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12",
+      "2026-11-13",
+      "2026-11-14",
+      "2026-11-15",
+      "2026-11-16",
+      "2026-11-17",
+      "2026-11-18",
+      "2026-11-19",
+      "2026-11-20",
+      "2026-11-21",
+      "2026-11-22",
+      "2026-11-23"
+    ],
+    "statusTransitions": [
+      {
+        "id": "tue-contrast-ultrasound-nanobubbles-2026-09-28",
+        "identity_key": "eindhoven university of technology (tu/e)|phd in contrast ultrasound imaging of nanobubbles for cancer diagnostics|eindhoven, netherlands|netherlands",
+        "from": "provisional",
+        "status": "expired",
+        "reason": "Deadline 2026-11-06 passed",
+        "date": "2026-11-24",
+        "automated": true
+      },
+      {
+        "id": "tue-quantitative-multitracer-pet-2026-09-29",
+        "identity_key": "university hospital tübingen|phd quantitative multi-tracer pet (f/m/d)|tübingen, germany|germany",
+        "from": "provisional",
+        "status": "expired",
+        "reason": "Deadline 2026-10-31 passed",
+        "date": "2026-11-24",
+        "automated": true
+      },
+      {
+        "id": "brunel-young-professional-medizintechnik-wuerzburg-2026-11-04",
+        "identity_key": "brunel gmbh|young professional / absolvent medizintechnik (w/m/d)|würzburg, bavaria, germany|germany",
+        "from": "provisional",
+        "status": "expired",
+        "reason": "Deadline 2026-11-06 passed",
+        "date": "2026-11-24",
+        "automated": true
+      },
+      {
+        "id": "edwards-clinical-graduate-program-germany-2027",
+        "identity_key": "edwards lifesciences|clinical graduate program|germany-field (initial training in munich)|germany",
+        "from": "provisional",
+        "status": "closed",
+        "reason": "Official URL returned HTTP 404",
+        "date": "2026-11-24",
+        "automated": true
+      }
+    ],
+    "changes": [
+      "Collapsed 1 duplicate vacancy registry record(s).",
+      "Recorded 40 missed run date(s): 2026-09-30 … 2026-11-23.",
+      "tue-contrast-ultrasound-nanobubbles-2026-09-28: provisional → expired (Deadline 2026-11-06 passed).",
+      "tue-quantitative-multitracer-pet-2026-09-29: provisional → expired (Deadline 2026-10-31 passed).",
+      "brunel-young-professional-medizintechnik-wuerzburg-2026-11-04: provisional → expired (Deadline 2026-11-06 passed).",
+      "edwards-clinical-graduate-program-germany-2027: provisional → closed (Official URL returned HTTP 404)."
+    ]
+  },
+  "sourcesSearched": [
+    "Bundesagentur für Arbeit — Jobsuche API",
+    "Arbeitnow — public job-board API"
+  ]
+}
