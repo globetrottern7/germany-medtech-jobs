@@ -13,6 +13,7 @@ on:
         required: false
 
 permissions:
+  actions: read
   contents: read
   pages: write
   id-token: write
@@ -41,7 +42,7 @@ jobs:
     needs: validate
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -55,6 +56,26 @@ jobs:
         uses: actions/upload-pages-artifact@v4
         with:
           path: .
+      # The artifact listing API is eventually consistent: deploy-pages has failed with
+      # "No artifacts named github-pages were found" one second after a successful upload.
+      - name: Wait until the uploaded site is listed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for i in $(seq 1 12); do
+            n=$(gh api "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts?name=github-pages" --jq '.total_count' || echo 0)
+            if [ "${n:-0}" -gt 0 ]; then echo "Artifact visible after $(( (i-1)*5 ))s"; exit 0; fi
+            sleep 5
+          done
+          echo "::warning::github-pages artifact not listed after 60s; trying to deploy anyway"
       - name: Deploy
         id: deployment
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+      - name: Wait before retry
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 30
+      - name: Deploy (retry)
+        id: deployment_retry
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v4
