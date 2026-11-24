@@ -190,6 +190,16 @@ async function main() {
     ledgerAuto.push(entry);
   }
 
+  // Re-screen leads still waiting in the queue so pre-screen improvements also clean up old entries.
+  let rescreened = 0;
+  for (const l of leads) {
+    if (l.status !== 'needs_review') continue;
+    const ps = prescreen(l, { config, profile });
+    if (ps.decision === 'reject') { l.status = 'auto_rejected'; l.rejectedReason = ps.reasons[0]; l.rejectedDate = today; rescreened++; }
+    else l.prescreen = { ...l.prescreen, relevance: ps.relevance };
+  }
+  if (rescreened) changes.push(`Removed ${rescreened} queued lead(s) that no longer pass the pre-screen.`);
+
   // Dedupe within the run, then against the registry.
   const known = new Map();
   for (const v of vacancies) known.set(matchKey(v), v);

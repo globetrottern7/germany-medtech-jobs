@@ -35,3 +35,16 @@ test('countryFrom handles names and codes', () => {
   assert.equal(countryFrom('Zug, CH'), 'Switzerland');
   assert.equal(countryFrom('Remote', 'Germany'), 'Germany');
 });
+
+test('Arbeitnow locations are not defaulted to Germany', () => {
+  const data = { data: [
+    { slug: 'a', title: 'Engineer', company_name: 'X', location: 'Paris', url: 'https://x', description: '' },
+    { slug: 'b', title: 'Engineer', company_name: 'X', location: 'Bielefeld, Nordrhein-Westfalen, Deutschland', url: 'https://x', description: '' },
+    { slug: 'c', title: 'Engineer', company_name: 'X', location: 'Nieuwegein', url: 'https://x', description: '' },
+  ] };
+  const [a, b, c] = parsers.parseArbeitnow(data);
+  assert.equal(a.country, 'France');
+  assert.equal(a.location, 'Paris');
+  assert.equal(b.country, 'Germany');
+  assert.equal(c.country, '');
+});

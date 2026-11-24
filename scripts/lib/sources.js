@@ -26,12 +26,26 @@ async function http(url, { method = 'GET', headers = {}, body, timeoutMs = 20000
 }
 
 const COUNTRY_BY_CODE = { DE: 'Germany', AT: 'Austria', CH: 'Switzerland', NL: 'Netherlands', IE: 'Ireland', BE: 'Belgium', FR: 'France', DK: 'Denmark', SE: 'Sweden', ES: 'Spain', IT: 'Italy', PL: 'Poland', CZ: 'Czechia', FI: 'Finland', NO: 'Norway', PT: 'Portugal', LU: 'Luxembourg', GB: 'United Kingdom', UK: 'United Kingdom' };
-const COUNTRY_NAMES = Object.values(COUNTRY_BY_CODE).concat(['Deutschland', 'Österreich', 'Schweiz']);
-const ALIAS = { Deutschland: 'Germany', 'Österreich': 'Austria', Schweiz: 'Switzerland' };
+const ALIAS = {
+  Deutschland: 'Germany', 'Österreich': 'Austria', Schweiz: 'Switzerland', Suisse: 'Switzerland', Nederland: 'Netherlands',
+  'Île-de-France': 'France', England: 'United Kingdom', Scotland: 'United Kingdom',
+  // German federal states
+  'Baden-Württemberg': 'Germany', Bayern: 'Germany', Bavaria: 'Germany', Brandenburg: 'Germany', Hessen: 'Germany', Niedersachsen: 'Germany',
+  'Mecklenburg-Vorpommern': 'Germany', 'Nordrhein-Westfalen': 'Germany', 'Rheinland-Pfalz': 'Germany', Saarland: 'Germany', Sachsen: 'Germany',
+  'Sachsen-Anhalt': 'Germany', 'Schleswig-Holstein': 'Germany', 'Thüringen': 'Germany',
+  // Large cities that commonly appear without a country
+  Berlin: 'Germany', Hamburg: 'Germany', 'München': 'Germany', Munich: 'Germany', 'Köln': 'Germany', Cologne: 'Germany', Frankfurt: 'Germany', Stuttgart: 'Germany',
+  'Düsseldorf': 'Germany', Leipzig: 'Germany', Dresden: 'Germany', Hannover: 'Germany', 'Nürnberg': 'Germany', Erlangen: 'Germany', Karlsruhe: 'Germany',
+  Paris: 'France', Lyon: 'France', London: 'United Kingdom', Cambridge: 'United Kingdom', Amsterdam: 'Netherlands', Eindhoven: 'Netherlands', Utrecht: 'Netherlands',
+  Rotterdam: 'Netherlands', 'Zürich': 'Switzerland', Zurich: 'Switzerland', Lausanne: 'Switzerland', Basel: 'Switzerland', Geneva: 'Switzerland', Zug: 'Switzerland',
+  Wien: 'Austria', Vienna: 'Austria', Dublin: 'Ireland', Cork: 'Ireland', Galway: 'Ireland', Copenhagen: 'Denmark', Stockholm: 'Sweden', Brussels: 'Belgium',
+  Madrid: 'Spain', Barcelona: 'Spain', Milan: 'Italy', Warsaw: 'Poland', Prague: 'Czechia',
+};
+const COUNTRY_NAMES = Object.values(COUNTRY_BY_CODE).concat(Object.keys(ALIAS));
 
 function countryFrom(text, fallback = '') {
   const s = String(text || '');
-  for (const n of COUNTRY_NAMES) if (s.includes(n)) return ALIAS[n] || n;
+  for (const n of COUNTRY_NAMES) if (new RegExp(`(^|[^\\p{L}])${n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}($|[^\\p{L}])`, 'u').test(s)) return ALIAS[n] || n;
   const code = s.match(/\b([A-Z]{2})\b\s*$/);
   if (code && COUNTRY_BY_CODE[code[1]]) return COUNTRY_BY_CODE[code[1]];
   return fallback;
@@ -108,8 +122,9 @@ function parseArbeitnow(data) {
     externalId: j.slug,
     title: j.title,
     company: j.company_name,
-    location: j.location ? `${j.location}${countryFrom(j.location) ? '' : ', Germany'}` : 'Germany',
-    country: countryFrom(j.location, 'Germany'),
+    // Arbeitnow has no country field: infer it from the location text, never default to Germany.
+    location: j.location || '',
+    country: countryFrom(j.location, ''),
     url: j.url,
     postedAt: j.created_at ? new Date(j.created_at * 1000).toISOString().slice(0, 10) : null,
     description: stripHtml(j.description).slice(0, 6000),

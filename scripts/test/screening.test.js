@@ -67,3 +67,27 @@ test('matchKey treats gender tags, legal suffixes and URL-free variants as the s
   const b = matchKey({ company: 'Siemens Healthineers', title: 'Embedded Engineer (w/m/d)', location: 'Erlangen', country: 'Germany' });
   assert.equal(a, b);
 });
+
+test('prescreen uses whole-word matching for short domain terms', () => {
+  // "mri" inside "primary", "emg" inside other words, "test" inside "latest" must not count.
+  const r = prescreen({ ...lead('Software Developer', 'Primary focus on the latest customer touchpoints; Gemganzheitlich testing.') }, { profile });
+  assert.equal(r.decision, 'reject');
+});
+
+test('prescreen rejects non-engineering titles even in health companies', () => {
+  for (const t of ['Customer Support Specialist', 'Marketing Manager (m/w/d)', 'Cloud Architect', 'Key Account Manager - Private Accounts', 'Operations Manager']) {
+    assert.equal(prescreen(lead(t, 'Medical device company, patients, healthcare, ISO 13485.'), { profile }).decision, 'reject', t);
+  }
+});
+
+test('prescreen needs a strong MedTech term or two weak ones with one in the title', () => {
+  assert.equal(prescreen(lead('Software Engineer', 'We build tools for healthcare.'), { profile }).decision, 'reject');
+  assert.equal(prescreen(lead('Clinical Software Engineer', 'Hospital patient workflows for recent graduates.'), { profile }).decision, 'lead');
+  assert.equal(prescreen(lead('Embedded Engineer', 'Firmware for ECG patches, IEC 62304. Graduates welcome.'), { profile }).decision, 'lead');
+});
+
+test('prescreen matches German text with umlauts and ß after normalisation', () => {
+  assert.equal(prescreen(lead('Entwicklungsingenieur Medizintechnik', 'Absolventen willkommen. Fließende Deutschkenntnisse.'), { profile }).decision, 'reject');
+  assert.equal(prescreen(lead('Entwicklungsingenieur Medizintechnik', 'Mehrjährige Berufserfahrung erforderlich.'), { profile }).decision, 'reject');
+  assert.equal(prescreen(lead('Ingenieur Hörgeräte', 'Hörgeräte-Entwicklung für Berufseinsteiger.'), { profile }).decision, 'lead');
+});
