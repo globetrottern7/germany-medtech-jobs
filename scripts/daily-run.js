@@ -17,6 +17,7 @@ const io = require('./lib/io');
 const { identityKey, matchKey, slug } = require('./lib/identity');
 const { ADAPTERS, http } = require('./lib/sources');
 const { prescreen } = require('./lib/prescreen');
+const { collapseDuplicates, findCitylessMatch, uniqueLeadId } = require('./lib/leads');
 const { adjudicateWithOpenAI, decide } = require('./lib/adjudicate');
 
 const args = process.argv.slice(2);
@@ -199,6 +200,8 @@ async function main() {
     else l.prescreen = { ...l.prescreen, relevance: ps.relevance };
   }
   if (rescreened) changes.push(`Removed ${rescreened} queued lead(s) that no longer pass the pre-screen.`);
+  const collapsed = collapseDuplicates(leads, today);
+  if (collapsed) changes.push(`Collapsed ${collapsed} duplicate queued lead(s).`);
 
   // Dedupe within the run, then against the registry.
   const known = new Map();
@@ -220,7 +223,7 @@ async function main() {
       if (fp) fp.last_seen = today;
       continue;
     }
-    const existing = leadByKey.get(mk);
+    const existing = leadByKey.get(mk) || findCitylessMatch(leads, d);
     if (existing) { existing.last_seen = today; existing.url = d.url || existing.url; continue; }
     const ps = prescreen(d, { config, profile });
     if (ps.decision === 'reject') {
@@ -229,7 +232,7 @@ async function main() {
       continue;
     }
     const lead = {
-      lead_id: `${slug(d.company, 30)}-${slug(d.title, 40)}-${today}`,
+      lead_id: uniqueLeadId(`${slug(d.company, 30)}-${slug(d.title, 40)}-${today}`, leads),
       match_key: mk, identity_key: identityKey(d),
       title: d.title, company: d.company, location: d.location, country: d.country,
       url: d.officialUrl || d.url, listingUrl: d.url, source: d.source, sourceType: d.sourceType, verificationTier: d.verificationTier,
