@@ -1,6 +1,6 @@
 {
   "status": "automated-partial-run-recorded",
-  "message": "Automated run 2026-11-24. 0 role(s) passed every publication gate (0 fresh). 1200 listing(s) retrieved from 1 automated source(s); 46 new lead(s) queued for adjudication, 0 matched known vacancies. Adjudication is disabled; 46 lead(s) await review in state/leads.jsonl. 4 status transition(s): tue-contrast-ultrasound-nanobubbles-2026-09-28, tue-quantitative-multitracer-pet-2026-09-29, brunel-young-professional-medizintechnik-wuerzburg-2026-11-04, edwards-clinical-graduate-program-germany-2027. 40 missed run date(s) recorded explicitly. Coverage is PARTIAL: only sources with public APIs were executed. No new vacancy passed the gates in the sources searched does not imply market absence.",
+  "message": "Automated run 2026-11-24. 0 role(s) passed every publication gate (0 fresh). 1200 listing(s) retrieved from 1 automated source(s); 1 new lead(s) queued for adjudication, 0 matched known vacancies. Adjudication is disabled; 4 lead(s) await review in state/leads.jsonl. No status transitions. Coverage is PARTIAL: only sources with public APIs were executed. No new vacancy passed the gates in the sources searched does not imply market absence.",
   "updatedAt": "2026-11-24",
   "reportDate": "2026-11-24",
   "activeJobs": 0,
@@ -43,7 +43,7 @@
     "coverageStatus": "PARTIAL",
     "ledgerVersion": "EUROPE-MEDTECH-v6",
     "coverageDate": "2026-11-24",
-    "runTimestamp": "2026-11-24T09:01:51.722Z",
+    "runTimestamp": "2026-11-24T09:20:39.951Z",
     "fullCoverageClaim": false,
     "queryRecordsSubmitted": 2,
     "configuredSourceCount": 179,
@@ -62,8 +62,8 @@
     "pipeline": "scripts/daily-run.js",
     "config": "state/automation.json",
     "reviewQueue": "state/leads.jsonl",
-    "reviewQueueSize": 46,
+    "reviewQueueSize": 4,
     "adjudicationEnabled": false,
-    "lastRun": "2026-11-24T09:01:51.723Z"
+    "lastRun": "2026-11-24T09:20:39.951Z"
   }
 }
