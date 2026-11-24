@@ -133,39 +133,25 @@ The former OpenAI API/GitHub Actions research path was retired after API credit 
 
 ## 10. Portal product
 
-The portal is a job-intelligence and candidate-tracking product.
+The portal is a focused job list plus a private application tracker. It shows only what helps the candidate act.
 
-### Discovery UX
+### Main page (`index.html`)
 
-Filters: country, CV match, language signal, deadline window, company, role family and application status. Sorting: best match, closing soon, fresh first, company. Combined filters are supported.
+- Summary cards: published roles, fresh, 90%+ strong match, closing within 7 days.
+- Jobs / Research & PhD switch; employment is the default view.
+- Filters: country, CV match, deadline window. Sorting: best match, closing soon, fresh first.
+- Job card: CV score, Fresh/Previously listed, deadline countdown, fit reasons, gaps, tracker controls and application link.
+- Tracker: New → Wishlist → Applied → Interviewing → Offer / Rejected, with follow-up date, connection and notes. Stored only in the browser (`localStorage`), never in public data.
+- CSV export of the current filtered view, including tracker fields.
+- A short collapsible "How roles are selected" explanation.
 
-### Job card
+### History page (`stats.html`)
 
-Show CV score, Fresh/Previously Listed state, deadline countdown, sponsorship/relocation signals, fit reasons, gaps, score breakdown when available, application link and tracking controls.
+- Review queue: unverified leads from automated discovery, clearly labelled as not recommendations.
+- Every qualifying role so far: each vacancy counted once, with its current status.
+- Daily runs: one row per date, including missed runs without synthesised counts.
 
-### Tracker
-
-Candidate-local workflow: **New → Wishlist → Applied → Interviewing → Offer / Rejected**. Store status date, notes, follow-up date and connection/referral status. This state is private browser-local state in the current static implementation and is not written to public research data.
-
-### Company view
-
-Group current and historical published vacancies by employer so strong employers remain visible even without a current match.
-
-### Map view
-
-Plot published vacancies where reliable coordinates are available and cluster nearby opportunities. Unknown/unmappable locations remain in the Jobs view.
-
-### Export
-
-Export the current filtered view to CSV, including candidate-local tracker fields only in the browser-generated export.
-
-### About page
-
-A recruiter-facing explanation of the problem, discovery pipeline, verification, scoring, historical controls, false-negative hunting and the product/system skills demonstrated by building it. The page must describe only capabilities actually running.
-
-### Opportunity Radar
-
-A concise explanation of adjacent role families being searched; it is context for discovery, not a second recommendation pool.
+Removed on 24 November 2026 because they added no decision value: cumulative threshold tables (day- and country-wise), the duplicated publication-history table, the never-connected visitor statistics, the research-intelligence panel, the opportunity-radar text, the companies view, the map and the past-report selector.
 
 ## 11. Source-of-truth files
 

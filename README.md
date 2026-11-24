@@ -2,8 +2,8 @@
 
 Static job-intelligence portal (GitHub Pages) for a fresh M.Sc. Biomedical Engineering graduate, with Germany-first coverage.
 
-- `index.html` — portal (jobs, Research & PhD, companies, map, tracker, CSV export)
-- `stats.html` — publication history, unique-opportunity statistics and the automated discovery queue
+- `index.html` — portal (jobs, Research & PhD, filters, application tracker, CSV export)
+- `stats.html` — review queue, every qualifying role so far, and daily run history
 - `data/` — published research data (see `DATA_SCHEMAS.md`)
 - `state/` — persistent identity registry, exclusions, review queue and configuration
 - `PRODUCTION_BASELINE.md`, `RESEARCH_SETUP.md` — methodology contract
